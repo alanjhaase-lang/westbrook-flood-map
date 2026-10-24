@@ -2342,22 +2342,24 @@
    "checked": "2026-10-24"
   },
   "541128": {
-   "minor": null,
-   "moderate": null,
-   "major": null,
-   "datum": null,
-   "source": "bom_station_plot_page",
+   "minor": 0.2,
+   "moderate": 0.6,
+   "major": 1.0,
+   "datum": "LGH",
+   "source": "user",
+   "note": "Community estimate for West Creek at Herries St; not official BOM flood classification levels.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541128.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-10-25"
   },
   "541129": {
-   "minor": null,
-   "moderate": null,
-   "major": null,
-   "datum": null,
-   "source": "bom_station_plot_page",
+   "minor": 0.2,
+   "moderate": 0.6,
+   "major": 1.0,
+   "datum": "LGH",
+   "source": "user",
+   "note": "Community estimate for West Creek at Alderly; not official BOM flood classification levels.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541129.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-10-25"
   },
   "541130": {
    "minor": null,
@@ -2369,22 +2371,24 @@
    "checked": "2026-10-24"
   },
   "541131": {
-   "minor": null,
-   "moderate": null,
-   "major": null,
-   "datum": null,
-   "source": "bom_station_plot_page",
+   "minor": 0.2,
+   "moderate": 0.6,
+   "major": 1.0,
+   "datum": "LGH",
+   "source": "user",
+   "note": "Community estimate for East Creek at Long St; not official BOM flood classification levels.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541131.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-10-25"
   },
   "541132": {
-   "minor": null,
-   "moderate": null,
-   "major": null,
-   "datum": null,
-   "source": "bom_station_plot_page",
+   "minor": 0.2,
+   "moderate": 0.6,
+   "major": 1.0,
+   "datum": "LGH",
+   "source": "user",
+   "note": "Community estimate for East Creek at South St; not official BOM flood classification levels.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541132.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-10-25"
   },
   "541133": {
    "minor": null,

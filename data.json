@@ -112,14 +112,22 @@
    "region_name": "Westbrook / Toowoomba",
    "distance_km": 7.5,
    "distance_from": "Westbrook",
-   "flood_levels": null,
-   "computed_class": null,
-   "next_class": null,
-   "next_level_m": null,
-   "delta_m": null,
+   "flood_levels": {
+    "minor": 0.2,
+    "moderate": 0.6,
+    "major": 1.0,
+    "datum": "LGH",
+    "source": "user",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541129.plt.shtml",
+    "note": "Community estimate for West Creek at Alderly; not official BOM flood classification levels."
+   },
+   "computed_class": "Minor",
+   "next_class": "Moderate",
+   "next_level_m": 0.6,
+   "delta_m": 0.29,
    "above_major_m": null,
-   "class_check": null,
-   "flood_levels_note": "no official flood levels published by BOM for this gauge"
+   "class_check": "no bulletin class",
+   "flood_levels_note": "Community estimate for West Creek at Alderly; not official BOM flood classification levels."
   },
   {
    "name": "West Creek at Herries St",
@@ -144,14 +152,22 @@
    "region_name": "Westbrook / Toowoomba",
    "distance_km": 8.7,
    "distance_from": "Westbrook",
-   "flood_levels": null,
-   "computed_class": null,
-   "next_class": null,
-   "next_level_m": null,
-   "delta_m": null,
+   "flood_levels": {
+    "minor": 0.2,
+    "moderate": 0.6,
+    "major": 1.0,
+    "datum": "LGH",
+    "source": "user",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541128.plt.shtml",
+    "note": "Community estimate for West Creek at Herries St; not official BOM flood classification levels."
+   },
+   "computed_class": "Below Flood Level",
+   "next_class": "Minor",
+   "next_level_m": 0.2,
+   "delta_m": 0.1,
    "above_major_m": null,
-   "class_check": null,
-   "flood_levels_note": "no official flood levels published by BOM for this gauge"
+   "class_check": "no bulletin class",
+   "flood_levels_note": "Community estimate for West Creek at Herries St; not official BOM flood classification levels."
   },
   {
    "name": "West Creek at Margaret Street",
@@ -208,14 +224,22 @@
    "region_name": "Westbrook / Toowoomba",
    "distance_km": 9.9,
    "distance_from": "Westbrook",
-   "flood_levels": null,
-   "computed_class": null,
-   "next_class": null,
-   "next_level_m": null,
-   "delta_m": null,
+   "flood_levels": {
+    "minor": 0.2,
+    "moderate": 0.6,
+    "major": 1.0,
+    "datum": "LGH",
+    "source": "user",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541131.plt.shtml",
+    "note": "Community estimate for East Creek at Long St; not official BOM flood classification levels."
+   },
+   "computed_class": "Minor",
+   "next_class": "Moderate",
+   "next_level_m": 0.6,
+   "delta_m": 0.29,
    "above_major_m": null,
-   "class_check": null,
-   "flood_levels_note": "no official flood levels published by BOM for this gauge"
+   "class_check": "no bulletin class",
+   "flood_levels_note": "Community estimate for East Creek at Long St; not official BOM flood classification levels."
   },
   {
    "name": "East Creek at South St",
@@ -240,14 +264,22 @@
    "region_name": "Westbrook / Toowoomba",
    "distance_km": 10.0,
    "distance_from": "Westbrook",
-   "flood_levels": null,
-   "computed_class": null,
+   "flood_levels": {
+    "minor": 0.2,
+    "moderate": 0.6,
+    "major": 1.0,
+    "datum": "LGH",
+    "source": "user",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541132.plt.shtml",
+    "note": "Community estimate for East Creek at South St; not official BOM flood classification levels."
+   },
+   "computed_class": "Major",
    "next_class": null,
    "next_level_m": null,
    "delta_m": null,
-   "above_major_m": null,
-   "class_check": null,
-   "flood_levels_note": "no official flood levels published by BOM for this gauge"
+   "above_major_m": 0.77,
+   "class_check": "no bulletin class",
+   "flood_levels_note": "Community estimate for East Creek at South St; not official BOM flood classification levels."
   },
   {
    "name": "East Creek at Alderley",
@@ -316,7 +348,7 @@
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
    "next_level_m": 0.8,
-   "delta_m": 0.13,
+   "delta_m": 0.5,
    "above_major_m": null,
    "class_check": "no bulletin class",
    "flood_levels_note": "Community estimate for Hodgson Creek at Cambooya (Rolleston Park); not official BOM flood classification levels."
