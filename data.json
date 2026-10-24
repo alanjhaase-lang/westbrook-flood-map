@@ -113,21 +113,21 @@
    "distance_km": 7.5,
    "distance_from": "Westbrook",
    "flood_levels": {
-    "minor": 0.2,
-    "moderate": 0.6,
-    "major": 1.0,
+    "minor": 1.0,
+    "moderate": 1.5,
+    "major": 2.5,
     "datum": "LGH",
     "source": "user",
     "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541129.plt.shtml",
-    "note": "Community estimate for West Creek at Alderly; not official BOM flood classification levels."
+    "note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC."
    },
-   "computed_class": "Minor",
-   "next_class": "Moderate",
-   "next_level_m": 0.6,
-   "delta_m": 0.29,
+   "computed_class": "Below Flood Level",
+   "next_class": "Minor",
+   "next_level_m": 1.0,
+   "delta_m": 0.69,
    "above_major_m": null,
    "class_check": "no bulletin class",
-   "flood_levels_note": "Community estimate for West Creek at Alderly; not official BOM flood classification levels."
+   "flood_levels_note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC."
   },
   {
    "name": "West Creek at Herries St",
@@ -153,21 +153,21 @@
    "distance_km": 8.7,
    "distance_from": "Westbrook",
    "flood_levels": {
-    "minor": 0.2,
-    "moderate": 0.6,
-    "major": 1.0,
+    "minor": 1.0,
+    "moderate": 1.5,
+    "major": 2.5,
     "datum": "LGH",
     "source": "user",
     "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541128.plt.shtml",
-    "note": "Community estimate for West Creek at Herries St; not official BOM flood classification levels."
+    "note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC."
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
-   "next_level_m": 0.2,
-   "delta_m": 0.1,
+   "next_level_m": 1.0,
+   "delta_m": 0.9,
    "above_major_m": null,
    "class_check": "no bulletin class",
-   "flood_levels_note": "Community estimate for West Creek at Herries St; not official BOM flood classification levels."
+   "flood_levels_note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC."
   },
   {
    "name": "West Creek at Margaret Street",
@@ -225,21 +225,21 @@
    "distance_km": 9.9,
    "distance_from": "Westbrook",
    "flood_levels": {
-    "minor": 0.2,
-    "moderate": 0.6,
-    "major": 1.0,
+    "minor": 1.0,
+    "moderate": 1.5,
+    "major": 2.5,
     "datum": "LGH",
     "source": "user",
     "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541131.plt.shtml",
-    "note": "Community estimate for East Creek at Long St; not official BOM flood classification levels."
+    "note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC."
    },
-   "computed_class": "Minor",
-   "next_class": "Moderate",
-   "next_level_m": 0.6,
-   "delta_m": 0.29,
+   "computed_class": "Below Flood Level",
+   "next_class": "Minor",
+   "next_level_m": 1.0,
+   "delta_m": 0.69,
    "above_major_m": null,
    "class_check": "no bulletin class",
-   "flood_levels_note": "Community estimate for East Creek at Long St; not official BOM flood classification levels."
+   "flood_levels_note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC."
   },
   {
    "name": "East Creek at South St",
@@ -265,21 +265,21 @@
    "distance_km": 10.0,
    "distance_from": "Westbrook",
    "flood_levels": {
-    "minor": 0.2,
-    "moderate": 0.6,
-    "major": 1.0,
+    "minor": 1.0,
+    "moderate": 1.5,
+    "major": 2.5,
     "datum": "LGH",
     "source": "user",
     "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541132.plt.shtml",
-    "note": "Community estimate for East Creek at South St; not official BOM flood classification levels."
+    "note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). This gauge often reads higher (~1.7 m) in quiet weather than the other East/West sites, so treat colours cautiously. Pending TRC."
    },
-   "computed_class": "Major",
-   "next_class": null,
-   "next_level_m": null,
-   "delta_m": null,
-   "above_major_m": 0.77,
+   "computed_class": "Moderate",
+   "next_class": "Major",
+   "next_level_m": 2.5,
+   "delta_m": 0.73,
+   "above_major_m": null,
    "class_check": "no bulletin class",
-   "flood_levels_note": "Community estimate for East Creek at South St; not official BOM flood classification levels."
+   "flood_levels_note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). This gauge often reads higher (~1.7 m) in quiet weather than the other East/West sites, so treat colours cautiously. Pending TRC."
   },
   {
    "name": "East Creek at Alderley",
@@ -337,21 +337,21 @@
    "distance_km": 11.6,
    "distance_from": "Westbrook",
    "flood_levels": {
-    "minor": 0.8,
-    "moderate": 1.4,
+    "minor": 1.0,
+    "moderate": 1.5,
     "major": 2.0,
     "datum": "LGH",
     "source": "user",
     "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541170.plt.shtml",
-    "note": "Community estimate for Hodgson Creek at Cambooya (Rolleston Park); not official BOM flood classification levels."
+    "note": "Community estimate (retuned): major ~2.0 m from Nov 2021 Karara Rd closure (~2.04 m on gauge); minor/moderate stepped below using BOM impact definitions. Not official BOM/council levels. Street-depth markers measure water on the road, not gauge height."
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
-   "next_level_m": 0.8,
-   "delta_m": 0.5,
+   "next_level_m": 1.0,
+   "delta_m": 0.7,
    "above_major_m": null,
    "class_check": "no bulletin class",
-   "flood_levels_note": "Community estimate for Hodgson Creek at Cambooya (Rolleston Park); not official BOM flood classification levels."
+   "flood_levels_note": "Community estimate (retuned): major ~2.0 m from Nov 2021 Karara Rd closure (~2.04 m on gauge); minor/moderate stepped below using BOM impact definitions. Not official BOM/council levels. Street-depth markers measure water on the road, not gauge height."
   },
   {
    "name": "Gowrie Creek at Cranley",

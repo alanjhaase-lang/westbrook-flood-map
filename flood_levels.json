@@ -2342,22 +2342,22 @@
    "checked": "2026-10-24"
   },
   "541128": {
-   "minor": 0.2,
-   "moderate": 0.6,
-   "major": 1.0,
+   "minor": 1.0,
+   "moderate": 1.5,
+   "major": 2.5,
    "datum": "LGH",
    "source": "user",
-   "note": "Community estimate for West Creek at Herries St; not official BOM flood classification levels.",
+   "note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541128.plt.shtml",
    "checked": "2026-10-25"
   },
   "541129": {
-   "minor": 0.2,
-   "moderate": 0.6,
-   "major": 1.0,
+   "minor": 1.0,
+   "moderate": 1.5,
+   "major": 2.5,
    "datum": "LGH",
    "source": "user",
-   "note": "Community estimate for West Creek at Alderly; not official BOM flood classification levels.",
+   "note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541129.plt.shtml",
    "checked": "2026-10-25"
   },
@@ -2371,22 +2371,22 @@
    "checked": "2026-10-24"
   },
   "541131": {
-   "minor": 0.2,
-   "moderate": 0.6,
-   "major": 1.0,
+   "minor": 1.0,
+   "moderate": 1.5,
+   "major": 2.5,
    "datum": "LGH",
    "source": "user",
-   "note": "Community estimate for East Creek at Long St; not official BOM flood classification levels.",
+   "note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). Road-depth posts are not gauge flood classes; thresholds raised so typical baseflow stays below minor. Pending TRC.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541131.plt.shtml",
    "checked": "2026-10-25"
   },
   "541132": {
-   "minor": 0.2,
-   "moderate": 0.6,
-   "major": 1.0,
+   "minor": 1.0,
+   "moderate": 1.5,
+   "major": 2.5,
    "datum": "LGH",
    "source": "user",
-   "note": "Community estimate for East Creek at South St; not official BOM flood classification levels.",
+   "note": "Community estimate (retuned from Street View depth markers + BOM impact definitions). This gauge often reads higher (~1.7 m) in quiet weather than the other East/West sites, so treat colours cautiously. Pending TRC.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541132.plt.shtml",
    "checked": "2026-10-25"
   },
@@ -2454,12 +2454,12 @@
    "checked": "2026-10-24"
   },
   "541170": {
-   "minor": 0.8,
-   "moderate": 1.4,
+   "minor": 1.0,
+   "moderate": 1.5,
    "major": 2.0,
    "datum": "LGH",
    "source": "user",
-   "note": "Community estimate for Hodgson Creek at Cambooya (Rolleston Park); not official BOM flood classification levels.",
+   "note": "Community estimate (retuned): major ~2.0 m from Nov 2021 Karara Rd closure (~2.04 m on gauge); minor/moderate stepped below using BOM impact definitions. Not official BOM/council levels. Street-depth markers measure water on the road, not gauge height.",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541170.plt.shtml",
    "checked": "2026-10-25"
   }
