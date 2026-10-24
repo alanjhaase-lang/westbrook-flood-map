@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-25T02:46:10+10:00",
- "generated_at_text": "Sun 25 Oct 2026 02:46 AM AEST",
+ "generated_at": "2026-10-25T05:10:35+10:00",
+ "generated_at_text": "Sun 25 Oct 2026 05:10 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-10-25T02:44:17+10:00",
+  "feed_published": "2026-10-25T05:05:22+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -753,8 +753,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T16:13:00+10:00",
-   "last_updated": "2026-10-25T00:27:06+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 12:27 AM AEST",
+   "last_updated": "2026-10-25T04:04:47+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 04:04 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836576",
@@ -1298,6 +1298,44 @@
     "lines": [
      [
       [
+       -27.72399,
+       152.22452
+      ],
+      [
+       -27.72463,
+       152.22478
+      ],
+      [
+       -27.72488,
+       152.22487
+      ],
+      [
+       -27.72506,
+       152.22496
+      ],
+      [
+       -27.72524,
+       152.22507
+      ],
+      [
+       -27.72568,
+       152.22549
+      ],
+      [
+       -27.72619,
+       152.22603
+      ],
+      [
+       -27.72642,
+       152.22626
+      ],
+      [
+       -27.72645,
+       152.22629
+      ]
+     ],
+     [
+      [
        -27.72883,
        152.22859
       ],
@@ -1380,44 +1418,6 @@
       [
        -27.72675,
        152.22649
-      ]
-     ],
-     [
-      [
-       -27.72399,
-       152.22452
-      ],
-      [
-       -27.72463,
-       152.22478
-      ],
-      [
-       -27.72488,
-       152.22487
-      ],
-      [
-       -27.72506,
-       152.22496
-      ],
-      [
-       -27.72524,
-       152.22507
-      ],
-      [
-       -27.72568,
-       152.22549
-      ],
-      [
-       -27.72619,
-       152.22603
-      ],
-      [
-       -27.72642,
-       152.22626
-      ],
-      [
-       -27.72645,
-       152.22629
       ]
      ],
      [
@@ -3171,8 +3171,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-24T15:00:00+10:00",
-   "last_updated": "2026-10-24T22:47:04+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 10:47 PM AEST",
+   "last_updated": "2026-10-25T04:04:06+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 04:04 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836769",
@@ -3223,12 +3223,12 @@
    "geometry": {
     "points": [
      [
-      -27.77063,
-      152.68456
-     ],
-     [
       -27.77149,
       152.683
+     ],
+     [
+      -27.77063,
+      152.68456
      ]
     ],
     "lines": []
@@ -3295,8 +3295,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T15:38:00+10:00",
-   "last_updated": "2026-10-25T01:08:59+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 01:08 AM AEST",
+   "last_updated": "2026-10-25T04:04:37+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 04:04 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836553",
@@ -3657,8 +3657,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-24T18:10:00+10:00",
-   "last_updated": "2026-10-24T22:46:09+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
+   "last_updated": "2026-10-25T04:04:15+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 04:04 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836808",
@@ -4625,8 +4625,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-22T05:46:00+10:00",
-   "last_updated": "2026-10-24T22:46:09+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
+   "last_updated": "2026-10-25T04:04:14+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 04:04 AM AEST",
    "provided_by": "Brisbane City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835892",
@@ -4815,8 +4815,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T09:50:00+10:00",
-   "last_updated": "2026-10-24T22:46:06+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
+   "last_updated": "2026-10-25T04:04:27+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 04:04 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836431",
@@ -4917,8 +4917,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T08:00:00+10:00",
-   "last_updated": "2026-10-24T22:46:06+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
+   "last_updated": "2026-10-25T04:04:26+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 04:04 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836388",
