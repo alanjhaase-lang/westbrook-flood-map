@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="icon" href="data:,">
-<title>River gauges near Westbrook, QLD</title>
+<title>River gauges: Westbrook, Ipswich, Brisbane &amp; Sunshine Coast</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -27,7 +27,24 @@
   .popup td:first-child { color: #555; white-space: nowrap; }
   .warn { color: #a15c00; }
   #err { color: #b00; }
-  @media (max-width: 600px) { .panel { font-size: 12px; } .title b { font-size: 13px; } }
+  .title { max-width: 300px; }
+  .title .hdr { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+  .title .hdr b { flex: 1; }
+  .title .chev { font-size: 12px; opacity: .7; }
+  .regions { margin-top: 6px; border-top: 1px solid #ddd; padding-top: 5px; }
+  .regions label { display: flex; align-items: center; gap: 6px; padding: 3px 0; cursor: pointer; }
+  .regions input { width: 17px; height: 17px; margin: 0; flex: none; }
+  .regions .sw { width: 12px; height: 12px; border: 2px dashed; border-radius: 50%; flex: none; }
+  .regions .nm { flex: 1; }
+  .regions .ct { color: #555; font-variant-numeric: tabular-nums; }
+  .regions .fl { color: #c62828; font-weight: bold; }
+  .regions button { font: inherit; font-size: 11.5px; padding: 2px 7px; border: 1px solid #aaa;
+                    border-radius: 4px; background: #f6f6f6; cursor: pointer; flex: none; }
+  .regions .row2 { display: flex; align-items: center; gap: 6px; margin-top: 4px; padding-top: 4px; border-top: 1px solid #eee; }
+  .regions .row2 label { flex: 1; }
+  .ctr { width: 10px; height: 10px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 2px #000; }
+  @media (max-width: 600px) { .panel { font-size: 12px; } .title b { font-size: 13px; }
+                              .title { max-width: 230px; } .regions label { padding: 5px 0; } }
 </style>
 </head>
 <body>
@@ -42,6 +59,7 @@ const COLORS = {
 };
 const LABELS = [["below flood level","Below Flood Level"],["minor","Minor"],
                 ["moderate","Moderate"],["major","Major"],["none","None / unknown"]];
+const Z = { "major": 800, "moderate": 700, "minor": 600, "below flood level": 300, "none": 0 };
 const ARROWS = { rising: "\u2191", falling: "\u2193", steady: "\u2013" };
 
 function classKey(fc) {
@@ -60,14 +78,31 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Data: <a href="https://www.bom.gov.au/qld/flood/rain_river.shtml">Bureau of Meteorology</a>'
 }).addTo(map);
 
-const gaugeLayer = L.layerGroup().addTo(map);
-let homeLayer = null, fitted = false;
+const LS_REGIONS = "floodmap.regions.v1", LS_FLOOD = "floodmap.floodOnly.v1", LS_OPEN = "floodmap.panelOpen.v1";
+function lsGet(k, dflt) { try { const v = localStorage.getItem(k); return v == null ? dflt : JSON.parse(v); } catch (e) { return dflt; } }
+function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+const enabled = lsGet(LS_REGIONS, {});          // region id -> bool (missing = on)
+let floodOnly = !!lsGet(LS_FLOOD, false);
+const groups = {};                              // region id -> {layer, markers, boundary, meta}
+let lastData = null, fitted = false, uiBuilt = false;
+
+function isOn(id) { return enabled[id] !== false; }
+function inFlood(s) { return ["minor", "moderate", "major"].includes(classKey(s.flood_class)); }
 
 const info = L.control({ position: "topright" });
 info.onAdd = () => {
   const d = L.DomUtil.create("div", "panel title");
-  d.innerHTML = '<b>River gauges within 50 km of Westbrook</b><div id="upd">Loading\u2026</div><div id="err"></div>';
+  d.innerHTML = '<div class="hdr" id="hdr"><b>River gauges: Westbrook, Ipswich, Brisbane &amp; Sunshine Coast</b>' +
+    '<span class="chev" id="chev"></span></div>' +
+    '<div id="body"><div id="upd">Loading\u2026</div><div id="err"></div><div class="regions" id="regions"></div></div>';
   L.DomEvent.disableClickPropagation(d);
+  L.DomEvent.disableScrollPropagation(d);
+  const body = d.querySelector("#body"), chev = d.querySelector("#chev");
+  let open = lsGet(LS_OPEN, window.innerWidth >= 600);
+  const apply = () => { body.style.display = open ? "" : "none"; chev.textContent = open ? "\u25B4 hide" : "\u25BE layers"; };
+  d.querySelector("#hdr").onclick = () => { open = !open; lsSet(LS_OPEN, open); apply(); };
+  apply();
   return d;
 };
 info.addTo(map);
@@ -79,7 +114,7 @@ legend.onAdd = () => {
     LABELS.map(([k, t]) => `<i style="background:${COLORS[k]}"></i>${t}`).join("<br>") +
     "<br><b>Tendency</b><br>\u2191 rising &nbsp; \u2193 falling &nbsp; \u2013 steady &nbsp; ? unknown" +
     "<br><span style='opacity:.7'>Dashed = no current reading</span>" +
-    "<br>\u{1F3E0} Westbrook &middot; circle = 50 km</div>";
+    "<br>\u{1F3E0} Westbrook &middot; dashed circles = regions</div>";
   L.DomEvent.disableClickPropagation(d);
   const body = d.querySelector("#lgb");
   if (window.innerWidth < 600) body.style.display = "none";
@@ -87,6 +122,62 @@ legend.onAdd = () => {
   return d;
 };
 legend.addTo(map);
+
+function ensureGroups(regions) {
+  for (const r of regions) {
+    if (groups[r.id]) { groups[r.id].meta = r; continue; }
+    const boundary = L.circle([r.lat, r.lon], { radius: r.radius_km * 1000, color: r.color, weight: 2,
+      fill: true, fillOpacity: 0.04, dashArray: "6 6", interactive: false });
+    const centre = r.id === "westbrook"
+      ? L.marker([r.lat, r.lon], { icon: L.divIcon({ className: "", html: '<div class="home">\u{1F3E0}</div>',
+                                    iconSize: [28, 28], iconAnchor: [14, 14] }), zIndexOffset: 1000 })
+      : L.marker([r.lat, r.lon], { icon: L.divIcon({ className: "", html: `<div class="ctr" style="background:${r.color}"></div>`,
+                                    iconSize: [14, 14], iconAnchor: [7, 7] }), zIndexOffset: -1000 });
+    centre.bindPopup(`<b>${esc(r.name)}</b><br>Centre: ${esc(r.centre_name)}<br>${r.lat}, ${r.lon}<br>Radius: ${r.radius_km} km`);
+    const markers = L.layerGroup();
+    const layer = L.layerGroup([boundary, centre, markers]);
+    groups[r.id] = { layer, markers, boundary, meta: r };
+    if (isOn(r.id)) layer.addTo(map);
+  }
+}
+
+function enabledBounds() {
+  let b = null;
+  for (const id in groups) if (isOn(id)) {
+    const gb = groups[id].boundary.getBounds();
+    b = b ? b.extend(gb) : L.latLngBounds(gb.getSouthWest(), gb.getNorthEast());
+  }
+  return b;
+}
+function fitEnabled() {
+  const b = enabledBounds() || (groups.westbrook && groups.westbrook.boundary.getBounds());
+  if (b) map.fitBounds(b, { padding: [10, 10] });
+}
+
+function buildUi(regions) {
+  const el = document.getElementById("regions");
+  el.innerHTML = regions.map(r => `<label><input type="checkbox" data-r="${esc(r.id)}" ${isOn(r.id) ? "checked" : ""}>
+      <span class="sw" style="border-color:${r.color}"></span>
+      <span class="nm">${esc(r.name)}${r.id === "westbrook" ? ` (${r.radius_km} km)` : ""}
+        <span class="ct" id="ct-${esc(r.id)}"></span></span>
+      <button type="button" data-z="${esc(r.id)}" title="Zoom to ${esc(r.name)}">Zoom</button></label>`).join("") +
+    `<div class="row2"><label><input type="checkbox" id="fo" ${floodOnly ? "checked" : ""}> In flood only</label>
+      <button type="button" id="fitall">Fit on</button></div>`;
+  el.querySelectorAll("input[data-r]").forEach(cb => cb.onchange = () => {
+    const id = cb.dataset.r; enabled[id] = cb.checked; lsSet(LS_REGIONS, enabled);
+    if (cb.checked) groups[id].layer.addTo(map); else map.removeLayer(groups[id].layer);
+  });
+  el.querySelectorAll("button[data-z]").forEach(btn => btn.onclick = (ev) => {
+    ev.preventDefault(); ev.stopPropagation();
+    const id = btn.dataset.z;
+    if (!isOn(id)) { enabled[id] = true; lsSet(LS_REGIONS, enabled); groups[id].layer.addTo(map);
+                     el.querySelector(`input[data-r="${id}"]`).checked = true; }
+    map.fitBounds(groups[id].boundary.getBounds(), { padding: [10, 10] });
+  });
+  el.querySelector("#fo").onchange = (e) => { floodOnly = e.target.checked; lsSet(LS_FLOOD, floodOnly); if (lastData) drawMarkers(lastData); };
+  el.querySelector("#fitall").onclick = fitEnabled;
+  uiBuilt = true;
+}
 
 function popupHtml(s) {
   const geo = s.geocoded ? '<span class="warn">approximate (geocoded from name)</span>' : esc(s.coord_source);
@@ -99,7 +190,8 @@ function popupHtml(s) {
     ["Flood class", esc(s.flood_class) || "\u2014"],
     ["Crossing", esc(s.crossing) || "\u2014"],
     ["Station type", esc(s.station_type)],
-    ["Distance", `${s.distance_km} km from Westbrook`],
+    ["Region", esc(s.region_name || s.region)],
+    ["Distance", `${s.distance_km} km from ${esc(s.distance_from || "Westbrook")}`],
     ["Location", `${s.lat.toFixed(4)}, ${s.lon.toFixed(4)} (${geo})`],
     ["Bulletin", `<a href="https://www.bom.gov.au/fwo/${esc(s.bulletin)}.html" target="_blank" rel="noopener">${esc(s.bulletin)}</a>`]
   ];
@@ -108,33 +200,46 @@ function popupHtml(s) {
     ${s.table_url ? ` | <a href="${esc(s.table_url)}" target="_blank" rel="noopener">table</a>` : ""}</p></div>`;
 }
 
-function render(data) {
-  gaugeLayer.clearLayers();
-  if (!homeLayer) {
-    const h = data.home;
-    homeLayer = L.layerGroup([
-      L.circle([h.lat, h.lon], { radius: data.radius_km * 1000, color: "#1565c0", weight: 2,
-                                  fill: true, fillOpacity: 0.04, dashArray: "6 6", interactive: false }),
-      L.marker([h.lat, h.lon], { icon: L.divIcon({ className: "", html: '<div class="home">\u{1F3E0}</div>',
-                                                  iconSize: [28, 28], iconAnchor: [14, 14] }), zIndexOffset: 1000 })
-        .bindPopup(`<b>${esc(h.name)}</b><br>${h.lat}, ${h.lon}<br>Radius: ${data.radius_km} km`)
-    ]).addTo(map);
-  }
+function legacyRegions(data) {  // data.json written before regions existed
+  const h = data.home;
+  return [{ id: "westbrook", name: "Westbrook / Toowoomba", lat: h.lat, lon: h.lon, radius_km: data.radius_km,
+            centre_name: "Westbrook", color: "#1565c0", count: data.count }];
+}
+
+function drawMarkers(data) {
+  const counts = {}, floods = {};
+  for (const id in groups) { groups[id].markers.clearLayers(); counts[id] = 0; floods[id] = 0; }
   for (const s of data.stations) {
+    const rid = s.region || "westbrook", g = groups[rid];
+    if (!g) continue;
+    counts[rid]++; if (inFlood(s)) floods[rid]++;
+    if (floodOnly && !inFlood(s)) continue;
     const key = classKey(s.flood_class);
     const arrow = ARROWS[(s.tendency || "").toLowerCase()] || "?";
     const stale = s.height_m == null ? " stale" : "";
     const icon = L.divIcon({ className: "", iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -12],
       html: `<div class="gauge${stale}" style="background:${COLORS[key]}">${arrow}</div>` });
-    L.marker([s.lat, s.lon], { icon, title: s.name, zIndexOffset: key === "none" ? 0 : 500 })
+    L.marker([s.lat, s.lon], { icon, title: s.name, zIndexOffset: Z[key] })
       .bindPopup(popupHtml(s), { maxWidth: 320 })
-      .addTo(gaugeLayer);
+      .addTo(g.markers);
   }
-  const bl = (data.bulletins || []).map(b => b.id).join(", ");
+  for (const id in groups) {
+    const c = document.getElementById("ct-" + id);
+    if (c) c.innerHTML = `(${counts[id]})` + (floods[id] ? ` <span class="fl" title="in flood">\u26A0 ${floods[id]}</span>` : "");
+  }
+}
+
+function render(data) {
+  lastData = data;
+  const regions = data.regions && data.regions.length ? data.regions : legacyRegions(data);
+  ensureGroups(regions);
+  if (!uiBuilt) buildUi(regions);
+  drawMarkers(data);
+  const bl = (data.bulletins || []).map(b => b.id + (b.stale ? " (stale)" : "")).join(", ");
   document.getElementById("upd").innerHTML =
     `Last updated: ${esc(data.generated_at_text || data.generated_at)}<br>${data.count} gauges &middot; bulletins ${esc(bl)}`;
   document.getElementById("err").textContent = "";
-  if (!fitted) { map.fitBounds(homeLayer.getLayers()[0].getBounds(), { padding: [10, 10] }); fitted = true; }
+  if (!fitted) { fitEnabled(); fitted = true; }
 }
 
 async function load() {

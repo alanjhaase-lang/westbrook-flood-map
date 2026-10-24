@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fetch BOM Queensland river height bulletins, join station coordinates,
-keep gauges within RADIUS_KM of Westbrook QLD and write data.json.
+keep gauges inside any of the REGIONS (Westbrook/Toowoomba, Ipswich,
+Brisbane, Sunshine Coast) and write data.json.
 
 Standard library only.
 """
@@ -24,12 +25,45 @@ BOM = "https://www.bom.gov.au"
 HOME = {"name": "Westbrook, QLD", "lat": -27.6018, "lon": 151.8723}
 RADIUS_KM = 50.0
 
-# IDQ60293 is the primary source. The others were checked and contain
-# gauges within 50 km of Westbrook (see README).
-BULLETINS = [
-    ("IDQ60293", "Upper Condamine, Condamine, Balonne, Maranoa"),
-    ("IDQ60286", "Stanley, Brisbane, Bremer, Lockyer, Ipswich/Brisbane Creeks, Pine/Caboolture"),
+# Regions are great-circle circles around a centre (same model as the
+# original 50 km Westbrook circle). A gauge inside several circles is
+# assigned to the one whose centre is nearest, so every gauge appears once.
+# Westbrook's circle does not overlap any other, so its behaviour is unchanged.
+REGIONS = [
+    {"id": "westbrook", "name": "Westbrook / Toowoomba", "short": "Westbrook",
+     "lat": HOME["lat"], "lon": HOME["lon"], "radius_km": RADIUS_KM,
+     "centre_name": "Westbrook", "color": "#1565c0"},
+    {"id": "ipswich", "name": "Ipswich", "short": "Ipswich",
+     "lat": -27.6144, "lon": 152.7590, "radius_km": 30.0,
+     "centre_name": "Ipswich CBD", "color": "#6a1b9a"},
+    {"id": "brisbane", "name": "Brisbane", "short": "Brisbane",
+     "lat": -27.4698, "lon": 153.0251, "radius_km": 35.0,
+     "centre_name": "Brisbane CBD", "color": "#00838f"},
+    {"id": "sunshine", "name": "Sunshine Coast", "short": "Sunshine Coast",
+     "lat": -26.6200, "lon": 153.0300, "radius_km": 40.0,
+     "centre_name": "Sunshine Coast (between Maroochydore and Nambour)", "color": "#c2185b"},
 ]
+
+# Bulletins listed on https://www.bom.gov.au/qld/flood/rain_river.shtml that
+# contain gauges inside at least one region (see README).
+BULLETINS = [
+    ("IDQ60293", "Condamine, Myall Creek, Balonne, Maranoa, Wallam/Mungallala Creeks"),
+    ("IDQ60286", "Stanley, Brisbane, Bremer, Lockyer, Ipswich/Brisbane Creeks, Pine/Caboolture"),
+    ("IDQ60285", "Nerang, Coomera, Pimpama, Logan-Albert, Tingalpa Creek"),
+    ("IDQ60287", "Mooloolah, Maroochy, Noosa, Mary"),
+]
+
+
+def assign_region(lat, lon):
+    """(region, distance_km) for the nearest region centre whose circle contains
+    the point, or (None, None)."""
+    best = None
+    for reg in REGIONS:
+        d = haversine_km(reg["lat"], reg["lon"], lat, lon)
+        if d <= reg["radius_km"] and (best is None or d < best[1]):
+            best = (reg, d)
+    return best if best else (None, None)
+
 
 STATIONS_FILE = os.path.join(HERE, "stations.json")
 DATA_FILE = os.path.join(HERE, "data.json")
@@ -196,19 +230,36 @@ def save_stations(stations):
 
 def main():
     stations = load_stations()
-    rows, used = [], []
+    old = None
+    if os.path.exists(DATA_FILE):
+        try:
+            with open(DATA_FILE) as f:
+                old = json.load(f)
+        except (ValueError, OSError):
+            old = None
+    rows, used, carried, failed = [], [], [], []
     for bid, desc in BULLETINS:
         url = f"{BOM}/fwo/{bid}.html"
         try:
             r = parse_bulletin(fetch(url), bid)
+            if not r:
+                raise ValueError("no rows parsed")
         except Exception as e:  # keep going if one bulletin fails
             print(f"WARN: {bid} failed: {e}", file=sys.stderr)
-            if bid == BULLETINS[0][0]:
-                raise
+            failed.append(bid)
+            # Keep the previous readings for this bulletin rather than
+            # silently dropping a whole region from the map.
+            prev = [x for x in (old or {}).get("stations", []) if x.get("bulletin") == bid]
+            if prev:
+                carried.extend(prev)
+                used.append({"id": bid, "description": desc, "url": url, "rows": len(prev),
+                             "stale": True})
             continue
         print(f"{bid}: {len(r)} rows")
         used.append({"id": bid, "description": desc, "url": url, "rows": len(r)})
         rows.extend(r)
+    if len(failed) == len(BULLETINS):
+        raise SystemExit("all bulletins failed; data.json left untouched")
 
     # New station numbers we have no coordinates for: look them up in BOM
     # sources (never geocoded automatically) and cache in stations.json.
@@ -230,13 +281,25 @@ def main():
         if not s or s.get("lat") is None:
             nocoord.append(f'{r["station_no"]} {r["name"]}')
             continue
-        d = haversine_km(HOME["lat"], HOME["lon"], s["lat"], s["lon"])
-        if d > RADIUS_KM:
+        reg, d = assign_region(s["lat"], s["lon"])
+        if reg is None:
             continue
         r.update(lat=s["lat"], lon=s["lon"], coord_source=s["source"],
-                 geocoded=bool(s.get("geocoded")), distance_km=round(d, 1))
+                 geocoded=bool(s.get("geocoded")), region=reg["id"],
+                 region_name=reg["name"], distance_km=round(d, 1),
+                 distance_from=reg["centre_name"])
         out.append(r)
-    out.sort(key=lambda x: x["distance_km"])
+    for r in carried:  # previous readings of a bulletin that failed this run
+        if r["station_no"] not in seen:
+            seen.add(r["station_no"])
+            out.append(r)
+    order = {reg["id"]: i for i, reg in enumerate(REGIONS)}
+    out.sort(key=lambda x: (order.get(x.get("region"), 99), x["distance_km"]))
+    regions = []
+    for reg in REGIONS:
+        mine = [x for x in out if x.get("region") == reg["id"]]
+        flood = sum(1 for x in mine if re.match(r"(minor|moderate|major)", (x.get("flood_class") or "").lower()))
+        regions.append(dict(reg, count=len(mine), in_flood=flood))
 
     now = dt.datetime.now(ZoneInfo("Australia/Brisbane"))
     data = {
@@ -244,26 +307,23 @@ def main():
         "generated_at_text": now.strftime("%a %d %b %Y %I:%M %p AEST"),
         "home": HOME,
         "radius_km": RADIUS_KM,
+        "regions": regions,
         "bulletins": used,
         "stations_without_coordinates": nocoord,
         "count": len(out),
         "stations": out,
     }
     # Avoid a commit every run when only the timestamp would change.
-    if os.path.exists(DATA_FILE):
-        try:
-            with open(DATA_FILE) as f:
-                old = json.load(f)
-            strip = lambda d: {k: v for k, v in d.items() if not k.startswith("generated_at")}
-            if strip(old) == strip(data):
-                print("no change in gauge data; data.json left untouched")
-                return
-        except (ValueError, OSError):
-            pass
+    if old is not None:
+        strip = lambda d: {k: v for k, v in d.items() if not k.startswith("generated_at")}
+        if strip(old) == strip(data):
+            print("no change in gauge data; data.json left untouched")
+            return
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=1, ensure_ascii=False)
         f.write("\n")
-    print(f"wrote {DATA_FILE}: {len(out)} stations within {RADIUS_KM} km; "
+    print(f"wrote {DATA_FILE}: {len(out)} stations (" +
+          ", ".join(f'{x["id"]}={x["count"]}' for x in regions) + "); "
           f"{len(nocoord)} bulletin stations lacked coordinates")
 
 

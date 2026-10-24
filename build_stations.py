@@ -14,6 +14,8 @@ import urllib.parse
 
 import update_data as u
 
+# Every Qld river height bulletin near SE Qld (from
+# https://www.bom.gov.au/qld/flood/rain_river.shtml).
 CANDIDATES = ["IDQ60293", "IDQ60286", "IDQ60285", "IDQ60287", "IDQ60292"]
 
 
@@ -48,14 +50,14 @@ def main():
             print(f"NO COORDS {no} {names[no]}", file=sys.stderr)
     u.save_stations(stations)
     for bid in CANDIDATES:
-        near = []
+        per = {}
         for r in rows:
             s = stations.get(r["station_no"])
             if r["bulletin"] == bid and s:
-                d = u.haversine_km(u.HOME["lat"], u.HOME["lon"], s["lat"], s["lon"])
-                if d <= u.RADIUS_KM:
-                    near.append((round(d, 1), r["name"], s["source"][:20]))
-        print(bid, len(near), "within", u.RADIUS_KM, "km", sorted(near)[:5])
+                reg, d = u.assign_region(s["lat"], s["lon"])
+                if reg:
+                    per.setdefault(reg["id"], []).append((round(d, 1), r["name"], s["source"][:20]))
+        print(bid, {k: len(v) for k, v in per.items()} or "no gauges in any region")
 
 
 if __name__ == "__main__":

@@ -1,12 +1,34 @@
-# River gauges near Westbrook, QLD
+# River gauges: Westbrook, Ipswich, Brisbane & Sunshine Coast
 
 A self-updating static web map (Leaflet + OpenStreetMap) of Bureau of Meteorology
-river-height gauges within **50 km** (great-circle) of Westbrook, Queensland
-(-27.6018, 151.8723; OpenStreetMap Nominatim).
+river-height gauges in four toggleable regions of south-east Queensland.
+
+## Regions
+
+Each region is a great-circle circle around a centre (`REGIONS` in `update_data.py`),
+the same model as the original Westbrook 50 km circle. Circles are simple to reason about,
+need no external boundary data, and suit gauges, which follow catchments rather than
+council (LGA) lines.
+
+| Region | Centre | Radius | Covers |
+|---|---|---|---|
+| Westbrook / Toowoomba | Westbrook -27.6018, 151.8723 | 50 km | original behaviour (Toowoomba, Oakey, Pittsworth, Lockyer headwaters) |
+| Ipswich | Ipswich CBD -27.6144, 152.7590 | 30 km | Bremer, Warrill, lower Lockyer, Brisbane R. Wivenhoe–Moggill |
+| Brisbane | Brisbane CBD -27.4698, 153.0251 | 35 km | Brisbane metro creeks, Pine/North Pine, Logan/Albert lower reaches, Tingalpa |
+| Sunshine Coast | -26.62, 153.03 (between Maroochydore and Nambour) | 40 km | Caloundra to Noosa plus the Blackall Range / upper Mary hinterland |
+
+A gauge inside more than one circle (only Ipswich/Brisbane overlap) is assigned to the
+region whose centre is **nearest**, so every gauge has exactly one marker. Each gauge in
+`data.json` has `region`, `region_name`, `distance_km` (to its region centre) and
+`distance_from`.
+
+The map has a collapsible panel (top right; collapsed by default on phones) with a
+checkbox, gauge count, in-flood count and *Zoom* button per region, an *In flood only*
+filter and *Fit on* (fit all enabled regions). Checkbox states persist in `localStorage`.
 
 - `update_data.py` – stdlib-only Python 3.9+ script. Fetches the BOM river height
   bulletins, parses every row, joins coordinates from `stations.json`, keeps
-  gauges within 50 km and writes `data.json` (timestamp in Australia/Brisbane).
+  gauges in any region and writes `data.json` (timestamp in Australia/Brisbane).
   If only the timestamp would change, `data.json` is left untouched so the
   workflow doesn't make empty commits.
 - `stations.json` – cached station-number → lat/lon lookup. New station numbers
@@ -25,10 +47,14 @@ Bulletins (configured in `BULLETINS` in `update_data.py`):
 | Bulletin | Coverage | Why |
 |---|---|---|
 | [IDQ60293](https://www.bom.gov.au/fwo/IDQ60293.html) (primary) | Upper Condamine, Condamine, Balonne, Maranoa | Westbrook / Toowoomba area |
-| [IDQ60286](https://www.bom.gov.au/fwo/IDQ60286.html) | Stanley, Brisbane, Bremer, Lockyer, Ipswich/Brisbane Creeks, Pine/Caboolture | Lockyer Valley gauges east of Toowoomba are within 50 km |
+| [IDQ60286](https://www.bom.gov.au/fwo/IDQ60286.html) | Stanley, Brisbane, Bremer, Lockyer, Ipswich/Brisbane Creeks, Pine/Caboolture | Lockyer gauges (Westbrook), Ipswich, Brisbane metro creeks |
+| [IDQ60285](https://www.bom.gov.au/fwo/IDQ60285.html) | Nerang, Coomera, Pimpama, Logan-Albert, Tingalpa Creek | Logan/Albert and Tingalpa gauges on Brisbane's southern edge |
+| [IDQ60287](https://www.bom.gov.au/fwo/IDQ60287.html) | Mooloolah, Maroochy, Noosa, Mary | Sunshine Coast and hinterland (upper Mary) |
 
-Also checked and excluded because they have no gauges within 50 km:
-IDQ60285 (Logan–Albert, Gold Coast), IDQ60287 (Mary), IDQ60292 (Macintyre, Dumaresq, Weir, Moonie).
+Also checked and excluded because they have no gauges in any region:
+IDQ60292 (Macintyre, Dumaresq, Weir, Moonie), IDQ60288 (Burnett etc.).
+If a bulletin fails to download, the previous readings for that bulletin are kept
+(marked `stale` in `bulletins`) rather than dropping a region.
 
 Coordinates, in priority order (`source` field in `stations.json`):
 
