@@ -71,6 +71,16 @@
   .roads input { width: 17px; height: 17px; margin: 0; flex: none; }
   .roads .ct { color: #555; font-variant-numeric: tabular-nums; }
   .roads .note { font-size: 11px; color: #555; }
+  .roads.gg { margin-top: 0; border-top: 0; padding-top: 0; }
+  .roads.gg + .roads { margin-top: 2px; border-top: 0; padding-top: 0; }
+  .roads .sub { padding-left: 23px; }
+  .roads .sub.off { opacity: .45; }
+  .roads .sub.off label { cursor: default; }
+  .roads .fl { color: #c62828; font-weight: bold; }
+  .gico { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #222; background: #4caf50; box-sizing: border-box; flex: none; }
+  .sec { margin-top: 7px; padding-top: 4px; border-top: 1px solid #ddd; font-size: 10.5px; font-weight: 600;
+         letter-spacing: .06em; text-transform: uppercase; color: #777; }
+  .sec + .regions, .sec + .roads { margin-top: 0; border-top: 0; padding-top: 0; }
   .roads .stale { color: #a15c00; font-size: 11.5px; }
   .ne { width: 18px; height: 18px; border-radius: 50%; background: #d50000; border: 2px solid #fff; box-sizing: border-box;
         box-shadow: 0 0 0 1px #7f0000, 0 1px 3px rgba(0,0,0,.5); display: flex; align-items: center; justify-content: center; }
@@ -89,7 +99,7 @@
   .ctr { width: 10px; height: 10px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 2px #000; }
   #body { max-height: calc(100vh - 150px); overflow-y: auto; }
   @media (max-width: 600px) { .panel { font-size: 12px; } .title b { font-size: 13px; }
-                              .title { max-width: 230px; } .regions label, .roads label { padding: 5px 0; } }
+                              .title { max-width: 230px; } .regions label, .roads label { padding: 5px 0; } .sec { margin-top: 5px; } }
 </style>
 </head>
 <body>
@@ -127,7 +137,9 @@ map.attributionControl.addAttribution('Road data &copy; State of Queensland (<a 
   '<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>');
 
 const LS_REGIONS = "floodmap.regions.v1", LS_FLOOD = "floodmap.floodOnly.v1", LS_OPEN = "floodmap.panelOpen.v1",
-      LS_RADAR = "floodmap.radar.v1", LS_CLOSURES = "floodmap.closures.v1", LS_CAMERAS = "floodmap.cameras.v1";
+      LS_RADAR = "floodmap.radar.v1", LS_CLOSURES = "floodmap.closures.v1", LS_CAMERAS = "floodmap.cameras.v1",
+      LS_GAUGES = "floodmap.gauges.v1";
+let gaugesOn = lsGet(LS_GAUGES, true) !== false;
 function lsGet(k, dflt) { try { const v = localStorage.getItem(k); return v == null ? dflt : JSON.parse(v); } catch (e) { return dflt; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 
@@ -164,8 +176,8 @@ info.onAdd = () => {
     '<div class="disc">Unofficial community map \u2014 not for safety decisions. ' +
     '<a href="https://www.bom.gov.au/qld/warnings/" target="_blank" rel="noopener">BOM warnings</a> &middot; ' +
     '<a href="#" id="discmore">more</a></div>' +
-    '<div id="body"><div id="upd">Loading\u2026</div><div id="err"></div><div class="regions" id="regions"></div>' +
-    '<div class="roads" id="roads"></div><div class="radar" id="radar"></div></div>';
+    '<div id="body"><div id="upd">Loading\u2026</div><div id="err"></div><div class="sec">Areas</div><div class="regions" id="regions"></div>' +
+    '<div class="sec">Layers</div><div class="roads gg" id="gauges"></div><div class="roads" id="roads"></div><div class="radar" id="radar"></div></div>';
   L.DomEvent.disableClickPropagation(d);
   L.DomEvent.disableScrollPropagation(d);
   d.querySelector("#discmore").onclick = (e) => { e.preventDefault(); showNotice(); };
@@ -236,21 +248,21 @@ function buildUi(regions) {
       <span class="nm">${esc(r.name)}${r.id === "westbrook" ? ` (${r.radius_km} km)` : ""}
         <span class="ct" id="ct-${esc(r.id)}"></span></span>
       <button type="button" data-z="${esc(r.id)}" title="Zoom to ${esc(r.name)}">Zoom</button></label>`).join("") +
-    `<div class="row2"><label><input type="checkbox" id="fo" ${floodOnly ? "checked" : ""}> <span title="Gauges only; road closures and cameras stay visible">In flood only (gauges)</span></label>
+    `<div class="row2"><label><span>Fit map to ticked areas</span></label>
       <button type="button" id="fitall">Fit on</button></div>`;
+  buildGaugesUi();
   el.querySelectorAll("input[data-r]").forEach(cb => cb.onchange = () => {
     const id = cb.dataset.r; enabled[id] = cb.checked; lsSet(LS_REGIONS, enabled);
     if (cb.checked) groups[id].layer.addTo(map); else map.removeLayer(groups[id].layer);
-    syncRoadLayers(); updateRoadCounts();
+    syncRoadLayers(); updateRoadCounts(); updateGaugeCount();
   });
   el.querySelectorAll("button[data-z]").forEach(btn => btn.onclick = (ev) => {
     ev.preventDefault(); ev.stopPropagation();
     const id = btn.dataset.z;
     if (!isOn(id)) { enabled[id] = true; lsSet(LS_REGIONS, enabled); groups[id].layer.addTo(map);
-                     el.querySelector(`input[data-r="${id}"]`).checked = true; syncRoadLayers(); updateRoadCounts(); }
+                     el.querySelector(`input[data-r="${id}"]`).checked = true; syncRoadLayers(); updateRoadCounts(); updateGaugeCount(); }
     map.fitBounds(groups[id].boundary.getBounds(), { padding: [10, 10] });
   });
-  el.querySelector("#fo").onchange = (e) => { floodOnly = e.target.checked; lsSet(LS_FLOOD, floodOnly); if (lastData) drawMarkers(lastData); };
   el.querySelector("#fitall").onclick = fitEnabled;
   uiBuilt = true;
 }
@@ -310,6 +322,30 @@ function legacyRegions(data) {  // data.json written before regions existed
             centre_name: "Westbrook", color: "#1565c0", count: data.count }];
 }
 
+function syncGauges() {
+  for (const id in groups) {
+    const g = groups[id];
+    if (gaugesOn) g.layer.addLayer(g.markers); else g.layer.removeLayer(g.markers);
+  }
+  const sub = document.getElementById("fosub"), fo = document.getElementById("fo");
+  if (sub) { sub.classList.toggle("off", !gaugesOn); fo.disabled = !gaugesOn; }
+}
+function buildGaugesUi() {
+  const el = document.getElementById("gauges");
+  el.innerHTML = `<label><input type="checkbox" id="gon" ${gaugesOn ? "checked" : ""}>
+      <span class="gico"></span>
+      <span>River gauges <span class="ct" id="ct-gauges"></span></span></label>
+    <div class="sub" id="fosub"><label><input type="checkbox" id="fo" ${floodOnly ? "checked" : ""}> <span title="Gauges only; road closures and cameras stay visible">In flood only</span></label></div>`;
+  el.querySelector("#gon").onchange = (e) => { gaugesOn = e.target.checked; lsSet(LS_GAUGES, gaugesOn); syncGauges(); };
+  el.querySelector("#fo").onchange = (e) => { floodOnly = e.target.checked; lsSet(LS_FLOOD, floodOnly); if (lastData) drawMarkers(lastData); };
+  syncGauges();
+}
+function updateGaugeCount() {
+  const c = document.getElementById("ct-gauges"); if (!c || !lastData) return;
+  let n = 0, f = 0;
+  for (const s of lastData.stations) { const rid = s.region || "westbrook"; if (groups[rid] && isOn(rid)) { n++; if (inFlood(s)) f++; } }
+  c.innerHTML = `(${n})` + (f ? ` <span class="fl" title="in flood">\u26A0 ${f} in flood</span>` : "");
+}
 function drawMarkers(data) {
   const counts = {}, floods = {};
   for (const id in groups) { groups[id].markers.clearLayers(); counts[id] = 0; floods[id] = 0; }
@@ -331,6 +367,7 @@ function drawMarkers(data) {
     const c = document.getElementById("ct-" + id);
     if (c) c.innerHTML = `(${counts[id]})` + (floods[id] ? ` <span class="fl" title="in flood">\u26A0 ${floods[id]}</span>` : "");
   }
+  updateGaugeCount();
 }
 
 function render(data) {
