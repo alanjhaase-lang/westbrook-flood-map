@@ -696,7 +696,7 @@ async function load() {
 // "https://qld-flood-bom-proxy.<account>.workers.dev". Source + deploy steps: the bom-proxy/ folder in
 // github.com/alanjhaase-lang/sunshine-coast-flood-map (one Worker serves both maps; it only allows
 // /fwo/IDQ60285|60286|60287|60293.html for alanjhaase-lang.github.io). "" = try BOM directly (normally blocked).
-const LIVE_PROXY = "";  // TODO: set to the deployed workers.dev URL
+const LIVE_PROXY = "https://qld-flood-bom-proxy.alanjhaase.workers.dev";  // shared BOM relay Worker (sunshine-coast-flood-map/bom-proxy)
 const LIVE_EVERY_MS = 5 * 60 * 1000, LIVE_TIMEOUT_MS = 10000;
 const live = { readings: {}, checked: null, ok: false, err: "", busy: false, lastTry: 0 };
 const WD = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
