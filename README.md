@@ -3,6 +3,14 @@
 A self-updating static web map (Leaflet + OpenStreetMap) of Bureau of Meteorology
 river-height gauges in four toggleable regions of south-east Queensland.
 
+> **Disclaimer:** Unofficial community map. Data from the Bureau of Meteorology may be delayed or
+> contain faulty readings. Do not rely on it for safety decisions. Check
+> [BOM warnings (bom.gov.au)](https://www.bom.gov.au/qld/warnings/), your council disaster dashboard,
+> and call SES 132 500 or 000 in an emergency.
+>
+> The map shows this as a short line in the header panel and as a notice on first visit
+> (dismissal remembered in `localStorage` key `floodmap.disclaimer.v1`; the *more* link reopens it).
+
 ## Regions
 
 Each region is a great-circle circle around a centre (`REGIONS` in `update_data.py`),

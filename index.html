@@ -21,7 +21,15 @@
            display: flex; align-items: center; justify-content: center;
            font: bold 15px/1 system-ui, sans-serif; color: #111; box-shadow: 0 1px 3px rgba(0,0,0,.5); }
   .gauge.stale { opacity: .55; border-style: dashed; }
-  .home { font-size: 26px; line-height: 1; text-shadow: 0 0 3px #fff; }
+  .wb-label { display: inline-block; transform: translate(-50%, -50%); white-space: nowrap; font: 600 12px/1.2 system-ui, sans-serif;
+              color: #222; background: rgba(255,255,255,.85); border: 1px solid #888; border-radius: 3px; padding: 1px 5px; }
+  .disc { font-size: 11.5px; color: #555; margin-top: 3px; }
+  .disc a { color: #555; }
+  #notice { position: absolute; z-index: 1100; left: 50%; bottom: 28px; transform: translateX(-50%);
+            width: min(460px, calc(100% - 24px)); box-sizing: border-box; background: #fff; border-left: 4px solid #a15c00;
+            border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.4); padding: 10px 12px; font: 13px/1.4 system-ui, sans-serif; }
+  #notice p { margin: 0 0 8px; }
+  #notice button { font: inherit; padding: 4px 12px; border: 1px solid #888; border-radius: 4px; background: #f3f3f3; cursor: pointer; }
   .popup table { border-collapse: collapse; font-size: 12.5px; }
   .popup td { padding: 1px 6px 1px 0; vertical-align: top; }
   .popup td:first-child { color: #555; white-space: nowrap; }
@@ -107,15 +115,36 @@ let lastData = null, fitted = false, uiBuilt = false;
 function isOn(id) { return enabled[id] !== false; }
 function inFlood(s) { return ["minor", "moderate", "major"].includes(classKey(s.flood_class)); }
 
+const LS_NOTICE = "floodmap.disclaimer.v1";
+const DISCLAIMER = 'Unofficial community map. Data from the Bureau of Meteorology may be delayed or contain ' +
+  'faulty readings. Do not rely on it for safety decisions. Check ' +
+  '<a href="https://www.bom.gov.au/qld/warnings/" target="_blank" rel="noopener">BOM warnings (bom.gov.au)</a>, ' +
+  'your council disaster dashboard, and call SES <a href="tel:132500">132 500</a> or ' +
+  '<a href="tel:000">000</a> in an emergency.';
+function showNotice() {
+  if (document.getElementById("notice")) return;
+  const n = document.createElement("div");
+  n.id = "notice"; n.setAttribute("role", "dialog"); n.setAttribute("aria-label", "Disclaimer");
+  n.innerHTML = `<p><b>Please note:</b> ${DISCLAIMER}</p><button type="button">OK, got it</button>`;
+  L.DomEvent.disableClickPropagation(n); L.DomEvent.disableScrollPropagation(n);
+  n.querySelector("button").onclick = () => { lsSet(LS_NOTICE, true); n.remove(); };
+  document.getElementById("map").appendChild(n);
+}
+if (!lsGet(LS_NOTICE, false)) showNotice();
+
 const info = L.control({ position: "topright" });
 info.onAdd = () => {
   const d = L.DomUtil.create("div", "panel title");
   d.innerHTML = '<div class="hdr" id="hdr"><b>River gauges: Westbrook, Ipswich, Brisbane &amp; Sunshine Coast</b>' +
     '<span class="chev" id="chev"></span></div>' +
+    '<div class="disc">Unofficial community map \u2014 not for safety decisions. ' +
+    '<a href="https://www.bom.gov.au/qld/warnings/" target="_blank" rel="noopener">BOM warnings</a> &middot; ' +
+    '<a href="#" id="discmore">more</a></div>' +
     '<div id="body"><div id="upd">Loading\u2026</div><div id="err"></div><div class="regions" id="regions"></div>' +
     '<div class="radar" id="radar"></div></div>';
   L.DomEvent.disableClickPropagation(d);
   L.DomEvent.disableScrollPropagation(d);
+  d.querySelector("#discmore").onclick = (e) => { e.preventDefault(); showNotice(); };
   const body = d.querySelector("#body"), chev = d.querySelector("#chev");
   let open = lsGet(LS_OPEN, window.innerWidth >= 600);
   const apply = () => { body.style.display = open ? "" : "none"; chev.textContent = open ? "\u25B4 hide" : "\u25BE layers"; };
@@ -132,7 +161,7 @@ legend.onAdd = () => {
     LABELS.map(([k, t]) => `<i style="background:${COLORS[k]}"></i>${t}`).join("<br>") +
     "<br><b>Tendency</b><br>\u2191 rising &nbsp; \u2193 falling &nbsp; \u2013 steady &nbsp; ? unknown" +
     "<br><span style='opacity:.7'>Dashed = no current reading</span>" +
-    "<br>\u{1F3E0} Westbrook &middot; dashed circles = regions</div>";
+    "<br><b>Westbrook</b> label = Westbrook &middot; dashed circles = regions</div>";
   L.DomEvent.disableClickPropagation(d);
   const body = d.querySelector("#lgb");
   if (window.innerWidth < 600) body.style.display = "none";
@@ -147,8 +176,8 @@ function ensureGroups(regions) {
     const boundary = L.circle([r.lat, r.lon], { radius: r.radius_km * 1000, color: r.color, weight: 2,
       fill: true, fillOpacity: 0.04, dashArray: "6 6", interactive: false });
     const centre = r.id === "westbrook"
-      ? L.marker([r.lat, r.lon], { icon: L.divIcon({ className: "", html: '<div class="home">\u{1F3E0}</div>',
-                                    iconSize: [28, 28], iconAnchor: [14, 14] }), zIndexOffset: 1000 })
+      ? L.marker([r.lat, r.lon], { icon: L.divIcon({ className: "", html: '<span class="wb-label">Westbrook</span>',
+                                    iconSize: [0, 0], iconAnchor: [0, 0] }), zIndexOffset: 1000 })
       : L.marker([r.lat, r.lon], { icon: L.divIcon({ className: "", html: `<div class="ctr" style="background:${r.color}"></div>`,
                                     iconSize: [14, 14], iconAnchor: [7, 7] }), zIndexOffset: -1000 });
     centre.bindPopup(`<b>${esc(r.name)}</b><br>Centre: ${esc(r.centre_name)}<br>${r.lat}, ${r.lon}<br>Radius: ${r.radius_km} km`);
