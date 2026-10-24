@@ -1,0 +1,2462 @@
+{
+ "note": "Official BOM flood classification levels (metres) keyed by BOM station number, scraped from the 'Flood Classification Levels' line of each station's BOM river height plot page (source_url). datum='AHD' when BOM prints 'm AHD', otherwise 'LGH' (local gauge height, the same gauge datum as the bulletin reading). Levels are null where BOM publishes none. checked = date last fetched (AEST).",
+ "levels": {
+  "040386": {
+   "minor": 3.0,
+   "moderate": 5.0,
+   "major": 8.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040386.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040441": {
+   "minor": 8.0,
+   "moderate": 15.0,
+   "major": 20.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040441.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040444": {
+   "minor": 7.0,
+   "moderate": 10.0,
+   "major": 15.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040444.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040647": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040647.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040702": {
+   "minor": 4.0,
+   "moderate": 5.0,
+   "major": 6.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040702.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040709": {
+   "minor": 3.0,
+   "moderate": 4.0,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.040709.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040713": {
+   "minor": 6.0,
+   "moderate": 8.0,
+   "major": 10.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040713.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040755": {
+   "minor": 5.0,
+   "moderate": 7.0,
+   "major": 9.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040755.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040777": {
+   "minor": 5.0,
+   "moderate": 6.5,
+   "major": 8.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040777.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040788": {
+   "minor": 23.5,
+   "moderate": 24.6,
+   "major": 25.7,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040788.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040789": {
+   "minor": 8.2,
+   "moderate": 8.8,
+   "major": 9.2,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040789.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040791": {
+   "minor": 7.0,
+   "moderate": 8.0,
+   "major": 8.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040791.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040796": {
+   "minor": 6.2,
+   "moderate": 7.0,
+   "major": 8.2,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040796.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040812": {
+   "minor": 10.0,
+   "moderate": 13.0,
+   "major": 15.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040812.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040813": {
+   "minor": 2.0,
+   "moderate": 3.0,
+   "major": 4.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040813.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040816": {
+   "minor": 4.5,
+   "moderate": 6.5,
+   "major": 7.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040816.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040817": {
+   "minor": 10.5,
+   "moderate": 12.0,
+   "major": 13.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040817.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040831": {
+   "minor": 7.0,
+   "moderate": 9.0,
+   "major": 11.7,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040831.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040836": {
+   "minor": 10.0,
+   "moderate": 12.0,
+   "major": 14.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040836.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040838": {
+   "minor": 14.0,
+   "moderate": 16.0,
+   "major": 18.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040838.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040872": {
+   "minor": 19.0,
+   "moderate": 20.0,
+   "major": 21.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040872.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040873": {
+   "minor": 24.0,
+   "moderate": 25.0,
+   "major": 26.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040873.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040874": {
+   "minor": 4.0,
+   "moderate": 5.0,
+   "major": 6.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040874.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040875": {
+   "minor": 14.5,
+   "moderate": 16.0,
+   "major": 17.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040875.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040878": {
+   "minor": 6.0,
+   "moderate": 7.5,
+   "major": 9.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.040878.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "040985": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040985.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "041345": {
+   "minor": 3.0,
+   "moderate": 5.0,
+   "major": 6.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041345.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "041352": {
+   "minor": 4.0,
+   "moderate": 4.5,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041352.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "041404": {
+   "minor": 3.9,
+   "moderate": 4.2,
+   "major": 4.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041404.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "041405": {
+   "minor": 3.0,
+   "moderate": 4.0,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041405.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "041499": {
+   "minor": 5.0,
+   "moderate": 8.0,
+   "major": 9.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041499.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "041515": {
+   "minor": 2.0,
+   "moderate": 2.3,
+   "major": 2.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041515.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "041518": {
+   "minor": 4.0,
+   "moderate": 4.5,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041518.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "041563": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041563.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "140004": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.140004.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "140024": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.140024.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540059": {
+   "minor": 5.0,
+   "moderate": 8.0,
+   "major": 9.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540059.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540061": {
+   "minor": 8.9,
+   "moderate": 10.4,
+   "major": 12.3,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540061.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540062": {
+   "minor": 5.0,
+   "moderate": 6.5,
+   "major": 8.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540062.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540063": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540063.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540064": {
+   "minor": 3.0,
+   "moderate": 4.0,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540064.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540065": {
+   "minor": 2.0,
+   "moderate": 3.5,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540065.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540071": {
+   "minor": 3.5,
+   "moderate": 4.5,
+   "major": 6.1,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540071.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540078": {
+   "minor": 9.0,
+   "moderate": 10.0,
+   "major": 11.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540078.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540079": {
+   "minor": 8.0,
+   "moderate": 9.0,
+   "major": 10.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540079.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540083": {
+   "minor": 4.05,
+   "moderate": 4.6,
+   "major": 5.3,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540083.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540087": {
+   "minor": 3.25,
+   "moderate": 3.95,
+   "major": 4.85,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540087.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540088": {
+   "minor": 6.85,
+   "moderate": 8.55,
+   "major": 9.25,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540088.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540089": {
+   "minor": 2.85,
+   "moderate": 3.45,
+   "major": 5.55,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540089.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540091": {
+   "minor": 4.0,
+   "moderate": 6.0,
+   "major": 7.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540091.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540092": {
+   "minor": 2.75,
+   "moderate": 3.25,
+   "major": 3.95,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540092.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540093": {
+   "minor": 5.5,
+   "moderate": 6.5,
+   "major": 7.6,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540093.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540094": {
+   "minor": 1.3,
+   "moderate": 1.5,
+   "major": 2.1,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540094.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540095": {
+   "minor": 2.85,
+   "moderate": 3.5,
+   "major": 4.3,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540095.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540097": {
+   "minor": 52.87,
+   "moderate": 53.87,
+   "major": 54.87,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540097.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540107": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540107.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540111": {
+   "minor": 33.5,
+   "moderate": 35.0,
+   "major": 36.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540111.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540113": {
+   "minor": 29.0,
+   "moderate": 29.5,
+   "major": 30.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540113.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540118": {
+   "minor": 5.2,
+   "moderate": 5.9,
+   "major": 6.7,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540118.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540119": {
+   "minor": 75.5,
+   "moderate": 77.0,
+   "major": 79.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540119.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540120": {
+   "minor": 7.1,
+   "moderate": 8.2,
+   "major": 9.2,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540120.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540121": {
+   "minor": 43.8,
+   "moderate": 44.0,
+   "major": 44.3,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540121.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540122": {
+   "minor": 12.0,
+   "moderate": 12.8,
+   "major": 13.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540122.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540124": {
+   "minor": 1.9,
+   "moderate": 2.5,
+   "major": 3.4,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540124.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540126": {
+   "minor": 10.2,
+   "moderate": 11.5,
+   "major": 12.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540126.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540127": {
+   "minor": 22.0,
+   "moderate": 23.0,
+   "major": 24.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540127.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540128": {
+   "minor": 5.9,
+   "moderate": 6.8,
+   "major": 7.6,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540128.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540129": {
+   "minor": 1.8,
+   "moderate": 2.2,
+   "major": 2.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540129.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540130": {
+   "minor": 2.3,
+   "moderate": 2.7,
+   "major": 3.3,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540130.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540132": {
+   "minor": 2.0,
+   "moderate": 2.8,
+   "major": 3.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540132.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540134": {
+   "minor": 17.5,
+   "moderate": 17.9,
+   "major": 18.3,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540134.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540142": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540142.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540143": {
+   "minor": 4.0,
+   "moderate": 6.5,
+   "major": 8.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540143.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540147": {
+   "minor": 3.5,
+   "moderate": 5.5,
+   "major": 7.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540147.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540150": {
+   "minor": 9.0,
+   "moderate": 16.0,
+   "major": 21.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540150.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540152": {
+   "minor": 4.5,
+   "moderate": 5.0,
+   "major": 6.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540152.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540153": {
+   "minor": 12.0,
+   "moderate": 14.0,
+   "major": 16.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540153.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540156": {
+   "minor": 7.0,
+   "moderate": 10.0,
+   "major": 15.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540156.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540174": {
+   "minor": 10.0,
+   "moderate": 11.5,
+   "major": 13.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540174.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540177": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540177.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540178": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540178.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540180": {
+   "minor": 4.0,
+   "moderate": 5.5,
+   "major": 6.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540180.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540182": {
+   "minor": 8.6,
+   "moderate": 15.9,
+   "major": 21.2,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540182.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540183": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540183.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540192": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540192.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540194": {
+   "minor": 6.0,
+   "moderate": 7.0,
+   "major": 8.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540194.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540195": {
+   "minor": 2.5,
+   "moderate": 3.5,
+   "major": 4.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540195.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540198": {
+   "minor": 1.7,
+   "moderate": 2.6,
+   "major": 3.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540198.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540199": {
+   "minor": 11.0,
+   "moderate": 13.0,
+   "major": 21.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540199.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540201": {
+   "minor": 10.0,
+   "moderate": 13.0,
+   "major": 15.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540201.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540204": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540204.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540205": {
+   "minor": 7.0,
+   "moderate": 7.8,
+   "major": 9.1,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540205.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540216": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540216.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540218": {
+   "minor": 4.05,
+   "moderate": 4.15,
+   "major": 4.4,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540218.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540220": {
+   "minor": 3.15,
+   "moderate": 3.5,
+   "major": 4.1,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540220.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540222": {
+   "minor": 4.3,
+   "moderate": 4.5,
+   "major": 4.75,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540222.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540223": {
+   "minor": 5.0,
+   "moderate": 5.35,
+   "major": 5.75,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540223.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540248": {
+   "minor": 15.54,
+   "moderate": 17.54,
+   "major": 19.54,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540248.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540249": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540249.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540250": {
+   "minor": 8.0,
+   "moderate": 10.0,
+   "major": 12.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540250.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540256": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540256.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540257": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540257.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540260": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540260.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540272": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540272.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540274": {
+   "minor": 2.5,
+   "moderate": 3.5,
+   "major": 5.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540274.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540276": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540276.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540277": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540277.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540278": {
+   "minor": 4.8,
+   "moderate": 6.0,
+   "major": 7.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540278.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540279": {
+   "minor": 2.8,
+   "moderate": 3.2,
+   "major": 3.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540279.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540286": {
+   "minor": 1.7,
+   "moderate": 2.0,
+   "major": 2.3,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540286.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540296": {
+   "minor": 6.0,
+   "moderate": 7.5,
+   "major": 9.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540296.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540298": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540298.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540308": {
+   "minor": 1.5,
+   "moderate": 2.0,
+   "major": 2.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540308.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540309": {
+   "minor": 1.0,
+   "moderate": 1.5,
+   "major": 2.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540309.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540310": {
+   "minor": 1.0,
+   "moderate": 1.3,
+   "major": 1.8,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540310.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540311": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540311.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540312": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540312.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540313": {
+   "minor": 7.25,
+   "moderate": 8.25,
+   "major": 9.25,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540313.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540314": {
+   "minor": 4.0,
+   "moderate": 4.4,
+   "major": 4.8,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540314.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540316": {
+   "minor": 1.0,
+   "moderate": 2.0,
+   "major": 3.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540316.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540326": {
+   "minor": 6.5,
+   "moderate": 8.5,
+   "major": 11.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540326.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540327": {
+   "minor": 4.0,
+   "moderate": 5.0,
+   "major": 5.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540327.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540330": {
+   "minor": 11.65,
+   "moderate": 15.0,
+   "major": 19.45,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540330.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540331": {
+   "minor": 8.15,
+   "moderate": 11.2,
+   "major": 15.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540331.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540332": {
+   "minor": 5.55,
+   "moderate": 8.05,
+   "major": 11.1,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540332.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540342": {
+   "minor": 2.95,
+   "moderate": 3.95,
+   "major": 4.95,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540342.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540343": {
+   "minor": 3.7,
+   "moderate": 6.85,
+   "major": 7.95,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540343.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540344": {
+   "minor": 5.0,
+   "moderate": 5.3,
+   "major": 5.48,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540344.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540345": {
+   "minor": 5.33,
+   "moderate": 5.76,
+   "major": 6.26,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540345.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540346": {
+   "minor": 26.0,
+   "moderate": 26.5,
+   "major": 27.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540346.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540347": {
+   "minor": 2.2,
+   "moderate": 2.35,
+   "major": 2.6,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540347.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540348": {
+   "minor": 1.55,
+   "moderate": 2.15,
+   "major": 2.7,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540348.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540350": {
+   "minor": 4.5,
+   "moderate": 4.6,
+   "major": 4.8,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540350.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540351": {
+   "minor": 2.1,
+   "moderate": 3.0,
+   "major": 3.8,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540351.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540378": {
+   "minor": 9.0,
+   "moderate": 11.5,
+   "major": 13.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540378.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540384": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540384.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540386": {
+   "minor": 2.0,
+   "moderate": 3.0,
+   "major": 4.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540386.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540387": {
+   "minor": 3.0,
+   "moderate": 4.0,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540387.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540388": {
+   "minor": 4.0,
+   "moderate": 5.0,
+   "major": 6.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540388.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540398": {
+   "minor": 7.0,
+   "moderate": 7.8,
+   "major": 9.1,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540398.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540403": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540403.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540405": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540405.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540406": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540406.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540412": {
+   "minor": 7.7,
+   "moderate": 9.5,
+   "major": 11.6,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540412.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540413": {
+   "minor": 3.4,
+   "moderate": 3.6,
+   "major": 3.9,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540413.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540415": {
+   "minor": 5.8,
+   "moderate": 7.0,
+   "major": 8.3,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540415.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540416": {
+   "minor": 5.2,
+   "moderate": 6.5,
+   "major": 7.2,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540416.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540417": {
+   "minor": 2.5,
+   "moderate": 3.2,
+   "major": 3.7,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540417.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540419": {
+   "minor": 3.35,
+   "moderate": 4.4,
+   "major": 5.9,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540419.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540420": {
+   "minor": 4.6,
+   "moderate": 5.05,
+   "major": 5.8,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540420.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540421": {
+   "minor": 2.0,
+   "moderate": 2.15,
+   "major": 2.35,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540421.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540424": {
+   "minor": 1.6,
+   "moderate": 2.2,
+   "major": 3.05,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540424.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540426": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540426.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540431": {
+   "minor": 4.2,
+   "moderate": 4.7,
+   "major": 5.4,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540431.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540432": {
+   "minor": 3.0,
+   "moderate": 5.0,
+   "major": 7.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540432.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540433": {
+   "minor": 4.2,
+   "moderate": 6.3,
+   "major": 7.8,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540433.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540439": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540439.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540442": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540442.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540444": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540444.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540445": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540445.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540448": {
+   "minor": 1.65,
+   "moderate": 1.95,
+   "major": 2.6,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540448.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540460": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540460.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540461": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540461.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540462": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540462.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540463": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540463.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540468": {
+   "minor": 1.7,
+   "moderate": 2.2,
+   "major": 2.7,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540468.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540469": {
+   "minor": 1.9,
+   "moderate": 2.1,
+   "major": 2.8,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540469.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540478": {
+   "minor": 10.5,
+   "moderate": 11.5,
+   "major": 12.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540478.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540483": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540483.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540484": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540484.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540495": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540495.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540499": {
+   "minor": 2.55,
+   "moderate": 2.95,
+   "major": 3.45,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540499.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540501": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540501.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540503": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540503.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540504": {
+   "minor": 5.0,
+   "moderate": 6.5,
+   "major": 8.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540504.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540506": {
+   "minor": 2.7,
+   "moderate": 3.2,
+   "major": 3.8,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540506.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540508": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540508.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540516": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540516.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540527": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540527.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540533": {
+   "minor": 2.75,
+   "moderate": 4.75,
+   "major": 8.2,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540533.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540535": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540535.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540536": {
+   "minor": 3.25,
+   "moderate": 3.85,
+   "major": 4.85,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540536.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540546": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540546.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540548": {
+   "minor": 2.3,
+   "moderate": 2.8,
+   "major": 3.2,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540548.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540562": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540562.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540566": {
+   "minor": 2.0,
+   "moderate": 4.0,
+   "major": 6.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540566.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540567": {
+   "minor": 2.0,
+   "moderate": 4.0,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540567.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540568": {
+   "minor": 1.0,
+   "moderate": 2.0,
+   "major": 3.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540568.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540574": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540574.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540596": {
+   "minor": 6.0,
+   "moderate": 9.0,
+   "major": 11.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540596.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540598": {
+   "minor": 7.5,
+   "moderate": 8.0,
+   "major": 8.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540598.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540599": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540599.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540604": {
+   "minor": 75.5,
+   "moderate": 77.0,
+   "major": 79.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540604.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540605": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540605.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540606": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540606.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540609": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540609.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540619": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540619.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540620": {
+   "minor": 2.8,
+   "moderate": 4.2,
+   "major": 6.3,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540620.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540623": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540623.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540625": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540625.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540636": {
+   "minor": 38.5,
+   "moderate": 39.4,
+   "major": 39.9,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540636.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540644": {
+   "minor": 3.5,
+   "moderate": 4.5,
+   "major": 5.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540644.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540645": {
+   "minor": 2.5,
+   "moderate": 4.0,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540645.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540646": {
+   "minor": 41.5,
+   "moderate": 42.0,
+   "major": 42.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540646.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540658": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540658.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540659": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540659.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540661": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540661.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540664": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540664.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540666": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540666.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540669": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540669.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540670": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540670.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540672": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540672.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540674": {
+   "minor": 7.6,
+   "moderate": 8.0,
+   "major": 8.4,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540674.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540675": {
+   "minor": 4.0,
+   "moderate": 5.0,
+   "major": 6.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540675.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540680": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540680.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540682": {
+   "minor": 6.0,
+   "moderate": 8.0,
+   "major": 10.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540682.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540683": {
+   "minor": 2.4,
+   "moderate": 3.5,
+   "major": 5.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540683.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540684": {
+   "minor": 1.7,
+   "moderate": 2.6,
+   "major": 3.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540684.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540685": {
+   "minor": 1.7,
+   "moderate": 2.3,
+   "major": 2.6,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540685.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540688": {
+   "minor": 4.2,
+   "moderate": 6.0,
+   "major": 7.5,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540688.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540692": {
+   "minor": 3.5,
+   "moderate": 4.5,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540692.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540702": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540702.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540719": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540719.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540720": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540720.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540727": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540727.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540728": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540728.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540730": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540730.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540737": {
+   "minor": 8.0,
+   "moderate": 8.5,
+   "major": 9.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540737.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540739": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540739.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540741": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540741.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540755": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540755.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540762": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540762.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540764": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540764.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540775": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540775.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540776": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540776.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540777": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540777.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540778": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540778.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540779": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540779.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540784": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540784.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540788": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540788.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540794": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540794.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540795": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540795.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540799": {
+   "minor": 15.0,
+   "moderate": 16.0,
+   "major": 17.0,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540799.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540804": {
+   "minor": 6.0,
+   "moderate": 6.4,
+   "major": 6.8,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540804.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540805": {
+   "minor": 4.6,
+   "moderate": 5.5,
+   "major": 6.2,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540805.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540807": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540807.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540808": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540808.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540822": {
+   "minor": 9.6,
+   "moderate": 10.2,
+   "major": 10.6,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540822.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540824": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540824.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540825": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540825.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "540829": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540829.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541038": {
+   "minor": 12.93,
+   "moderate": 13.43,
+   "major": 14.43,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541038.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541040": {
+   "minor": 3.5,
+   "moderate": 5.5,
+   "major": 6.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541040.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541047": {
+   "minor": 2.5,
+   "moderate": 3.0,
+   "major": 3.5,
+   "datum": "AHD",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541047.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541048": {
+   "minor": 3.0,
+   "moderate": 4.0,
+   "major": 5.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541048.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541049": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541049.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541050": {
+   "minor": 4.5,
+   "moderate": 5.5,
+   "major": 6.0,
+   "datum": "LGH",
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541050.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541058": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541058.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541093": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541093.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541097": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541097.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541128": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541128.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541129": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541129.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541130": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541130.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541131": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541131.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541132": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541132.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541133": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541133.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541141": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541141.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541145": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541145.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541146": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541146.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541147": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541147.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541148": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541148.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541160": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541160.plt.shtml",
+   "checked": "2026-10-24"
+  },
+  "541170": {
+   "minor": null,
+   "moderate": null,
+   "major": null,
+   "datum": null,
+   "source": "bom_station_plot_page",
+   "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541170.plt.shtml",
+   "checked": "2026-10-24"
+  }
+ }
+}

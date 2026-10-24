@@ -26,6 +26,9 @@
   .popup td { padding: 1px 6px 1px 0; vertical-align: top; }
   .popup td:first-child { color: #555; white-space: nowrap; }
   .warn { color: #a15c00; }
+  .fl-lv { display: inline-block; padding: 0 4px; margin: 1px 0; border: 1px solid #ccc; border-radius: 3px;
+           font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .fl-lv.on { border-color: #222; font-weight: bold; color: #111; }
   #err { color: #b00; }
   .title { max-width: 300px; }
   .title .hdr { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
@@ -194,18 +197,46 @@ function buildUi(regions) {
   uiBuilt = true;
 }
 
+const CLS = [["minor", "Minor"], ["moderate", "Moderate"], ["major", "Major"]];
+function m2(v) { return `${Number(v).toFixed(2)} m`; }
+function floodNext(s) {            // short text: next class + metres to go
+  if (!s.flood_levels || s.height_m == null) return "";
+  if (s.next_class) return `Next: ${s.next_class} at ${m2(s.next_level_m)}, ${m2(s.delta_m)} to go`;
+  if (s.above_major_m != null) return `Above Major by ${m2(s.above_major_m)}`;
+  return "";
+}
+function floodRows(s) {
+  const lv = s.flood_levels;
+  if (!lv) {
+    const why = (s.flood_levels_note || "").startsWith("datum mismatch")
+      ? `<span class="warn">Flood levels not compared (${esc(s.flood_levels_note)})</span>`
+      : '<span style="color:#777">No official flood levels for this gauge</span>';
+    return [["Flood levels", why]];
+  }
+  const cur = classKey(s.computed_class);
+  const list = CLS.filter(([k]) => lv[k] != null).map(([k, t]) => {
+    const on = cur === k;
+    return `<span class="fl-lv${on ? " on" : ""}" style="${on ? `background:${COLORS[k]}` : ""}">${t} ${Number(lv[k]).toFixed(2)}</span>`;
+  }).join(" ");
+  const rows = [];
+  if (s.height_m == null) rows.push(["Next", "\u2014 (no current reading)"]);
+  else if (s.next_class) rows.push(["Next", `<b>${esc(s.next_class)} at ${m2(s.next_level_m)}, ${m2(s.delta_m)} to go</b>`]);
+  else if (s.above_major_m != null) rows.push(["Next", `<b>None \u2014 above Major by ${m2(s.above_major_m)}</b>`]);
+  rows.push(["Flood levels", `${list} <span style="color:#777">m ${esc(lv.datum)}</span>`]);
+  if (s.class_check && s.class_check.startsWith("differs"))
+    rows.push(["", `<span class="warn">Computed ${esc(s.computed_class)}; ${esc(s.class_check)}</span>`]);
+  return rows;
+}
+
 function popupHtml(s) {
   const geo = s.geocoded ? '<span class="warn">approximate (geocoded from name)</span>' : esc(s.coord_source);
   const rows = [
     ["Station", esc(s.name)],
-    ["BOM station no.", esc(s.station_no)],
     ["Height", s.height_m == null ? "\u2014" : `${s.height_m.toFixed(2)} m ${esc(s.datum)}`],
     ["Time", esc(s.time) || "\u2014"],
     ["Tendency", esc(s.tendency) || "\u2014"],
     ["Flood class", esc(s.flood_class) || "\u2014"],
-    ["Crossing", esc(s.crossing) || "\u2014"],
-    ["Station type", esc(s.station_type)],
-    ["Region", esc(s.region_name || s.region)],
+    ...floodRows(s),
     ["Distance", `${s.distance_km} km from ${esc(s.distance_from || "Westbrook")}`],
     ["Location", `${s.lat.toFixed(4)}, ${s.lon.toFixed(4)} (${geo})`],
     ["Bulletin", `<a href="https://www.bom.gov.au/fwo/${esc(s.bulletin)}.html" target="_blank" rel="noopener">${esc(s.bulletin)}</a>`]
@@ -234,7 +265,7 @@ function drawMarkers(data) {
     const stale = s.height_m == null ? " stale" : "";
     const icon = L.divIcon({ className: "", iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -12],
       html: `<div class="gauge${stale}" style="background:${COLORS[key]}">${arrow}</div>` });
-    L.marker([s.lat, s.lon], { icon, title: s.name, zIndexOffset: Z[key] })
+    L.marker([s.lat, s.lon], { icon, title: s.name + (floodNext(s) ? ` \u2014 ${floodNext(s)}` : ""), zIndexOffset: Z[key] })
       .bindPopup(popupHtml(s), { maxWidth: 320 })
       .addTo(g.markers);
   }

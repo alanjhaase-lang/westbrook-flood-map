@@ -200,6 +200,164 @@ def lookup_authoritative(station_nos, names):
     return found
 
 
+# ---------------------------------------------------------------------------
+# Official flood classification levels (minor / moderate / major)
+# ---------------------------------------------------------------------------
+FLOOD_LEVELS_FILE = os.path.join(HERE, "flood_levels.json")
+FLOOD_CLASSES = ("minor", "moderate", "major")
+LEVELS_NEW_PER_RUN = 60       # stations with no cached entry fetched per run
+LEVELS_REFRESH_PER_RUN = 8    # oldest cached entries re-checked per run ...
+LEVELS_MAX_AGE_DAYS = 30      # ... once they are older than this
+
+
+def parse_flood_levels(page):
+    """'Flood Classification Levels' block of a BOM station plot/table page.
+
+    Returns {"minor", "moderate", "major", "datum", "raw"}; levels are floats or
+    None. BOM prints AHD levels as e.g. 'Minor: 2.50 m AHD' and local gauge
+    height (LGH) levels with no suffix, so datum is 'AHD', 'LGH' or None (no
+    levels / mixed). Returns None if the page has no classification block."""
+    text = re.sub(r"<(script|style)\b.*?</\1>", " ", page, flags=re.S | re.I)
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", text)))
+    m = re.search(r"Flood Classification Levels:(.*?)(?:Crossing Levels|Data from|Data as Table|$)", text)
+    if not m:
+        return None
+    block = m.group(1)
+    out = {"minor": None, "moderate": None, "major": None, "datum": None,
+           "raw": "Flood Classification Levels:" + block.rstrip()}
+    datums = set()
+    for cls, val, ahd in re.findall(r"\b(Minor|Moderate|Major)\s*:\s*(-?\d+(?:\.\d+)?)\s*m\b(\s*AHD)?",
+                                    block, re.I):
+        out[cls.lower()] = float(val)
+        datums.add("AHD" if ahd.strip() else "LGH")
+    out["datum"] = datums.pop() if len(datums) == 1 else None
+    return out
+
+
+def load_flood_levels():
+    if os.path.exists(FLOOD_LEVELS_FILE):
+        with open(FLOOD_LEVELS_FILE) as f:
+            return json.load(f).get("levels", {})
+    return {}
+
+
+def save_flood_levels(levels):
+    payload = {
+        "note": "Official BOM flood classification levels (metres) keyed by BOM station number, "
+                "scraped from the 'Flood Classification Levels' line of each station's BOM river "
+                "height plot page (source_url). datum='AHD' when BOM prints 'm AHD', otherwise "
+                "'LGH' (local gauge height, the same gauge datum as the bulletin reading). "
+                "Levels are null where BOM publishes none. checked = date last fetched (AEST).",
+        "levels": dict(sorted(levels.items())),
+    }
+    with open(FLOOD_LEVELS_FILE, "w") as f:
+        json.dump(payload, f, indent=1, ensure_ascii=False)
+        f.write("\n")
+
+
+def fetch_flood_levels(station_no, plot_url):
+    lv = parse_flood_levels(fetch(plot_url))
+    today = dt.datetime.now(ZoneInfo("Australia/Brisbane")).date().isoformat()
+    entry = {"minor": None, "moderate": None, "major": None, "datum": None}
+    if lv:
+        entry.update({k: lv[k] for k in ("minor", "moderate", "major", "datum")})
+    entry.update(source="bom_station_plot_page", source_url=plot_url, checked=today)
+    return entry
+
+
+def update_flood_levels(levels, rows, new_limit=LEVELS_NEW_PER_RUN,
+                        refresh_limit=LEVELS_REFRESH_PER_RUN, workers=6):
+    """Fetch levels for stations without a cached entry, plus a few stale ones.
+    Returns True if anything changed. Failures keep the old entry."""
+    from concurrent.futures import ThreadPoolExecutor
+    urls = {}
+    for r in rows:
+        urls.setdefault(r["station_no"], r["plot_url"])
+    new = [n for n in sorted(urls) if n not in levels][:new_limit]
+    today = dt.datetime.now(ZoneInfo("Australia/Brisbane")).date()
+    def age(n):
+        try:
+            return (today - dt.date.fromisoformat(levels[n].get("checked", ""))).days
+        except ValueError:
+            return 10 ** 6
+    old = sorted((n for n in urls if n in levels and age(n) > LEVELS_MAX_AGE_DAYS),
+                 key=age, reverse=True)[:refresh_limit]
+    todo = new + old
+    if not todo:
+        return False
+    def one(n):
+        try:
+            return n, fetch_flood_levels(n, urls[n])
+        except Exception as e:
+            print(f"WARN: flood levels {n} failed: {e}", file=sys.stderr)
+            return n, None
+    changed = False
+    with ThreadPoolExecutor(workers) as ex:
+        for n, entry in ex.map(one, todo):
+            if entry is None:
+                continue
+            prev = levels.get(n)
+            strip = lambda e: {k: v for k, v in (e or {}).items() if k != "checked"}
+            if prev is None or strip(prev) != strip(entry):
+                print(f"flood levels {n}: {strip(prev) or None} -> {strip(entry)}")
+            levels[n] = entry
+            changed = True
+    return changed
+
+
+def bulletin_class(fc):
+    k = (fc or "").strip().lower()
+    if k.startswith("below"):
+        return "Below Flood Level"
+    for c in FLOOD_CLASSES:
+        if k.startswith(c):
+            return c.capitalize()
+    return None
+
+
+def flood_status(row, lv):
+    """Flood-class fields for one bulletin row given its cached levels entry.
+
+    delta_m = next_level_m - height_m (positive = metres still to go)."""
+    out = {"flood_levels": None, "computed_class": None, "next_class": None,
+           "next_level_m": None, "delta_m": None, "above_major_m": None,
+           "class_check": None, "flood_levels_note": None}
+    have = lv and any(lv.get(c) is not None for c in FLOOD_CLASSES)
+    if not have:
+        out["flood_levels_note"] = "no official flood levels published by BOM for this gauge"
+        return out
+    if lv.get("datum") != row.get("datum"):
+        # e.g. levels in AHD but bulletin height in local gauge height: a
+        # delta would be meaningless, so show nothing rather than a wrong number.
+        out["flood_levels_note"] = (f"datum mismatch: levels {lv.get('datum') or 'unknown'}, "
+                                    f"reading {row.get('datum') or 'unknown'}; not compared")
+        return out
+    out["flood_levels"] = {c: lv.get(c) for c in FLOOD_CLASSES}
+    out["flood_levels"].update(datum=lv["datum"], source_url=lv.get("source_url"))
+    h = row.get("height_m")
+    if h is None:
+        return out
+    known = [(c, lv[c]) for c in FLOOD_CLASSES if lv.get(c) is not None]
+    current = "Below Flood Level"
+    for c, level in known:
+        if round(h - level, 3) >= 0:
+            current = c.capitalize()
+    out["computed_class"] = current
+    nxt = next(((c, level) for c, level in known if round(h - level, 3) < 0), None)
+    if nxt:
+        out["next_class"] = nxt[0].capitalize()
+        out["next_level_m"] = nxt[1]
+        out["delta_m"] = round(nxt[1] - h, 2)
+    elif lv.get("major") is not None:
+        out["above_major_m"] = round(h - lv["major"], 2)
+    bc = bulletin_class(row.get("flood_class"))
+    if bc is None:
+        out["class_check"] = "no bulletin class"
+    else:
+        out["class_check"] = "agrees" if bc == current else f"differs (bulletin: {bc})"
+    return out
+
+
 def haversine_km(lat1, lon1, lat2, lon2):
     r = 6371.0088
     p1, p2 = math.radians(lat1), math.radians(lat2)
@@ -272,6 +430,17 @@ def main():
             save_stations(stations)
             print(f"added {len(found)} new station(s) to stations.json")
 
+    # Official flood classification levels, cached in flood_levels.json.
+    flevels = load_flood_levels()
+    try:
+        mine = [r for r in rows if (stations.get(r["station_no"]) or {}).get("lat") is not None
+                and assign_region(stations[r["station_no"]]["lat"],
+                                  stations[r["station_no"]]["lon"])[0] is not None]
+        if update_flood_levels(flevels, mine):
+            save_flood_levels(flevels)
+    except Exception as e:  # never let this stop the gauge update
+        print(f"WARN: flood level update failed: {e}", file=sys.stderr)
+
     seen, out, nocoord = set(), [], []
     for r in rows:
         if r["station_no"] in seen:  # same gauge listed in two bulletins
@@ -288,10 +457,12 @@ def main():
                  geocoded=bool(s.get("geocoded")), region=reg["id"],
                  region_name=reg["name"], distance_km=round(d, 1),
                  distance_from=reg["centre_name"])
+        r.update(flood_status(r, flevels.get(r["station_no"])))
         out.append(r)
     for r in carried:  # previous readings of a bulletin that failed this run
         if r["station_no"] not in seen:
             seen.add(r["station_no"])
+            r.update(flood_status(r, flevels.get(r["station_no"])))
             out.append(r)
     order = {reg["id"]: i for i, reg in enumerate(REGIONS)}
     out.sort(key=lambda x: (order.get(x.get("region"), 99), x["distance_km"]))
@@ -310,6 +481,8 @@ def main():
         "regions": regions,
         "bulletins": used,
         "stations_without_coordinates": nocoord,
+        "flood_levels_source": "BOM station plot pages ('Flood Classification Levels'), cached in "
+                               "flood_levels.json; delta_m = next_level_m - height_m (metres to go)",
         "count": len(out),
         "stations": out,
     }

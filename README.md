@@ -54,11 +54,37 @@ republish, and BOM's radar WMS (GIS2Web) is registered-user only.
 - `stations.json` – cached station-number → lat/lon lookup. New station numbers
   that appear in a bulletin are looked up automatically (BOM sources only) and
   added.
+- `flood_levels.json` – cached official flood classification levels (see above);
+  `build_flood_levels.py` rebuilds it.
 - `build_stations.py` – one-off rebuild of `stations.json` across candidate
   bulletins, including a flagged Nominatim geocode fallback.
 - `index.html` – the map. Re-fetches `data.json` (and the radar frame list) every 5 minutes.
 - `.github/workflows/update.yml` – runs every 30 minutes (and manually) and
   commits `data.json` when it changes.
+
+### Flood levels and "metres to next class"
+
+Clicking a gauge shows, under *Flood class*, a **Next** line such as
+`Minor at 1.70 m, 0.66 m to go` (or `None — above Major by 3.03 m`) and the gauge's official
+**Minor / Moderate / Major** levels with the current class highlighted. Gauges for which BOM
+publishes no classification show *No official flood levels for this gauge*. The marker hover
+tooltip also shows the "Next: …" text. (The popup no longer shows station number, station type,
+crossing or region; those fields are still in `data.json`.)
+
+- **Source**: the *Flood Classification Levels* line on each gauge's BOM river height plot page
+  (`/fwo/IDQ65xxx/IDQ65xxx.<station>.plt.shtml`, the "BOM plot" link). The BOM National Flood
+  Gauge Network service has no level attributes, and the Qld network index pages (section 1–6)
+  list stations only. Levels are cached in `flood_levels.json` (`source_url`, `checked` date);
+  official values only, `null` when BOM publishes none.
+- **Datum**: BOM writes AHD levels as `Minor: 1.70 m AHD` and local gauge height (LGH) levels with no
+  suffix. A level set is used only if its datum matches the bulletin's datum column for that gauge;
+  otherwise the popup says the levels were not compared (`flood_levels_note`). No mismatches exist today.
+- **Fields** added to each gauge in `data.json`: `flood_levels` {minor, moderate, major, datum,
+  source_url}, `computed_class` (height ≥ level ⇒ that class), `next_class`, `next_level_m`,
+  `delta_m` (= next_level_m − height_m, metres to go), `above_major_m`, `class_check`
+  (computed class vs the bulletin's class: `agrees` / `differs (bulletin: …)`), `flood_levels_note`.
+- **Updates**: `update_data.py` fetches levels for gauges with no cached entry and re-checks the
+  8 oldest entries (older than 30 days) each run. `python3 build_flood_levels.py` does a full refresh.
 
 ## Data sources
 
