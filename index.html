@@ -54,6 +54,9 @@
            font-variant-numeric: tabular-nums; white-space: nowrap; }
   .fl-lv.on { border-color: #222; font-weight: bold; color: #111; }
   #err { color: #b00; }
+  #live { font-size: 11.5px; color: #555; margin-top: 2px; }
+  #live.ok { color: #2e7d32; }
+  #live.off { color: #a15c00; }
   .title { max-width: 300px; }
   .title .hdr { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
   .title .hdr b { flex: 1; }
@@ -208,7 +211,7 @@ info.onAdd = () => {
     '<div class="disc">Unofficial community map \u2014 not for safety decisions. ' +
     '<a href="https://www.bom.gov.au/qld/warnings/" target="_blank" rel="noopener">BOM warnings</a> &middot; ' +
     '<a href="#" id="discmore">more</a></div>' +
-    '<div id="body"><div id="upd">Loading\u2026</div><div id="err"></div><div class="sec">Areas</div><div class="regions" id="regions"></div>' +
+    '<div id="body"><div id="upd">Loading\u2026</div><div id="live"></div><div id="err"></div><div class="sec">Areas</div><div class="regions" id="regions"></div>' +
     '<div class="sec">Layers</div><div class="roads gg" id="gauges"></div><div class="roads" id="roads"></div><div class="radar" id="radar"></div></div>';
   L.DomEvent.disableClickPropagation(d);
   L.DomEvent.disableScrollPropagation(d);
@@ -337,7 +340,7 @@ function popupHtml(s) {
   const rows = [
     ["Station", esc(s.name)],
     ["Height", s.height_m == null ? "\u2014" : `${s.height_m.toFixed(2)} m ${esc(s.datum)}`],
-    ["Time", esc(s.time) || "\u2014"],
+    ["Time", (esc(s.time) || "\u2014") + (s.live ? ' <span style="color:#2e7d32">(live from BOM)</span>' : "")],
     ["Tendency", esc(s.tendency) || "\u2014"],
     ["Flood class", esc(s.flood_class) || (s.computed_class ? esc(s.computed_class) + ' <span style="color:#777">(from levels)</span>' : "\u2014")],
     ...floodRows(s),
@@ -411,6 +414,7 @@ function render(data) {
   const regions = data.regions && data.regions.length ? data.regions : legacyRegions(data);
   ensureGroups(regions);
   if (!uiBuilt) buildUi(regions);
+  applyLive(data);
   drawMarkers(data);
   const bl = (data.bulletins || []).map(b => b.id + (b.stale ? " (stale)" : "")).join(", ");
   document.getElementById("upd").innerHTML =
@@ -684,8 +688,116 @@ async function load() {
     document.getElementById("err").textContent = "Could not load data.json: " + e.message;
   }
 }
-load();
-setInterval(() => { load(); refreshRadar(); }, 5 * 60 * 1000);
+// ---- Live BOM gauge readings, fetched in the browser ----
+// GitHub Actions (update_data.py, every 15 min) commits data.json; between runs the page also tries to read the
+// BOM river height bulletins directly and overlays any newer readings on the committed stations. If the browser
+// cannot read BOM (no CORS headers / blocked), the committed data.json is shown unchanged.
+// LIVE_PROXY: optional prefix for a CORS proxy you control (e.g. a free Cloudflare Worker), "" = direct to BOM.
+const LIVE_PROXY = "";
+const LIVE_EVERY_MS = 5 * 60 * 1000, LIVE_TIMEOUT_MS = 10000;
+const live = { readings: {}, checked: null, ok: false, err: "", busy: false, lastTry: 0 };
+const WD = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+function bomTimeMs(t, nowMs = Date.now()) {   // "07.20AM Sun" (Brisbane, UTC+10, no DST) -> epoch ms
+  const m = /^(\d{1,2})\.(\d{2})\s*(AM|PM)\s+([A-Za-z]{3})/i.exec((t || "").trim());
+  if (!m) return null;
+  const h = (+m[1] % 12) + (m[3].toUpperCase() === "PM" ? 12 : 0), wd = WD.indexOf(m[4].toLowerCase());
+  if (wd < 0) return null;
+  const b = new Date(nowMs + 10 * 3600e3);    // UTC fields of b = Brisbane wall clock
+  for (let back = 0; back < 8; back++) {
+    const day = new Date(Date.UTC(b.getUTCFullYear(), b.getUTCMonth(), b.getUTCDate() - back));
+    if (day.getUTCDay() !== wd) continue;
+    const ms = Date.UTC(day.getUTCFullYear(), day.getUTCMonth(), day.getUTCDate(), h, +m[2]) - 10 * 3600e3;
+    if (ms <= nowMs + 30 * 60e3) return ms;
+  }
+  return null;
+}
+function cellText(td) { return (td.textContent || "").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim(); }
+function parseBulletinHtml(html, bid) {        // same table layout update_data.py parses
+  const doc = new DOMParser().parseFromString(html, "text/html"), out = {};
+  for (const tr of doc.querySelectorAll("tr")) {
+    const tds = tr.querySelectorAll("td");
+    if (tds.length < 9) continue;
+    const a = [...tr.querySelectorAll("a[href]")].map(x => /\.(\d{6})\.plt\.shtml/.exec(x.getAttribute("href"))).find(Boolean);
+    if (!a) continue;
+    const raw = cellText(tds[3]), h = parseFloat(raw);
+    out[a[1]] = { time: cellText(tds[2]), height_raw: raw, height_m: /^-?\d+(\.\d+)?$/.test(raw) ? h : null,
+                  datum: cellText(tds[4]), tendency: cellText(tds[5]).toLowerCase(), crossing: cellText(tds[6]),
+                  flood_class: cellText(tds[7]), bulletin: bid };
+  }
+  return out;
+}
+async function fetchText(url) {
+  const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), LIVE_TIMEOUT_MS);
+  try {
+    const r = await fetch(LIVE_PROXY ? LIVE_PROXY + encodeURIComponent(url) : url, { cache: "no-store", signal: ctl.signal, credentials: "omit" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return await r.text();
+  } finally { clearTimeout(t); }
+}
+async function refreshLive() {
+  if (live.busy || !lastData) return;
+  if (Date.now() - live.lastTry < LIVE_EVERY_MS - 5000) return;
+  live.busy = true; live.lastTry = Date.now();
+  const ids = [...new Set((lastData.bulletins || []).map(b => b.id))];
+  const res = await Promise.allSettled(ids.map(async id => parseBulletinHtml(await fetchText(`https://www.bom.gov.au/fwo/${id}.html`), id)));
+  let got = 0, errs = [];
+  res.forEach((r, i) => {
+    if (r.status === "fulfilled" && Object.keys(r.value).length) { Object.assign(live.readings, r.value); got++; }
+    else errs.push(ids[i] + ": " + (r.status === "rejected" ? (r.reason && r.reason.name === "TypeError" ? "blocked by browser (CORS)" : (r.reason && r.reason.message) || "failed") : "no rows"));
+  });
+  live.checked = Date.now(); live.ok = got > 0; live.err = errs.join("; ");
+  live.busy = false;
+  if (lastData) { applyLive(lastData); drawMarkers(lastData); }
+}
+function liveStatus(s, lv) {   // mirrors flood_status() in update_data.py for an updated reading
+  if (!s.flood_levels) return;
+  const keys = ["minor", "moderate", "major"], known = keys.filter(k => s.flood_levels[k] != null).map(k => [k, s.flood_levels[k]]);
+  Object.assign(s, { computed_class: null, next_class: null, next_level_m: null, delta_m: null, above_major_m: null });
+  const h = s.height_m; if (h == null || !known.length) return;
+  const cap = k => k[0].toUpperCase() + k.slice(1), r3 = v => Math.round(v * 1000) / 1000, r2 = v => Math.round(v * 100) / 100;
+  let cur = "Below Flood Level";
+  for (const [k, v] of known) if (r3(h - v) >= 0) cur = cap(k);
+  s.computed_class = cur;
+  const nxt = known.find(([, v]) => r3(h - v) < 0);
+  if (nxt) { s.next_class = cap(nxt[0]); s.next_level_m = nxt[1]; s.delta_m = r2(nxt[1] - h); }
+  else if (s.flood_levels.major != null) s.above_major_m = r2(h - s.flood_levels.major);
+  const bk = classKey(s.flood_class);
+  s.class_check = bk === "none" ? "no bulletin class" : (classKey(cur) === bk ? "agrees" : `differs (bulletin: ${s.flood_class})`);
+}
+function liveWhy() {   // one short reason; full per-bulletin detail in the tooltip
+  const why = [...new Set((live.err || "failed").split("; ").map(x => x.replace(/^[^:]+: /, "")))];
+  return why.length === 1 ? why[0] : why.join(", ");
+}
+function applyLive(data) {
+  let merged = 0, newest = null;
+  for (const s of data.stations || []) {
+    const r = live.readings[s.station_no];
+    const tOld = bomTimeMs(s.time), tNew = r && bomTimeMs(r.time);
+    if (r && tNew != null && r.height_m != null && r.datum === s.datum && (tOld == null || tNew > tOld)) {
+      Object.assign(s, { time: r.time, height_m: r.height_m, height_raw: r.height_raw, tendency: r.tendency,
+                         crossing: r.crossing, flood_class: r.flood_class, live: true });
+      liveStatus(s);
+    }
+    if (s.live) merged++;
+    const t = bomTimeMs(s.time);
+    if (t != null && (newest == null || t > newest)) newest = t;
+  }
+  const el = document.getElementById("live"); if (!el) return;
+  const obs = newest ? `latest BOM observation ${fmtBneFull.format(new Date(newest))} AEST` : "no BOM observation time";
+  const chk = live.checked ? fmtBne.format(new Date(live.checked)) + " AEST" : "";
+  if (live.ok) {
+    el.className = "ok";
+    el.textContent = `Gauges: live from BOM in your browser (checked ${chk}; ${merged} newer than snapshot) \u00b7 ${obs}`;
+  } else {
+    el.className = live.checked ? "off" : ""; el.title = live.err || "";
+    el.textContent = live.checked
+      ? `Gauges: GitHub snapshot (BOM live read unavailable: ${liveWhy()}) \u00b7 ${obs}`
+      : `Gauges: GitHub snapshot \u00b7 ${obs} \u00b7 checking BOM\u2026`;
+  }
+}
+
+load().then(refreshLive);
+setInterval(() => { load().then(refreshLive); refreshRadar(); }, LIVE_EVERY_MS);
 </script>
 </body>
 </html>

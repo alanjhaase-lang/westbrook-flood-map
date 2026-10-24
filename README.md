@@ -105,8 +105,16 @@ republish, and BOM's radar WMS (GIS2Web) is registered-user only.
 - `update_roads.py` – stdlib-only; writes `closures.json` and `cameras.json` from QLDTraffic
   (see *Road closures* above). Imports `REGIONS` from `update_data.py`.
 - `index.html` – the map. Re-fetches `data.json`, `closures.json`, `cameras.json` (and the radar
-  frame list) every 5 minutes.
-- `.github/workflows/update.yml` – runs every 30 minutes (and manually), runs both scripts (the road
+  frame list) every 5 minutes. It also tries a **live in-browser BOM read** on load and every
+  5 minutes: it fetches the same BOM river height bulletins (`https://www.bom.gov.au/fwo/IDQ6028x.html`)
+  directly, parses them, and overlays any reading newer than the committed `data.json` (same datum
+  only; flood class / metres-to-next are recomputed from the cached levels). The panel line under
+  *Last updated* says whether gauges are "live from BOM" or the "GitHub snapshot", and shows the
+  latest BOM observation time. BOM currently sends no CORS headers, so browsers block the direct
+  read and the page falls back to `data.json` silently. Set `LIVE_PROXY` in `index.html` to the URL
+  prefix of a CORS proxy you control (e.g. a free Cloudflare Worker; the BOM URL is appended
+  URL-encoded) to make the live read work.
+- `.github/workflows/update.yml` – runs every 15 minutes (GitHub may delay scheduled runs; and manually), runs both scripts (the road
   step runs even if the BOM step fails) and commits the data files when they change.
 
 ### Flood levels and "metres to next class"
