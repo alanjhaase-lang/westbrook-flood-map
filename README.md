@@ -26,6 +26,26 @@ The map has a collapsible panel (top right; collapsed by default on phones) with
 checkbox, gauge count, in-flood count and *Zoom* button per region, an *In flood only*
 filter and *Fit on* (fit all enabled regions). Checkbox states persist in `localStorage`.
 
+### Rain radar overlay
+
+The panel also has a **Rain radar** checkbox (off by default; on/off and opacity persist in
+`localStorage`). When on it shows the latest frame of the free
+[RainViewer Weather Maps API](https://www.rainviewer.com/api/weather-maps-api.html)
+(`https://api.rainviewer.com/public/weather-maps.json`), with an opacity slider (default 0.6),
+a ▶/⏸ button that loops the past ~2 hours (13 frames, 10-minute steps) and the frame time in
+Brisbane time (AEST). The frame list refreshes every 5 minutes along with `data.json`.
+Radar tiles sit in their own pane (z-index 350) above the base map but below the region
+circles and gauge markers.
+
+RainViewer free-tier limits (since 1 Jan 2026): personal/educational use only, attribution
+link to rainviewer.com required (shown in the map attribution), past frames only (no
+nowcast), one colour scheme (Universal Blue, scale shown in the panel), max tile zoom 7
+(the map upscales z7 tiles when zoomed in, so radar looks blocky at street level) and
+100 requests/IP/minute. Availability is not guaranteed.
+
+BOM radar is not used: BOM radar images are restricted content that needs a data licence to
+republish, and BOM's radar WMS (GIS2Web) is registered-user only.
+
 - `update_data.py` – stdlib-only Python 3.9+ script. Fetches the BOM river height
   bulletins, parses every row, joins coordinates from `stations.json`, keeps
   gauges in any region and writes `data.json` (timestamp in Australia/Brisbane).
@@ -36,7 +56,7 @@ filter and *Fit on* (fit all enabled regions). Checkbox states persist in `local
   added.
 - `build_stations.py` – one-off rebuild of `stations.json` across candidate
   bulletins, including a flagged Nominatim geocode fallback.
-- `index.html` – the map. Re-fetches `data.json` every 5 minutes.
+- `index.html` – the map. Re-fetches `data.json` (and the radar frame list) every 5 minutes.
 - `.github/workflows/update.yml` – runs every 30 minutes (and manually) and
   commits `data.json` when it changes.
 

@@ -42,6 +42,19 @@
                     border-radius: 4px; background: #f6f6f6; cursor: pointer; flex: none; }
   .regions .row2 { display: flex; align-items: center; gap: 6px; margin-top: 4px; padding-top: 4px; border-top: 1px solid #eee; }
   .regions .row2 label { flex: 1; }
+  .radar { margin-top: 6px; border-top: 1px solid #ddd; padding-top: 5px; }
+  .radar label { display: flex; align-items: center; gap: 6px; padding: 3px 0; cursor: pointer; }
+  .radar input[type=checkbox] { width: 17px; height: 17px; margin: 0; flex: none; }
+  .radar .rc { display: flex; align-items: center; gap: 6px; margin-top: 3px; flex-wrap: wrap; }
+  .radar button { font: inherit; font-size: 12px; padding: 2px 8px; border: 1px solid #aaa; border-radius: 4px;
+                  background: #f6f6f6; cursor: pointer; min-width: 34px; }
+  .radar .ts { flex: 1; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .radar input[type=range] { flex: 1; min-width: 90px; margin: 0; }
+  .radar .scale { height: 8px; border-radius: 4px; margin: 4px 0 1px; border: 1px solid #bbb;
+    background: linear-gradient(to right, #88ddee, #00a3e0, #005588, #ffee00, #ffaa00, #ff4400, #c10000, #ffaaff); }
+  .radar .sl { display: flex; justify-content: space-between; font-size: 11px; color: #555; }
+  .radar .note { font-size: 11px; color: #555; }
+  .leaflet-radar-pane img { pointer-events: none; }
   .ctr { width: 10px; height: 10px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 2px #000; }
   @media (max-width: 600px) { .panel { font-size: 12px; } .title b { font-size: 13px; }
                               .title { max-width: 230px; } .regions label { padding: 5px 0; } }
@@ -78,7 +91,8 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Data: <a href="https://www.bom.gov.au/qld/flood/rain_river.shtml">Bureau of Meteorology</a>'
 }).addTo(map);
 
-const LS_REGIONS = "floodmap.regions.v1", LS_FLOOD = "floodmap.floodOnly.v1", LS_OPEN = "floodmap.panelOpen.v1";
+const LS_REGIONS = "floodmap.regions.v1", LS_FLOOD = "floodmap.floodOnly.v1", LS_OPEN = "floodmap.panelOpen.v1",
+      LS_RADAR = "floodmap.radar.v1";
 function lsGet(k, dflt) { try { const v = localStorage.getItem(k); return v == null ? dflt : JSON.parse(v); } catch (e) { return dflt; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 
@@ -95,7 +109,8 @@ info.onAdd = () => {
   const d = L.DomUtil.create("div", "panel title");
   d.innerHTML = '<div class="hdr" id="hdr"><b>River gauges: Westbrook, Ipswich, Brisbane &amp; Sunshine Coast</b>' +
     '<span class="chev" id="chev"></span></div>' +
-    '<div id="body"><div id="upd">Loading\u2026</div><div id="err"></div><div class="regions" id="regions"></div></div>';
+    '<div id="body"><div id="upd">Loading\u2026</div><div id="err"></div><div class="regions" id="regions"></div>' +
+    '<div class="radar" id="radar"></div></div>';
   L.DomEvent.disableClickPropagation(d);
   L.DomEvent.disableScrollPropagation(d);
   const body = d.querySelector("#body"), chev = d.querySelector("#chev");
@@ -242,6 +257,118 @@ function render(data) {
   if (!fitted) { fitEnabled(); fitted = true; }
 }
 
+// ---- Rain radar (RainViewer public Weather Maps API: past 2 h, 10-min frames, max zoom 7, Universal Blue) ----
+const RV_API = "https://api.rainviewer.com/public/weather-maps.json";
+const RV_ATTR = 'Radar &copy; <a href="https://www.rainviewer.com/" target="_blank" rel="noopener">RainViewer</a>';
+const RV_COLOR = 2, RV_OPTS = "1_0";            // 2 = Universal Blue (only free scheme); smoothed, no snow colours
+map.createPane("radar");
+map.getPane("radar").style.zIndex = 350;         // above base tiles (200), below region circles (400) and gauges (600)
+map.getPane("radar").style.pointerEvents = "none";
+const radarSaved = lsGet(LS_RADAR, {});
+const radar = { on: radarSaved.on === true, opacity: typeof radarSaved.opacity === "number" ? radarSaved.opacity : 0.6,
+                host: "", frames: [], layers: {}, idx: -1, playing: false, timer: null, err: "" };
+function saveRadar() { lsSet(LS_RADAR, { on: radar.on, opacity: radar.opacity }); }
+const fmtBne = new Intl.DateTimeFormat("en-AU", { timeZone: "Australia/Brisbane", hour: "2-digit", minute: "2-digit",
+                                                   hour12: false, weekday: "short" });
+function radarLayer(f) {
+  if (!radar.layers[f.path]) {
+    // 512 px tiles with zoomOffset -1: map zoom z requests tile zoom z-1. Tile zoom is capped at 7 by RainViewer,
+    // so maxNativeZoom 8 (= tile zoom 7); beyond that Leaflet upscales the z7 tiles instead of dropping them.
+    radar.layers[f.path] = L.tileLayer(`${radar.host}${f.path}/512/{z}/{x}/{y}/${RV_COLOR}/${RV_OPTS}.png`, {
+      pane: "radar", tileSize: 512, zoomOffset: -1, minNativeZoom: 1, maxNativeZoom: 8, maxZoom: 18,
+      opacity: 0, attribution: RV_ATTR, keepBuffer: 1, updateWhenIdle: true });
+  }
+  return radar.layers[f.path];
+}
+function showFrame(i) {
+  if (!radar.frames.length) return;
+  radar.idx = (i + radar.frames.length) % radar.frames.length;
+  const cur = radar.frames[radar.idx];
+  for (const f of radar.frames) {
+    const lyr = radar.layers[f.path];
+    if (f === cur) { const l = radarLayer(f); if (!map.hasLayer(l)) l.addTo(map); l.setOpacity(radar.opacity); }
+    else if (lyr) { if (radar.playing) lyr.setOpacity(0); else map.removeLayer(lyr); }
+  }
+  updateRadarUi();
+}
+function preloadFrames() { for (const f of radar.frames) { const l = radarLayer(f); if (!map.hasLayer(l)) l.addTo(map); } }
+function stopAnim() { radar.playing = false; clearTimeout(radar.timer); radar.timer = null; }
+function tick() {   // loops oldest -> latest, holding a little longer on the latest frame
+  showFrame(radar.idx + 1);
+  radar.timer = setTimeout(tick, radar.idx === radar.frames.length - 1 ? 1800 : 600);
+}
+function togglePlay() {
+  if (radar.playing) { stopAnim(); showFrame(radar.idx); return; }
+  radar.playing = true; preloadFrames(); showFrame(0);
+  radar.timer = setTimeout(tick, 600);
+}
+function clearRadarLayers() { for (const k in radar.layers) map.removeLayer(radar.layers[k]); }
+async function refreshRadar() {
+  if (!radar.on) return;
+  try {
+    const r = await fetch(RV_API, { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const d = await r.json();
+    const past = (d.radar && d.radar.past) || [];
+    if (!past.length) throw new Error("no radar frames listed");
+    const atLatest = radar.idx < 0 || radar.idx === radar.frames.length - 1;
+    radar.host = d.host;
+    const keep = new Set(past.map(f => f.path));
+    for (const k in radar.layers) if (!keep.has(k)) { map.removeLayer(radar.layers[k]); delete radar.layers[k]; }
+    const curPath = radar.frames[radar.idx] && radar.frames[radar.idx].path;
+    radar.frames = past;
+    radar.err = "";
+    if (!radar.on) return;
+    if (radar.playing) preloadFrames();
+    let i = past.length - 1;
+    if (!atLatest && curPath) { const j = past.findIndex(f => f.path === curPath); if (j >= 0) i = j; }
+    showFrame(i);
+  } catch (e) {
+    radar.err = "Radar unavailable: " + e.message;
+    updateRadarUi();
+  }
+}
+function setRadarOn(on) {
+  radar.on = on; saveRadar();
+  if (!on) { stopAnim(); clearRadarLayers(); radar.idx = -1; updateRadarUi(); return; }
+  updateRadarUi(); refreshRadar();
+}
+function updateRadarUi() {
+  const ctl = document.getElementById("rvctl"); if (!ctl) return;
+  ctl.style.display = radar.on ? "" : "none";
+  const f = radar.frames[radar.idx];
+  const ts = document.getElementById("rvts"), btn = document.getElementById("rvplay");
+  if (radar.err) ts.textContent = radar.err;
+  else if (!f) ts.textContent = "Loading radar\u2026";
+  else {
+    const mins = Math.round((Date.now() / 1000 - f.time) / 60);
+    const latest = radar.idx === radar.frames.length - 1;
+    ts.textContent = `${fmtBne.format(new Date(f.time * 1000))} AEST (${latest ? "latest, " : ""}${mins} min ago)`;
+  }
+  btn.textContent = radar.playing ? "\u23F8" : "\u25B6";
+  btn.title = radar.playing ? "Pause" : "Play the last 2 hours";
+}
+function buildRadarUi() {
+  const el = document.getElementById("radar");
+  el.innerHTML = `<label><input type="checkbox" id="rvon" ${radar.on ? "checked" : ""}> <span>Rain radar</span></label>
+    <div id="rvctl">
+      <div class="rc"><button type="button" id="rvplay">\u25B6</button><span class="ts" id="rvts"></span></div>
+      <div class="rc"><span>Opacity</span><input type="range" id="rvop" min="0.1" max="1" step="0.05" value="${radar.opacity}"></div>
+      <div class="scale"></div><div class="sl"><span>light</span><span>moderate</span><span>heavy</span><span>intense</span></div>
+      <div class="note">Past 2 h, 10-min frames. Coarse resolution (max zoom 7), so blocky when zoomed in.</div>
+    </div>`;
+  el.querySelector("#rvon").onchange = (e) => setRadarOn(e.target.checked);
+  el.querySelector("#rvplay").onclick = togglePlay;
+  el.querySelector("#rvop").oninput = (e) => {
+    radar.opacity = +e.target.value; saveRadar();
+    const f = radar.frames[radar.idx]; if (f && radar.layers[f.path]) radar.layers[f.path].setOpacity(radar.opacity);
+  };
+  updateRadarUi();
+}
+document.addEventListener("visibilitychange", () => { if (document.hidden && radar.playing) { stopAnim(); showFrame(radar.idx); } });
+buildRadarUi();
+if (radar.on) refreshRadar();
+
 async function load() {
   try {
     const r = await fetch("data.json?t=" + Date.now(), { cache: "no-store" });
@@ -252,7 +379,7 @@ async function load() {
   }
 }
 load();
-setInterval(load, 5 * 60 * 1000);
+setInterval(() => { load(); refreshRadar(); }, 5 * 60 * 1000);
 </script>
 </body>
 </html>
