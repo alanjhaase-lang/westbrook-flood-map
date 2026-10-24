@@ -126,6 +126,12 @@ function classKey(fc) {
   if (k.startsWith("major")) return "major";
   return "none";
 }
+// Prefer class computed from height vs flood levels (incl. community estimates);
+// fall back to the BOM bulletin class when we have no levels for the gauge.
+function effectiveClass(s) {
+  if (s.computed_class) return s.computed_class;
+  return s.flood_class;
+}
 function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
 
 const map = L.map("map", { zoomControl: true }).setView([-27.60, 151.87], 9);
@@ -149,7 +155,7 @@ const groups = {};                              // region id -> {layer, markers,
 let lastData = null, fitted = false, uiBuilt = false;
 
 function isOn(id) { return enabled[id] !== false; }
-function inFlood(s) { return ["minor", "moderate", "major"].includes(classKey(s.flood_class)); }
+function inFlood(s) { return ["minor", "moderate", "major"].includes(classKey(effectiveClass(s))); }
 
 const LS_NOTICE = "floodmap.disclaimer.v1";
 const DISCLAIMER = 'Unofficial community map. Data from the Bureau of Meteorology may be delayed or contain ' +
@@ -307,7 +313,7 @@ function popupHtml(s) {
     ["Height", s.height_m == null ? "\u2014" : `${s.height_m.toFixed(2)} m ${esc(s.datum)}`],
     ["Time", esc(s.time) || "\u2014"],
     ["Tendency", esc(s.tendency) || "\u2014"],
-    ["Flood class", esc(s.flood_class) || "\u2014"],
+    ["Flood class", esc(s.flood_class) || (s.computed_class ? esc(s.computed_class) + ' <span style="color:#777">(from levels)</span>' : "\u2014")],
     ...floodRows(s),
     ["Distance", `${s.distance_km} km from ${esc(s.distance_from || "Westbrook")}`],
     ["Location", `${s.lat.toFixed(4)}, ${s.lon.toFixed(4)} (${geo})`],
@@ -356,7 +362,7 @@ function drawMarkers(data) {
     if (!g) continue;
     counts[rid]++; if (inFlood(s)) floods[rid]++;
     if (floodOnly && !inFlood(s)) continue;
-    const key = classKey(s.flood_class);
+    const key = classKey(effectiveClass(s));
     const arrow = ARROWS[(s.tendency || "").toLowerCase()] || "?";
     const stale = s.height_m == null ? " stale" : "";
     const icon = L.divIcon({ className: "", iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -12],
