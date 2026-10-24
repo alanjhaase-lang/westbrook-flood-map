@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-24T20:56:31+10:00",
- "generated_at_text": "Sat 24 Oct 2026 08:56 PM AEST",
+ "generated_at": "2026-10-24T23:00:36+10:00",
+ "generated_at_text": "Sat 24 Oct 2026 11:00 PM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-10-24T20:56:12+10:00",
+  "feed_published": "2026-10-24T22:53:15+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -38,12 +38,12 @@
   {
    "id": "sunshine",
    "name": "Sunshine Coast",
-   "count": 7,
-   "closed": 4,
+   "count": 6,
+   "closed": 3,
    "partial": 3
   }
  ],
- "count": 39,
+ "count": 38,
  "excluded": [
   {
    "id": 836516,
@@ -207,16 +207,6 @@
     "lines": [
      [
       [
-       -27.83878,
-       151.45014
-      ],
-      [
-       -27.86253,
-       151.44641
-      ]
-     ],
-     [
-      [
        -27.81511,
        151.45375
       ],
@@ -327,6 +317,16 @@
       [
        -27.83878,
        151.45012
+      ]
+     ],
+     [
+      [
+       -27.83878,
+       151.45014
+      ],
+      [
+       -27.86253,
+       151.44641
       ]
      ]
     ]
@@ -1145,36 +1145,6 @@
     "lines": [
      [
       [
-       -27.55078,
-       152.12132
-      ],
-      [
-       -27.55085,
-       152.12131
-      ],
-      [
-       -27.55095,
-       152.1213
-      ],
-      [
-       -27.55103,
-       152.12128
-      ],
-      [
-       -27.55109,
-       152.12126
-      ],
-      [
-       -27.55116,
-       152.12123
-      ],
-      [
-       -27.55117,
-       152.12122
-      ]
-     ],
-     [
-      [
        -27.54881,
        152.12208
       ],
@@ -1217,6 +1187,36 @@
       [
        -27.54854,
        152.12272
+      ]
+     ],
+     [
+      [
+       -27.55078,
+       152.12132
+      ],
+      [
+       -27.55085,
+       152.12131
+      ],
+      [
+       -27.55095,
+       152.1213
+      ],
+      [
+       -27.55103,
+       152.12128
+      ],
+      [
+       -27.55109,
+       152.12126
+      ],
+      [
+       -27.55116,
+       152.12123
+      ],
+      [
+       -27.55117,
+       152.12122
       ]
      ]
     ]
@@ -1296,6 +1296,92 @@
      ]
     ],
     "lines": [
+     [
+      [
+       -27.72883,
+       152.22859
+      ],
+      [
+       -27.72861,
+       152.22824
+      ],
+      [
+       -27.72852,
+       152.22803
+      ],
+      [
+       -27.72849,
+       152.22796
+      ],
+      [
+       -27.72839,
+       152.22765
+      ],
+      [
+       -27.72824,
+       152.22714
+      ],
+      [
+       -27.72812,
+       152.22688
+      ],
+      [
+       -27.7281,
+       152.22683
+      ],
+      [
+       -27.72803,
+       152.22675
+      ],
+      [
+       -27.72796,
+       152.2267
+      ],
+      [
+       -27.72795,
+       152.22669
+      ],
+      [
+       -27.72789,
+       152.22665
+      ],
+      [
+       -27.72777,
+       152.22658
+      ],
+      [
+       -27.72762,
+       152.22654
+      ],
+      [
+       -27.72753,
+       152.22653
+      ],
+      [
+       -27.72729,
+       152.22654
+      ],
+      [
+       -27.72716,
+       152.22655
+      ],
+      [
+       -27.72702,
+       152.22654
+      ],
+      [
+       -27.72686,
+       152.22652
+      ],
+      [
+       -27.72677,
+       152.2265
+      ],
+      [
+       -27.72675,
+       152.22649
+      ]
+     ],
      [
       [
        -27.76942,
@@ -2272,92 +2358,6 @@
      ],
      [
       [
-       -27.72883,
-       152.22859
-      ],
-      [
-       -27.72861,
-       152.22824
-      ],
-      [
-       -27.72852,
-       152.22803
-      ],
-      [
-       -27.72849,
-       152.22796
-      ],
-      [
-       -27.72839,
-       152.22765
-      ],
-      [
-       -27.72824,
-       152.22714
-      ],
-      [
-       -27.72812,
-       152.22688
-      ],
-      [
-       -27.7281,
-       152.22683
-      ],
-      [
-       -27.72803,
-       152.22675
-      ],
-      [
-       -27.72796,
-       152.2267
-      ],
-      [
-       -27.72795,
-       152.22669
-      ],
-      [
-       -27.72789,
-       152.22665
-      ],
-      [
-       -27.72777,
-       152.22658
-      ],
-      [
-       -27.72762,
-       152.22654
-      ],
-      [
-       -27.72753,
-       152.22653
-      ],
-      [
-       -27.72729,
-       152.22654
-      ],
-      [
-       -27.72716,
-       152.22655
-      ],
-      [
-       -27.72702,
-       152.22654
-      ],
-      [
-       -27.72686,
-       152.22652
-      ],
-      [
-       -27.72677,
-       152.2265
-      ],
-      [
-       -27.72675,
-       152.22649
-      ]
-     ],
-     [
-      [
        -27.72399,
        152.22452
       ],
@@ -2414,8 +2414,8 @@
    "information": "Caution - water over road",
    "status": "Published",
    "start": "2026-10-23T10:23:00+10:00",
-   "last_updated": "2026-10-24T19:32:37+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 07:32 PM AEST",
+   "last_updated": "2026-10-24T22:46:52+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836451",
@@ -2539,8 +2539,8 @@
    "information": "Water over road - proceed with caution.",
    "status": "Published",
    "start": "2026-10-22T14:23:00+10:00",
-   "last_updated": "2026-10-24T19:32:36+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 07:32 PM AEST",
+   "last_updated": "2026-10-24T22:46:52+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836176",
@@ -3171,8 +3171,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-24T15:00:00+10:00",
-   "last_updated": "2026-10-24T18:59:59+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 06:59 PM AEST",
+   "last_updated": "2026-10-24T22:47:04+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:47 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836769",
@@ -3333,8 +3333,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-06-25T08:47:00+10:00",
-   "last_updated": "2026-10-24T19:33:45+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 07:33 PM AEST",
+   "last_updated": "2026-10-24T22:46:15+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/811011",
@@ -3504,9 +3504,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T05:00:00+10:00",
-   "last_updated": "2026-10-24T16:50:01+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 04:50 PM AEST",
+   "start": "2026-10-24T10:30:00+10:00",
+   "last_updated": "2026-10-24T21:20:03+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 09:20 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835912",
@@ -3542,9 +3542,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-23T19:00:00+10:00",
-   "last_updated": "2026-10-24T05:15:02+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 05:15 AM AEST",
+   "start": "2026-10-24T11:00:00+10:00",
+   "last_updated": "2026-10-24T21:20:01+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 09:20 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836049",
@@ -3580,9 +3580,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T05:10:00+10:00",
-   "last_updated": "2026-10-24T16:45:03+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 04:45 PM AEST",
+   "start": "2026-10-24T10:05:00+10:00",
+   "last_updated": "2026-10-24T21:40:03+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 09:40 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836180",
@@ -3618,9 +3618,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T05:35:00+10:00",
-   "last_updated": "2026-10-24T16:45:02+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 04:45 PM AEST",
+   "start": "2026-10-24T09:50:00+10:00",
+   "last_updated": "2026-10-24T21:35:01+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 09:35 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/717127",
@@ -3657,8 +3657,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-24T18:10:00+10:00",
-   "last_updated": "2026-10-24T20:32:16+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 08:32 PM AEST",
+   "last_updated": "2026-10-24T22:46:09+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836808",
@@ -4548,9 +4548,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T05:15:00+10:00",
-   "last_updated": "2026-10-24T16:45:04+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 04:45 PM AEST",
+   "start": "2026-10-24T10:00:00+10:00",
+   "last_updated": "2026-10-24T21:35:03+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 09:35 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836394",
@@ -4586,9 +4586,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T05:50:00+10:00",
-   "last_updated": "2026-10-24T16:25:07+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 04:25 PM AEST",
+   "start": "2026-10-24T10:20:00+10:00",
+   "last_updated": "2026-10-24T21:40:08+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 09:40 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836050",
@@ -4625,8 +4625,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-22T05:46:00+10:00",
-   "last_updated": "2026-10-24T20:37:04+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 08:37 PM AEST",
+   "last_updated": "2026-10-24T22:46:09+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
    "provided_by": "Brisbane City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835892",
@@ -4662,9 +4662,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T06:45:00+10:00",
-   "last_updated": "2026-10-24T17:05:02+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 05:05 PM AEST",
+   "start": "2026-10-24T11:15:00+10:00",
+   "last_updated": "2026-10-24T21:55:01+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 09:55 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835889",
@@ -4700,9 +4700,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T09:55:00+10:00",
-   "last_updated": "2026-10-24T20:05:01+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 08:05 PM AEST",
+   "start": "2026-10-24T11:00:00+10:00",
+   "last_updated": "2026-10-24T21:45:07+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 09:45 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835955",
@@ -4755,44 +4755,6 @@
      [
       -26.42221,
       152.95956
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 836210,
-   "road": "Cove Road",
-   "description": "at Commissioners Flat",
-   "locality": "Commissioners Flat",
-   "lga": "Moreton Bay Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-10-24T05:50:00+10:00",
-   "last_updated": "2026-10-24T16:25:01+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 04:25 PM AEST",
-   "provided_by": "City of Moreton Bay",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836210",
-   "region": "sunshine",
-   "region_name": "Sunshine Coast",
-   "marker": [
-    -26.88012,
-    152.82831
-   ],
-   "geometry": {
-    "points": [
-     [
-      -26.88012,
-      152.82831
      ]
     ],
     "lines": []
@@ -4853,8 +4815,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T09:50:00+10:00",
-   "last_updated": "2026-10-24T20:18:51+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 08:18 PM AEST",
+   "last_updated": "2026-10-24T22:46:06+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836431",
@@ -4955,8 +4917,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T08:00:00+10:00",
-   "last_updated": "2026-10-24T20:18:52+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 08:18 PM AEST",
+   "last_updated": "2026-10-24T22:46:06+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836388",
