@@ -51,6 +51,42 @@ nowcast), one colour scheme (Universal Blue, scale shown in the panel), max tile
 (the map upscales z7 tiles when zoomed in, so radar looks blocky at street level) and
 100 requests/IP/minute. Availability is not guaranteed.
 
+### Road closures (flooding) and flood cameras
+
+Two more panel checkboxes, both from [QLDTraffic](https://qldtraffic.qld.gov.au/)
+(Road data © State of Queensland (QLDTraffic), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/),
+shown in the map attribution). On/off persists in `localStorage` (`floodmap.closures.v1`, default on;
+`floodmap.cameras.v1`, default off). Both respect the region checkboxes (each item belongs to one
+region: nearest centre among the circles it touches, same rule as gauges) and are **not** hidden by
+*In flood only*, which applies to gauges only. Counts next to the checkboxes cover enabled regions.
+
+- **Road closures** – `closures.json`, built by `update_roads.py` from QLDTraffic events. Source order:
+  the official API `https://api.qldtraffic.qld.gov.au/v2/events` with the shared public key from the
+  [API spec v1.10](https://qldtraffic.qld.gov.au/media/moreDevelopers-and-Data/qldtraffic-website-api-specification-v1-10.pdf)
+  (often HTTP 429 because everyone shares it), falling back to the static feed
+  `https://data.qldtraffic.qld.gov.au/events_v2.geojson` (same structure, updated every minute).
+  `source.used` records `api` or `fallback`. Kept: `event_type == "Flooding"` or `event_due_to`
+  containing "flood" (this includes *Road damage – earlier flooding* hazards), with any vertex inside a
+  region circle. Dropped (listed in `excluded` with a reason): any vertex outside a Queensland bounding
+  box, implausible road names (non-ASCII/garbage, e.g. a bad reverse geocode), status other than
+  Published, or an end time in the past. `severity` is `closed` (road closed to all/through traffic,
+  all lanes blocked) or `partial` (lanes affected, 4WD-only, partial closures). Drawn as a red
+  "no entry" marker plus solid red line (closed) or amber diamond plus dashed amber line (partial);
+  popups show road, locality/LGA, impact, cause, advice, start and last-updated time (AEST) and a
+  link to qldtraffic.qld.gov.au. Coordinates in `closures.json` are `[lat, lon]`
+  (`marker`, `geometry.points`, `geometry.lines`).
+- **Flood cameras** – `cameras.json`, from `https://data.qldtraffic.qld.gov.au/floodcameras.geojson`
+  filtered to the regions. The popup loads the **live** image straight from `cameras.qldtraffic.qld.gov.au`
+  (https, S3/CloudFront, no hotlink protection) with a `?t=<now>` cache-buster each time it opens; if the
+  image fails it shows a link instead. The image server sends no CORS headers, so the browser cannot read
+  the image time; instead the update job HEADs each image and, only when it is older than 3 h, records
+  `image_time` / `image_stale` (shown in the popup, grey icon). Recording a fresh time would change the
+  file, and so commit, every run. Many TMR cameras only update 6am–6pm.
+
+On a fetch failure the previous file is kept with `stale: true`, `stale_since` and `stale_reason`
+(the panel shows a warning). Like `data.json`, the files are only rewritten when something other than
+`generated_at*` changes. The map re-fetches both every 5 minutes with `data.json`.
+
 BOM radar is not used: BOM radar images are restricted content that needs a data licence to
 republish, and BOM's radar WMS (GIS2Web) is registered-user only.
 
@@ -66,9 +102,12 @@ republish, and BOM's radar WMS (GIS2Web) is registered-user only.
   `build_flood_levels.py` rebuilds it.
 - `build_stations.py` – one-off rebuild of `stations.json` across candidate
   bulletins, including a flagged Nominatim geocode fallback.
-- `index.html` – the map. Re-fetches `data.json` (and the radar frame list) every 5 minutes.
-- `.github/workflows/update.yml` – runs every 30 minutes (and manually) and
-  commits `data.json` when it changes.
+- `update_roads.py` – stdlib-only; writes `closures.json` and `cameras.json` from QLDTraffic
+  (see *Road closures* above). Imports `REGIONS` from `update_data.py`.
+- `index.html` – the map. Re-fetches `data.json`, `closures.json`, `cameras.json` (and the radar
+  frame list) every 5 minutes.
+- `.github/workflows/update.yml` – runs every 30 minutes (and manually), runs both scripts (the road
+  step runs even if the BOM step fails) and commits the data files when they change.
 
 ### Flood levels and "metres to next class"
 
@@ -142,6 +181,7 @@ activity, but if it stops, re-enable it in the Actions tab.
 
 ```sh
 python3 update_data.py           # writes data.json
+python3 update_roads.py          # writes closures.json, cameras.json
 python3 -m http.server 8000      # open http://localhost:8000/
 ```
 

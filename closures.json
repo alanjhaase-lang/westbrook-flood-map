@@ -1,0 +1,5018 @@
+{
+ "generated_at": "2026-10-24T20:56:31+10:00",
+ "generated_at_text": "Sat 24 Oct 2026 08:56 PM AEST",
+ "stale": false,
+ "source": {
+  "used": "fallback",
+  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
+  "feed_published": "2026-10-24T20:56:12+10:00",
+  "errors": [
+   "api: HTTP 429"
+  ]
+ },
+ "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
+ "licence": "https://creativecommons.org/licenses/by/4.0/",
+ "filter": "event_type == 'Flooding' or 'flood' in event_due_to (case-insensitive); any vertex inside a region circle; region = nearest centre. severity 'closed' = road closed / all lanes blocked, 'partial' = lanes affected, restricted or partial closure. Coordinates [lat, lon].",
+ "regions": [
+  {
+   "id": "westbrook",
+   "name": "Westbrook / Toowoomba",
+   "count": 17,
+   "closed": 10,
+   "partial": 7
+  },
+  {
+   "id": "ipswich",
+   "name": "Ipswich",
+   "count": 4,
+   "closed": 1,
+   "partial": 3
+  },
+  {
+   "id": "brisbane",
+   "name": "Brisbane",
+   "count": 11,
+   "closed": 11,
+   "partial": 0
+  },
+  {
+   "id": "sunshine",
+   "name": "Sunshine Coast",
+   "count": 7,
+   "closed": 4,
+   "partial": 3
+  }
+ ],
+ "count": 39,
+ "excluded": [
+  {
+   "id": 836516,
+   "road": "Đường Vân Nội",
+   "locality": null,
+   "lga": "Ipswich City",
+   "reason": "implausible road name 'Đường Vân Nội'"
+  }
+ ],
+ "closures": [
+  {
+   "id": 836439,
+   "road": "Cockburn Road",
+   "description": "Road Closed due to flooding - fast flowing",
+   "locality": "Jondaryan",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T09:30:00+10:00",
+   "last_updated": "2026-10-23T14:16:01+10:00",
+   "last_updated_text": "Fri 23 Oct 2026 02:16 PM AEST",
+   "provided_by": "Toowoomba Regional",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836439",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.42463,
+    151.64068
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.4225,
+       151.64104
+      ],
+      [
+       -27.42306,
+       151.64094
+      ],
+      [
+       -27.42364,
+       151.64086
+      ],
+      [
+       -27.4241,
+       151.64077
+      ],
+      [
+       -27.42463,
+       151.64068
+      ],
+      [
+       -27.42501,
+       151.64064
+      ],
+      [
+       -27.42528,
+       151.64062
+      ],
+      [
+       -27.42611,
+       151.64063
+      ],
+      [
+       -27.4267,
+       151.64062
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836358,
+   "road": "East Haldon Road / Black Duck Creek Road",
+   "description": "Water Over Road",
+   "locality": "Junction View",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T06:50:00+10:00",
+   "last_updated": "2026-10-24T07:02:07+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:02 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836358",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.8031,
+    152.18816
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.80192,
+       152.18794
+      ],
+      [
+       -27.8031,
+       152.18816
+      ],
+      [
+       -27.80334,
+       152.18822
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836587,
+   "road": "Fysh Road / Yarramalong Road / Yarramalong Road",
+   "description": "Between Millmerran Leyburn and Fysh Roads",
+   "locality": "Tummaville",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Flooding of river",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T16:55:00+10:00",
+   "last_updated": "2026-10-24T18:16:02+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 06:16 PM AEST",
+   "provided_by": "Toowoomba Regional",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836587",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.83571,
+    151.44993
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.83878,
+       151.45014
+      ],
+      [
+       -27.86253,
+       151.44641
+      ]
+     ],
+     [
+      [
+       -27.81511,
+       151.45375
+      ],
+      [
+       -27.82958,
+       151.45074
+      ],
+      [
+       -27.83449,
+       151.44966
+      ],
+      [
+       -27.83454,
+       151.4496
+      ],
+      [
+       -27.83461,
+       151.44952
+      ],
+      [
+       -27.83468,
+       151.44944
+      ],
+      [
+       -27.83475,
+       151.44937
+      ],
+      [
+       -27.83482,
+       151.44932
+      ],
+      [
+       -27.83485,
+       151.4493
+      ],
+      [
+       -27.83489,
+       151.4493
+      ],
+      [
+       -27.83493,
+       151.44929
+      ],
+      [
+       -27.83498,
+       151.4493
+      ],
+      [
+       -27.83502,
+       151.4493
+      ],
+      [
+       -27.83505,
+       151.44931
+      ],
+      [
+       -27.8351,
+       151.44933
+      ],
+      [
+       -27.83514,
+       151.44936
+      ],
+      [
+       -27.83567,
+       151.44991
+      ],
+      [
+       -27.83571,
+       151.44993
+      ],
+      [
+       -27.83576,
+       151.44996
+      ],
+      [
+       -27.8358,
+       151.44998
+      ],
+      [
+       -27.83584,
+       151.44999
+      ],
+      [
+       -27.83591,
+       151.44999
+      ],
+      [
+       -27.83599,
+       151.45
+      ],
+      [
+       -27.83607,
+       151.45001
+      ],
+      [
+       -27.83717,
+       151.44986
+      ],
+      [
+       -27.83862,
+       151.44964
+      ],
+      [
+       -27.83871,
+       151.44963
+      ],
+      [
+       -27.83878,
+       151.45012
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836409,
+   "road": "Glendene Road",
+   "description": "Road Closed - Water Over Road - Do not Drive in Flood Waters",
+   "locality": "Forest Hill",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T08:49:00+10:00",
+   "last_updated": "2026-10-24T07:02:09+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:02 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836409",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.57985,
+    152.37058
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.57985,
+      152.37058
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836446,
+   "road": "Kearney Road",
+   "description": "Road Closed due to flooding - fast flowing",
+   "locality": "Aubigny / Oakey",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T10:15:00+10:00",
+   "last_updated": "2026-10-23T14:16:02+10:00",
+   "last_updated_text": "Fri 23 Oct 2026 02:16 PM AEST",
+   "provided_by": "Toowoomba Regional",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836446",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.43885,
+    151.67829
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.43728,
+       151.67823
+      ],
+      [
+       -27.43759,
+       151.67818
+      ],
+      [
+       -27.43768,
+       151.67816
+      ],
+      [
+       -27.43779,
+       151.67816
+      ],
+      [
+       -27.4379,
+       151.67818
+      ],
+      [
+       -27.43807,
+       151.67824
+      ],
+      [
+       -27.43827,
+       151.67832
+      ],
+      [
+       -27.43837,
+       151.67834
+      ],
+      [
+       -27.4385,
+       151.67834
+      ],
+      [
+       -27.43885,
+       151.67829
+      ],
+      [
+       -27.43916,
+       151.67823
+      ],
+      [
+       -27.43935,
+       151.6782
+      ],
+      [
+       -27.43944,
+       151.67819
+      ],
+      [
+       -27.43954,
+       151.67818
+      ],
+      [
+       -27.43962,
+       151.67815
+      ],
+      [
+       -27.43977,
+       151.67807
+      ],
+      [
+       -27.44005,
+       151.67788
+      ],
+      [
+       -27.44019,
+       151.67777
+      ],
+      [
+       -27.44034,
+       151.67772
+      ],
+      [
+       -27.44071,
+       151.67765
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 750590,
+   "road": "Laidley Creek West Road",
+   "description": "Road Closed - Seek Alternative Route",
+   "locality": "Mulgowie",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Hazard",
+   "event_subtype": "Road damage",
+   "due_to": "Earlier flooding",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Diversions are in place",
+   "information": null,
+   "status": "Published",
+   "start": "2026-06-30T14:26:00+10:00",
+   "last_updated": "2026-10-08T06:00:04+10:00",
+   "last_updated_text": "Thu 08 Oct 2026 06:00 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/750590",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.70903,
+    152.3569
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.70813,
+       152.35754
+      ],
+      [
+       -27.70848,
+       152.35724
+      ],
+      [
+       -27.70869,
+       152.35709
+      ],
+      [
+       -27.70887,
+       152.35697
+      ],
+      [
+       -27.70903,
+       152.3569
+      ],
+      [
+       -27.70917,
+       152.35683
+      ],
+      [
+       -27.70931,
+       152.3568
+      ],
+      [
+       -27.70962,
+       152.35677
+      ],
+      [
+       -27.71022,
+       152.35674
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836383,
+   "road": "Martin Road / Sippel Road",
+   "description": "Road Closed - Water Over Road - Do not Drive in Flood Waters",
+   "locality": "Blenheim",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T08:00:00+10:00",
+   "last_updated": "2026-10-24T06:28:03+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 06:28 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836383",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.63462,
+    152.32555
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.63328,
+       152.31665
+      ],
+      [
+       -27.63335,
+       152.31705
+      ],
+      [
+       -27.63341,
+       152.31747
+      ],
+      [
+       -27.63345,
+       152.31779
+      ],
+      [
+       -27.6335,
+       152.31821
+      ],
+      [
+       -27.63359,
+       152.31878
+      ],
+      [
+       -27.63371,
+       152.31952
+      ],
+      [
+       -27.63379,
+       152.32019
+      ],
+      [
+       -27.63393,
+       152.32096
+      ],
+      [
+       -27.63406,
+       152.32189
+      ],
+      [
+       -27.63425,
+       152.3231
+      ],
+      [
+       -27.63443,
+       152.32433
+      ],
+      [
+       -27.63462,
+       152.32555
+      ],
+      [
+       -27.63467,
+       152.32587
+      ],
+      [
+       -27.63467,
+       152.32594
+      ],
+      [
+       -27.63679,
+       152.33171
+      ],
+      [
+       -27.63683,
+       152.33172
+      ],
+      [
+       -27.63685,
+       152.33173
+      ],
+      [
+       -27.63687,
+       152.33174
+      ],
+      [
+       -27.63689,
+       152.33176
+      ],
+      [
+       -27.63691,
+       152.33179
+      ],
+      [
+       -27.63692,
+       152.33182
+      ],
+      [
+       -27.63694,
+       152.33191
+      ],
+      [
+       -27.63697,
+       152.33207
+      ],
+      [
+       -27.63814,
+       152.3405
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836502,
+   "road": "Mount Berryman Road",
+   "description": "Road Damage - Avoid the Area",
+   "locality": "Mount Berryman",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Hazard",
+   "event_subtype": "Road damage",
+   "due_to": "Earlier flooding",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Avoid the area",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T13:00:00+10:00",
+   "last_updated": "2026-10-24T07:00:04+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:00 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836502",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.73871,
+    152.32851
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.73364,
+      152.32892
+     ],
+     [
+      -27.73871,
+      152.32851
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836576,
+   "road": "Oakey Pittsworth Road",
+   "description": "Between Mount Tyson Road and Moran Road",
+   "locality": "Motley",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T16:13:00+10:00",
+   "last_updated": "2026-10-24T12:27:07+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 12:27 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836576",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.55288,
+    151.61294
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.57332,
+       151.58832
+      ],
+      [
+       -27.57272,
+       151.58908
+      ],
+      [
+       -27.5726,
+       151.58923
+      ],
+      [
+       -27.5725,
+       151.58935
+      ],
+      [
+       -27.57248,
+       151.58938
+      ],
+      [
+       -27.57166,
+       151.59042
+      ],
+      [
+       -27.57073,
+       151.59158
+      ],
+      [
+       -27.56967,
+       151.5929
+      ],
+      [
+       -27.56959,
+       151.593
+      ],
+      [
+       -27.56947,
+       151.59315
+      ],
+      [
+       -27.56935,
+       151.5933
+      ],
+      [
+       -27.56923,
+       151.59345
+      ],
+      [
+       -27.56864,
+       151.59419
+      ],
+      [
+       -27.56748,
+       151.59563
+      ],
+      [
+       -27.56663,
+       151.59671
+      ],
+      [
+       -27.56634,
+       151.59707
+      ],
+      [
+       -27.56622,
+       151.59722
+      ],
+      [
+       -27.5661,
+       151.59737
+      ],
+      [
+       -27.56581,
+       151.59774
+      ],
+      [
+       -27.56505,
+       151.59869
+      ],
+      [
+       -27.56372,
+       151.60034
+      ],
+      [
+       -27.56245,
+       151.60187
+      ],
+      [
+       -27.5605,
+       151.60415
+      ],
+      [
+       -27.55957,
+       151.6052
+      ],
+      [
+       -27.55941,
+       151.60538
+      ],
+      [
+       -27.5579,
+       151.60712
+      ],
+      [
+       -27.55658,
+       151.60862
+      ],
+      [
+       -27.55551,
+       151.60985
+      ],
+      [
+       -27.55527,
+       151.61013
+      ],
+      [
+       -27.55477,
+       151.6107
+      ],
+      [
+       -27.55359,
+       151.61205
+      ],
+      [
+       -27.55312,
+       151.61261
+      ],
+      [
+       -27.55288,
+       151.61294
+      ],
+      [
+       -27.55245,
+       151.61354
+      ],
+      [
+       -27.55225,
+       151.61386
+      ],
+      [
+       -27.55201,
+       151.61425
+      ],
+      [
+       -27.5516,
+       151.61495
+      ],
+      [
+       -27.55138,
+       151.61534
+      ],
+      [
+       -27.5513,
+       151.61551
+      ],
+      [
+       -27.55112,
+       151.61577
+      ],
+      [
+       -27.55102,
+       151.61588
+      ],
+      [
+       -27.55091,
+       151.61605
+      ],
+      [
+       -27.55072,
+       151.61628
+      ],
+      [
+       -27.55032,
+       151.61674
+      ],
+      [
+       -27.5502,
+       151.61687
+      ],
+      [
+       -27.55005,
+       151.61702
+      ],
+      [
+       -27.54977,
+       151.61727
+      ],
+      [
+       -27.5493,
+       151.61763
+      ],
+      [
+       -27.54922,
+       151.61769
+      ],
+      [
+       -27.54861,
+       151.61807
+      ],
+      [
+       -27.54852,
+       151.61812
+      ],
+      [
+       -27.54714,
+       151.61908
+      ],
+      [
+       -27.54692,
+       151.61925
+      ],
+      [
+       -27.54675,
+       151.61939
+      ],
+      [
+       -27.54634,
+       151.61978
+      ],
+      [
+       -27.54592,
+       151.62025
+      ],
+      [
+       -27.54559,
+       151.62068
+      ],
+      [
+       -27.54536,
+       151.62102
+      ],
+      [
+       -27.54503,
+       151.62159
+      ],
+      [
+       -27.54463,
+       151.62235
+      ],
+      [
+       -27.54418,
+       151.62317
+      ],
+      [
+       -27.54416,
+       151.62325
+      ],
+      [
+       -27.54414,
+       151.62331
+      ],
+      [
+       -27.54413,
+       151.62333
+      ],
+      [
+       -27.54412,
+       151.62339
+      ],
+      [
+       -27.54409,
+       151.62345
+      ],
+      [
+       -27.54356,
+       151.62447
+      ],
+      [
+       -27.54307,
+       151.62539
+      ],
+      [
+       -27.54225,
+       151.62691
+      ],
+      [
+       -27.54216,
+       151.62709
+      ],
+      [
+       -27.54212,
+       151.62717
+      ],
+      [
+       -27.54207,
+       151.62726
+      ],
+      [
+       -27.54175,
+       151.62785
+      ],
+      [
+       -27.5416,
+       151.62809
+      ],
+      [
+       -27.54117,
+       151.62873
+      ],
+      [
+       -27.5409,
+       151.62906
+      ],
+      [
+       -27.54078,
+       151.62921
+      ],
+      [
+       -27.54034,
+       151.6297
+      ],
+      [
+       -27.54032,
+       151.62972
+      ],
+      [
+       -27.54012,
+       151.6299
+      ],
+      [
+       -27.53988,
+       151.63014
+      ],
+      [
+       -27.5395,
+       151.63054
+      ],
+      [
+       -27.53895,
+       151.63113
+      ],
+      [
+       -27.53866,
+       151.63142
+      ],
+      [
+       -27.53852,
+       151.6316
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836344,
+   "road": "Turner Street",
+   "description": "Water over Road",
+   "locality": "Helidon",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T06:15:00+10:00",
+   "last_updated": "2026-10-24T07:06:31+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:06 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836344",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.54881,
+    152.12208
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.55078,
+       152.12132
+      ],
+      [
+       -27.55085,
+       152.12131
+      ],
+      [
+       -27.55095,
+       152.1213
+      ],
+      [
+       -27.55103,
+       152.12128
+      ],
+      [
+       -27.55109,
+       152.12126
+      ],
+      [
+       -27.55116,
+       152.12123
+      ],
+      [
+       -27.55117,
+       152.12122
+      ]
+     ],
+     [
+      [
+       -27.54881,
+       152.12208
+      ],
+      [
+       -27.54875,
+       152.12212
+      ],
+      [
+       -27.54871,
+       152.12215
+      ],
+      [
+       -27.54867,
+       152.12221
+      ],
+      [
+       -27.54865,
+       152.12225
+      ],
+      [
+       -27.5486,
+       152.12238
+      ],
+      [
+       -27.54858,
+       152.12246
+      ],
+      [
+       -27.54856,
+       152.12254
+      ],
+      [
+       -27.54855,
+       152.12263
+      ],
+      [
+       -27.54854,
+       152.12271
+      ],
+      [
+       -27.54854,
+       152.12272
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836011,
+   "road": "Lawlers Road",
+   "description": "Water Over Road",
+   "locality": "Helidon",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "Both directions",
+   "advice": "Observe signage",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-22T09:08:00+10:00",
+   "last_updated": "2026-10-24T07:06:02+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:06 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836011",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.56258,
+    152.15151
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.56258,
+      152.15151
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836188,
+   "road": "Lefthand Branch Road / Left Hand Branch Road / Lefthand Branch Road / Lefthand Branch Road / Left Hand Branch Road / Dallingers Road",
+   "description": "Water over road - Various Locations - Observe Signage",
+   "locality": "Lefthand Branch / Mount Sylvia",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Observe signage",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-22T15:00:00+10:00",
+   "last_updated": "2026-10-24T07:06:19+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:06 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836188",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.74806,
+    152.24263
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.76946,
+      152.25372
+     ]
+    ],
+    "lines": [
+     [
+      [
+       -27.76942,
+       152.2537
+      ],
+      [
+       -27.7692,
+       152.25359
+      ],
+      [
+       -27.7687,
+       152.25339
+      ],
+      [
+       -27.76839,
+       152.25322
+      ],
+      [
+       -27.76826,
+       152.25313
+      ],
+      [
+       -27.76815,
+       152.25304
+      ],
+      [
+       -27.76812,
+       152.25301
+      ],
+      [
+       -27.76796,
+       152.25284
+      ],
+      [
+       -27.76778,
+       152.25259
+      ],
+      [
+       -27.76759,
+       152.25228
+      ],
+      [
+       -27.76737,
+       152.25197
+      ],
+      [
+       -27.76725,
+       152.25181
+      ],
+      [
+       -27.76713,
+       152.25165
+      ],
+      [
+       -27.76697,
+       152.25139
+      ],
+      [
+       -27.76681,
+       152.25113
+      ],
+      [
+       -27.76664,
+       152.25082
+      ],
+      [
+       -27.76658,
+       152.25072
+      ],
+      [
+       -27.76653,
+       152.25061
+      ],
+      [
+       -27.76642,
+       152.25033
+      ],
+      [
+       -27.76638,
+       152.25025
+      ],
+      [
+       -27.76633,
+       152.25017
+      ],
+      [
+       -27.76632,
+       152.25015
+      ],
+      [
+       -27.76628,
+       152.25011
+      ],
+      [
+       -27.76624,
+       152.25006
+      ],
+      [
+       -27.7662,
+       152.25
+      ],
+      [
+       -27.76615,
+       152.24996
+      ],
+      [
+       -27.7661,
+       152.24993
+      ],
+      [
+       -27.76599,
+       152.24988
+      ],
+      [
+       -27.76594,
+       152.24986
+      ],
+      [
+       -27.76579,
+       152.24985
+      ],
+      [
+       -27.76568,
+       152.24984
+      ],
+      [
+       -27.76559,
+       152.24984
+      ],
+      [
+       -27.76544,
+       152.24988
+      ],
+      [
+       -27.76533,
+       152.2499
+      ],
+      [
+       -27.76483,
+       152.25001
+      ],
+      [
+       -27.76467,
+       152.25003
+      ],
+      [
+       -27.76466,
+       152.25003
+      ],
+      [
+       -27.7646,
+       152.25003
+      ],
+      [
+       -27.76443,
+       152.25
+      ],
+      [
+       -27.76439,
+       152.24998
+      ],
+      [
+       -27.76426,
+       152.24992
+      ],
+      [
+       -27.76421,
+       152.24989
+      ],
+      [
+       -27.76415,
+       152.24985
+      ],
+      [
+       -27.76383,
+       152.24957
+      ],
+      [
+       -27.76344,
+       152.24925
+      ],
+      [
+       -27.76332,
+       152.24915
+      ],
+      [
+       -27.76321,
+       152.24907
+      ],
+      [
+       -27.76316,
+       152.24904
+      ],
+      [
+       -27.76315,
+       152.24904
+      ],
+      [
+       -27.76312,
+       152.24901
+      ],
+      [
+       -27.76302,
+       152.24897
+      ],
+      [
+       -27.76292,
+       152.24895
+      ],
+      [
+       -27.76284,
+       152.24894
+      ],
+      [
+       -27.76276,
+       152.24894
+      ],
+      [
+       -27.76273,
+       152.24894
+      ],
+      [
+       -27.76258,
+       152.24897
+      ],
+      [
+       -27.76211,
+       152.24914
+      ],
+      [
+       -27.76206,
+       152.24916
+      ],
+      [
+       -27.76198,
+       152.24919
+      ],
+      [
+       -27.76187,
+       152.24925
+      ],
+      [
+       -27.7618,
+       152.24929
+      ],
+      [
+       -27.76135,
+       152.24947
+      ],
+      [
+       -27.76131,
+       152.24948
+      ],
+      [
+       -27.76109,
+       152.24957
+      ],
+      [
+       -27.761,
+       152.2496
+      ],
+      [
+       -27.76094,
+       152.2496
+      ],
+      [
+       -27.76083,
+       152.2496
+      ],
+      [
+       -27.76073,
+       152.2496
+      ],
+      [
+       -27.76067,
+       152.24961
+      ],
+      [
+       -27.76057,
+       152.24965
+      ],
+      [
+       -27.76043,
+       152.24969
+      ],
+      [
+       -27.76034,
+       152.2497
+      ],
+      [
+       -27.76029,
+       152.2497
+      ],
+      [
+       -27.76025,
+       152.2497
+      ],
+      [
+       -27.76022,
+       152.2497
+      ],
+      [
+       -27.76005,
+       152.24964
+      ],
+      [
+       -27.75994,
+       152.2496
+      ],
+      [
+       -27.75951,
+       152.24941
+      ],
+      [
+       -27.75913,
+       152.24928
+      ],
+      [
+       -27.75891,
+       152.24917
+      ],
+      [
+       -27.75885,
+       152.24915
+      ],
+      [
+       -27.75876,
+       152.24911
+      ],
+      [
+       -27.75873,
+       152.2491
+      ],
+      [
+       -27.75867,
+       152.24905
+      ],
+      [
+       -27.75863,
+       152.24902
+      ],
+      [
+       -27.75862,
+       152.24899
+      ],
+      [
+       -27.75861,
+       152.24897
+      ],
+      [
+       -27.7586,
+       152.24894
+      ],
+      [
+       -27.75858,
+       152.24887
+      ],
+      [
+       -27.7584,
+       152.24836
+      ],
+      [
+       -27.75818,
+       152.24778
+      ],
+      [
+       -27.75815,
+       152.2477
+      ],
+      [
+       -27.75808,
+       152.24751
+      ],
+      [
+       -27.75792,
+       152.24715
+      ],
+      [
+       -27.75768,
+       152.24663
+      ],
+      [
+       -27.75762,
+       152.24655
+      ],
+      [
+       -27.75755,
+       152.24649
+      ],
+      [
+       -27.7575,
+       152.24644
+      ],
+      [
+       -27.75746,
+       152.24642
+      ],
+      [
+       -27.75739,
+       152.24639
+      ],
+      [
+       -27.75728,
+       152.24635
+      ],
+      [
+       -27.75651,
+       152.2462
+      ],
+      [
+       -27.75643,
+       152.24619
+      ],
+      [
+       -27.7564,
+       152.24619
+      ],
+      [
+       -27.75636,
+       152.24618
+      ],
+      [
+       -27.7563,
+       152.24619
+      ],
+      [
+       -27.75614,
+       152.24622
+      ],
+      [
+       -27.75591,
+       152.24631
+      ],
+      [
+       -27.75582,
+       152.24634
+      ],
+      [
+       -27.75575,
+       152.24636
+      ],
+      [
+       -27.75565,
+       152.24637
+      ],
+      [
+       -27.75555,
+       152.24637
+      ],
+      [
+       -27.75548,
+       152.24636
+      ],
+      [
+       -27.75538,
+       152.24633
+      ],
+      [
+       -27.75514,
+       152.24624
+      ],
+      [
+       -27.75507,
+       152.24622
+      ],
+      [
+       -27.75499,
+       152.2462
+      ],
+      [
+       -27.75491,
+       152.24619
+      ],
+      [
+       -27.75485,
+       152.24619
+      ],
+      [
+       -27.75477,
+       152.24621
+      ],
+      [
+       -27.75472,
+       152.24622
+      ],
+      [
+       -27.75466,
+       152.24626
+      ],
+      [
+       -27.75462,
+       152.24629
+      ],
+      [
+       -27.75457,
+       152.24634
+      ],
+      [
+       -27.75425,
+       152.24671
+      ],
+      [
+       -27.75416,
+       152.24681
+      ],
+      [
+       -27.75407,
+       152.24689
+      ],
+      [
+       -27.75399,
+       152.24695
+      ],
+      [
+       -27.75391,
+       152.247
+      ],
+      [
+       -27.75384,
+       152.24703
+      ],
+      [
+       -27.75369,
+       152.24709
+      ],
+      [
+       -27.7532,
+       152.24729
+      ],
+      [
+       -27.75307,
+       152.24733
+      ],
+      [
+       -27.75299,
+       152.24733
+      ],
+      [
+       -27.75289,
+       152.24732
+      ],
+      [
+       -27.7528,
+       152.24731
+      ],
+      [
+       -27.75274,
+       152.24729
+      ],
+      [
+       -27.7526,
+       152.24725
+      ],
+      [
+       -27.7523,
+       152.24711
+      ],
+      [
+       -27.75222,
+       152.24707
+      ],
+      [
+       -27.75202,
+       152.24695
+      ],
+      [
+       -27.75183,
+       152.24682
+      ],
+      [
+       -27.75163,
+       152.24667
+      ],
+      [
+       -27.75151,
+       152.24654
+      ],
+      [
+       -27.75134,
+       152.24633
+      ],
+      [
+       -27.7513,
+       152.24628
+      ],
+      [
+       -27.75117,
+       152.24607
+      ],
+      [
+       -27.75094,
+       152.24575
+      ],
+      [
+       -27.75072,
+       152.24545
+      ],
+      [
+       -27.7503,
+       152.24498
+      ],
+      [
+       -27.74997,
+       152.24466
+      ],
+      [
+       -27.7497,
+       152.24443
+      ],
+      [
+       -27.74949,
+       152.24428
+      ],
+      [
+       -27.74904,
+       152.244
+      ],
+      [
+       -27.74897,
+       152.24395
+      ],
+      [
+       -27.74894,
+       152.24392
+      ],
+      [
+       -27.74882,
+       152.2438
+      ],
+      [
+       -27.74861,
+       152.2435
+      ],
+      [
+       -27.74806,
+       152.24263
+      ],
+      [
+       -27.74778,
+       152.24221
+      ],
+      [
+       -27.74769,
+       152.24207
+      ],
+      [
+       -27.74755,
+       152.24189
+      ],
+      [
+       -27.74736,
+       152.24167
+      ],
+      [
+       -27.74716,
+       152.24151
+      ],
+      [
+       -27.74697,
+       152.24135
+      ],
+      [
+       -27.74672,
+       152.24115
+      ],
+      [
+       -27.74639,
+       152.24092
+      ],
+      [
+       -27.74635,
+       152.24089
+      ],
+      [
+       -27.74628,
+       152.24087
+      ],
+      [
+       -27.74617,
+       152.24083
+      ],
+      [
+       -27.74601,
+       152.2408
+      ],
+      [
+       -27.74543,
+       152.24073
+      ],
+      [
+       -27.74418,
+       152.24059
+      ],
+      [
+       -27.74354,
+       152.24053
+      ],
+      [
+       -27.74327,
+       152.24047
+      ],
+      [
+       -27.74316,
+       152.24044
+      ],
+      [
+       -27.743,
+       152.24035
+      ],
+      [
+       -27.74293,
+       152.24032
+      ],
+      [
+       -27.74277,
+       152.24021
+      ],
+      [
+       -27.74222,
+       152.23985
+      ],
+      [
+       -27.74205,
+       152.23973
+      ],
+      [
+       -27.74186,
+       152.23961
+      ],
+      [
+       -27.74166,
+       152.23944
+      ],
+      [
+       -27.74126,
+       152.23902
+      ],
+      [
+       -27.74122,
+       152.23897
+      ],
+      [
+       -27.74074,
+       152.23836
+      ],
+      [
+       -27.74062,
+       152.23822
+      ],
+      [
+       -27.74045,
+       152.23803
+      ],
+      [
+       -27.74025,
+       152.23785
+      ],
+      [
+       -27.74025,
+       152.23784
+      ],
+      [
+       -27.7401,
+       152.23773
+      ],
+      [
+       -27.73984,
+       152.23755
+      ],
+      [
+       -27.73884,
+       152.23681
+      ],
+      [
+       -27.73828,
+       152.23642
+      ],
+      [
+       -27.73807,
+       152.23631
+      ],
+      [
+       -27.73793,
+       152.23626
+      ],
+      [
+       -27.73782,
+       152.23623
+      ],
+      [
+       -27.73758,
+       152.23618
+      ],
+      [
+       -27.73742,
+       152.23616
+      ],
+      [
+       -27.737,
+       152.23611
+      ],
+      [
+       -27.73682,
+       152.23608
+      ],
+      [
+       -27.73668,
+       152.23603
+      ],
+      [
+       -27.73661,
+       152.236
+      ],
+      [
+       -27.7365,
+       152.23593
+      ],
+      [
+       -27.73636,
+       152.23579
+      ],
+      [
+       -27.7363,
+       152.23571
+      ],
+      [
+       -27.73617,
+       152.23556
+      ],
+      [
+       -27.73605,
+       152.23541
+      ],
+      [
+       -27.73585,
+       152.23521
+      ],
+      [
+       -27.73539,
+       152.23482
+      ],
+      [
+       -27.735,
+       152.2345
+      ],
+      [
+       -27.73495,
+       152.23447
+      ],
+      [
+       -27.73461,
+       152.23428
+      ],
+      [
+       -27.73433,
+       152.23416
+      ],
+      [
+       -27.73345,
+       152.23386
+      ],
+      [
+       -27.73327,
+       152.23379
+      ],
+      [
+       -27.73317,
+       152.23373
+      ],
+      [
+       -27.7331,
+       152.23367
+      ],
+      [
+       -27.73298,
+       152.23354
+      ],
+      [
+       -27.7329,
+       152.23342
+      ],
+      [
+       -27.73288,
+       152.23337
+      ],
+      [
+       -27.73277,
+       152.23318
+      ],
+      [
+       -27.73264,
+       152.23292
+      ],
+      [
+       -27.73247,
+       152.23256
+      ],
+      [
+       -27.73237,
+       152.23235
+      ],
+      [
+       -27.73226,
+       152.23213
+      ],
+      [
+       -27.73202,
+       152.23171
+      ],
+      [
+       -27.73191,
+       152.23153
+      ],
+      [
+       -27.73179,
+       152.23138
+      ],
+      [
+       -27.73168,
+       152.23129
+      ],
+      [
+       -27.73159,
+       152.23124
+      ],
+      [
+       -27.73144,
+       152.23115
+      ],
+      [
+       -27.73113,
+       152.23097
+      ],
+      [
+       -27.73073,
+       152.23076
+      ],
+      [
+       -27.73047,
+       152.2306
+      ],
+      [
+       -27.73018,
+       152.23044
+      ],
+      [
+       -27.73001,
+       152.23031
+      ],
+      [
+       -27.72991,
+       152.23023
+      ],
+      [
+       -27.72984,
+       152.23015
+      ],
+      [
+       -27.7298,
+       152.2301
+      ],
+      [
+       -27.72955,
+       152.22975
+      ],
+      [
+       -27.72931,
+       152.22937
+      ],
+      [
+       -27.72881,
+       152.22856
+      ]
+     ],
+     [
+      [
+       -27.72883,
+       152.22859
+      ],
+      [
+       -27.72861,
+       152.22824
+      ],
+      [
+       -27.72852,
+       152.22803
+      ],
+      [
+       -27.72849,
+       152.22796
+      ],
+      [
+       -27.72839,
+       152.22765
+      ],
+      [
+       -27.72824,
+       152.22714
+      ],
+      [
+       -27.72812,
+       152.22688
+      ],
+      [
+       -27.7281,
+       152.22683
+      ],
+      [
+       -27.72803,
+       152.22675
+      ],
+      [
+       -27.72796,
+       152.2267
+      ],
+      [
+       -27.72795,
+       152.22669
+      ],
+      [
+       -27.72789,
+       152.22665
+      ],
+      [
+       -27.72777,
+       152.22658
+      ],
+      [
+       -27.72762,
+       152.22654
+      ],
+      [
+       -27.72753,
+       152.22653
+      ],
+      [
+       -27.72729,
+       152.22654
+      ],
+      [
+       -27.72716,
+       152.22655
+      ],
+      [
+       -27.72702,
+       152.22654
+      ],
+      [
+       -27.72686,
+       152.22652
+      ],
+      [
+       -27.72677,
+       152.2265
+      ],
+      [
+       -27.72675,
+       152.22649
+      ]
+     ],
+     [
+      [
+       -27.72399,
+       152.22452
+      ],
+      [
+       -27.72463,
+       152.22478
+      ],
+      [
+       -27.72488,
+       152.22487
+      ],
+      [
+       -27.72506,
+       152.22496
+      ],
+      [
+       -27.72524,
+       152.22507
+      ],
+      [
+       -27.72568,
+       152.22549
+      ],
+      [
+       -27.72619,
+       152.22603
+      ],
+      [
+       -27.72642,
+       152.22626
+      ],
+      [
+       -27.72645,
+       152.22629
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836451,
+   "road": "Leyburn Cunningham Road",
+   "description": "At Thanes Creek",
+   "locality": "Old Talgai",
+   "lga": "Southern Downs Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": "Caution - water over road",
+   "status": "Published",
+   "start": "2026-10-23T10:23:00+10:00",
+   "last_updated": "2026-10-24T19:32:37+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:32 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836451",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -28.01223,
+    151.69468
+   ],
+   "geometry": {
+    "points": [
+     [
+      -28.01223,
+      151.69468
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836611,
+   "road": "Litfins Road",
+   "description": "Road damaged",
+   "locality": "Mount Sylvia",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Hazard",
+   "event_subtype": "Road damage",
+   "due_to": "Earlier flash flooding",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Observe signage",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T18:57:00+10:00",
+   "last_updated": "2026-10-24T06:28:05+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 06:28 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836611",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.7628,
+    152.20787
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.7628,
+      152.20787
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836345,
+   "road": "Mount Berryman Road",
+   "description": "Water over road - Various Locations - Observe signage",
+   "locality": "Blenheim / Mount Berryman",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Observe signage",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T06:17:00+10:00",
+   "last_updated": "2026-10-24T10:44:02+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:44 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836345",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.70832,
+    152.32852
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.71846,
+      152.32875
+     ]
+    ],
+    "lines": [
+     [
+      [
+       -27.6715,
+       152.3254
+      ],
+      [
+       -27.70832,
+       152.32852
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836176,
+   "road": "Mount Sylvia Road",
+   "description": "Various locations between Upper Tenthill School Road and Zampechs Road",
+   "locality": "Caffey / Upper Tenthill",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": "Water over road - proceed with caution.",
+   "status": "Published",
+   "start": "2026-10-22T14:23:00+10:00",
+   "last_updated": "2026-10-24T19:32:36+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:32 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836176",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.68136,
+    152.2177
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.65598,
+       152.22077
+      ],
+      [
+       -27.65642,
+       152.22089
+      ],
+      [
+       -27.65676,
+       152.22096
+      ],
+      [
+       -27.65772,
+       152.22112
+      ],
+      [
+       -27.6604,
+       152.22151
+      ],
+      [
+       -27.66048,
+       152.22153
+      ],
+      [
+       -27.66065,
+       152.22155
+      ],
+      [
+       -27.66169,
+       152.2217
+      ],
+      [
+       -27.66296,
+       152.22189
+      ],
+      [
+       -27.6632,
+       152.22193
+      ],
+      [
+       -27.66462,
+       152.22214
+      ],
+      [
+       -27.66498,
+       152.22219
+      ],
+      [
+       -27.66516,
+       152.22222
+      ],
+      [
+       -27.66534,
+       152.22225
+      ],
+      [
+       -27.66551,
+       152.22228
+      ],
+      [
+       -27.66569,
+       152.2223
+      ],
+      [
+       -27.66658,
+       152.22244
+      ],
+      [
+       -27.66676,
+       152.22246
+      ],
+      [
+       -27.66687,
+       152.22248
+      ],
+      [
+       -27.66712,
+       152.2225
+      ],
+      [
+       -27.6673,
+       152.22251
+      ],
+      [
+       -27.66733,
+       152.22251
+      ],
+      [
+       -27.66747,
+       152.2225
+      ],
+      [
+       -27.66758,
+       152.2225
+      ],
+      [
+       -27.66788,
+       152.22245
+      ],
+      [
+       -27.66819,
+       152.22239
+      ],
+      [
+       -27.66837,
+       152.22236
+      ],
+      [
+       -27.66953,
+       152.22207
+      ],
+      [
+       -27.67061,
+       152.22183
+      ],
+      [
+       -27.67175,
+       152.22156
+      ],
+      [
+       -27.67253,
+       152.22139
+      ],
+      [
+       -27.67264,
+       152.22136
+      ],
+      [
+       -27.67285,
+       152.22132
+      ],
+      [
+       -27.67325,
+       152.22122
+      ],
+      [
+       -27.67366,
+       152.2211
+      ],
+      [
+       -27.67388,
+       152.22103
+      ],
+      [
+       -27.674,
+       152.22097
+      ],
+      [
+       -27.67415,
+       152.2209
+      ],
+      [
+       -27.67432,
+       152.2208
+      ],
+      [
+       -27.67469,
+       152.22057
+      ],
+      [
+       -27.675,
+       152.22039
+      ],
+      [
+       -27.67509,
+       152.22033
+      ],
+      [
+       -27.67525,
+       152.22026
+      ],
+      [
+       -27.67557,
+       152.22014
+      ],
+      [
+       -27.67576,
+       152.22008
+      ],
+      [
+       -27.67611,
+       152.22
+      ],
+      [
+       -27.67613,
+       152.21999
+      ],
+      [
+       -27.67659,
+       152.21993
+      ],
+      [
+       -27.67685,
+       152.21988
+      ],
+      [
+       -27.67713,
+       152.21982
+      ],
+      [
+       -27.67756,
+       152.21975
+      ],
+      [
+       -27.67762,
+       152.21974
+      ],
+      [
+       -27.67773,
+       152.21972
+      ],
+      [
+       -27.67813,
+       152.21965
+      ],
+      [
+       -27.67845,
+       152.21959
+      ],
+      [
+       -27.67856,
+       152.21957
+      ],
+      [
+       -27.67876,
+       152.21954
+      ],
+      [
+       -27.67898,
+       152.21947
+      ],
+      [
+       -27.67915,
+       152.21942
+      ],
+      [
+       -27.67932,
+       152.21933
+      ],
+      [
+       -27.67949,
+       152.21924
+      ],
+      [
+       -27.67958,
+       152.21919
+      ],
+      [
+       -27.67983,
+       152.219
+      ],
+      [
+       -27.68017,
+       152.21873
+      ],
+      [
+       -27.68136,
+       152.2177
+      ],
+      [
+       -27.68198,
+       152.21717
+      ],
+      [
+       -27.68262,
+       152.21663
+      ],
+      [
+       -27.68292,
+       152.21637
+      ],
+      [
+       -27.68323,
+       152.21612
+      ],
+      [
+       -27.68327,
+       152.21609
+      ],
+      [
+       -27.68339,
+       152.21601
+      ],
+      [
+       -27.68346,
+       152.21597
+      ],
+      [
+       -27.68354,
+       152.21592
+      ],
+      [
+       -27.68359,
+       152.21589
+      ],
+      [
+       -27.68377,
+       152.21581
+      ],
+      [
+       -27.68389,
+       152.21576
+      ],
+      [
+       -27.68403,
+       152.21573
+      ],
+      [
+       -27.68421,
+       152.2157
+      ],
+      [
+       -27.68447,
+       152.2157
+      ],
+      [
+       -27.68466,
+       152.21572
+      ],
+      [
+       -27.68477,
+       152.21574
+      ],
+      [
+       -27.68486,
+       152.21576
+      ],
+      [
+       -27.68495,
+       152.21578
+      ],
+      [
+       -27.68503,
+       152.2158
+      ],
+      [
+       -27.68549,
+       152.21593
+      ],
+      [
+       -27.68602,
+       152.21609
+      ],
+      [
+       -27.6865,
+       152.21623
+      ],
+      [
+       -27.68684,
+       152.2163
+      ],
+      [
+       -27.68705,
+       152.21633
+      ],
+      [
+       -27.68706,
+       152.21633
+      ],
+      [
+       -27.68723,
+       152.21633
+      ],
+      [
+       -27.68747,
+       152.21634
+      ],
+      [
+       -27.68796,
+       152.21631
+      ],
+      [
+       -27.6883,
+       152.21629
+      ],
+      [
+       -27.68871,
+       152.21628
+      ],
+      [
+       -27.68907,
+       152.21626
+      ],
+      [
+       -27.68952,
+       152.21623
+      ],
+      [
+       -27.68988,
+       152.21618
+      ],
+      [
+       -27.69003,
+       152.21614
+      ],
+      [
+       -27.69016,
+       152.2161
+      ],
+      [
+       -27.6903,
+       152.21603
+      ],
+      [
+       -27.69046,
+       152.21593
+      ],
+      [
+       -27.69056,
+       152.21587
+      ],
+      [
+       -27.69059,
+       152.21585
+      ],
+      [
+       -27.69067,
+       152.21578
+      ],
+      [
+       -27.69073,
+       152.21572
+      ],
+      [
+       -27.69085,
+       152.2156
+      ],
+      [
+       -27.69086,
+       152.21559
+      ],
+      [
+       -27.69108,
+       152.21536
+      ],
+      [
+       -27.69135,
+       152.21514
+      ],
+      [
+       -27.69159,
+       152.21494
+      ],
+      [
+       -27.69172,
+       152.21485
+      ],
+      [
+       -27.69218,
+       152.2147
+      ],
+      [
+       -27.69252,
+       152.2146
+      ],
+      [
+       -27.69276,
+       152.21452
+      ],
+      [
+       -27.69293,
+       152.21447
+      ],
+      [
+       -27.69299,
+       152.21445
+      ],
+      [
+       -27.6931,
+       152.21442
+      ],
+      [
+       -27.69328,
+       152.21437
+      ],
+      [
+       -27.69335,
+       152.21434
+      ],
+      [
+       -27.69345,
+       152.21432
+      ],
+      [
+       -27.69357,
+       152.2143
+      ],
+      [
+       -27.69371,
+       152.21428
+      ],
+      [
+       -27.69386,
+       152.21428
+      ],
+      [
+       -27.69408,
+       152.21431
+      ],
+      [
+       -27.69416,
+       152.21434
+      ],
+      [
+       -27.69422,
+       152.21436
+      ],
+      [
+       -27.69433,
+       152.21441
+      ],
+      [
+       -27.69434,
+       152.21441
+      ],
+      [
+       -27.69445,
+       152.21448
+      ],
+      [
+       -27.69463,
+       152.21461
+      ],
+      [
+       -27.69464,
+       152.21462
+      ],
+      [
+       -27.69479,
+       152.21473
+      ],
+      [
+       -27.69481,
+       152.21474
+      ],
+      [
+       -27.69521,
+       152.21507
+      ],
+      [
+       -27.69548,
+       152.21531
+      ],
+      [
+       -27.69562,
+       152.21547
+      ],
+      [
+       -27.69569,
+       152.21557
+      ],
+      [
+       -27.69578,
+       152.21571
+      ],
+      [
+       -27.69584,
+       152.21582
+      ],
+      [
+       -27.69589,
+       152.21592
+      ],
+      [
+       -27.69592,
+       152.216
+      ],
+      [
+       -27.69596,
+       152.21608
+      ],
+      [
+       -27.69603,
+       152.21643
+      ],
+      [
+       -27.69613,
+       152.21708
+      ],
+      [
+       -27.69624,
+       152.21782
+      ],
+      [
+       -27.6963,
+       152.21823
+      ],
+      [
+       -27.69638,
+       152.21877
+      ],
+      [
+       -27.69643,
+       152.2191
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836769,
+   "road": "Warrego Highway",
+   "description": "Gowrie Creek",
+   "locality": "Oakey",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T15:00:00+10:00",
+   "last_updated": "2026-10-24T18:59:59+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 06:59 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836769",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.48097,
+    151.76456
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.48097,
+      151.76456
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836416,
+   "road": "Mutdapilly Churchbank Weir Road / Peak Crossing Churchbank Weir Road",
+   "description": null,
+   "locality": "Mutdapilly / Peak Crossing",
+   "lga": "Scenic Rim Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T09:04:00+10:00",
+   "last_updated": "2026-10-23T09:16:03+10:00",
+   "last_updated_text": "Fri 23 Oct 2026 09:16 AM AEST",
+   "provided_by": "Scenic Rim Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836416",
+   "region": "ipswich",
+   "region_name": "Ipswich",
+   "marker": [
+    -27.77063,
+    152.68456
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.77063,
+      152.68456
+     ],
+     [
+      -27.77149,
+      152.683
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 835984,
+   "road": "Goldleaf Court / Nevis Road",
+   "description": "Water Over Road - Fischer Road - Between Aulds Road and Scotts Road",
+   "locality": "Ripley",
+   "lga": "Ipswich City",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-22T08:00:00+10:00",
+   "last_updated": "2026-10-23T13:52:02+10:00",
+   "last_updated_text": "Fri 23 Oct 2026 01:52 PM AEST",
+   "provided_by": "Ipswich City Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835984",
+   "region": "ipswich",
+   "region_name": "Ipswich",
+   "marker": [
+    -27.6708,
+    152.78942
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.67009,
+       152.78952
+      ],
+      [
+       -27.6708,
+       152.78942
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836553,
+   "road": "Rosewood Warrill View Road",
+   "description": "Rosewood Warrill view Rd south of Bremer River Bridge",
+   "locality": "Ebenezer",
+   "lga": "Ipswich City",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": null,
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T15:38:00+10:00",
+   "last_updated": "2026-10-24T20:38:57+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 08:38 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836553",
+   "region": "ipswich",
+   "region_name": "Ipswich",
+   "marker": [
+    -27.66445,
+    152.59122
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.66445,
+      152.59122
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 811011,
+   "road": "Warrill View Peak Crossing Road",
+   "description": "Near Munbilla Road",
+   "locality": "Harrisville",
+   "lga": "Scenic Rim Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": null,
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-06-25T08:47:00+10:00",
+   "last_updated": "2026-10-24T19:33:45+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 07:33 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/811011",
+   "region": "ipswich",
+   "region_name": "Ipswich",
+   "marker": [
+    -27.81398,
+    152.68543
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.81401,
+       152.68564
+      ],
+      [
+       -27.81398,
+       152.68543
+      ],
+      [
+       -27.81394,
+       152.68523
+      ],
+      [
+       -27.81392,
+       152.68509
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 835868,
+   "road": "Boscombe Road",
+   "description": "between Brookfield Rd and Rafting Ground Rd",
+   "locality": "Brookfield",
+   "lga": "Brisbane City",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes blocked",
+   "impact_type": "Lanes blocked",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-22T02:22:00+10:00",
+   "last_updated": "2026-10-24T20:38:33+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 08:38 PM AEST",
+   "provided_by": "Brisbane City Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835868",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.4958,
+    152.91358
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.49383,
+       152.91399
+      ],
+      [
+       -27.49422,
+       152.91391
+      ],
+      [
+       -27.49458,
+       152.91382
+      ],
+      [
+       -27.49474,
+       152.91379
+      ],
+      [
+       -27.49489,
+       152.91374
+      ],
+      [
+       -27.49508,
+       152.9137
+      ],
+      [
+       -27.49515,
+       152.91368
+      ],
+      [
+       -27.49529,
+       152.91366
+      ],
+      [
+       -27.49567,
+       152.9136
+      ],
+      [
+       -27.49568,
+       152.9136
+      ],
+      [
+       -27.4958,
+       152.91358
+      ],
+      [
+       -27.49627,
+       152.9135
+      ],
+      [
+       -27.49634,
+       152.91348
+      ],
+      [
+       -27.49669,
+       152.91342
+      ],
+      [
+       -27.49687,
+       152.91339
+      ],
+      [
+       -27.49723,
+       152.91333
+      ],
+      [
+       -27.49734,
+       152.91331
+      ],
+      [
+       -27.4974,
+       152.91329
+      ],
+      [
+       -27.49762,
+       152.91321
+      ],
+      [
+       -27.4977,
+       152.91317
+      ],
+      [
+       -27.49777,
+       152.91313
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 835912,
+   "road": "Chermside Road",
+   "description": "between John Street and Kinsellas Road West",
+   "locality": "Mango Hill",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T05:00:00+10:00",
+   "last_updated": "2026-10-24T16:50:01+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 04:50 PM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835912",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.21834,
+    153.03025
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.21834,
+      153.03025
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836049,
+   "road": "Creek Road",
+   "description": "near Eastern Service Rd",
+   "locality": "Burpengary East",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T19:00:00+10:00",
+   "last_updated": "2026-10-24T05:15:02+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 05:15 AM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836049",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.17159,
+    152.98449
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.17159,
+      152.98449
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836180,
+   "road": "Curtis Road",
+   "description": null,
+   "locality": "Cedar Creek",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T05:10:00+10:00",
+   "last_updated": "2026-10-24T16:45:03+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 04:45 PM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836180",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.33597,
+    152.8284
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.33597,
+      152.8284
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 717127,
+   "road": "Dugandan Road",
+   "description": "Flood Damage at Bunya Crossing Reserve car park",
+   "locality": "Bunya",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T05:35:00+10:00",
+   "last_updated": "2026-10-24T16:45:02+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 04:45 PM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/717127",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.35492,
+    152.94808
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.35492,
+      152.94808
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836808,
+   "road": "Gap Creek Road",
+   "description": "Between Kookaburra St and Highwood Rd",
+   "locality": "Kenmore Hills / Mount Coot-Tha",
+   "lga": "Brisbane City",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T18:10:00+10:00",
+   "last_updated": "2026-10-24T20:32:16+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 08:32 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836808",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.47713,
+    152.9264
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.49336,
+       152.92637
+      ],
+      [
+       -27.49335,
+       152.92637
+      ],
+      [
+       -27.49332,
+       152.92635
+      ],
+      [
+       -27.49317,
+       152.92624
+      ],
+      [
+       -27.49309,
+       152.92617
+      ],
+      [
+       -27.49304,
+       152.92611
+      ],
+      [
+       -27.493,
+       152.92606
+      ],
+      [
+       -27.49296,
+       152.92602
+      ],
+      [
+       -27.49284,
+       152.92584
+      ],
+      [
+       -27.49269,
+       152.92563
+      ],
+      [
+       -27.49262,
+       152.92552
+      ],
+      [
+       -27.49254,
+       152.92542
+      ],
+      [
+       -27.49247,
+       152.92533
+      ],
+      [
+       -27.49239,
+       152.92523
+      ],
+      [
+       -27.49228,
+       152.92513
+      ],
+      [
+       -27.49175,
+       152.9247
+      ],
+      [
+       -27.49154,
+       152.92453
+      ],
+      [
+       -27.49139,
+       152.9244
+      ],
+      [
+       -27.49133,
+       152.92437
+      ],
+      [
+       -27.49126,
+       152.92433
+      ],
+      [
+       -27.49121,
+       152.92432
+      ],
+      [
+       -27.49115,
+       152.92433
+      ],
+      [
+       -27.49111,
+       152.92434
+      ],
+      [
+       -27.49106,
+       152.92437
+      ],
+      [
+       -27.491,
+       152.92443
+      ],
+      [
+       -27.49091,
+       152.92453
+      ],
+      [
+       -27.4908,
+       152.92469
+      ],
+      [
+       -27.49067,
+       152.92483
+      ],
+      [
+       -27.49057,
+       152.92492
+      ],
+      [
+       -27.49047,
+       152.925
+      ],
+      [
+       -27.49004,
+       152.92531
+      ],
+      [
+       -27.48968,
+       152.92555
+      ],
+      [
+       -27.48933,
+       152.92576
+      ],
+      [
+       -27.48889,
+       152.92597
+      ],
+      [
+       -27.48834,
+       152.92624
+      ],
+      [
+       -27.48827,
+       152.92627
+      ],
+      [
+       -27.48822,
+       152.92629
+      ],
+      [
+       -27.48815,
+       152.92631
+      ],
+      [
+       -27.48807,
+       152.92632
+      ],
+      [
+       -27.48799,
+       152.92633
+      ],
+      [
+       -27.48788,
+       152.92632
+      ],
+      [
+       -27.48771,
+       152.92631
+      ],
+      [
+       -27.48756,
+       152.92629
+      ],
+      [
+       -27.48697,
+       152.92626
+      ],
+      [
+       -27.48687,
+       152.92624
+      ],
+      [
+       -27.4867,
+       152.92625
+      ],
+      [
+       -27.48659,
+       152.92626
+      ],
+      [
+       -27.48654,
+       152.92627
+      ],
+      [
+       -27.48648,
+       152.92629
+      ],
+      [
+       -27.48643,
+       152.92631
+      ],
+      [
+       -27.48638,
+       152.92634
+      ],
+      [
+       -27.48611,
+       152.92654
+      ],
+      [
+       -27.48592,
+       152.92672
+      ],
+      [
+       -27.48577,
+       152.92685
+      ],
+      [
+       -27.48572,
+       152.92687
+      ],
+      [
+       -27.48561,
+       152.92692
+      ],
+      [
+       -27.4855,
+       152.92694
+      ],
+      [
+       -27.48537,
+       152.92697
+      ],
+      [
+       -27.48494,
+       152.92701
+      ],
+      [
+       -27.48467,
+       152.92706
+      ],
+      [
+       -27.48449,
+       152.92712
+      ],
+      [
+       -27.48413,
+       152.9273
+      ],
+      [
+       -27.4839,
+       152.9274
+      ],
+      [
+       -27.48361,
+       152.92752
+      ],
+      [
+       -27.48346,
+       152.92759
+      ],
+      [
+       -27.48338,
+       152.92761
+      ],
+      [
+       -27.48334,
+       152.92762
+      ],
+      [
+       -27.48324,
+       152.92764
+      ],
+      [
+       -27.4832,
+       152.92764
+      ],
+      [
+       -27.48276,
+       152.92765
+      ],
+      [
+       -27.4826,
+       152.92766
+      ],
+      [
+       -27.48253,
+       152.92765
+      ],
+      [
+       -27.48243,
+       152.9276
+      ],
+      [
+       -27.48236,
+       152.92755
+      ],
+      [
+       -27.48231,
+       152.92748
+      ],
+      [
+       -27.48222,
+       152.92733
+      ],
+      [
+       -27.48217,
+       152.92728
+      ],
+      [
+       -27.48212,
+       152.92723
+      ],
+      [
+       -27.48207,
+       152.92719
+      ],
+      [
+       -27.482,
+       152.92717
+      ],
+      [
+       -27.48196,
+       152.92716
+      ],
+      [
+       -27.48194,
+       152.92716
+      ],
+      [
+       -27.48186,
+       152.92716
+      ],
+      [
+       -27.48175,
+       152.92719
+      ],
+      [
+       -27.48127,
+       152.92731
+      ],
+      [
+       -27.48122,
+       152.92732
+      ],
+      [
+       -27.48076,
+       152.92744
+      ],
+      [
+       -27.48058,
+       152.92751
+      ],
+      [
+       -27.47953,
+       152.92808
+      ],
+      [
+       -27.47935,
+       152.92815
+      ],
+      [
+       -27.47924,
+       152.92817
+      ],
+      [
+       -27.47917,
+       152.92817
+      ],
+      [
+       -27.47903,
+       152.92816
+      ],
+      [
+       -27.479,
+       152.92815
+      ],
+      [
+       -27.47888,
+       152.92812
+      ],
+      [
+       -27.47868,
+       152.92807
+      ],
+      [
+       -27.47856,
+       152.92803
+      ],
+      [
+       -27.47835,
+       152.92797
+      ],
+      [
+       -27.47822,
+       152.92791
+      ],
+      [
+       -27.47806,
+       152.92781
+      ],
+      [
+       -27.47785,
+       152.92764
+      ],
+      [
+       -27.47778,
+       152.92757
+      ],
+      [
+       -27.47771,
+       152.92749
+      ],
+      [
+       -27.47758,
+       152.92731
+      ],
+      [
+       -27.47755,
+       152.92724
+      ],
+      [
+       -27.47744,
+       152.92705
+      ],
+      [
+       -27.47731,
+       152.92676
+      ],
+      [
+       -27.47713,
+       152.9264
+      ],
+      [
+       -27.47695,
+       152.92604
+      ],
+      [
+       -27.4767,
+       152.92563
+      ],
+      [
+       -27.47637,
+       152.92514
+      ],
+      [
+       -27.47623,
+       152.92496
+      ],
+      [
+       -27.47608,
+       152.92477
+      ],
+      [
+       -27.47591,
+       152.92457
+      ],
+      [
+       -27.47579,
+       152.92446
+      ],
+      [
+       -27.47571,
+       152.9244
+      ],
+      [
+       -27.47563,
+       152.92435
+      ],
+      [
+       -27.47554,
+       152.92432
+      ],
+      [
+       -27.47545,
+       152.9243
+      ],
+      [
+       -27.47537,
+       152.9243
+      ],
+      [
+       -27.47526,
+       152.92431
+      ],
+      [
+       -27.47498,
+       152.92444
+      ],
+      [
+       -27.47483,
+       152.92451
+      ],
+      [
+       -27.47469,
+       152.92455
+      ],
+      [
+       -27.47446,
+       152.9246
+      ],
+      [
+       -27.47405,
+       152.92468
+      ],
+      [
+       -27.47382,
+       152.92473
+      ],
+      [
+       -27.47372,
+       152.92475
+      ],
+      [
+       -27.47329,
+       152.92494
+      ],
+      [
+       -27.47307,
+       152.92504
+      ],
+      [
+       -27.47294,
+       152.92511
+      ],
+      [
+       -27.4727,
+       152.92526
+      ],
+      [
+       -27.47247,
+       152.9254
+      ],
+      [
+       -27.47237,
+       152.92547
+      ],
+      [
+       -27.47227,
+       152.92555
+      ],
+      [
+       -27.47211,
+       152.9257
+      ],
+      [
+       -27.47204,
+       152.92577
+      ],
+      [
+       -27.47191,
+       152.92587
+      ],
+      [
+       -27.4717,
+       152.92602
+      ],
+      [
+       -27.47149,
+       152.92612
+      ],
+      [
+       -27.47129,
+       152.92621
+      ],
+      [
+       -27.47114,
+       152.92625
+      ],
+      [
+       -27.47101,
+       152.92628
+      ],
+      [
+       -27.47083,
+       152.92631
+      ],
+      [
+       -27.47053,
+       152.92631
+      ],
+      [
+       -27.47025,
+       152.92631
+      ],
+      [
+       -27.47003,
+       152.92632
+      ],
+      [
+       -27.46981,
+       152.92635
+      ],
+      [
+       -27.46944,
+       152.92639
+      ],
+      [
+       -27.46929,
+       152.9264
+      ],
+      [
+       -27.46917,
+       152.92639
+      ],
+      [
+       -27.46896,
+       152.92634
+      ],
+      [
+       -27.4687,
+       152.92623
+      ],
+      [
+       -27.46842,
+       152.92617
+      ],
+      [
+       -27.46788,
+       152.92605
+      ],
+      [
+       -27.46766,
+       152.92597
+      ],
+      [
+       -27.46724,
+       152.92583
+      ],
+      [
+       -27.46693,
+       152.92572
+      ],
+      [
+       -27.46677,
+       152.92566
+      ],
+      [
+       -27.46662,
+       152.92563
+      ],
+      [
+       -27.46651,
+       152.92561
+      ],
+      [
+       -27.46618,
+       152.92562
+      ],
+      [
+       -27.46592,
+       152.92564
+      ],
+      [
+       -27.4658,
+       152.92566
+      ],
+      [
+       -27.46572,
+       152.92569
+      ],
+      [
+       -27.4656,
+       152.92574
+      ],
+      [
+       -27.4655,
+       152.92579
+      ],
+      [
+       -27.46542,
+       152.92586
+      ],
+      [
+       -27.46536,
+       152.92591
+      ],
+      [
+       -27.46532,
+       152.92595
+      ],
+      [
+       -27.46531,
+       152.92595
+      ],
+      [
+       -27.46531,
+       152.92594
+      ],
+      [
+       -27.4653,
+       152.92594
+      ],
+      [
+       -27.46529,
+       152.92593
+      ],
+      [
+       -27.46528,
+       152.92593
+      ],
+      [
+       -27.46527,
+       152.92593
+      ],
+      [
+       -27.46526,
+       152.92593
+      ],
+      [
+       -27.46525,
+       152.92593
+      ],
+      [
+       -27.46524,
+       152.92593
+      ],
+      [
+       -27.46524,
+       152.92594
+      ],
+      [
+       -27.46523,
+       152.92594
+      ],
+      [
+       -27.46522,
+       152.92595
+      ],
+      [
+       -27.46522,
+       152.92596
+      ],
+      [
+       -27.46521,
+       152.92596
+      ],
+      [
+       -27.46521,
+       152.92597
+      ],
+      [
+       -27.4652,
+       152.92597
+      ],
+      [
+       -27.4652,
+       152.92598
+      ],
+      [
+       -27.4652,
+       152.92599
+      ],
+      [
+       -27.4652,
+       152.926
+      ],
+      [
+       -27.4652,
+       152.92601
+      ],
+      [
+       -27.4652,
+       152.92602
+      ],
+      [
+       -27.4652,
+       152.92603
+      ],
+      [
+       -27.4652,
+       152.92604
+      ],
+      [
+       -27.4652,
+       152.92605
+      ],
+      [
+       -27.46521,
+       152.92605
+      ],
+      [
+       -27.46521,
+       152.92606
+      ],
+      [
+       -27.46521,
+       152.92607
+      ],
+      [
+       -27.46522,
+       152.92607
+      ],
+      [
+       -27.46522,
+       152.92608
+      ],
+      [
+       -27.46523,
+       152.92608
+      ],
+      [
+       -27.46517,
+       152.9262
+      ],
+      [
+       -27.46514,
+       152.9263
+      ],
+      [
+       -27.46511,
+       152.9264
+      ],
+      [
+       -27.46509,
+       152.92652
+      ],
+      [
+       -27.46507,
+       152.92663
+      ],
+      [
+       -27.46502,
+       152.92709
+      ],
+      [
+       -27.46499,
+       152.92733
+      ],
+      [
+       -27.46499,
+       152.92747
+      ],
+      [
+       -27.465,
+       152.92757
+      ],
+      [
+       -27.46503,
+       152.92768
+      ],
+      [
+       -27.46509,
+       152.92783
+      ],
+      [
+       -27.4652,
+       152.92805
+      ],
+      [
+       -27.4653,
+       152.92829
+      ],
+      [
+       -27.46536,
+       152.92847
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836394,
+   "road": "Gordons Road",
+   "description": "at upper crossing",
+   "locality": "Cedar Creek",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T05:15:00+10:00",
+   "last_updated": "2026-10-24T16:45:04+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 04:45 PM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836394",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.33623,
+    152.84045
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.33623,
+      152.84045
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836050,
+   "road": "Kobble Creek Road",
+   "description": "at Pringles Road",
+   "locality": "Kobble Creek",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T05:50:00+10:00",
+   "last_updated": "2026-10-24T16:25:07+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 04:25 PM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836050",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.24913,
+    152.82902
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.24913,
+      152.82902
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 835892,
+   "road": "Lancing Street",
+   "description": "At Pullen Pullen Creek",
+   "locality": "Pullenvale",
+   "lga": "Brisbane City",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-22T05:46:00+10:00",
+   "last_updated": "2026-10-24T20:37:04+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 08:37 PM AEST",
+   "provided_by": "Brisbane City Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835892",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.53689,
+    152.891
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.53689,
+      152.891
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 835889,
+   "road": "Mott Street",
+   "description": null,
+   "locality": "Strathpine",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T06:45:00+10:00",
+   "last_updated": "2026-10-24T17:05:02+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 05:05 PM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835889",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.31307,
+    152.99036
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.31307,
+      152.99036
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 835955,
+   "road": "Myuna Place",
+   "description": "at North Pine River",
+   "locality": "Petrie",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T09:55:00+10:00",
+   "last_updated": "2026-10-24T20:05:01+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 08:05 PM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835955",
+   "region": "brisbane",
+   "region_name": "Brisbane",
+   "marker": [
+    -27.26705,
+    152.95655
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.26705,
+      152.95655
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836360,
+   "road": "Cooroy Mountain Road",
+   "description": null,
+   "locality": "Cooroy Mountain",
+   "lga": "Noosa Shire",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T07:00:00+10:00",
+   "last_updated": "2026-10-23T13:42:04+10:00",
+   "last_updated_text": "Fri 23 Oct 2026 01:42 PM AEST",
+   "provided_by": "Noosa Shire Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836360",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.42221,
+    152.95956
+   ],
+   "geometry": {
+    "points": [
+     [
+      -26.42221,
+      152.95956
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836210,
+   "road": "Cove Road",
+   "description": "at Commissioners Flat",
+   "locality": "Commissioners Flat",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T05:50:00+10:00",
+   "last_updated": "2026-10-24T16:25:01+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 04:25 PM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836210",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.88012,
+    152.82831
+   ],
+   "geometry": {
+    "points": [
+     [
+      -26.88012,
+      152.82831
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836486,
+   "road": "Grahams Road",
+   "description": null,
+   "locality": "Pomona",
+   "lga": "Noosa Shire",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "Road closed to through traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T12:15:00+10:00",
+   "last_updated": "2026-10-24T10:22:01+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 10:22 AM AEST",
+   "provided_by": "Noosa Shire Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836486",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.34178,
+    152.86347
+   ],
+   "geometry": {
+    "points": [
+     [
+      -26.34178,
+      152.86347
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836431,
+   "road": "Louis Bazzo Drive",
+   "description": "Six Mile Creek",
+   "locality": "Pomona",
+   "lga": "Noosa Shire",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T09:50:00+10:00",
+   "last_updated": "2026-10-24T20:18:51+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 08:18 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836431",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.3415,
+    152.89137
+   ],
+   "geometry": {
+    "points": [
+     [
+      -26.3415,
+      152.89137
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836462,
+   "road": "Coral Fern Drive",
+   "description": "Water over road",
+   "locality": "Cooroibah",
+   "lga": "Noosa Shire",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T11:00:00+10:00",
+   "last_updated": "2026-10-24T12:38:02+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 12:38 PM AEST",
+   "provided_by": "Noosa Shire Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836462",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.36479,
+    152.97632
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -26.3648,
+       152.97673
+      ],
+      [
+       -26.36479,
+       152.97668
+      ],
+      [
+       -26.36478,
+       152.97637
+      ],
+      [
+       -26.36479,
+       152.97632
+      ],
+      [
+       -26.3648,
+       152.97612
+      ],
+      [
+       -26.36481,
+       152.97599
+      ],
+      [
+       -26.36482,
+       152.97593
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 836388,
+   "road": "Eumundi Noosa Road",
+   "description": "At Doonan Creek",
+   "locality": "Doonan",
+   "lga": "Sunshine Coast Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "Both directions",
+   "advice": "Proceed with caution",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-23T08:00:00+10:00",
+   "last_updated": "2026-10-24T20:18:52+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 08:18 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836388",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.45271,
+    153.01405
+   ],
+   "geometry": {
+    "points": [
+     [
+      -26.45271,
+      153.01405
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836729,
+   "road": "Station Street",
+   "description": "Water over road",
+   "locality": "Pomona",
+   "lga": "Noosa Shire",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-05-18T12:15:00+10:00",
+   "last_updated": "2026-10-24T12:38:04+10:00",
+   "last_updated_text": "Sat 24 Oct 2026 12:38 PM AEST",
+   "provided_by": "Noosa Shire Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836729",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.36674,
+    152.85847
+   ],
+   "geometry": {
+    "points": [
+     [
+      -26.36674,
+      152.85847
+     ]
+    ],
+    "lines": []
+   }
+  }
+ ]
+}

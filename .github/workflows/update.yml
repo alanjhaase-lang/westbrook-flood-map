@@ -26,14 +26,21 @@ jobs:
       - name: Fetch BOM bulletins and build data.json
         run: python update_data.py
 
-      - name: Commit data.json if it changed
+      # Independent of the gauge step: runs (and commits) even if BOM failed.
+      - name: Fetch QLDTraffic flood closures and cameras (closures.json, cameras.json)
+        if: ${{ !cancelled() }}
+        run: python update_roads.py
+
+      - name: Commit data files if they changed
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json stations.json flood_levels.json
+          git add data.json stations.json flood_levels.json closures.json cameras.json
           if git diff --cached --quiet; then
             echo "No changes."
           else
-            git commit -m "Update river gauge data $(TZ=Australia/Brisbane date '+%Y-%m-%d %H:%M AEST')"
+            git commit -m "Update river gauge and road data $(TZ=Australia/Brisbane date '+%Y-%m-%d %H:%M AEST')"
+            git pull --rebase || { git rebase --abort; exit 1; }
             git push
           fi
