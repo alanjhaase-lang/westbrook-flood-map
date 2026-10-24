@@ -112,9 +112,9 @@ republish, and BOM's radar WMS (GIS2Web) is registered-user only.
   *Last updated* says whether gauges are "live from BOM" or the "GitHub snapshot", and shows the
   latest BOM observation time. BOM currently sends no CORS headers, so browsers block the direct
   read and the page falls back to `data.json` (re-fetched every 5 minutes and whenever the tab
-  becomes visible again); each gauge popup shows its BOM reading time and age. Set `LIVE_PROXY` in `index.html` to the URL
-  prefix of a CORS proxy you control (e.g. a free Cloudflare Worker; the BOM URL is appended
-  URL-encoded) to make the live read work.
+  becomes visible again); each gauge popup shows its BOM reading time and age. Set `LIVE_PROXY` in `index.html` to the base URL
+  of the shared BOM Worker (see *Live gauge relay* below; the page requests `<LIVE_PROXY>/fwo/IDQxxxxx.html`)
+  to make the live read work.
 - `.github/workflows/update.yml` – runs every 15 minutes (GitHub may delay scheduled runs; and manually), runs both scripts (the road
   step runs even if the BOM step fails) and commits the data files when they change.
 
