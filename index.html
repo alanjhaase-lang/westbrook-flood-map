@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="data:,">
+<title>River gauges near Westbrook, QLD</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+  html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  #map { position: absolute; inset: 0; }
+  .panel { background: rgba(255,255,255,.93); padding: 8px 10px; border-radius: 6px;
+           box-shadow: 0 1px 5px rgba(0,0,0,.35); font-size: 13px; line-height: 1.35; }
+  .title b { font-size: 15px; }
+  .legend i { display: inline-block; width: 14px; height: 14px; border-radius: 50%;
+              margin-right: 6px; vertical-align: -2px; border: 1px solid #333; }
+  .gauge { width: 24px; height: 24px; border-radius: 50%; border: 2px solid #222;
+           display: flex; align-items: center; justify-content: center;
+           font: bold 15px/1 system-ui, sans-serif; color: #111; box-shadow: 0 1px 3px rgba(0,0,0,.5); }
+  .gauge.stale { opacity: .55; border-style: dashed; }
+  .home { font-size: 26px; line-height: 1; text-shadow: 0 0 3px #fff; }
+  .popup table { border-collapse: collapse; font-size: 12.5px; }
+  .popup td { padding: 1px 6px 1px 0; vertical-align: top; }
+  .popup td:first-child { color: #555; white-space: nowrap; }
+  .warn { color: #a15c00; }
+  #err { color: #b00; }
+  @media (max-width: 600px) { .panel { font-size: 12px; } .title b { font-size: 13px; } }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+const COLORS = {
+  "below flood level": "#2ecc40",
+  "minor": "#ffdc00",
+  "moderate": "#ff851b",
+  "major": "#e3261c",
+  "none": "#9e9e9e"
+};
+const LABELS = [["below flood level","Below Flood Level"],["minor","Minor"],
+                ["moderate","Moderate"],["major","Major"],["none","None / unknown"]];
+const ARROWS = { rising: "\u2191", falling: "\u2193", steady: "\u2013" };
+
+function classKey(fc) {
+  const k = (fc || "").trim().toLowerCase();
+  if (k.startsWith("below")) return "below flood level";
+  if (k.startsWith("minor")) return "minor";
+  if (k.startsWith("moderate")) return "moderate";
+  if (k.startsWith("major")) return "major";
+  return "none";
+}
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+
+const map = L.map("map", { zoomControl: true }).setView([-27.60, 151.87], 9);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 18,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Data: <a href="https://www.bom.gov.au/qld/flood/rain_river.shtml">Bureau of Meteorology</a>'
+}).addTo(map);
+
+const gaugeLayer = L.layerGroup().addTo(map);
+let homeLayer = null, fitted = false;
+
+const info = L.control({ position: "topright" });
+info.onAdd = () => {
+  const d = L.DomUtil.create("div", "panel title");
+  d.innerHTML = '<b>River gauges within 50 km of Westbrook</b><div id="upd">Loading\u2026</div><div id="err"></div>';
+  L.DomEvent.disableClickPropagation(d);
+  return d;
+};
+info.addTo(map);
+
+const legend = L.control({ position: "bottomright" });
+legend.onAdd = () => {
+  const d = L.DomUtil.create("div", "panel legend");
+  d.innerHTML = "<b id='lgt' style='cursor:pointer'>Legend ▾</b><div id='lgb'><b>Flood class</b><br>" +
+    LABELS.map(([k, t]) => `<i style="background:${COLORS[k]}"></i>${t}`).join("<br>") +
+    "<br><b>Tendency</b><br>\u2191 rising &nbsp; \u2193 falling &nbsp; \u2013 steady &nbsp; ? unknown" +
+    "<br><span style='opacity:.7'>Dashed = no current reading</span>" +
+    "<br>\u{1F3E0} Westbrook &middot; circle = 50 km</div>";
+  L.DomEvent.disableClickPropagation(d);
+  const body = d.querySelector("#lgb");
+  if (window.innerWidth < 600) body.style.display = "none";
+  d.querySelector("#lgt").onclick = () => { body.style.display = body.style.display === "none" ? "" : "none"; };
+  return d;
+};
+legend.addTo(map);
+
+function popupHtml(s) {
+  const geo = s.geocoded ? '<span class="warn">approximate (geocoded from name)</span>' : esc(s.coord_source);
+  const rows = [
+    ["Station", esc(s.name)],
+    ["BOM station no.", esc(s.station_no)],
+    ["Height", s.height_m == null ? "\u2014" : `${s.height_m.toFixed(2)} m ${esc(s.datum)}`],
+    ["Time", esc(s.time) || "\u2014"],
+    ["Tendency", esc(s.tendency) || "\u2014"],
+    ["Flood class", esc(s.flood_class) || "\u2014"],
+    ["Crossing", esc(s.crossing) || "\u2014"],
+    ["Station type", esc(s.station_type)],
+    ["Distance", `${s.distance_km} km from Westbrook`],
+    ["Location", `${s.lat.toFixed(4)}, ${s.lon.toFixed(4)} (${geo})`],
+    ["Bulletin", `<a href="https://www.bom.gov.au/fwo/${esc(s.bulletin)}.html" target="_blank" rel="noopener">${esc(s.bulletin)}</a>`]
+  ];
+  return `<div class="popup"><table>${rows.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join("")}</table>
+    <p style="margin:6px 0 0"><a href="${esc(s.plot_url)}" target="_blank" rel="noopener"><b>BOM plot \u2192</b></a>
+    ${s.table_url ? ` | <a href="${esc(s.table_url)}" target="_blank" rel="noopener">table</a>` : ""}</p></div>`;
+}
+
+function render(data) {
+  gaugeLayer.clearLayers();
+  if (!homeLayer) {
+    const h = data.home;
+    homeLayer = L.layerGroup([
+      L.circle([h.lat, h.lon], { radius: data.radius_km * 1000, color: "#1565c0", weight: 2,
+                                  fill: true, fillOpacity: 0.04, dashArray: "6 6", interactive: false }),
+      L.marker([h.lat, h.lon], { icon: L.divIcon({ className: "", html: '<div class="home">\u{1F3E0}</div>',
+                                                  iconSize: [28, 28], iconAnchor: [14, 14] }), zIndexOffset: 1000 })
+        .bindPopup(`<b>${esc(h.name)}</b><br>${h.lat}, ${h.lon}<br>Radius: ${data.radius_km} km`)
+    ]).addTo(map);
+  }
+  for (const s of data.stations) {
+    const key = classKey(s.flood_class);
+    const arrow = ARROWS[(s.tendency || "").toLowerCase()] || "?";
+    const stale = s.height_m == null ? " stale" : "";
+    const icon = L.divIcon({ className: "", iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -12],
+      html: `<div class="gauge${stale}" style="background:${COLORS[key]}">${arrow}</div>` });
+    L.marker([s.lat, s.lon], { icon, title: s.name, zIndexOffset: key === "none" ? 0 : 500 })
+      .bindPopup(popupHtml(s), { maxWidth: 320 })
+      .addTo(gaugeLayer);
+  }
+  const bl = (data.bulletins || []).map(b => b.id).join(", ");
+  document.getElementById("upd").innerHTML =
+    `Last updated: ${esc(data.generated_at_text || data.generated_at)}<br>${data.count} gauges &middot; bulletins ${esc(bl)}`;
+  document.getElementById("err").textContent = "";
+  if (!fitted) { map.fitBounds(homeLayer.getLayers()[0].getBounds(), { padding: [10, 10] }); fitted = true; }
+}
+
+async function load() {
+  try {
+    const r = await fetch("data.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    render(await r.json());
+  } catch (e) {
+    document.getElementById("err").textContent = "Could not load data.json: " + e.message;
+  }
+}
+load();
+setInterval(load, 5 * 60 * 1000);
+</script>
+</body>
+</html>
