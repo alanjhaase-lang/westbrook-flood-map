@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-25T07:42:30+10:00",
- "generated_at_text": "Sun 25 Oct 2026 07:42 AM AEST",
+ "generated_at": "2026-10-25T09:03:07+10:00",
+ "generated_at_text": "Sun 25 Oct 2026 09:03 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-10-25T07:36:10+10:00",
+  "feed_published": "2026-10-25T08:59:17+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,9 +17,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 16,
+   "count": 17,
    "closed": 10,
-   "partial": 6
+   "partial": 7
   },
   {
    "id": "ipswich",
@@ -31,19 +31,19 @@
   {
    "id": "brisbane",
    "name": "Brisbane",
-   "count": 11,
-   "closed": 11,
+   "count": 10,
+   "closed": 10,
    "partial": 0
   },
   {
    "id": "sunshine",
    "name": "Sunshine Coast",
-   "count": 7,
-   "closed": 3,
+   "count": 8,
+   "closed": 4,
    "partial": 4
   }
  ],
- "count": 38,
+ "count": 39,
  "excluded": [
   {
    "id": 836516,
@@ -725,12 +725,12 @@
    "geometry": {
     "points": [
      [
-      -27.73364,
-      152.32892
-     ],
-     [
       -27.73871,
       152.32851
+     ],
+     [
+      -27.73364,
+      152.32892
      ]
     ],
     "lines": []
@@ -1145,36 +1145,6 @@
     "lines": [
      [
       [
-       -27.55078,
-       152.12132
-      ],
-      [
-       -27.55085,
-       152.12131
-      ],
-      [
-       -27.55095,
-       152.1213
-      ],
-      [
-       -27.55103,
-       152.12128
-      ],
-      [
-       -27.55109,
-       152.12126
-      ],
-      [
-       -27.55116,
-       152.12123
-      ],
-      [
-       -27.55117,
-       152.12122
-      ]
-     ],
-     [
-      [
        -27.54881,
        152.12208
       ],
@@ -1217,6 +1187,36 @@
       [
        -27.54854,
        152.12272
+      ]
+     ],
+     [
+      [
+       -27.55078,
+       152.12132
+      ],
+      [
+       -27.55085,
+       152.12131
+      ],
+      [
+       -27.55095,
+       152.1213
+      ],
+      [
+       -27.55103,
+       152.12128
+      ],
+      [
+       -27.55109,
+       152.12126
+      ],
+      [
+       -27.55116,
+       152.12123
+      ],
+      [
+       -27.55117,
+       152.12122
       ]
      ]
     ]
@@ -1296,92 +1296,6 @@
      ]
     ],
     "lines": [
-     [
-      [
-       -27.72883,
-       152.22859
-      ],
-      [
-       -27.72861,
-       152.22824
-      ],
-      [
-       -27.72852,
-       152.22803
-      ],
-      [
-       -27.72849,
-       152.22796
-      ],
-      [
-       -27.72839,
-       152.22765
-      ],
-      [
-       -27.72824,
-       152.22714
-      ],
-      [
-       -27.72812,
-       152.22688
-      ],
-      [
-       -27.7281,
-       152.22683
-      ],
-      [
-       -27.72803,
-       152.22675
-      ],
-      [
-       -27.72796,
-       152.2267
-      ],
-      [
-       -27.72795,
-       152.22669
-      ],
-      [
-       -27.72789,
-       152.22665
-      ],
-      [
-       -27.72777,
-       152.22658
-      ],
-      [
-       -27.72762,
-       152.22654
-      ],
-      [
-       -27.72753,
-       152.22653
-      ],
-      [
-       -27.72729,
-       152.22654
-      ],
-      [
-       -27.72716,
-       152.22655
-      ],
-      [
-       -27.72702,
-       152.22654
-      ],
-      [
-       -27.72686,
-       152.22652
-      ],
-      [
-       -27.72677,
-       152.2265
-      ],
-      [
-       -27.72675,
-       152.22649
-      ]
-     ],
      [
       [
        -27.76942,
@@ -2358,6 +2272,92 @@
      ],
      [
       [
+       -27.72883,
+       152.22859
+      ],
+      [
+       -27.72861,
+       152.22824
+      ],
+      [
+       -27.72852,
+       152.22803
+      ],
+      [
+       -27.72849,
+       152.22796
+      ],
+      [
+       -27.72839,
+       152.22765
+      ],
+      [
+       -27.72824,
+       152.22714
+      ],
+      [
+       -27.72812,
+       152.22688
+      ],
+      [
+       -27.7281,
+       152.22683
+      ],
+      [
+       -27.72803,
+       152.22675
+      ],
+      [
+       -27.72796,
+       152.2267
+      ],
+      [
+       -27.72795,
+       152.22669
+      ],
+      [
+       -27.72789,
+       152.22665
+      ],
+      [
+       -27.72777,
+       152.22658
+      ],
+      [
+       -27.72762,
+       152.22654
+      ],
+      [
+       -27.72753,
+       152.22653
+      ],
+      [
+       -27.72729,
+       152.22654
+      ],
+      [
+       -27.72716,
+       152.22655
+      ],
+      [
+       -27.72702,
+       152.22654
+      ],
+      [
+       -27.72686,
+       152.22652
+      ],
+      [
+       -27.72677,
+       152.2265
+      ],
+      [
+       -27.72675,
+       152.22649
+      ]
+     ],
+     [
+      [
        -27.72399,
        152.22452
       ],
@@ -3155,6 +3155,44 @@
    }
   },
   {
+   "id": 836874,
+   "road": "Toowoomba Cecil Plains Road",
+   "description": "Evanslea Road",
+   "locality": "Evanslea",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": null,
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-25T07:57:00+10:00",
+   "last_updated": "2026-10-25T07:58:14+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 07:58 AM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836874",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.53228,
+    151.52296
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.53228,
+      151.52296
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
    "id": 836416,
    "road": "Mutdapilly Churchbank Weir Road / Peak Crossing Churchbank Weir Road",
    "description": null,
@@ -3185,12 +3223,12 @@
    "geometry": {
     "points": [
      [
-      -27.77149,
-      152.683
-     ],
-     [
       -27.77063,
       152.68456
+     ],
+     [
+      -27.77149,
+      152.683
      ]
     ],
     "lines": []
@@ -3466,9 +3504,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T10:30:00+10:00",
-   "last_updated": "2026-10-24T21:20:03+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 09:20 PM AEST",
+   "start": "2026-10-24T19:00:00+10:00",
+   "last_updated": "2026-10-25T07:55:03+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 07:55 AM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835912",
@@ -3504,9 +3542,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T11:00:00+10:00",
-   "last_updated": "2026-10-24T21:20:01+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 09:20 PM AEST",
+   "start": "2026-10-24T19:00:00+10:00",
+   "last_updated": "2026-10-25T07:55:01+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 07:55 AM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836049",
@@ -4647,44 +4685,6 @@
    }
   },
   {
-   "id": 835955,
-   "road": "Myuna Place",
-   "description": "at North Pine River",
-   "locality": "Petrie",
-   "lga": "Moreton Bay Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-10-24T11:00:00+10:00",
-   "last_updated": "2026-10-24T21:45:07+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 09:45 PM AEST",
-   "provided_by": "City of Moreton Bay",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835955",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.26705,
-    152.95655
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.26705,
-      152.95655
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
    "id": 836360,
    "road": "Cooroy Mountain Road",
    "description": null,
@@ -4717,6 +4717,44 @@
      [
       -26.42221,
       152.95956
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 836876,
+   "road": "Cove Road",
+   "description": "at Commissioners Flat",
+   "locality": "Commissioners Flat",
+   "lga": "Moreton Bay Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-24T22:00:00+10:00",
+   "last_updated": "2026-10-25T08:05:03+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 08:05 AM AEST",
+   "provided_by": "City of Moreton Bay",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836876",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.88012,
+    152.82831
+   ],
+   "geometry": {
+    "points": [
+     [
+      -26.88012,
+      152.82831
      ]
     ],
     "lines": []
@@ -4879,8 +4917,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T08:00:00+10:00",
-   "last_updated": "2026-10-25T04:04:26+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 04:04 AM AEST",
+   "last_updated": "2026-10-25T08:22:47+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 08:22 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836388",
