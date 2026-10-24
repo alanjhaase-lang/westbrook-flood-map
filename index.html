@@ -340,7 +340,7 @@ function popupHtml(s) {
   const rows = [
     ["Station", esc(s.name)],
     ["Height", s.height_m == null ? "\u2014" : `${s.height_m.toFixed(2)} m ${esc(s.datum)}`],
-    ["Time", (esc(s.time) || "\u2014") + (s.live ? ' <span style="color:#2e7d32">(live from BOM)</span>' : "")],
+    ["Time", (esc(s.time) || "\u2014") + obsAge(s) + (s.live ? ' <span style="color:#2e7d32">(live from BOM)</span>' : ' <span style="color:#777">(GitHub snapshot)</span>')],
     ["Tendency", esc(s.tendency) || "\u2014"],
     ["Flood class", esc(s.flood_class) || (s.computed_class ? esc(s.computed_class) + ' <span style="color:#777">(from levels)</span>' : "\u2014")],
     ...floodRows(s),
@@ -764,6 +764,12 @@ function liveStatus(s, lv) {   // mirrors flood_status() in update_data.py for a
   const bk = classKey(s.flood_class);
   s.class_check = bk === "none" ? "no bulletin class" : (classKey(cur) === bk ? "agrees" : `differs (bulletin: ${s.flood_class})`);
 }
+function obsAge(s) {   // per-gauge "BOM reading N min/h ago"
+  const t = bomTimeMs(s.time); if (t == null) return "";
+  const m = Math.max(0, Math.round((Date.now() - t) / 60e3));
+  const txt = m < 60 ? `${m} min ago` : `${Math.floor(m / 60)} h ${m % 60} min ago`;
+  return ` <span style="color:${m > 180 ? "#a15c00" : "#555"}">(BOM reading ${txt})</span>`;
+}
 function liveWhy() {   // one short reason; full per-bulletin detail in the tooltip
   const why = [...new Set((live.err || "failed").split("; ").map(x => x.replace(/^[^:]+: /, "")))];
   return why.length === 1 ? why[0] : why.join(", ");
@@ -791,13 +797,19 @@ function applyLive(data) {
   } else {
     el.className = live.checked ? "off" : ""; el.title = live.err || "";
     el.textContent = live.checked
-      ? `Gauges: GitHub snapshot (BOM live read unavailable: ${liveWhy()}) \u00b7 ${obs}`
+      ? `Gauges: GitHub snapshot (GitHub Actions, scheduled every 15 min; BOM does not allow direct browser reads${liveWhy().includes("CORS") ? "" : ": " + liveWhy()}) \u00b7 ${obs}`
       : `Gauges: GitHub snapshot \u00b7 ${obs} \u00b7 checking BOM\u2026`;
   }
 }
 
 load().then(refreshLive);
 setInterval(() => { load().then(refreshLive); refreshRadar(); }, LIVE_EVERY_MS);
+// Re-fetch the snapshot when the tab comes back into view (phones pause timers in the background).
+let lastVisLoad = Date.now();
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden || Date.now() - lastVisLoad < 60e3) return;
+  lastVisLoad = Date.now(); load().then(refreshLive); refreshRadar();
+});
 </script>
 </body>
 </html>
