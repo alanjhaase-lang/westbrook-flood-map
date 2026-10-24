@@ -293,6 +293,8 @@ function floodRows(s) {
   else if (s.next_class) rows.push(["Next", `<b>${esc(s.next_class)} at ${m2(s.next_level_m)}, ${m2(s.delta_m)} to go</b>`]);
   else if (s.above_major_m != null) rows.push(["Next", `<b>None \u2014 above Major by ${m2(s.above_major_m)}</b>`]);
   rows.push(["Flood levels", `${list} <span style="color:#777">m ${esc(lv.datum)}</span>`]);
+  if (lv.source === "user")
+    rows.push(["", `<span style="color:#777">Community estimate (not official BOM)</span>`]);
   if (s.class_check && s.class_check.startsWith("differs"))
     rows.push(["", `<span class="warn">Computed ${esc(s.computed_class)}; ${esc(s.class_check)}</span>`]);
   return rows;

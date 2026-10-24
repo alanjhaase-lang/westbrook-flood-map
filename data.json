@@ -304,14 +304,22 @@
    "region_name": "Westbrook / Toowoomba",
    "distance_km": 11.6,
    "distance_from": "Westbrook",
-   "flood_levels": null,
-   "computed_class": null,
-   "next_class": null,
-   "next_level_m": null,
-   "delta_m": null,
+   "flood_levels": {
+    "minor": 0.8,
+    "moderate": 1.4,
+    "major": 2.0,
+    "datum": "LGH",
+    "source": "user",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541170.plt.shtml",
+    "note": "Community estimate for Hodgson Creek at Cambooya (Rolleston Park); not official BOM flood classification levels."
+   },
+   "computed_class": "Below Flood Level",
+   "next_class": "Minor",
+   "next_level_m": 0.8,
+   "delta_m": 0.13,
    "above_major_m": null,
-   "class_check": null,
-   "flood_levels_note": "no official flood levels published by BOM for this gauge"
+   "class_check": "no bulletin class",
+   "flood_levels_note": "Community estimate for Hodgson Creek at Cambooya (Rolleston Park); not official BOM flood classification levels."
   },
   {
    "name": "Gowrie Creek at Cranley",
@@ -469,7 +477,9 @@
     "moderate": 4.0,
     "major": 6.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540566.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540566.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -539,7 +549,9 @@
     "moderate": 6.5,
     "major": 8.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540143.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540143.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -577,7 +589,9 @@
     "moderate": 4.0,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041405.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041405.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -775,7 +789,9 @@
     "moderate": 3.0,
     "major": 4.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540386.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540386.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -845,7 +861,9 @@
     "moderate": 2.3,
     "major": 2.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041515.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041515.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -883,7 +901,9 @@
     "moderate": 5.0,
     "major": 6.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540152.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540152.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -953,7 +973,9 @@
     "moderate": 4.5,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041518.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041518.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -991,7 +1013,9 @@
     "moderate": 4.5,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041352.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041352.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -1061,7 +1085,9 @@
     "moderate": 2.0,
     "major": 3.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540568.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540568.plt.shtml",
+    "note": null
    },
    "computed_class": "Minor",
    "next_class": "Moderate",
@@ -1099,7 +1125,9 @@
     "moderate": 10.0,
     "major": 15.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540156.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540156.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1137,7 +1165,9 @@
     "moderate": 10.0,
     "major": 15.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040444.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040444.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -1175,7 +1205,9 @@
     "moderate": 5.5,
     "major": 6.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541050.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541050.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1245,7 +1277,9 @@
     "moderate": 4.0,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541048.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541048.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1283,7 +1317,9 @@
     "moderate": 4.2,
     "major": 4.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041404.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041404.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -1321,7 +1357,9 @@
     "moderate": 4.0,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540567.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540567.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -1423,7 +1461,9 @@
     "moderate": 13.43,
     "major": 14.43,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541038.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541038.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1589,7 +1629,9 @@
     "moderate": 8.0,
     "major": 9.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041499.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041499.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1723,7 +1765,9 @@
     "moderate": 5.5,
     "major": 6.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541040.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541040.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1793,7 +1837,9 @@
     "moderate": 3.0,
     "major": 3.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541047.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.541047.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1831,7 +1877,9 @@
     "moderate": 5.0,
     "major": 6.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041345.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65396/IDQ65396.041345.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -1869,7 +1917,9 @@
     "moderate": 9.0,
     "major": 11.7,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040831.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040831.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1939,7 +1989,9 @@
     "moderate": 12.0,
     "major": 14.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040836.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040836.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -1977,7 +2029,9 @@
     "moderate": 10.0,
     "major": 12.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540250.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540250.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2015,7 +2069,9 @@
     "moderate": 17.54,
     "major": 19.54,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540248.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540248.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2085,7 +2141,9 @@
     "moderate": 16.0,
     "major": 18.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040838.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040838.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2123,7 +2181,9 @@
     "moderate": 20.0,
     "major": 21.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040872.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040872.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2161,7 +2221,9 @@
     "moderate": 25.0,
     "major": 26.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040873.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040873.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2263,7 +2325,9 @@
     "moderate": 16.0,
     "major": 17.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040875.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040875.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2365,7 +2429,9 @@
     "moderate": 6.5,
     "major": 8.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540504.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540504.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2435,7 +2501,9 @@
     "moderate": 6.5,
     "major": 7.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040816.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040816.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2473,7 +2541,9 @@
     "moderate": 6.5,
     "major": 8.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540062.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540062.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2575,7 +2645,9 @@
     "moderate": 5.5,
     "major": 7.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540147.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540147.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2613,7 +2685,9 @@
     "moderate": 5.5,
     "major": 6.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540180.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540180.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2651,7 +2725,9 @@
     "moderate": 13.0,
     "major": 21.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540199.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540199.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2721,7 +2797,9 @@
     "moderate": 13.0,
     "major": 15.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040812.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040812.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -2791,7 +2869,9 @@
     "moderate": 13.0,
     "major": 15.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540201.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540201.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3053,7 +3133,9 @@
     "moderate": 7.5,
     "major": 9.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540296.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540296.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3123,7 +3205,9 @@
     "moderate": 5.0,
     "major": 6.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040874.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040874.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3193,7 +3277,9 @@
     "moderate": 5.0,
     "major": 6.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540388.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540388.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3359,7 +3445,9 @@
     "moderate": 8.25,
     "major": 9.25,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540313.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540313.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3397,7 +3485,9 @@
     "moderate": 4.4,
     "major": 4.8,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540314.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540314.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3435,7 +3525,9 @@
     "moderate": 3.5,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540065.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540065.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3473,7 +3565,9 @@
     "moderate": 2.0,
     "major": 3.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540316.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540316.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3511,7 +3605,9 @@
     "moderate": 16.0,
     "major": 21.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540150.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540150.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3549,7 +3645,9 @@
     "moderate": 7.0,
     "major": 8.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540194.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540194.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3587,7 +3685,9 @@
     "moderate": 53.87,
     "major": 54.87,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540097.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540097.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3657,7 +3757,9 @@
     "moderate": 15.9,
     "major": 21.2,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540182.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540182.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3727,7 +3829,9 @@
     "moderate": 15.0,
     "major": 20.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040441.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040441.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -3765,7 +3869,9 @@
     "moderate": 42.0,
     "major": 42.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540646.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540646.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3803,7 +3909,9 @@
     "moderate": 3.5,
     "major": 4.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540195.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540195.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -3841,7 +3949,9 @@
     "moderate": 4.0,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540387.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540387.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3879,7 +3989,9 @@
     "moderate": 14.0,
     "major": 16.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540153.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540153.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -3917,7 +4029,9 @@
     "moderate": 5.0,
     "major": 6.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040702.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040702.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -3955,7 +4069,9 @@
     "moderate": 12.0,
     "major": 13.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040817.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040817.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4025,7 +4141,9 @@
     "moderate": 11.5,
     "major": 13.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540174.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540174.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -4095,7 +4213,9 @@
     "moderate": 4.0,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540064.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540064.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4165,7 +4285,9 @@
     "moderate": 2.6,
     "major": 3.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540684.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540684.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4203,7 +4325,9 @@
     "moderate": 2.6,
     "major": 3.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540198.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540198.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4273,7 +4397,9 @@
     "moderate": 2.7,
     "major": 3.3,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540130.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540130.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4311,7 +4437,9 @@
     "moderate": 2.3,
     "major": 2.6,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540685.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540685.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4381,7 +4509,9 @@
     "moderate": 2.8,
     "major": 3.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540132.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540132.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4419,7 +4549,9 @@
     "moderate": 2.0,
     "major": 2.3,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540286.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540286.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4457,7 +4589,9 @@
     "moderate": 16.0,
     "major": 17.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540799.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540799.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4495,7 +4629,9 @@
     "moderate": 5.9,
     "major": 6.7,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540118.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540118.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4533,7 +4669,9 @@
     "moderate": 3.5,
     "major": 5.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540683.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540683.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4571,7 +4709,9 @@
     "moderate": 10.2,
     "major": 10.6,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540822.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540822.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4609,7 +4749,9 @@
     "moderate": 11.5,
     "major": 12.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540478.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540478.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4679,7 +4821,9 @@
     "moderate": 6.4,
     "major": 6.8,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540804.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540804.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4717,7 +4861,9 @@
     "moderate": 17.9,
     "major": 18.3,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540134.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540134.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4755,7 +4901,9 @@
     "moderate": 3.5,
     "major": 5.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540274.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540274.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4793,7 +4941,9 @@
     "moderate": 6.3,
     "major": 7.8,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540433.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540433.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4831,7 +4981,9 @@
     "moderate": 2.8,
     "major": 3.2,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540548.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540548.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4869,7 +5021,9 @@
     "moderate": 35.0,
     "major": 36.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540111.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540111.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4907,7 +5061,9 @@
     "moderate": 6.8,
     "major": 7.6,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540128.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540128.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4945,7 +5101,9 @@
     "moderate": 2.1,
     "major": 2.8,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540469.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540469.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -4983,7 +5141,9 @@
     "moderate": 39.4,
     "major": 39.9,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540636.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540636.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5021,7 +5181,9 @@
     "moderate": 4.5,
     "major": 6.1,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540071.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540071.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5059,7 +5221,9 @@
     "moderate": 5.0,
     "major": 7.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540432.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540432.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5097,7 +5261,9 @@
     "moderate": 2.2,
     "major": 2.7,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540468.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540468.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5135,7 +5301,9 @@
     "moderate": 77.0,
     "major": 79.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540604.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540604.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5173,7 +5341,9 @@
     "moderate": 8.2,
     "major": 9.2,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540120.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540120.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5211,7 +5381,9 @@
     "moderate": 2.2,
     "major": 2.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540129.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540129.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5249,7 +5421,9 @@
     "moderate": 77.0,
     "major": 79.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540119.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540119.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5287,7 +5461,9 @@
     "moderate": 8.0,
     "major": 10.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040713.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040713.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -5325,7 +5501,9 @@
     "moderate": 11.5,
     "major": 12.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540126.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540126.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5363,7 +5541,9 @@
     "moderate": 10.4,
     "major": 12.3,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540061.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540061.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5401,7 +5581,9 @@
     "moderate": 8.0,
     "major": 8.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040791.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040791.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5439,7 +5621,9 @@
     "moderate": 44.0,
     "major": 44.3,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540121.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540121.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5477,7 +5661,9 @@
     "moderate": 29.5,
     "major": 30.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540113.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540113.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5515,7 +5701,9 @@
     "moderate": 5.5,
     "major": 6.2,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540805.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540805.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5553,7 +5741,9 @@
     "moderate": 8.0,
     "major": 10.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540682.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540682.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5623,7 +5813,9 @@
     "moderate": 4.7,
     "major": 5.4,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540431.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540431.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5661,7 +5853,9 @@
     "moderate": 12.8,
     "major": 13.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540122.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540122.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5699,7 +5893,9 @@
     "moderate": 23.0,
     "major": 24.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540127.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540127.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5737,7 +5933,9 @@
     "moderate": 7.0,
     "major": 8.2,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040796.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040796.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5775,7 +5973,9 @@
     "moderate": 8.8,
     "major": 9.2,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040789.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040789.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5877,7 +6077,9 @@
     "moderate": 3.0,
     "major": 4.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040813.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040813.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5915,7 +6117,9 @@
     "moderate": 11.5,
     "major": 13.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540378.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540378.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -5953,7 +6157,9 @@
     "moderate": 3.2,
     "major": 3.5,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540279.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540279.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -5991,7 +6197,9 @@
     "moderate": 6.0,
     "major": 7.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540278.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540278.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6061,7 +6269,9 @@
     "moderate": 2.5,
     "major": 3.4,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540124.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540124.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6131,7 +6341,9 @@
     "moderate": 7.0,
     "major": 8.3,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540415.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540415.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6201,7 +6413,9 @@
     "moderate": 7.8,
     "major": 9.1,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540398.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540398.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6239,7 +6453,9 @@
     "moderate": 7.8,
     "major": 9.1,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540205.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540205.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6309,7 +6525,9 @@
     "moderate": 6.5,
     "major": 7.2,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540416.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540416.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6475,7 +6693,9 @@
     "moderate": 3.6,
     "major": 3.9,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540413.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540413.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6513,7 +6733,9 @@
     "moderate": 3.2,
     "major": 3.7,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540417.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540417.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6551,7 +6773,9 @@
     "moderate": 9.0,
     "major": 10.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540079.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540079.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6589,7 +6813,9 @@
     "moderate": 24.6,
     "major": 25.7,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040788.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040788.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -6723,7 +6949,9 @@
     "moderate": 4.5,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540692.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540692.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6761,7 +6989,9 @@
     "moderate": 6.0,
     "major": 7.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540091.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540091.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6799,7 +7029,9 @@
     "moderate": 10.0,
     "major": 11.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540078.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540078.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6837,7 +7069,9 @@
     "moderate": 9.5,
     "major": 11.6,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540412.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540412.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -6907,7 +7141,9 @@
     "moderate": 8.5,
     "major": 9.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540737.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540737.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -7041,7 +7277,9 @@
     "moderate": 8.0,
     "major": 8.4,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540674.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540674.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7079,7 +7317,9 @@
     "moderate": 5.0,
     "major": 6.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540675.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540675.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7117,7 +7357,9 @@
     "moderate": 7.5,
     "major": 9.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.040878.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.040878.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7251,7 +7493,9 @@
     "moderate": 4.0,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.040709.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.040709.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -7289,7 +7533,9 @@
     "moderate": 4.0,
     "major": 5.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540645.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540645.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7519,7 +7765,9 @@
     "moderate": 8.0,
     "major": 8.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540598.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540598.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7589,7 +7837,9 @@
     "moderate": 4.5,
     "major": 5.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540644.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540644.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7627,7 +7877,9 @@
     "moderate": 9.0,
     "major": 11.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540596.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540596.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7665,7 +7917,9 @@
     "moderate": 6.0,
     "major": 7.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540688.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65388/IDQ65388.540688.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7735,7 +7989,9 @@
     "moderate": 3.2,
     "major": 3.8,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540506.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540506.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7773,7 +8029,9 @@
     "moderate": 2.2,
     "major": 3.05,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540424.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540424.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7811,7 +8069,9 @@
     "moderate": 4.6,
     "major": 5.3,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540083.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540083.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7849,7 +8109,9 @@
     "moderate": 3.95,
     "major": 4.85,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540087.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540087.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7887,7 +8149,9 @@
     "moderate": 3.5,
     "major": 4.3,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540095.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540095.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7925,7 +8189,9 @@
     "moderate": 1.5,
     "major": 2.1,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540094.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540094.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -7963,7 +8229,9 @@
     "moderate": 8.55,
     "major": 9.25,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540088.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540088.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8001,7 +8269,9 @@
     "moderate": 5.05,
     "major": 5.8,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540420.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540420.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8039,7 +8309,9 @@
     "moderate": 2.15,
     "major": 2.35,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540421.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540421.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8077,7 +8349,9 @@
     "moderate": 2.95,
     "major": 3.45,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540499.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540499.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8115,7 +8389,9 @@
     "moderate": 3.5,
     "major": 4.1,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540220.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540220.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8153,7 +8429,9 @@
     "moderate": 5.35,
     "major": 5.75,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540223.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540223.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8191,7 +8469,9 @@
     "moderate": 3.25,
     "major": 3.95,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540092.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540092.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8293,7 +8573,9 @@
     "moderate": 4.4,
     "major": 5.9,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540419.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540419.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8331,7 +8613,9 @@
     "moderate": 2.35,
     "major": 2.6,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540347.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540347.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8369,7 +8653,9 @@
     "moderate": 3.45,
     "major": 5.55,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540089.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540089.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8407,7 +8693,9 @@
     "moderate": 4.5,
     "major": 4.75,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540222.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540222.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8477,7 +8765,9 @@
     "moderate": 2.15,
     "major": 2.7,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540348.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540348.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8515,7 +8805,9 @@
     "moderate": 4.6,
     "major": 4.8,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540350.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540350.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8553,7 +8845,9 @@
     "moderate": 4.15,
     "major": 4.4,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540218.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540218.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8591,7 +8885,9 @@
     "moderate": 6.5,
     "major": 7.6,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540093.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540093.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8629,7 +8925,9 @@
     "moderate": 5.76,
     "major": 6.26,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540345.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540345.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8667,7 +8965,9 @@
     "moderate": 5.3,
     "major": 5.48,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540344.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540344.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8737,7 +9037,9 @@
     "moderate": 3.0,
     "major": 3.8,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540351.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540351.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8775,7 +9077,9 @@
     "moderate": 26.5,
     "major": 27.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540346.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540346.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -8909,7 +9213,9 @@
     "moderate": 1.3,
     "major": 1.8,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540310.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540310.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -8947,7 +9253,9 @@
     "moderate": 1.95,
     "major": 2.6,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540448.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540448.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9017,7 +9325,9 @@
     "moderate": 7.0,
     "major": 9.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040755.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040755.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -9119,7 +9429,9 @@
     "moderate": 3.95,
     "major": 4.95,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540342.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540342.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9157,7 +9469,9 @@
     "moderate": 6.85,
     "major": 7.95,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540343.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540343.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9291,7 +9605,9 @@
     "moderate": 4.75,
     "major": 8.2,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540533.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540533.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9329,7 +9645,9 @@
     "moderate": 5.0,
     "major": 5.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540327.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540327.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9367,7 +9685,9 @@
     "moderate": 5.0,
     "major": 8.0,
     "datum": "AHD",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040386.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040386.plt.shtml",
+    "note": null
    },
    "computed_class": null,
    "next_class": null,
@@ -9405,7 +9725,9 @@
     "moderate": 11.2,
     "major": 15.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540331.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540331.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9443,7 +9765,9 @@
     "moderate": 1.5,
     "major": 2.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540309.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540309.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9481,7 +9805,9 @@
     "moderate": 15.0,
     "major": 19.45,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540330.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540330.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9519,7 +9845,9 @@
     "moderate": 8.0,
     "major": 9.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540059.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540059.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9557,7 +9885,9 @@
     "moderate": 3.85,
     "major": 4.85,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540536.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540536.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9595,7 +9925,9 @@
     "moderate": 8.05,
     "major": 11.1,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540332.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540332.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9697,7 +10029,9 @@
     "moderate": 4.2,
     "major": 6.3,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540620.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540620.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9735,7 +10069,9 @@
     "moderate": 2.0,
     "major": 2.5,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540308.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540308.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9773,7 +10109,9 @@
     "moderate": 8.5,
     "major": 11.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540326.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.540326.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",
@@ -9811,7 +10149,9 @@
     "moderate": 6.5,
     "major": 8.0,
     "datum": "LGH",
-    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040777.plt.shtml"
+    "source": "bom_station_plot_page",
+    "source_url": "https://www.bom.gov.au/fwo/IDQ65390/IDQ65390.040777.plt.shtml",
+    "note": null
    },
    "computed_class": "Below Flood Level",
    "next_class": "Minor",

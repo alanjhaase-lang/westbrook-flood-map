@@ -243,11 +243,14 @@ def load_flood_levels():
 
 def save_flood_levels(levels):
     payload = {
-        "note": "Official BOM flood classification levels (metres) keyed by BOM station number, "
-                "scraped from the 'Flood Classification Levels' line of each station's BOM river "
-                "height plot page (source_url). datum='AHD' when BOM prints 'm AHD', otherwise "
-                "'LGH' (local gauge height, the same gauge datum as the bulletin reading). "
-                "Levels are null where BOM publishes none. checked = date last fetched (AEST).",
+        "note": "Flood classification levels (metres) keyed by BOM station number. Most entries "
+                "are scraped from the 'Flood Classification Levels' line of each station's BOM "
+                "river height plot page (source='bom_station_plot_page', source_url). "
+                "datum='AHD' when BOM prints 'm AHD', otherwise 'LGH' (local gauge height, the "
+                "same gauge datum as the bulletin reading). Levels are null where BOM publishes "
+                "none. Entries with source='user' are community estimates set by the map "
+                "maintainer (not official BOM); the updater never overwrites them. "
+                "checked = date last fetched or set (AEST).",
         "levels": dict(sorted(levels.items())),
     }
     with open(FLOOD_LEVELS_FILE, "w") as f:
@@ -273,6 +276,9 @@ def update_flood_levels(levels, rows, new_limit=LEVELS_NEW_PER_RUN,
     urls = {}
     for r in rows:
         urls.setdefault(r["station_no"], r["plot_url"])
+    def is_user(n):
+        return (levels.get(n) or {}).get("source") == "user"
+
     new = [n for n in sorted(urls) if n not in levels][:new_limit]
     today = dt.datetime.now(ZoneInfo("Australia/Brisbane")).date()
     def age(n):
@@ -280,7 +286,9 @@ def update_flood_levels(levels, rows, new_limit=LEVELS_NEW_PER_RUN,
             return (today - dt.date.fromisoformat(levels[n].get("checked", ""))).days
         except ValueError:
             return 10 ** 6
-    old = sorted((n for n in urls if n in levels and age(n) > LEVELS_MAX_AGE_DAYS),
+    # Never re-fetch / overwrite maintainer-set community estimates.
+    old = sorted((n for n in urls if n in levels and not is_user(n)
+                  and age(n) > LEVELS_MAX_AGE_DAYS),
                  key=age, reverse=True)[:refresh_limit]
     todo = new + old
     if not todo:
@@ -296,6 +304,8 @@ def update_flood_levels(levels, rows, new_limit=LEVELS_NEW_PER_RUN,
         for n, entry in ex.map(one, todo):
             if entry is None:
                 continue
+            if (levels.get(n) or {}).get("source") == "user":
+                continue  # keep community estimates
             prev = levels.get(n)
             strip = lambda e: {k: v for k, v in (e or {}).items() if k != "checked"}
             if prev is None or strip(prev) != strip(entry):
@@ -333,7 +343,15 @@ def flood_status(row, lv):
                                     f"reading {row.get('datum') or 'unknown'}; not compared")
         return out
     out["flood_levels"] = {c: lv.get(c) for c in FLOOD_CLASSES}
-    out["flood_levels"].update(datum=lv["datum"], source_url=lv.get("source_url"))
+    out["flood_levels"].update(
+        datum=lv["datum"],
+        source=lv.get("source"),
+        source_url=lv.get("source_url"),
+        note=lv.get("note"),
+    )
+    if lv.get("source") == "user":
+        out["flood_levels_note"] = lv.get("note") or (
+            "Community estimate (not official BOM flood classification levels)")
     h = row.get("height_m")
     if h is None:
         return out
