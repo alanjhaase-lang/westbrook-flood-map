@@ -692,8 +692,11 @@ async function load() {
 // GitHub Actions (update_data.py, every 15 min) commits data.json; between runs the page also tries to read the
 // BOM river height bulletins directly and overlays any newer readings on the committed stations. If the browser
 // cannot read BOM (no CORS headers / blocked), the committed data.json is shown unchanged.
-// LIVE_PROXY: optional prefix for a CORS proxy you control (e.g. a free Cloudflare Worker), "" = direct to BOM.
-const LIVE_PROXY = "";
+// LIVE_PROXY: base URL of our locked-down Cloudflare Worker that relays BOM bulletins with CORS headers, e.g.
+// "https://qld-flood-bom-proxy.<account>.workers.dev". Source + deploy steps: the bom-proxy/ folder in
+// github.com/alanjhaase-lang/sunshine-coast-flood-map (one Worker serves both maps; it only allows
+// /fwo/IDQ60285|60286|60287|60293.html for alanjhaase-lang.github.io). "" = try BOM directly (normally blocked).
+const LIVE_PROXY = "";  // TODO: set to the deployed workers.dev URL
 const LIVE_EVERY_MS = 5 * 60 * 1000, LIVE_TIMEOUT_MS = 10000;
 const live = { readings: {}, checked: null, ok: false, err: "", busy: false, lastTry: 0 };
 const WD = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
@@ -726,10 +729,10 @@ function parseBulletinHtml(html, bid) {        // same table layout update_data.
   }
   return out;
 }
-async function fetchText(url) {
+async function fetchText(url) {   // url = https://www.bom.gov.au/fwo/IDQxxxxx.html
   const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), LIVE_TIMEOUT_MS);
   try {
-    const r = await fetch(LIVE_PROXY ? LIVE_PROXY + encodeURIComponent(url) : url, { cache: "no-store", signal: ctl.signal, credentials: "omit" });
+    const r = await fetch(LIVE_PROXY ? LIVE_PROXY.replace(/\/+$/, "") + new URL(url).pathname : url, { cache: "no-store", signal: ctl.signal, credentials: "omit" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     return await r.text();
   } finally { clearTimeout(t); }
@@ -793,11 +796,11 @@ function applyLive(data) {
   const chk = live.checked ? fmtBne.format(new Date(live.checked)) + " AEST" : "";
   if (live.ok) {
     el.className = "ok";
-    el.textContent = `Gauges: live from BOM in your browser (checked ${chk}; ${merged} newer than snapshot) \u00b7 ${obs}`;
+    el.textContent = `Gauges: live from BOM${LIVE_PROXY ? " via map relay" : " in your browser"} (checked ${chk}; ${merged} newer than snapshot) \u00b7 ${obs}`;
   } else {
     el.className = live.checked ? "off" : ""; el.title = live.err || "";
     el.textContent = live.checked
-      ? `Gauges: GitHub snapshot (GitHub Actions, scheduled every 15 min; BOM does not allow direct browser reads${liveWhy().includes("CORS") ? "" : ": " + liveWhy()}) \u00b7 ${obs}`
+      ? `Gauges: GitHub snapshot (GitHub Actions, scheduled every 15 min; ${LIVE_PROXY ? "live BOM relay unavailable: " + liveWhy() : "BOM does not allow direct browser reads" + (liveWhy().includes("CORS") ? "" : ": " + liveWhy())}) \u00b7 ${obs}`
       : `Gauges: GitHub snapshot \u00b7 ${obs} \u00b7 checking BOM\u2026`;
   }
 }

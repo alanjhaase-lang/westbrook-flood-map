@@ -196,3 +196,12 @@ python3 -m http.server 8000      # open http://localhost:8000/
 
 Data © Commonwealth of Australia, Bureau of Meteorology. Not an official warning service —
 always check [BOM warnings](https://www.bom.gov.au/qld/warnings/) in an emergency.
+
+## Live gauge relay (Cloudflare Worker)
+
+BOM doesn't let github.io pages read its bulletins directly, so live 5-min gauge reads go through one small,
+free, locked-down Cloudflare Worker shared with the Twin Waters map. Source, lock list and deploy steps:
+[`bom-proxy/` in sunshine-coast-flood-map](https://github.com/alanjhaase-lang/sunshine-coast-flood-map/tree/main/bom-proxy).
+It only serves `/fwo/IDQ60285|60286|60287|60293.html` to `https://alanjhaase-lang.github.io` (403 otherwise).
+Set its workers.dev URL in `LIVE_PROXY` in `index.html`. If the Worker is down or unset, the map uses the
+GitHub Actions `data.json` snapshot (every 15 min) as before.
