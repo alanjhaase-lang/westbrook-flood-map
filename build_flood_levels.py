@@ -12,8 +12,11 @@ import update_data as u
 def main():
     with open(u.DATA_FILE) as f:
         rows = json.load(f)["stations"]
-    levels = {}  # full refresh
+    # Keep maintainer-set community estimates (source=user); refresh everything else.
+    kept = {n: e for n, e in u.load_flood_levels().items() if e.get("source") == "user"}
+    levels = {}
     u.update_flood_levels(levels, rows, new_limit=10 ** 6, refresh_limit=0)
+    levels.update(kept)
     u.save_flood_levels(levels)
     have = sum(1 for e in levels.values() if any(e.get(c) is not None for c in u.FLOOD_CLASSES))
     print(f"{len(levels)} stations checked, {have} with official flood levels")
