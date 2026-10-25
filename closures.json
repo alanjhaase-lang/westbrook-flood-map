@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-25T21:24:08+10:00",
- "generated_at_text": "Sun 25 Oct 2026 09:24 PM AEST",
+ "generated_at": "2026-10-26T01:00:17+10:00",
+ "generated_at_text": "Mon 26 Oct 2026 01:00 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-10-25T21:11:06+10:00",
+  "feed_published": "2026-10-26T00:38:05+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -65,6 +65,13 @@
    "locality": "Forest Hill / Laidley North",
    "lga": "Lockyer Valley Regional",
    "reason": "ended 2026-05-19T12:27:50+10:00"
+  },
+  {
+   "id": 837061,
+   "road": "Winwill Connection Road",
+   "locality": "Lower Tenthill / Winwill",
+   "lga": "Lockyer Valley Regional",
+   "reason": "ended 2026-05-19T12:28:43+10:00"
   }
  ],
  "closures": [
@@ -788,12 +795,12 @@
    "geometry": {
     "points": [
      [
-      -27.73364,
-      152.32892
-     ],
-     [
       -27.73871,
       152.32851
+     ],
+     [
+      -27.73364,
+      152.32892
      ]
     ],
     "lines": []
@@ -816,8 +823,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T16:13:00+10:00",
-   "last_updated": "2026-10-25T18:58:24+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:58 PM AEST",
+   "last_updated": "2026-10-25T22:25:41+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:25 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836576",
@@ -1302,8 +1309,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-25T17:40:00+10:00",
-   "last_updated": "2026-10-25T18:45:06+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:45 PM AEST",
+   "last_updated": "2026-10-25T21:39:59+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 09:39 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837023",
@@ -2086,8 +2093,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-25T07:57:00+10:00",
-   "last_updated": "2026-10-25T18:44:56+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:44 PM AEST",
+   "last_updated": "2026-10-25T22:43:41+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:43 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836874",
@@ -2386,12 +2393,12 @@
    "geometry": {
     "points": [
      [
-      -27.77149,
-      152.683
-     ],
-     [
       -27.77063,
       152.68456
+     ],
+     [
+      -27.77149,
+      152.683
      ]
     ],
     "lines": []
@@ -2743,9 +2750,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-25T05:00:00+10:00",
-   "last_updated": "2026-10-25T17:25:05+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 05:25 PM AEST",
+   "start": "2026-10-25T09:00:00+10:00",
+   "last_updated": "2026-10-25T21:40:05+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 09:40 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836180",
@@ -2781,9 +2788,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-25T04:50:00+10:00",
-   "last_updated": "2026-10-25T17:35:01+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 05:35 PM AEST",
+   "start": "2026-10-25T08:50:00+10:00",
+   "last_updated": "2026-10-25T21:35:01+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 09:35 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/717127",
@@ -2819,9 +2826,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-25T05:15:00+10:00",
-   "last_updated": "2026-10-25T17:25:06+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 05:25 PM AEST",
+   "start": "2026-10-25T09:05:00+10:00",
+   "last_updated": "2026-10-25T21:40:08+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 09:40 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836394",
@@ -2857,9 +2864,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-25T05:20:00+10:00",
-   "last_updated": "2026-10-25T17:25:10+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 05:25 PM AEST",
+   "start": "2026-10-25T09:20:00+10:00",
+   "last_updated": "2026-10-25T21:40:09+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 09:40 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836050",
@@ -2933,9 +2940,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-25T06:00:00+10:00",
-   "last_updated": "2026-10-25T17:30:04+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 05:30 PM AEST",
+   "start": "2026-10-25T10:25:00+10:00",
+   "last_updated": "2026-10-25T21:45:11+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 09:45 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835889",
@@ -3149,9 +3156,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-25T06:15:00+10:00",
-   "last_updated": "2026-10-25T17:40:01+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 05:40 PM AEST",
+   "start": "2026-10-25T10:00:00+10:00",
+   "last_updated": "2026-10-25T21:40:01+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 09:40 PM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836876",
@@ -3226,8 +3233,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T09:50:00+10:00",
-   "last_updated": "2026-10-25T20:14:21+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 08:14 PM AEST",
+   "last_updated": "2026-10-26T00:14:20+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 12:14 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836431",
@@ -3366,8 +3373,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T08:00:00+10:00",
-   "last_updated": "2026-10-25T20:14:22+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 08:14 PM AEST",
+   "last_updated": "2026-10-26T00:14:21+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 12:14 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836388",
