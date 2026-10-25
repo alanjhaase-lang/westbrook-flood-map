@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-25T16:05:58+10:00",
- "generated_at_text": "Sun 25 Oct 2026 04:05 PM AEST",
+ "generated_at": "2026-10-25T21:24:11+10:00",
+ "generated_at_text": "Sun 25 Oct 2026 09:24 PM AEST",
  "stale": false,
  "source": {
   "url": "https://data.qldtraffic.qld.gov.au/floodcameras.geojson"
@@ -47,8 +47,8 @@
    "lat": -27.92134,
    "lon": 151.67464,
    "image_ok": true,
-   "image_time": "2026-10-25T12:02:00+10:00",
-   "image_time_text": "Sun 25 Oct 2026 12:02 PM AEST",
+   "image_time": "2026-10-23T03:29:00+10:00",
+   "image_time_text": "Fri 23 Oct 2026 03:29 AM AEST",
    "image_stale": true
   },
   {
@@ -100,7 +100,9 @@
    "lat": -27.17437,
    "lon": 152.98133,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 253,
@@ -117,7 +119,9 @@
    "lat": -26.62248,
    "lon": 153.04827,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 249,
@@ -134,7 +138,9 @@
    "lat": -26.57477,
    "lon": 152.97492,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 273,
@@ -151,7 +157,9 @@
    "lat": -26.70746,
    "lon": 153.04675,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 269,
@@ -168,7 +176,9 @@
    "lat": -26.68479,
    "lon": 152.9595,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 268,
@@ -185,7 +195,9 @@
    "lat": -26.76021,
    "lon": 152.96231,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 260,
@@ -202,7 +214,9 @@
    "lat": -26.45279,
    "lon": 153.01395,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 257,
@@ -219,7 +233,9 @@
    "lat": -26.79894,
    "lon": 153.11487,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 261,
@@ -236,7 +252,9 @@
    "lat": -26.5663,
    "lon": 152.76555,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 259,
@@ -253,7 +271,9 @@
    "lat": -26.39924,
    "lon": 152.9016,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 258,
@@ -270,7 +290,9 @@
    "lat": -26.73246,
    "lon": 152.75412,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 271,
@@ -287,7 +309,9 @@
    "lat": -26.36567,
    "lon": 152.85896,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 272,
@@ -304,7 +328,9 @@
    "lat": -26.34145,
    "lon": 152.8915,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 270,
@@ -321,7 +347,9 @@
    "lat": -26.34748,
    "lon": 152.85901,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   },
   {
    "id": 276,
@@ -338,7 +366,9 @@
    "lat": -26.34148,
    "lon": 152.84916,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-10-25T17:45:00+10:00",
+   "image_time_text": "Sun 25 Oct 2026 05:45 PM AEST",
+   "image_stale": true
   }
  ]
 }
