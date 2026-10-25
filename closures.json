@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-10-25T09:03:07+10:00",
- "generated_at_text": "Sun 25 Oct 2026 09:03 AM AEST",
+ "generated_at": "2026-10-25T11:08:58+10:00",
+ "generated_at_text": "Sun 25 Oct 2026 11:08 AM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-10-25T08:59:17+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-10-25T11:08:43+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -17,8 +15,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 17,
-   "closed": 10,
+   "count": 16,
+   "closed": 9,
    "partial": 7
   },
   {
@@ -38,8 +36,8 @@
   {
    "id": "sunshine",
    "name": "Sunshine Coast",
-   "count": 8,
-   "closed": 4,
+   "count": 9,
+   "closed": 5,
    "partial": 4
   }
  ],
@@ -207,6 +205,16 @@
     "lines": [
      [
       [
+       -27.83878,
+       151.45014
+      ],
+      [
+       -27.86253,
+       151.44641
+      ]
+     ],
+     [
+      [
        -27.81511,
        151.45375
       ],
@@ -318,56 +326,8 @@
        -27.83878,
        151.45012
       ]
-     ],
-     [
-      [
-       -27.83878,
-       151.45014
-      ],
-      [
-       -27.86253,
-       151.44641
-      ]
      ]
     ]
-   }
-  },
-  {
-   "id": 836409,
-   "road": "Glendene Road",
-   "description": "Road Closed - Water Over Road - Do not Drive in Flood Waters",
-   "locality": "Forest Hill",
-   "lga": "Lockyer Valley Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-10-23T08:49:00+10:00",
-   "last_updated": "2026-10-25T06:32:11+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:32 AM AEST",
-   "provided_by": "Lockyer Valley Regional Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836409",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.57985,
-    152.37058
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.57985,
-      152.37058
-     ]
-    ],
-    "lines": []
    }
   },
   {
@@ -725,12 +685,12 @@
    "geometry": {
     "points": [
      [
-      -27.73871,
-      152.32851
-     ],
-     [
       -27.73364,
       152.32892
+     ],
+     [
+      -27.73871,
+      152.32851
      ]
     ],
     "lines": []
@@ -1296,6 +1256,44 @@
      ]
     ],
     "lines": [
+     [
+      [
+       -27.72399,
+       152.22452
+      ],
+      [
+       -27.72463,
+       152.22478
+      ],
+      [
+       -27.72488,
+       152.22487
+      ],
+      [
+       -27.72506,
+       152.22496
+      ],
+      [
+       -27.72524,
+       152.22507
+      ],
+      [
+       -27.72568,
+       152.22549
+      ],
+      [
+       -27.72619,
+       152.22603
+      ],
+      [
+       -27.72642,
+       152.22626
+      ],
+      [
+       -27.72645,
+       152.22629
+      ]
+     ],
      [
       [
        -27.76942,
@@ -2355,44 +2353,6 @@
        -27.72675,
        152.22649
       ]
-     ],
-     [
-      [
-       -27.72399,
-       152.22452
-      ],
-      [
-       -27.72463,
-       152.22478
-      ],
-      [
-       -27.72488,
-       152.22487
-      ],
-      [
-       -27.72506,
-       152.22496
-      ],
-      [
-       -27.72524,
-       152.22507
-      ],
-      [
-       -27.72568,
-       152.22549
-      ],
-      [
-       -27.72619,
-       152.22603
-      ],
-      [
-       -27.72642,
-       152.22626
-      ],
-      [
-       -27.72645,
-       152.22629
-      ]
      ]
     ]
    }
@@ -2414,8 +2374,8 @@
    "information": "Caution - water over road",
    "status": "Published",
    "start": "2026-10-23T10:23:00+10:00",
-   "last_updated": "2026-10-24T22:46:52+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
+   "last_updated": "2026-10-25T10:46:51+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:46 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836451",
@@ -2539,8 +2499,8 @@
    "information": "Water over road - proceed with caution.",
    "status": "Published",
    "start": "2026-10-22T14:23:00+10:00",
-   "last_updated": "2026-10-24T22:46:52+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
+   "last_updated": "2026-10-25T10:46:51+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:46 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836176",
@@ -3223,12 +3183,12 @@
    "geometry": {
     "points": [
      [
-      -27.77063,
-      152.68456
-     ],
-     [
       -27.77149,
       152.683
+     ],
+     [
+      -27.77063,
+      152.68456
      ]
     ],
     "lines": []
@@ -3333,8 +3293,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-06-25T08:47:00+10:00",
-   "last_updated": "2026-10-24T22:46:15+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 10:46 PM AEST",
+   "last_updated": "2026-10-25T10:46:14+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:46 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/811011",
@@ -3580,9 +3540,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T10:05:00+10:00",
-   "last_updated": "2026-10-24T21:40:03+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 09:40 PM AEST",
+   "start": "2026-10-24T23:30:00+10:00",
+   "last_updated": "2026-10-25T10:05:01+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:05 AM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836180",
@@ -3618,9 +3578,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T09:50:00+10:00",
-   "last_updated": "2026-10-24T21:35:01+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 09:35 PM AEST",
+   "start": "2026-10-25T00:00:00+10:00",
+   "last_updated": "2026-10-25T10:20:03+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:20 AM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/717127",
@@ -4548,9 +4508,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T10:00:00+10:00",
-   "last_updated": "2026-10-24T21:35:03+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 09:35 PM AEST",
+   "start": "2026-10-24T23:35:00+10:00",
+   "last_updated": "2026-10-25T10:05:02+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:05 AM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836394",
@@ -4586,9 +4546,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T10:20:00+10:00",
-   "last_updated": "2026-10-24T21:40:08+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 09:40 PM AEST",
+   "start": "2026-10-24T23:15:00+10:00",
+   "last_updated": "2026-10-25T10:05:03+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:05 AM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836050",
@@ -4662,9 +4622,9 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-24T11:15:00+10:00",
-   "last_updated": "2026-10-24T21:55:01+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 09:55 PM AEST",
+   "start": "2026-10-24T22:30:00+10:00",
+   "last_updated": "2026-10-25T10:00:05+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:00 AM AEST",
    "provided_by": "City of Moreton Bay",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835889",
@@ -4682,6 +4642,146 @@
      ]
     ],
     "lines": []
+   }
+  },
+  {
+   "id": 836886,
+   "road": "Bridge Street / James Street / Railway Road",
+   "description": "Water over road",
+   "locality": "Cooran",
+   "lga": "Noosa Shire",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-25T09:00:00+10:00",
+   "last_updated": "2026-10-25T09:04:03+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 09:04 AM AEST",
+   "provided_by": "Noosa Shire Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836886",
+   "region": "sunshine",
+   "region_name": "Sunshine Coast",
+   "marker": [
+    -26.34038,
+    152.82656
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -26.33551,
+       152.82369
+      ],
+      [
+       -26.33572,
+       152.8238
+      ],
+      [
+       -26.33643,
+       152.82417
+      ],
+      [
+       -26.33676,
+       152.82437
+      ],
+      [
+       -26.3372,
+       152.82462
+      ],
+      [
+       -26.33787,
+       152.82507
+      ],
+      [
+       -26.33823,
+       152.82528
+      ],
+      [
+       -26.33839,
+       152.82538
+      ],
+      [
+       -26.33864,
+       152.82555
+      ],
+      [
+       -26.33958,
+       152.82616
+      ],
+      [
+       -26.33982,
+       152.82632
+      ],
+      [
+       -26.34006,
+       152.82644
+      ],
+      [
+       -26.34038,
+       152.82656
+      ],
+      [
+       -26.34067,
+       152.82665
+      ],
+      [
+       -26.34088,
+       152.82671
+      ],
+      [
+       -26.34126,
+       152.82682
+      ],
+      [
+       -26.34223,
+       152.82716
+      ],
+      [
+       -26.34258,
+       152.8273
+      ],
+      [
+       -26.34267,
+       152.82734
+      ],
+      [
+       -26.34302,
+       152.82749
+      ],
+      [
+       -26.34308,
+       152.82752
+      ],
+      [
+       -26.3431,
+       152.82753
+      ],
+      [
+       -26.34313,
+       152.82756
+      ],
+      [
+       -26.34328,
+       152.82776
+      ],
+      [
+       -26.3436,
+       152.82815
+      ],
+      [
+       -26.34374,
+       152.82832
+      ]
+     ]
+    ]
    }
   },
   {
@@ -4777,8 +4877,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T12:15:00+10:00",
-   "last_updated": "2026-10-25T06:10:01+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:10 AM AEST",
+   "last_updated": "2026-10-25T10:04:02+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:04 AM AEST",
    "provided_by": "Noosa Shire Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836486",
@@ -4815,8 +4915,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T09:50:00+10:00",
-   "last_updated": "2026-10-25T06:05:19+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:05 AM AEST",
+   "last_updated": "2026-10-25T10:05:18+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:05 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836431",
@@ -4853,8 +4953,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T11:00:00+10:00",
-   "last_updated": "2026-10-24T12:38:02+10:00",
-   "last_updated_text": "Sat 24 Oct 2026 12:38 PM AEST",
+   "last_updated": "2026-10-25T10:34:01+10:00",
+   "last_updated_text": "Sun 25 Oct 2026 10:34 AM AEST",
    "provided_by": "Noosa Shire Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836462",
