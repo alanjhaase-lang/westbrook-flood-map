@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-26T04:24:10+10:00",
- "generated_at_text": "Mon 26 Oct 2026 04:24 AM AEST",
+ "generated_at": "2026-10-26T07:02:30+10:00",
+ "generated_at_text": "Mon 26 Oct 2026 07:02 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-10-26T04:20:16+10:00",
+  "feed_published": "2026-10-26T07:02:00+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,8 +17,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 18,
-   "closed": 11,
+   "count": 20,
+   "closed": 13,
    "partial": 7
   },
   {
@@ -32,8 +32,8 @@
    "id": "brisbane",
    "name": "Brisbane",
    "count": 9,
-   "closed": 9,
-   "partial": 0
+   "closed": 8,
+   "partial": 1
   },
   {
    "id": "sunshine",
@@ -43,7 +43,7 @@
    "partial": 5
   }
  ],
- "count": 41,
+ "count": 43,
  "excluded": [
   {
    "id": 836516,
@@ -53,25 +53,11 @@
    "reason": "implausible road name 'Đường Vân Nội'"
   },
   {
-   "id": 836931,
-   "road": "Allan Street / Adare Road / Woodlands Road",
-   "locality": "Blenheim / Gatton / Glen Cairn",
-   "lga": "Lockyer Valley Regional",
-   "reason": "ended 2026-05-19T12:28:00+10:00"
-  },
-  {
-   "id": 836984,
-   "road": "Old Laidley Forest Hill Road",
-   "locality": "Forest Hill / Laidley North",
-   "lga": "Lockyer Valley Regional",
-   "reason": "ended 2026-05-19T12:27:50+10:00"
-  },
-  {
    "id": 837061,
    "road": "Winwill Connection Road",
    "locality": "Lower Tenthill / Winwill",
    "lga": "Lockyer Valley Regional",
-   "reason": "ended 2026-05-19T12:28:43+10:00"
+   "reason": "ended 2026-05-19T12:28:00+10:00"
   }
  ],
  "closures": [
@@ -164,8 +150,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T06:50:00+10:00",
-   "last_updated": "2026-10-25T15:34:03+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 03:34 PM AEST",
+   "last_updated": "2026-10-26T05:56:01+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 05:56 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836358",
@@ -558,8 +544,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-22T15:00:00+10:00",
-   "last_updated": "2026-10-25T11:46:01+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 11:46 AM AEST",
+   "last_updated": "2026-10-26T05:58:03+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 05:58 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836188",
@@ -596,8 +582,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T08:00:00+10:00",
-   "last_updated": "2026-10-25T06:32:09+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:32 AM AEST",
+   "last_updated": "2026-10-26T05:58:08+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 05:58 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836383",
@@ -732,8 +718,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-25T15:30:00+10:00",
-   "last_updated": "2026-10-25T15:36:02+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 03:36 PM AEST",
+   "last_updated": "2026-10-26T06:00:06+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:00 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836345",
@@ -781,8 +767,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T13:00:00+10:00",
-   "last_updated": "2026-10-25T06:32:14+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:32 AM AEST",
+   "last_updated": "2026-10-26T05:58:11+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 05:58 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836502",
@@ -801,6 +787,48 @@
      [
       -27.73364,
       152.32892
+     ]
+    ],
+    "lines": []
+   }
+  },
+  {
+   "id": 837069,
+   "road": "New England Highway",
+   "description": "Warwick to Toowoomba",
+   "locality": "Glengallan / Kearneys Spring",
+   "lga": "Southern Downs Regional / Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-26T04:36:00+10:00",
+   "last_updated": "2026-10-26T06:46:25+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:46 AM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837069",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -28.12284,
+    152.06831
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.60349,
+      151.94619
+     ],
+     [
+      -28.12284,
+      152.06831
      ]
     ],
     "lines": []
@@ -1183,6 +1211,518 @@
    }
   },
   {
+   "id": 836984,
+   "road": "Old Laidley Forest Hill Road",
+   "description": "Old Laidley Forest Hill Road, Laidley North to Forest Hill: Automated signs have been activated to close this road. Do not drive in flood waters.",
+   "locality": "Forest Hill / Laidley North",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Heavy rain",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-25T15:49:00+10:00",
+   "last_updated": "2026-10-26T05:56:09+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 05:56 AM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836984",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.5923,
+    152.38122
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.6156,
+       152.3958
+      ],
+      [
+       -27.61549,
+       152.39501
+      ],
+      [
+       -27.61536,
+       152.39411
+      ],
+      [
+       -27.61533,
+       152.3939
+      ],
+      [
+       -27.61532,
+       152.39387
+      ],
+      [
+       -27.61529,
+       152.39367
+      ],
+      [
+       -27.61525,
+       152.39355
+      ],
+      [
+       -27.61524,
+       152.3935
+      ],
+      [
+       -27.61521,
+       152.39341
+      ],
+      [
+       -27.61514,
+       152.39326
+      ],
+      [
+       -27.61512,
+       152.39322
+      ],
+      [
+       -27.61506,
+       152.39312
+      ],
+      [
+       -27.61504,
+       152.39309
+      ],
+      [
+       -27.61492,
+       152.39289
+      ],
+      [
+       -27.61482,
+       152.39277
+      ],
+      [
+       -27.60974,
+       152.38849
+      ],
+      [
+       -27.60429,
+       152.38423
+      ],
+      [
+       -27.60423,
+       152.38421
+      ],
+      [
+       -27.60409,
+       152.38419
+      ],
+      [
+       -27.6039,
+       152.38418
+      ],
+      [
+       -27.60124,
+       152.38421
+      ],
+      [
+       -27.60011,
+       152.38424
+      ],
+      [
+       -27.59876,
+       152.38425
+      ],
+      [
+       -27.59805,
+       152.38425
+      ],
+      [
+       -27.59786,
+       152.38426
+      ],
+      [
+       -27.59783,
+       152.38426
+      ],
+      [
+       -27.59762,
+       152.38426
+      ],
+      [
+       -27.5973,
+       152.38429
+      ],
+      [
+       -27.59696,
+       152.38434
+      ],
+      [
+       -27.59675,
+       152.38438
+      ],
+      [
+       -27.59634,
+       152.38446
+      ],
+      [
+       -27.59588,
+       152.38453
+      ],
+      [
+       -27.59573,
+       152.38456
+      ],
+      [
+       -27.59563,
+       152.38457
+      ],
+      [
+       -27.59555,
+       152.38457
+      ],
+      [
+       -27.59554,
+       152.38457
+      ],
+      [
+       -27.59538,
+       152.38456
+      ],
+      [
+       -27.59525,
+       152.38455
+      ],
+      [
+       -27.59518,
+       152.38454
+      ],
+      [
+       -27.59511,
+       152.38453
+      ],
+      [
+       -27.59504,
+       152.38452
+      ],
+      [
+       -27.5949,
+       152.38445
+      ],
+      [
+       -27.59479,
+       152.38439
+      ],
+      [
+       -27.59459,
+       152.38426
+      ],
+      [
+       -27.5945,
+       152.38419
+      ],
+      [
+       -27.59442,
+       152.38412
+      ],
+      [
+       -27.59439,
+       152.38409
+      ],
+      [
+       -27.59434,
+       152.38404
+      ],
+      [
+       -27.59427,
+       152.38395
+      ],
+      [
+       -27.59416,
+       152.38381
+      ],
+      [
+       -27.59415,
+       152.38379
+      ],
+      [
+       -27.59342,
+       152.3828
+      ],
+      [
+       -27.5923,
+       152.38122
+      ],
+      [
+       -27.59138,
+       152.37996
+      ],
+      [
+       -27.5912,
+       152.3797
+      ],
+      [
+       -27.59105,
+       152.3795
+      ],
+      [
+       -27.59103,
+       152.37947
+      ],
+      [
+       -27.59082,
+       152.37915
+      ],
+      [
+       -27.59078,
+       152.37908
+      ],
+      [
+       -27.59071,
+       152.37895
+      ],
+      [
+       -27.59066,
+       152.37884
+      ],
+      [
+       -27.59065,
+       152.37882
+      ],
+      [
+       -27.59062,
+       152.37873
+      ],
+      [
+       -27.59057,
+       152.37854
+      ],
+      [
+       -27.59056,
+       152.37851
+      ],
+      [
+       -27.59053,
+       152.37838
+      ],
+      [
+       -27.59047,
+       152.37804
+      ],
+      [
+       -27.59046,
+       152.3779
+      ],
+      [
+       -27.59044,
+       152.37778
+      ],
+      [
+       -27.59032,
+       152.37689
+      ],
+      [
+       -27.59019,
+       152.37598
+      ],
+      [
+       -27.59006,
+       152.37507
+      ],
+      [
+       -27.58997,
+       152.37453
+      ],
+      [
+       -27.58996,
+       152.37445
+      ],
+      [
+       -27.58989,
+       152.37417
+      ],
+      [
+       -27.58988,
+       152.37412
+      ],
+      [
+       -27.5898,
+       152.37389
+      ],
+      [
+       -27.58973,
+       152.37377
+      ],
+      [
+       -27.5897,
+       152.3737
+      ],
+      [
+       -27.58961,
+       152.37355
+      ],
+      [
+       -27.5895,
+       152.37337
+      ],
+      [
+       -27.58949,
+       152.37335
+      ],
+      [
+       -27.58914,
+       152.37292
+      ],
+      [
+       -27.58888,
+       152.37259
+      ],
+      [
+       -27.588,
+       152.37147
+      ],
+      [
+       -27.58785,
+       152.3713
+      ],
+      [
+       -27.58769,
+       152.37113
+      ],
+      [
+       -27.58755,
+       152.371
+      ],
+      [
+       -27.58736,
+       152.37083
+      ],
+      [
+       -27.58718,
+       152.37069
+      ],
+      [
+       -27.58678,
+       152.37042
+      ],
+      [
+       -27.58647,
+       152.3702
+      ],
+      [
+       -27.58601,
+       152.36987
+      ],
+      [
+       -27.58558,
+       152.36958
+      ],
+      [
+       -27.58538,
+       152.36946
+      ],
+      [
+       -27.58535,
+       152.36944
+      ],
+      [
+       -27.58512,
+       152.36932
+      ],
+      [
+       -27.58503,
+       152.36928
+      ],
+      [
+       -27.58485,
+       152.36921
+      ],
+      [
+       -27.5847,
+       152.36916
+      ],
+      [
+       -27.58469,
+       152.36916
+      ],
+      [
+       -27.58432,
+       152.36906
+      ],
+      [
+       -27.58422,
+       152.36905
+      ],
+      [
+       -27.58412,
+       152.36904
+      ],
+      [
+       -27.5838,
+       152.36902
+      ],
+      [
+       -27.58375,
+       152.36902
+      ],
+      [
+       -27.58356,
+       152.36902
+      ],
+      [
+       -27.58326,
+       152.36903
+      ],
+      [
+       -27.58266,
+       152.36906
+      ],
+      [
+       -27.58262,
+       152.36907
+      ],
+      [
+       -27.58234,
+       152.36909
+      ],
+      [
+       -27.58211,
+       152.36912
+      ],
+      [
+       -27.58188,
+       152.36917
+      ],
+      [
+       -27.58183,
+       152.36918
+      ],
+      [
+       -27.58154,
+       152.36925
+      ],
+      [
+       -27.58112,
+       152.36936
+      ],
+      [
+       -27.58089,
+       152.36942
+      ],
+      [
+       -27.58076,
+       152.36946
+      ],
+      [
+       -27.58071,
+       152.36946
+      ]
+     ]
+    ]
+   }
+  },
+  {
    "id": 836344,
    "road": "Turner Street",
    "description": "Water over Road - Road Closed",
@@ -1199,8 +1739,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T06:15:00+10:00",
-   "last_updated": "2026-10-25T15:34:02+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 03:34 PM AEST",
+   "last_updated": "2026-10-26T06:00:04+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:00 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836344",
@@ -1213,6 +1753,36 @@
    "geometry": {
     "points": [],
     "lines": [
+     [
+      [
+       -27.55078,
+       152.12132
+      ],
+      [
+       -27.55085,
+       152.12131
+      ],
+      [
+       -27.55095,
+       152.1213
+      ],
+      [
+       -27.55103,
+       152.12128
+      ],
+      [
+       -27.55109,
+       152.12126
+      ],
+      [
+       -27.55116,
+       152.12123
+      ],
+      [
+       -27.55117,
+       152.12122
+      ]
+     ],
      [
       [
        -27.54881,
@@ -1258,38 +1828,46 @@
        -27.54854,
        152.12272
       ]
-     ],
-     [
-      [
-       -27.55078,
-       152.12132
-      ],
-      [
-       -27.55085,
-       152.12131
-      ],
-      [
-       -27.55095,
-       152.1213
-      ],
-      [
-       -27.55103,
-       152.12128
-      ],
-      [
-       -27.55109,
-       152.12126
-      ],
-      [
-       -27.55116,
-       152.12123
-      ],
-      [
-       -27.55117,
-       152.12122
-      ]
      ]
     ]
+   }
+  },
+  {
+   "id": 837085,
+   "road": "Gatton Clifton Road ( Clifton Road)",
+   "description": "Kings Creek",
+   "locality": "Hirstglen",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-10-26T06:04:00+10:00",
+   "last_updated": "2026-10-26T06:05:39+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:05 AM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837085",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.8597,
+    152.05572
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.8597,
+      152.05572
+     ]
+    ],
+    "lines": []
    }
   },
   {
@@ -1309,8 +1887,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-25T17:40:00+10:00",
-   "last_updated": "2026-10-26T02:00:11+10:00",
-   "last_updated_text": "Mon 26 Oct 2026 02:00 AM AEST",
+   "last_updated": "2026-10-26T06:00:10+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:00 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837023",
@@ -1347,8 +1925,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-22T09:08:00+10:00",
-   "last_updated": "2026-10-25T06:34:09+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:34 AM AEST",
+   "last_updated": "2026-10-26T05:58:01+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 05:58 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836011",
@@ -1423,8 +2001,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T18:57:00+10:00",
-   "last_updated": "2026-10-25T06:30:02+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 06:30 AM AEST",
+   "last_updated": "2026-10-26T05:56:02+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 05:56 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836611",
@@ -2093,8 +2671,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-25T07:57:00+10:00",
-   "last_updated": "2026-10-26T02:00:07+10:00",
-   "last_updated_text": "Mon 26 Oct 2026 02:00 AM AEST",
+   "last_updated": "2026-10-26T06:00:06+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:00 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836874",
@@ -2112,254 +2690,6 @@
      ]
     ],
     "lines": []
-   }
-  },
-  {
-   "id": 837052,
-   "road": "Winwill Connection Road / Winwill Connection Road Bridge",
-   "description": "Automated signs activated. Do not drive in flood waters.",
-   "locality": "Lower Tenthill / Winwill",
-   "lga": "Lockyer Valley Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-10-23T04:19:00+10:00",
-   "last_updated": "2026-10-25T20:38:02+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 08:38 PM AEST",
-   "provided_by": "Lockyer Valley Regional Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837052",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.6102,
-    152.22058
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.60996,
-       152.21841
-      ],
-      [
-       -27.60996,
-       152.21852
-      ],
-      [
-       -27.60994,
-       152.21867
-      ],
-      [
-       -27.60994,
-       152.21868
-      ],
-      [
-       -27.60992,
-       152.21882
-      ],
-      [
-       -27.60985,
-       152.21904
-      ],
-      [
-       -27.60969,
-       152.21937
-      ],
-      [
-       -27.60953,
-       152.21964
-      ],
-      [
-       -27.6094,
-       152.21985
-      ],
-      [
-       -27.60933,
-       152.21999
-      ],
-      [
-       -27.60931,
-       152.22004
-      ],
-      [
-       -27.60929,
-       152.2201
-      ],
-      [
-       -27.60928,
-       152.22013
-      ],
-      [
-       -27.60927,
-       152.2202
-      ],
-      [
-       -27.60927,
-       152.22025
-      ],
-      [
-       -27.60928,
-       152.22026
-      ],
-      [
-       -27.60929,
-       152.22032
-      ],
-      [
-       -27.60932,
-       152.2204
-      ],
-      [
-       -27.60935,
-       152.22045
-      ],
-      [
-       -27.60938,
-       152.22048
-      ],
-      [
-       -27.60943,
-       152.22052
-      ],
-      [
-       -27.6095,
-       152.22056
-      ],
-      [
-       -27.60953,
-       152.22056
-      ],
-      [
-       -27.6096,
-       152.22058
-      ],
-      [
-       -27.6098,
-       152.22059
-      ],
-      [
-       -27.60982,
-       152.22059
-      ],
-      [
-       -27.6102,
-       152.22058
-      ],
-      [
-       -27.61035,
-       152.22057
-      ],
-      [
-       -27.61059,
-       152.22053
-      ],
-      [
-       -27.61066,
-       152.22053
-      ],
-      [
-       -27.61073,
-       152.22053
-      ],
-      [
-       -27.61075,
-       152.22053
-      ],
-      [
-       -27.61079,
-       152.22055
-      ],
-      [
-       -27.61085,
-       152.22058
-      ],
-      [
-       -27.61091,
-       152.22063
-      ],
-      [
-       -27.61094,
-       152.22067
-      ],
-      [
-       -27.61094,
-       152.22068
-      ],
-      [
-       -27.61097,
-       152.22073
-      ],
-      [
-       -27.61097,
-       152.22078
-      ],
-      [
-       -27.61097,
-       152.22085
-      ],
-      [
-       -27.61095,
-       152.22093
-      ],
-      [
-       -27.61094,
-       152.22096
-      ],
-      [
-       -27.6109,
-       152.22104
-      ],
-      [
-       -27.61084,
-       152.22112
-      ],
-      [
-       -27.61077,
-       152.22122
-      ],
-      [
-       -27.61073,
-       152.2213
-      ],
-      [
-       -27.6107,
-       152.22135
-      ],
-      [
-       -27.61066,
-       152.22145
-      ],
-      [
-       -27.61066,
-       152.22148
-      ],
-      [
-       -27.61065,
-       152.22154
-      ],
-      [
-       -27.61064,
-       152.22163
-      ],
-      [
-       -27.61064,
-       152.22165
-      ],
-      [
-       -27.61069,
-       152.22199
-      ]
-     ]
-    ]
    }
   },
   {
@@ -2393,12 +2723,12 @@
    "geometry": {
     "points": [
      [
-      -27.77063,
-      152.68456
-     ],
-     [
       -27.77149,
       152.683
+     ],
+     [
+      -27.77063,
+      152.68456
      ]
     ],
     "lines": []
@@ -2465,8 +2795,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T15:38:00+10:00",
-   "last_updated": "2026-10-25T17:16:41+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 05:16 PM AEST",
+   "last_updated": "2026-10-26T06:12:44+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:12 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836553",
@@ -2555,8 +2885,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-22T02:22:00+10:00",
-   "last_updated": "2026-10-26T02:00:20+10:00",
-   "last_updated_text": "Mon 26 Oct 2026 02:00 AM AEST",
+   "last_updated": "2026-10-26T06:13:25+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:13 AM AEST",
    "provided_by": "Brisbane City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835868",
@@ -2903,8 +3233,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-22T05:46:00+10:00",
-   "last_updated": "2026-10-26T02:00:14+10:00",
-   "last_updated_text": "Mon 26 Oct 2026 02:00 AM AEST",
+   "last_updated": "2026-10-26T06:13:05+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:13 AM AEST",
    "provided_by": "Brisbane City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835892",
@@ -2925,38 +3255,38 @@
    }
   },
   {
-   "id": 835889,
-   "road": "Mott Street",
-   "description": null,
-   "locality": "Strathpine",
-   "lga": "Moreton Bay Regional",
+   "id": 837112,
+   "road": "Bowhill Road",
+   "description": "at Hanleys Creek",
+   "locality": "Durack",
+   "lga": "Brisbane City",
    "event_type": "Flooding",
    "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
+   "due_to": "Water over road",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
    "direction": "Both directions",
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-10-25T10:25:00+10:00",
-   "last_updated": "2026-10-25T21:45:11+10:00",
-   "last_updated_text": "Sun 25 Oct 2026 09:45 PM AEST",
-   "provided_by": "City of Moreton Bay",
+   "start": "2026-10-26T06:54:00+10:00",
+   "last_updated": "2026-10-26T06:57:08+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:57 AM AEST",
+   "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/835889",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837112",
    "region": "brisbane",
    "region_name": "Brisbane",
    "marker": [
-    -27.31307,
-    152.99036
+    -27.58695,
+    152.98928
    ],
    "geometry": {
     "points": [
      [
-      -27.31307,
-      152.99036
+      -27.58695,
+      152.98928
      ]
     ],
     "lines": []
@@ -3233,8 +3563,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T09:50:00+10:00",
-   "last_updated": "2026-10-26T02:00:15+10:00",
-   "last_updated_text": "Mon 26 Oct 2026 02:00 AM AEST",
+   "last_updated": "2026-10-26T06:14:11+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:14 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836431",
@@ -3373,8 +3703,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T08:00:00+10:00",
-   "last_updated": "2026-10-26T02:00:17+10:00",
-   "last_updated_text": "Mon 26 Oct 2026 02:00 AM AEST",
+   "last_updated": "2026-10-26T06:14:10+10:00",
+   "last_updated_text": "Mon 26 Oct 2026 06:14 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836388",
