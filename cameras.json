@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-26T23:49:47+10:00",
- "generated_at_text": "Mon 26 Oct 2026 11:49 PM AEST",
+ "generated_at": "2026-10-27T05:42:36+10:00",
+ "generated_at_text": "Tue 27 Oct 2026 05:42 AM AEST",
  "stale": false,
  "source": {
   "url": "https://data.qldtraffic.qld.gov.au/floodcameras.geojson"
@@ -117,8 +117,8 @@
    "lat": -26.62248,
    "lon": 153.04827,
    "image_ok": true,
-   "image_time": "2026-10-26T17:00:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:00 PM AEST",
+   "image_time": "2026-10-26T17:45:00+10:00",
+   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
    "image_stale": true
   },
   {
@@ -136,8 +136,8 @@
    "lat": -26.57477,
    "lon": 152.97492,
    "image_ok": true,
-   "image_time": "2026-10-26T17:00:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:00 PM AEST",
+   "image_time": "2026-10-26T17:45:00+10:00",
+   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
    "image_stale": true
   },
   {
@@ -155,8 +155,8 @@
    "lat": -26.70746,
    "lon": 153.04675,
    "image_ok": true,
-   "image_time": "2026-10-26T17:00:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:00 PM AEST",
+   "image_time": "2026-10-26T17:45:00+10:00",
+   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
    "image_stale": true
   },
   {
@@ -231,8 +231,8 @@
    "lat": -26.79894,
    "lon": 153.11487,
    "image_ok": true,
-   "image_time": "2026-10-26T17:00:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:00 PM AEST",
+   "image_time": "2026-10-26T17:45:00+10:00",
+   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
    "image_stale": true
   },
   {
@@ -269,8 +269,8 @@
    "lat": -26.39924,
    "lon": 152.9016,
    "image_ok": true,
-   "image_time": "2026-10-26T09:15:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 09:15 AM AEST",
+   "image_time": "2026-10-26T08:30:00+10:00",
+   "image_time_text": "Mon 26 Oct 2026 08:30 AM AEST",
    "image_stale": true
   },
   {
