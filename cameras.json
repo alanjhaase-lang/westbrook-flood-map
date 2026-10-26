@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-27T05:42:36+10:00",
- "generated_at_text": "Tue 27 Oct 2026 05:42 AM AEST",
+ "generated_at": "2026-10-27T09:22:23+10:00",
+ "generated_at_text": "Tue 27 Oct 2026 09:22 AM AEST",
  "stale": false,
  "source": {
   "url": "https://data.qldtraffic.qld.gov.au/floodcameras.geojson"
@@ -98,9 +98,7 @@
    "lat": -27.17437,
    "lon": 152.98133,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 253,
@@ -117,9 +115,7 @@
    "lat": -26.62248,
    "lon": 153.04827,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 249,
@@ -136,9 +132,7 @@
    "lat": -26.57477,
    "lon": 152.97492,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 273,
@@ -155,9 +149,7 @@
    "lat": -26.70746,
    "lon": 153.04675,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 269,
@@ -174,9 +166,7 @@
    "lat": -26.68479,
    "lon": 152.9595,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 268,
@@ -193,9 +183,7 @@
    "lat": -26.76021,
    "lon": 152.96231,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 260,
@@ -212,9 +200,7 @@
    "lat": -26.45279,
    "lon": 153.01395,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 257,
@@ -231,9 +217,7 @@
    "lat": -26.79894,
    "lon": 153.11487,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 261,
@@ -250,9 +234,7 @@
    "lat": -26.5663,
    "lon": 152.76555,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 259,
@@ -288,9 +270,7 @@
    "lat": -26.73246,
    "lon": 152.75412,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 271,
@@ -307,9 +287,7 @@
    "lat": -26.36567,
    "lon": 152.85896,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 272,
@@ -326,9 +304,7 @@
    "lat": -26.34145,
    "lon": 152.8915,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 270,
@@ -345,9 +321,7 @@
    "lat": -26.34748,
    "lon": 152.85901,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   },
   {
    "id": 276,
@@ -364,9 +338,7 @@
    "lat": -26.34148,
    "lon": 152.84916,
    "image_ok": true,
-   "image_time": "2026-10-26T17:45:00+10:00",
-   "image_time_text": "Mon 26 Oct 2026 05:45 PM AEST",
-   "image_stale": true
+   "image_stale": false
   }
  ]
 }
