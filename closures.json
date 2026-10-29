@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-10-30T04:49:54+10:00",
- "generated_at_text": "Fri 30 Oct 2026 04:49 AM AEST",
+ "generated_at": "2026-10-30T09:04:50+10:00",
+ "generated_at_text": "Fri 30 Oct 2026 09:04 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-10-30T04:49:45+10:00",
+  "feed_published": "2026-10-30T09:04:33+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,8 +17,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 16,
-   "closed": 13,
+   "count": 15,
+   "closed": 12,
    "partial": 3
   },
   {
@@ -43,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 21,
+ "count": 20,
  "excluded": [],
  "closures": [
   {
@@ -101,8 +101,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T06:50:00+10:00",
-   "last_updated": "2026-10-29T07:46:04+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 07:46 AM AEST",
+   "last_updated": "2026-10-30T07:42:04+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 07:42 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836358",
@@ -149,8 +149,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T16:55:00+10:00",
-   "last_updated": "2026-10-29T06:06:02+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 06:06 AM AEST",
+   "last_updated": "2026-10-30T06:08:03+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 06:08 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836587",
@@ -307,8 +307,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T16:30:00+10:00",
-   "last_updated": "2026-10-29T06:08:07+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 06:08 AM AEST",
+   "last_updated": "2026-10-30T06:06:22+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 06:06 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837401",
@@ -791,44 +791,6 @@
    }
   },
   {
-   "id": 836188,
-   "road": "Left Hand Branch Road",
-   "description": "Water over road - Various Locations - Observe Signage",
-   "locality": "Lefthand Branch",
-   "lga": "Lockyer Valley Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Observe signage",
-   "information": null,
-   "status": "Published",
-   "start": "2026-10-22T15:00:00+10:00",
-   "last_updated": "2026-10-29T07:48:01+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 07:48 AM AEST",
-   "provided_by": "Lockyer Valley Regional Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836188",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.76204,
-    152.24917
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.76204,
-      152.24917
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
    "id": 837194,
    "road": "Millmerran Leyburn Road ( Leyburn Road)",
    "description": "Gore Highway to Tummaville Road, Leyburn",
@@ -845,8 +807,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T09:03:00+10:00",
-   "last_updated": "2026-10-29T18:15:59+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 06:15 PM AEST",
+   "last_updated": "2026-10-30T07:16:40+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 07:16 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837194",
@@ -2713,8 +2675,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T13:00:00+10:00",
-   "last_updated": "2026-10-29T07:48:03+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 07:48 AM AEST",
+   "last_updated": "2026-10-30T07:42:08+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 07:42 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836502",
@@ -2727,12 +2689,12 @@
    "geometry": {
     "points": [
      [
-      -27.73364,
-      152.32892
-     ],
-     [
       -27.73871,
       152.32851
+     ],
+     [
+      -27.73364,
+      152.32892
      ]
     ],
     "lines": []
@@ -2755,8 +2717,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-27T09:00:00+10:00",
-   "last_updated": "2026-10-29T07:46:05+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 07:46 AM AEST",
+   "last_updated": "2026-10-30T07:42:10+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 07:42 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837540",
@@ -3167,8 +3129,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T12:21:00+10:00",
-   "last_updated": "2026-10-29T06:06:07+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 06:06 AM AEST",
+   "last_updated": "2026-10-30T06:06:10+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 06:06 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837284",
@@ -3345,6 +3307,140 @@
       [
        -28.00665,
        151.75683
+      ]
+     ],
+     [
+      [
+       -27.97316,
+       151.70052
+      ],
+      [
+       -27.97983,
+       151.70518
+      ],
+      [
+       -27.98001,
+       151.70535
+      ],
+      [
+       -27.98179,
+       151.70698
+      ],
+      [
+       -27.9837,
+       151.70869
+      ],
+      [
+       -27.98607,
+       151.71083
+      ],
+      [
+       -27.98614,
+       151.71089
+      ],
+      [
+       -27.98622,
+       151.71098
+      ],
+      [
+       -27.98633,
+       151.71108
+      ],
+      [
+       -27.98638,
+       151.71115
+      ],
+      [
+       -27.98641,
+       151.71122
+      ],
+      [
+       -27.98645,
+       151.71132
+      ],
+      [
+       -27.98647,
+       151.71146
+      ],
+      [
+       -27.98648,
+       151.71152
+      ],
+      [
+       -27.98658,
+       151.71253
+      ],
+      [
+       -27.98664,
+       151.71318
+      ],
+      [
+       -27.98669,
+       151.71355
+      ],
+      [
+       -27.98672,
+       151.71384
+      ],
+      [
+       -27.98678,
+       151.71408
+      ],
+      [
+       -27.98687,
+       151.71433
+      ],
+      [
+       -27.98697,
+       151.71455
+      ],
+      [
+       -27.98702,
+       151.71463
+      ],
+      [
+       -27.9872,
+       151.71491
+      ],
+      [
+       -27.98864,
+       151.71668
+      ],
+      [
+       -27.98905,
+       151.7172
+      ],
+      [
+       -27.9892,
+       151.71742
+      ],
+      [
+       -27.98936,
+       151.71769
+      ],
+      [
+       -27.98944,
+       151.71781
+      ],
+      [
+       -27.9899,
+       151.71866
+      ],
+      [
+       -27.99063,
+       151.72005
+      ],
+      [
+       -27.99225,
+       151.72314
+      ],
+      [
+       -27.99227,
+       151.72318
+      ],
+      [
+       -27.99426,
+       151.72759
       ]
      ],
      [
@@ -3608,140 +3704,6 @@
        -27.97311,
        151.70054
       ]
-     ],
-     [
-      [
-       -27.97316,
-       151.70052
-      ],
-      [
-       -27.97983,
-       151.70518
-      ],
-      [
-       -27.98001,
-       151.70535
-      ],
-      [
-       -27.98179,
-       151.70698
-      ],
-      [
-       -27.9837,
-       151.70869
-      ],
-      [
-       -27.98607,
-       151.71083
-      ],
-      [
-       -27.98614,
-       151.71089
-      ],
-      [
-       -27.98622,
-       151.71098
-      ],
-      [
-       -27.98633,
-       151.71108
-      ],
-      [
-       -27.98638,
-       151.71115
-      ],
-      [
-       -27.98641,
-       151.71122
-      ],
-      [
-       -27.98645,
-       151.71132
-      ],
-      [
-       -27.98647,
-       151.71146
-      ],
-      [
-       -27.98648,
-       151.71152
-      ],
-      [
-       -27.98658,
-       151.71253
-      ],
-      [
-       -27.98664,
-       151.71318
-      ],
-      [
-       -27.98669,
-       151.71355
-      ],
-      [
-       -27.98672,
-       151.71384
-      ],
-      [
-       -27.98678,
-       151.71408
-      ],
-      [
-       -27.98687,
-       151.71433
-      ],
-      [
-       -27.98697,
-       151.71455
-      ],
-      [
-       -27.98702,
-       151.71463
-      ],
-      [
-       -27.9872,
-       151.71491
-      ],
-      [
-       -27.98864,
-       151.71668
-      ],
-      [
-       -27.98905,
-       151.7172
-      ],
-      [
-       -27.9892,
-       151.71742
-      ],
-      [
-       -27.98936,
-       151.71769
-      ],
-      [
-       -27.98944,
-       151.71781
-      ],
-      [
-       -27.9899,
-       151.71866
-      ],
-      [
-       -27.99063,
-       151.72005
-      ],
-      [
-       -27.99225,
-       151.72314
-      ],
-      [
-       -27.99227,
-       151.72318
-      ],
-      [
-       -27.99426,
-       151.72759
-      ]
      ]
     ]
    }
@@ -3763,8 +3725,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-27T07:04:00+10:00",
-   "last_updated": "2026-10-29T06:08:12+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 06:08 AM AEST",
+   "last_updated": "2026-10-30T06:06:30+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 06:06 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837508",
@@ -3989,6 +3951,20 @@
       [
        -27.86265,
        151.549
+      ]
+     ],
+     [
+      [
+       -27.82419,
+       151.57586
+      ],
+      [
+       -27.84053,
+       151.57289
+      ],
+      [
+       -27.8455,
+       151.57199
       ]
      ],
      [
@@ -4292,20 +4268,6 @@
        -27.86321,
        151.54382
       ]
-     ],
-     [
-      [
-       -27.82419,
-       151.57586
-      ],
-      [
-       -27.84053,
-       151.57289
-      ],
-      [
-       -27.8455,
-       151.57199
-      ]
      ]
     ]
    }
@@ -4327,8 +4289,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T06:15:00+10:00",
-   "last_updated": "2026-10-29T07:52:07+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 07:52 AM AEST",
+   "last_updated": "2026-10-30T07:44:03+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 07:44 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836344",
@@ -4475,8 +4437,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-25T15:30:00+10:00",
-   "last_updated": "2026-10-29T07:46:03+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 07:46 AM AEST",
+   "last_updated": "2026-10-30T07:42:03+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 07:42 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836345",
@@ -4524,8 +4486,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T12:24:00+10:00",
-   "last_updated": "2026-10-29T06:10:01+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 06:10 AM AEST",
+   "last_updated": "2026-10-30T06:06:16+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 06:06 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837290",
@@ -4958,8 +4920,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-06-25T08:47:00+10:00",
-   "last_updated": "2026-10-29T18:16:28+10:00",
-   "last_updated_text": "Thu 29 Oct 2026 06:16 PM AEST",
+   "last_updated": "2026-10-30T06:16:27+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 06:16 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/811011",
@@ -5010,8 +4972,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-29T10:03:00+10:00",
-   "last_updated": "2026-10-30T04:06:10+10:00",
-   "last_updated_text": "Fri 30 Oct 2026 04:06 AM AEST",
+   "last_updated": "2026-10-30T06:53:22+10:00",
+   "last_updated_text": "Fri 30 Oct 2026 06:53 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/838116",
