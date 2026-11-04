@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-05T03:45:40+10:00",
- "generated_at_text": "Thu 05 Nov 2026 03:45 AM AEST",
+ "generated_at": "2026-11-05T08:57:16+10:00",
+ "generated_at_text": "Thu 05 Nov 2026 08:57 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-05T03:38:21+10:00",
+  "feed_published": "2026-11-05T08:56:10+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,8 +17,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 15,
-   "closed": 9,
+   "count": 14,
+   "closed": 8,
    "partial": 6
   },
   {
@@ -43,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 17,
+ "count": 16,
  "excluded": [],
  "closures": [
   {
@@ -63,8 +63,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T06:50:00+10:00",
-   "last_updated": "2026-11-03T17:12:14+10:00",
-   "last_updated_text": "Tue 03 Nov 2026 05:12 PM AEST",
+   "last_updated": "2026-11-05T07:52:04+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:52 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836358",
@@ -111,8 +111,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T16:55:00+10:00",
-   "last_updated": "2026-11-04T06:20:02+10:00",
-   "last_updated_text": "Wed 04 Nov 2026 06:20 AM AEST",
+   "last_updated": "2026-11-05T07:38:09+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836587",
@@ -269,8 +269,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T16:30:00+10:00",
-   "last_updated": "2026-11-04T09:52:02+10:00",
-   "last_updated_text": "Wed 04 Nov 2026 09:52 AM AEST",
+   "last_updated": "2026-11-05T07:38:17+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839385",
@@ -769,8 +769,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T13:00:00+10:00",
-   "last_updated": "2026-11-03T17:12:17+10:00",
-   "last_updated_text": "Tue 03 Nov 2026 05:12 PM AEST",
+   "last_updated": "2026-11-05T07:52:07+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:52 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836502",
@@ -783,12 +783,12 @@
    "geometry": {
     "points": [
      [
-      -27.73871,
-      152.32851
-     ],
-     [
       -27.73364,
       152.32892
+     ],
+     [
+      -27.73871,
+      152.32851
      ]
     ],
     "lines": []
@@ -811,8 +811,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-27T09:00:00+10:00",
-   "last_updated": "2026-11-03T17:12:21+10:00",
-   "last_updated_text": "Tue 03 Nov 2026 05:12 PM AEST",
+   "last_updated": "2026-11-05T07:50:04+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:50 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837540",
@@ -1043,8 +1043,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-04T06:15:00+10:00",
-   "last_updated": "2026-11-04T23:31:59+10:00",
-   "last_updated_text": "Wed 04 Nov 2026 11:31 PM AEST",
+   "last_updated": "2026-11-05T07:39:06+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:39 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839350",
@@ -1071,602 +1071,6 @@
    }
   },
   {
-   "id": 837284,
-   "road": "Oleary Road",
-   "description": "Between Clifton Leyburn and Ryeford Pratten Roads",
-   "locality": "Ellangowan / Old Talgai",
-   "lga": "Southern Downs Regional / Toowoomba Regional",
-   "event_type": "Hazard",
-   "event_subtype": "Road damage",
-   "due_to": "Earlier flooding",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Use alternative route",
-   "information": null,
-   "status": "Published",
-   "start": "2026-10-26T12:21:00+10:00",
-   "last_updated": "2026-11-04T06:18:04+10:00",
-   "last_updated_text": "Wed 04 Nov 2026 06:18 AM AEST",
-   "provided_by": "Toowoomba Regional",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837284",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.98672,
-    151.71384
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.97316,
-       151.70052
-      ],
-      [
-       -27.97983,
-       151.70518
-      ],
-      [
-       -27.98001,
-       151.70535
-      ],
-      [
-       -27.98179,
-       151.70698
-      ],
-      [
-       -27.9837,
-       151.70869
-      ],
-      [
-       -27.98607,
-       151.71083
-      ],
-      [
-       -27.98614,
-       151.71089
-      ],
-      [
-       -27.98622,
-       151.71098
-      ],
-      [
-       -27.98633,
-       151.71108
-      ],
-      [
-       -27.98638,
-       151.71115
-      ],
-      [
-       -27.98641,
-       151.71122
-      ],
-      [
-       -27.98645,
-       151.71132
-      ],
-      [
-       -27.98647,
-       151.71146
-      ],
-      [
-       -27.98648,
-       151.71152
-      ],
-      [
-       -27.98658,
-       151.71253
-      ],
-      [
-       -27.98664,
-       151.71318
-      ],
-      [
-       -27.98669,
-       151.71355
-      ],
-      [
-       -27.98672,
-       151.71384
-      ],
-      [
-       -27.98678,
-       151.71408
-      ],
-      [
-       -27.98687,
-       151.71433
-      ],
-      [
-       -27.98697,
-       151.71455
-      ],
-      [
-       -27.98702,
-       151.71463
-      ],
-      [
-       -27.9872,
-       151.71491
-      ],
-      [
-       -27.98864,
-       151.71668
-      ],
-      [
-       -27.98905,
-       151.7172
-      ],
-      [
-       -27.9892,
-       151.71742
-      ],
-      [
-       -27.98936,
-       151.71769
-      ],
-      [
-       -27.98944,
-       151.71781
-      ],
-      [
-       -27.9899,
-       151.71866
-      ],
-      [
-       -27.99063,
-       151.72005
-      ],
-      [
-       -27.99225,
-       151.72314
-      ],
-      [
-       -27.99227,
-       151.72318
-      ],
-      [
-       -27.99426,
-       151.72759
-      ]
-     ],
-     [
-      [
-       -27.95176,
-       151.69311
-      ],
-      [
-       -27.95193,
-       151.69258
-      ],
-      [
-       -27.95198,
-       151.69242
-      ],
-      [
-       -27.95212,
-       151.69202
-      ],
-      [
-       -27.95225,
-       151.69158
-      ],
-      [
-       -27.9523,
-       151.69143
-      ],
-      [
-       -27.95234,
-       151.69134
-      ],
-      [
-       -27.95237,
-       151.69129
-      ],
-      [
-       -27.95243,
-       151.69122
-      ],
-      [
-       -27.95245,
-       151.69119
-      ],
-      [
-       -27.95249,
-       151.69116
-      ],
-      [
-       -27.95253,
-       151.69114
-      ],
-      [
-       -27.95258,
-       151.69112
-      ],
-      [
-       -27.95262,
-       151.69111
-      ],
-      [
-       -27.95266,
-       151.69111
-      ],
-      [
-       -27.9527,
-       151.69111
-      ],
-      [
-       -27.95282,
-       151.69115
-      ],
-      [
-       -27.95305,
-       151.69129
-      ],
-      [
-       -27.9534,
-       151.69152
-      ],
-      [
-       -27.95431,
-       151.69209
-      ],
-      [
-       -27.95525,
-       151.69268
-      ],
-      [
-       -27.95603,
-       151.69318
-      ],
-      [
-       -27.95626,
-       151.69332
-      ],
-      [
-       -27.95646,
-       151.69341
-      ],
-      [
-       -27.95668,
-       151.69352
-      ],
-      [
-       -27.95714,
-       151.69369
-      ],
-      [
-       -27.95797,
-       151.69397
-      ],
-      [
-       -27.95863,
-       151.6942
-      ],
-      [
-       -27.9588,
-       151.69426
-      ],
-      [
-       -27.95978,
-       151.69459
-      ],
-      [
-       -27.96052,
-       151.69485
-      ],
-      [
-       -27.96092,
-       151.69499
-      ],
-      [
-       -27.96116,
-       151.69508
-      ],
-      [
-       -27.96134,
-       151.69512
-      ],
-      [
-       -27.96153,
-       151.69516
-      ],
-      [
-       -27.96158,
-       151.69516
-      ],
-      [
-       -27.96176,
-       151.69519
-      ],
-      [
-       -27.96209,
-       151.6952
-      ],
-      [
-       -27.96239,
-       151.6952
-      ],
-      [
-       -27.96274,
-       151.69518
-      ],
-      [
-       -27.96297,
-       151.69516
-      ],
-      [
-       -27.96314,
-       151.69517
-      ],
-      [
-       -27.96326,
-       151.69518
-      ],
-      [
-       -27.96331,
-       151.6952
-      ],
-      [
-       -27.96336,
-       151.69522
-      ],
-      [
-       -27.96346,
-       151.69526
-      ],
-      [
-       -27.96358,
-       151.69534
-      ],
-      [
-       -27.9637,
-       151.69543
-      ],
-      [
-       -27.96385,
-       151.69559
-      ],
-      [
-       -27.96424,
-       151.69603
-      ],
-      [
-       -27.96454,
-       151.69635
-      ],
-      [
-       -27.96464,
-       151.69644
-      ],
-      [
-       -27.96468,
-       151.69647
-      ],
-      [
-       -27.9647,
-       151.69649
-      ],
-      [
-       -27.96476,
-       151.69653
-      ],
-      [
-       -27.96483,
-       151.69658
-      ],
-      [
-       -27.96507,
-       151.6967
-      ],
-      [
-       -27.96528,
-       151.69679
-      ],
-      [
-       -27.96584,
-       151.69699
-      ],
-      [
-       -27.96662,
-       151.69725
-      ],
-      [
-       -27.96755,
-       151.69758
-      ],
-      [
-       -27.96893,
-       151.69806
-      ],
-      [
-       -27.96986,
-       151.69839
-      ],
-      [
-       -27.97078,
-       151.6987
-      ],
-      [
-       -27.97311,
-       151.70054
-      ]
-     ],
-     [
-      [
-       -27.99437,
-       151.72837
-      ],
-      [
-       -27.99452,
-       151.72947
-      ],
-      [
-       -27.99465,
-       151.73048
-      ],
-      [
-       -27.99469,
-       151.7309
-      ],
-      [
-       -27.99469,
-       151.731
-      ],
-      [
-       -27.99681,
-       151.74023
-      ],
-      [
-       -27.99704,
-       151.74116
-      ],
-      [
-       -27.99759,
-       151.74342
-      ],
-      [
-       -27.9982,
-       151.74594
-      ],
-      [
-       -27.99863,
-       151.74753
-      ],
-      [
-       -28.00165,
-       151.75204
-      ],
-      [
-       -28.00181,
-       151.75216
-      ],
-      [
-       -28.00193,
-       151.75224
-      ],
-      [
-       -28.00207,
-       151.7523
-      ],
-      [
-       -28.00265,
-       151.75253
-      ],
-      [
-       -28.00329,
-       151.75277
-      ],
-      [
-       -28.00354,
-       151.75286
-      ],
-      [
-       -28.00374,
-       151.75296
-      ],
-      [
-       -28.0039,
-       151.75304
-      ],
-      [
-       -28.00407,
-       151.75318
-      ],
-      [
-       -28.0042,
-       151.75333
-      ],
-      [
-       -28.00437,
-       151.7536
-      ],
-      [
-       -28.00443,
-       151.75378
-      ],
-      [
-       -28.00485,
-       151.75781
-      ],
-      [
-       -28.00486,
-       151.7578
-      ],
-      [
-       -28.00514,
-       151.75764
-      ],
-      [
-       -28.00533,
-       151.75756
-      ],
-      [
-       -28.0054,
-       151.75752
-      ],
-      [
-       -28.00546,
-       151.75745
-      ],
-      [
-       -28.0055,
-       151.75734
-      ],
-      [
-       -28.00547,
-       151.75665
-      ],
-      [
-       -28.00561,
-       151.75682
-      ],
-      [
-       -28.0057,
-       151.7569
-      ],
-      [
-       -28.00584,
-       151.75696
-      ],
-      [
-       -28.00599,
-       151.75701
-      ],
-      [
-       -28.00613,
-       151.75701
-      ],
-      [
-       -28.00623,
-       151.75699
-      ],
-      [
-       -28.00635,
-       151.75696
-      ],
-      [
-       -28.00643,
-       151.75693
-      ],
-      [
-       -28.0066,
-       151.75685
-      ],
-      [
-       -28.00665,
-       151.75683
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 837508,
    "road": "Tummaville Road / Tummaville Road / Millmerran-Leyburn Road",
    "description": "Between Millmerran Leyburn and Gunbower Roads",
@@ -1683,8 +1087,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-27T07:04:00+10:00",
-   "last_updated": "2026-11-04T06:18:11+10:00",
-   "last_updated_text": "Wed 04 Nov 2026 06:18 AM AEST",
+   "last_updated": "2026-11-05T07:38:27+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837508",
@@ -1697,20 +1101,6 @@
    "geometry": {
     "points": [],
     "lines": [
-     [
-      [
-       -27.82419,
-       151.57586
-      ],
-      [
-       -27.84053,
-       151.57289
-      ],
-      [
-       -27.8455,
-       151.57199
-      ]
-     ],
      [
       [
        -27.84559,
@@ -1923,6 +1313,20 @@
       [
        -27.86265,
        151.549
+      ]
+     ],
+     [
+      [
+       -27.82419,
+       151.57586
+      ],
+      [
+       -27.84053,
+       151.57289
+      ],
+      [
+       -27.8455,
+       151.57199
       ]
      ],
      [
@@ -2285,8 +1689,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-04T06:15:00+10:00",
-   "last_updated": "2026-11-04T09:52:03+10:00",
-   "last_updated_text": "Wed 04 Nov 2026 09:52 AM AEST",
+   "last_updated": "2026-11-05T07:38:31+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839346",
@@ -2449,8 +1853,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-25T15:30:00+10:00",
-   "last_updated": "2026-11-03T17:12:10+10:00",
-   "last_updated_text": "Tue 03 Nov 2026 05:12 PM AEST",
+   "last_updated": "2026-11-05T07:52:02+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:52 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836345",
@@ -2498,8 +1902,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-04T16:45:00+10:00",
-   "last_updated": "2026-11-05T03:31:52+10:00",
-   "last_updated_text": "Thu 05 Nov 2026 03:31 AM AEST",
+   "last_updated": "2026-11-05T07:39:05+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:39 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839530",
@@ -2554,8 +1958,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T12:24:00+10:00",
-   "last_updated": "2026-11-04T06:18:05+10:00",
-   "last_updated_text": "Wed 04 Nov 2026 06:18 AM AEST",
+   "last_updated": "2026-11-05T07:38:13+10:00",
+   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837290",
