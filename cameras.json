@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-04T08:28:35+10:00",
- "generated_at_text": "Wed 04 Nov 2026 08:28 AM AEST",
+ "generated_at": "2026-11-04T12:35:58+10:00",
+ "generated_at_text": "Wed 04 Nov 2026 12:35 PM AEST",
  "stale": false,
  "source": {
   "url": "https://data.qldtraffic.qld.gov.au/floodcameras.geojson"
@@ -251,7 +251,9 @@
    "lat": -26.39924,
    "lon": 152.9016,
    "image_ok": true,
-   "image_stale": false
+   "image_time": "2026-11-04T08:00:00+10:00",
+   "image_time_text": "Wed 04 Nov 2026 08:00 AM AEST",
+   "image_stale": true
   },
   {
    "id": 258,
