@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-06T04:31:28+10:00",
- "generated_at_text": "Fri 06 Nov 2026 04:31 AM AEST",
+ "generated_at": "2026-11-06T09:51:09+10:00",
+ "generated_at_text": "Fri 06 Nov 2026 09:51 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-06T04:28:49+10:00",
+  "feed_published": "2026-11-06T09:50:21+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,9 +17,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 11,
+   "count": 10,
    "closed": 6,
-   "partial": 5
+   "partial": 4
   },
   {
    "id": "ipswich",
@@ -43,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 13,
+ "count": 12,
  "excluded": [],
  "closures": [
   {
@@ -63,8 +63,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T16:55:00+10:00",
-   "last_updated": "2026-11-05T07:38:09+10:00",
-   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
+   "last_updated": "2026-11-06T06:14:02+10:00",
+   "last_updated_text": "Fri 06 Nov 2026 06:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/836587",
@@ -77,16 +77,6 @@
    "geometry": {
     "points": [],
     "lines": [
-     [
-      [
-       -27.83878,
-       151.45014
-      ],
-      [
-       -27.86253,
-       151.44641
-      ]
-     ],
      [
       [
        -27.81511,
@@ -200,6 +190,16 @@
        -27.83878,
        151.45012
       ]
+     ],
+     [
+      [
+       -27.83878,
+       151.45014
+      ],
+      [
+       -27.86253,
+       151.44641
+      ]
      ]
     ]
    }
@@ -221,8 +221,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T16:30:00+10:00",
-   "last_updated": "2026-11-05T07:38:17+10:00",
-   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
+   "last_updated": "2026-11-06T06:14:10+10:00",
+   "last_updated_text": "Fri 06 Nov 2026 06:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839385",
@@ -721,8 +721,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-05T14:26:00+10:00",
-   "last_updated": "2026-11-05T14:28:03+10:00",
-   "last_updated_text": "Thu 05 Nov 2026 02:28 PM AEST",
+   "last_updated": "2026-11-06T06:12:02+10:00",
+   "last_updated_text": "Fri 06 Nov 2026 06:12 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839723",
@@ -1163,8 +1163,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-04T06:15:00+10:00",
-   "last_updated": "2026-11-05T07:38:31+10:00",
-   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
+   "last_updated": "2026-11-06T06:12:01+10:00",
+   "last_updated_text": "Fri 06 Nov 2026 06:12 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839346",
@@ -1311,62 +1311,6 @@
    }
   },
   {
-   "id": 839530,
-   "road": "Mount Sylvia Road",
-   "description": "In the vicinity of Upper Tenthill School road",
-   "locality": "Upper Tenthill",
-   "lga": "Lockyer Valley Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-04T16:45:00+10:00",
-   "last_updated": "2026-11-06T01:34:53+10:00",
-   "last_updated_text": "Fri 06 Nov 2026 01:34 AM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839530",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.65676,
-    152.22096
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.65536,
-       152.22062
-      ],
-      [
-       -27.65642,
-       152.22089
-      ],
-      [
-       -27.65676,
-       152.22096
-      ],
-      [
-       -27.65772,
-       152.22112
-      ],
-      [
-       -27.65865,
-       152.22126
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 837290,
    "road": "Pilton Valley Road / Nelson Road",
    "description": "Between Nelson and Waldron Roads",
@@ -1383,8 +1327,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T12:24:00+10:00",
-   "last_updated": "2026-11-05T07:38:13+10:00",
-   "last_updated_text": "Thu 05 Nov 2026 07:38 AM AEST",
+   "last_updated": "2026-11-06T06:14:08+10:00",
+   "last_updated_text": "Fri 06 Nov 2026 06:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837290",
