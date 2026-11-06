@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-11-06T09:51:09+10:00",
- "generated_at_text": "Fri 06 Nov 2026 09:51 AM AEST",
+ "generated_at": "2026-11-06T14:55:02+10:00",
+ "generated_at_text": "Fri 06 Nov 2026 02:55 PM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-06T09:50:21+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-11-06T14:53:16+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -17,9 +15,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 10,
+   "count": 11,
    "closed": 6,
-   "partial": 4
+   "partial": 5
   },
   {
    "id": "ipswich",
@@ -43,7 +41,7 @@
    "partial": 0
   }
  ],
- "count": 12,
+ "count": 13,
  "excluded": [],
  "closures": [
   {
@@ -77,6 +75,16 @@
    "geometry": {
     "points": [],
     "lines": [
+     [
+      [
+       -27.83878,
+       151.45014
+      ],
+      [
+       -27.86253,
+       151.44641
+      ]
+     ],
      [
       [
        -27.81511,
@@ -189,16 +197,6 @@
       [
        -27.83878,
        151.45012
-      ]
-     ],
-     [
-      [
-       -27.83878,
-       151.45014
-      ],
-      [
-       -27.86253,
-       151.44641
       ]
      ]
     ]
@@ -1065,44 +1063,48 @@
    }
   },
   {
-   "id": 839350,
-   "road": "Oakey Pittsworth Road",
-   "description": "Between Moran Road and Mount Tyson Road",
-   "locality": "Motley",
+   "id": 839933,
+   "road": "Terrabella Road / Imhoff Road",
+   "description": null,
+   "locality": "Sandy Camp",
    "lga": "Toowoomba Regional",
    "event_type": "Flooding",
    "event_subtype": "Long-term flooding",
-   "due_to": null,
+   "due_to": "Flooding of river",
    "impact": "Road closed to all traffic",
    "impact_type": "Closures",
    "severity": "closed",
    "direction": "All directions",
-   "advice": "Do not drive in flood waters",
+   "advice": "Use alternative route",
    "information": null,
    "status": "Published",
-   "start": "2026-11-04T06:15:00+10:00",
-   "last_updated": "2026-11-06T01:35:52+10:00",
-   "last_updated_text": "Fri 06 Nov 2026 01:35 AM AEST",
-   "provided_by": "Department of Transport and Main Roads",
+   "start": "2026-11-06T11:51:00+10:00",
+   "last_updated": "2026-11-06T11:54:03+10:00",
+   "last_updated_text": "Fri 06 Nov 2026 11:54 AM AEST",
+   "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839350",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839933",
    "region": "westbrook",
    "region_name": "Westbrook / Toowoomba",
    "marker": [
-    -27.55796,
-    151.60705
+    -27.95115,
+    151.85715
    ],
    "geometry": {
     "points": [],
     "lines": [
      [
       [
-       -27.55796,
-       151.60705
+       -27.92808,
+       151.86191
       ],
       [
-       -27.55902,
-       151.60584
+       -27.95115,
+       151.85715
+      ],
+      [
+       -27.97833,
+       151.85275
       ]
      ]
     ]
@@ -1305,6 +1307,50 @@
       [
        -27.90809,
        151.55062
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 839350,
+   "road": "Oakey Pittsworth Road",
+   "description": "Between Moran Road and Mount Tyson Road",
+   "locality": "Motley",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": null,
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Reduced speed limit (60km/h)",
+   "information": "Water over 1 lane",
+   "status": "Published",
+   "start": "2026-11-04T06:15:00+10:00",
+   "last_updated": "2026-11-06T13:46:31+10:00",
+   "last_updated_text": "Fri 06 Nov 2026 01:46 PM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839350",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.55796,
+    151.60705
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.55796,
+       151.60705
+      ],
+      [
+       -27.55902,
+       151.60584
       ]
      ]
     ]
@@ -1663,8 +1709,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-06-25T08:47:00+10:00",
-   "last_updated": "2026-11-06T01:33:55+10:00",
-   "last_updated_text": "Fri 06 Nov 2026 01:33 AM AEST",
+   "last_updated": "2026-11-06T13:45:11+10:00",
+   "last_updated_text": "Fri 06 Nov 2026 01:45 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/811011",
