@@ -1,12 +1,14 @@
 {
- "generated_at": "2026-11-07T14:25:40+10:00",
- "generated_at_text": "Sat 07 Nov 2026 02:25 PM AEST",
+ "generated_at": "2026-11-07T21:17:19+10:00",
+ "generated_at_text": "Sat 07 Nov 2026 09:17 PM AEST",
  "stale": false,
  "source": {
-  "used": "api",
-  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
-  "feed_published": "2026-11-07T14:25:31+10:00",
-  "errors": []
+  "used": "fallback",
+  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
+  "feed_published": "2026-11-07T21:14:26+10:00",
+  "errors": [
+   "api: HTTP 429"
+  ]
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -75,16 +77,6 @@
    "geometry": {
     "points": [],
     "lines": [
-     [
-      [
-       -27.83878,
-       151.45014
-      ],
-      [
-       -27.86253,
-       151.44641
-      ]
-     ],
      [
       [
        -27.81511,
@@ -197,6 +189,16 @@
       [
        -27.83878,
        151.45012
+      ]
+     ],
+     [
+      [
+       -27.83878,
+       151.45014
+      ],
+      [
+       -27.86253,
+       151.44641
       ]
      ]
     ]
@@ -1329,8 +1331,8 @@
    "information": "Water over 1 lane",
    "status": "Published",
    "start": "2026-11-04T06:15:00+10:00",
-   "last_updated": "2026-11-07T02:43:00+10:00",
-   "last_updated_text": "Sat 07 Nov 2026 02:43 AM AEST",
+   "last_updated": "2026-11-07T14:43:21+10:00",
+   "last_updated_text": "Sat 07 Nov 2026 02:43 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839350",
@@ -1709,8 +1711,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-06-25T08:47:00+10:00",
-   "last_updated": "2026-11-07T02:43:26+10:00",
-   "last_updated_text": "Sat 07 Nov 2026 02:43 AM AEST",
+   "last_updated": "2026-11-07T14:43:59+10:00",
+   "last_updated_text": "Sat 07 Nov 2026 02:43 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/811011",
