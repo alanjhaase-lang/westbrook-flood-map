@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-08T22:07:09+10:00",
- "generated_at_text": "Sun 08 Nov 2026 10:07 PM AEST",
+ "generated_at": "2026-11-09T03:57:59+10:00",
+ "generated_at_text": "Mon 09 Nov 2026 03:57 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-08T22:00:02+10:00",
+  "feed_published": "2026-11-09T03:53:21+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -1331,8 +1331,8 @@
    "information": "Water over 1 lane",
    "status": "Published",
    "start": "2026-11-04T06:15:00+10:00",
-   "last_updated": "2026-11-08T19:39:30+10:00",
-   "last_updated_text": "Sun 08 Nov 2026 07:39 PM AEST",
+   "last_updated": "2026-11-09T00:51:14+10:00",
+   "last_updated_text": "Mon 09 Nov 2026 12:51 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839350",
@@ -1711,8 +1711,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-06-25T08:47:00+10:00",
-   "last_updated": "2026-11-08T19:41:58+10:00",
-   "last_updated_text": "Sun 08 Nov 2026 07:41 PM AEST",
+   "last_updated": "2026-11-09T00:50:56+10:00",
+   "last_updated_text": "Mon 09 Nov 2026 12:50 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/811011",
