@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-11-09T07:40:18+10:00",
- "generated_at_text": "Mon 09 Nov 2026 07:40 AM AEST",
+ "generated_at": "2026-11-09T11:16:46+10:00",
+ "generated_at_text": "Mon 09 Nov 2026 11:16 AM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-09T07:38:05+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-11-09T11:15:57+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -24,9 +22,9 @@
   {
    "id": "ipswich",
    "name": "Ipswich",
-   "count": 1,
+   "count": 0,
    "closed": 0,
-   "partial": 1
+   "partial": 0
   },
   {
    "id": "brisbane",
@@ -43,7 +41,7 @@
    "partial": 0
   }
  ],
- "count": 13,
+ "count": 12,
  "excluded": [],
  "closures": [
   {
@@ -1689,58 +1687,6 @@
       [
        -27.9174,
        152.10723
-      ]
-     ]
-    ]
-   }
-  },
-  {
-   "id": 811011,
-   "road": "Warrill View Peak Crossing Road",
-   "description": "Kalbar Peak Crossing Rd",
-   "locality": "Harrisville",
-   "lga": "Scenic Rim Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": null,
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Proceed with caution",
-   "information": null,
-   "status": "Published",
-   "start": "2026-06-25T08:47:00+10:00",
-   "last_updated": "2026-11-09T00:50:56+10:00",
-   "last_updated_text": "Mon 09 Nov 2026 12:50 AM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/811011",
-   "region": "ipswich",
-   "region_name": "Ipswich",
-   "marker": [
-    -27.81398,
-    152.68543
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.81401,
-       152.68564
-      ],
-      [
-       -27.81398,
-       152.68543
-      ],
-      [
-       -27.81394,
-       152.68523
-      ],
-      [
-       -27.81392,
-       152.68509
       ]
      ]
     ]
