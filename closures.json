@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-10T19:11:30+10:00",
- "generated_at_text": "Tue 10 Nov 2026 07:11 PM AEST",
+ "generated_at": "2026-11-11T03:03:42+10:00",
+ "generated_at_text": "Wed 11 Nov 2026 03:03 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-10T19:07:51+10:00",
+  "feed_published": "2026-11-11T03:02:15+10:00",
   "errors": [
    "api: HTTP 429"
   ]
