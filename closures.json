@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-11-10T04:43:23+10:00",
- "generated_at_text": "Tue 10 Nov 2026 04:43 AM AEST",
+ "generated_at": "2026-11-10T11:48:50+10:00",
+ "generated_at_text": "Tue 10 Nov 2026 11:48 AM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-10T04:35:14+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-11-10T11:47:06+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -17,9 +15,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 10,
+   "count": 9,
    "closed": 4,
-   "partial": 6
+   "partial": 5
   },
   {
    "id": "ipswich",
@@ -43,7 +41,7 @@
    "partial": 0
   }
  ],
- "count": 11,
+ "count": 10,
  "excluded": [],
  "closures": [
   {
@@ -543,8 +541,8 @@
    "information": "Caution - road damage due to flooding",
    "status": "Published",
    "start": "2026-10-28T09:15:00+10:00",
-   "last_updated": "2026-11-08T07:33:06+10:00",
-   "last_updated_text": "Sun 08 Nov 2026 07:33 AM AEST",
+   "last_updated": "2026-11-10T07:39:42+10:00",
+   "last_updated_text": "Tue 10 Nov 2026 07:39 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837831",
@@ -693,8 +691,8 @@
    "information": "1 lane of bridge closed",
    "status": "Published",
    "start": "2026-10-30T14:10:00+10:00",
-   "last_updated": "2026-11-08T07:33:36+10:00",
-   "last_updated_text": "Sun 08 Nov 2026 07:33 AM AEST",
+   "last_updated": "2026-11-10T07:39:37+10:00",
+   "last_updated_text": "Tue 10 Nov 2026 07:39 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/838419",
@@ -745,8 +743,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-09T16:34:00+10:00",
-   "last_updated": "2026-11-10T00:55:20+10:00",
-   "last_updated_text": "Tue 10 Nov 2026 12:55 AM AEST",
+   "last_updated": "2026-11-10T07:59:19+10:00",
+   "last_updated_text": "Tue 10 Nov 2026 07:59 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/840571",
@@ -759,124 +757,6 @@
    "geometry": {
     "points": [],
     "lines": [
-     [
-      [
-       -27.77512,
-       152.19367
-      ],
-      [
-       -27.77518,
-       152.19368
-      ],
-      [
-       -27.77536,
-       152.19371
-      ],
-      [
-       -27.77537,
-       152.19371
-      ],
-      [
-       -27.77568,
-       152.19374
-      ],
-      [
-       -27.77571,
-       152.19374
-      ],
-      [
-       -27.77592,
-       152.19374
-      ],
-      [
-       -27.77607,
-       152.19371
-      ],
-      [
-       -27.77625,
-       152.19367
-      ],
-      [
-       -27.77642,
-       152.19361
-      ],
-      [
-       -27.77659,
-       152.19356
-      ],
-      [
-       -27.7766,
-       152.19356
-      ],
-      [
-       -27.77661,
-       152.19355
-      ],
-      [
-       -27.77677,
-       152.1935
-      ],
-      [
-       -27.77694,
-       152.19344
-      ],
-      [
-       -27.77706,
-       152.19339
-      ],
-      [
-       -27.77716,
-       152.19335
-      ],
-      [
-       -27.7773,
-       152.1933
-      ],
-      [
-       -27.77745,
-       152.19324
-      ],
-      [
-       -27.77753,
-       152.1932
-      ],
-      [
-       -27.77759,
-       152.19315
-      ],
-      [
-       -27.7777,
-       152.19307
-      ],
-      [
-       -27.7778,
-       152.19292
-      ],
-      [
-       -27.77785,
-       152.19281
-      ],
-      [
-       -27.77791,
-       152.19268
-      ],
-      [
-       -27.77795,
-       152.19253
-      ],
-      [
-       -27.77797,
-       152.19246
-      ],
-      [
-       -27.77803,
-       152.19221
-      ],
-      [
-       -27.77813,
-       152.19173
-      ]
-     ],
      [
       [
        -27.77813,
@@ -1198,49 +1078,123 @@
        -27.79326,
        152.18903
       ]
-     ]
-    ]
-   }
-  },
-  {
-   "id": 839350,
-   "road": "Oakey Pittsworth Road",
-   "description": "Between Moran Road and Mount Tyson Road",
-   "locality": "Motley",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": null,
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Reduced speed limit (60km/h)",
-   "information": "Water over 1 lane",
-   "status": "Published",
-   "start": "2026-11-04T06:15:00+10:00",
-   "last_updated": "2026-11-10T01:16:32+10:00",
-   "last_updated_text": "Tue 10 Nov 2026 01:16 AM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839350",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.55796,
-    151.60705
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
+     ],
      [
       [
-       -27.55796,
-       151.60705
+       -27.77512,
+       152.19367
       ],
       [
-       -27.55902,
-       151.60584
+       -27.77518,
+       152.19368
+      ],
+      [
+       -27.77536,
+       152.19371
+      ],
+      [
+       -27.77537,
+       152.19371
+      ],
+      [
+       -27.77568,
+       152.19374
+      ],
+      [
+       -27.77571,
+       152.19374
+      ],
+      [
+       -27.77592,
+       152.19374
+      ],
+      [
+       -27.77607,
+       152.19371
+      ],
+      [
+       -27.77625,
+       152.19367
+      ],
+      [
+       -27.77642,
+       152.19361
+      ],
+      [
+       -27.77659,
+       152.19356
+      ],
+      [
+       -27.7766,
+       152.19356
+      ],
+      [
+       -27.77661,
+       152.19355
+      ],
+      [
+       -27.77677,
+       152.1935
+      ],
+      [
+       -27.77694,
+       152.19344
+      ],
+      [
+       -27.77706,
+       152.19339
+      ],
+      [
+       -27.77716,
+       152.19335
+      ],
+      [
+       -27.7773,
+       152.1933
+      ],
+      [
+       -27.77745,
+       152.19324
+      ],
+      [
+       -27.77753,
+       152.1932
+      ],
+      [
+       -27.77759,
+       152.19315
+      ],
+      [
+       -27.7777,
+       152.19307
+      ],
+      [
+       -27.7778,
+       152.19292
+      ],
+      [
+       -27.77785,
+       152.19281
+      ],
+      [
+       -27.77791,
+       152.19268
+      ],
+      [
+       -27.77795,
+       152.19253
+      ],
+      [
+       -27.77797,
+       152.19246
+      ],
+      [
+       -27.77803,
+       152.19221
+      ],
+      [
+       -27.77813,
+       152.19173
       ]
      ]
     ]
