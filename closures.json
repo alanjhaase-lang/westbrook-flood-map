@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-11T03:03:42+10:00",
- "generated_at_text": "Wed 11 Nov 2026 03:03 AM AEST",
+ "generated_at": "2026-11-11T08:24:54+10:00",
+ "generated_at_text": "Wed 11 Nov 2026 08:24 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-11T03:02:15+10:00",
+  "feed_published": "2026-11-11T08:23:59+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -263,8 +263,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-27T09:00:00+10:00",
-   "last_updated": "2026-11-09T06:14:13+10:00",
-   "last_updated_text": "Mon 09 Nov 2026 06:14 AM AEST",
+   "last_updated": "2026-11-11T06:02:01+10:00",
+   "last_updated_text": "Wed 11 Nov 2026 06:02 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837540",
