@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-11T19:24:34+10:00",
- "generated_at_text": "Wed 11 Nov 2026 07:24 PM AEST",
+ "generated_at": "2026-11-12T03:22:43+10:00",
+ "generated_at_text": "Thu 12 Nov 2026 03:22 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-11T19:22:13+10:00",
+  "feed_published": "2026-11-12T03:11:52+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -31,9 +31,9 @@
   {
    "id": "brisbane",
    "name": "Brisbane",
-   "count": 13,
+   "count": 10,
    "closed": 7,
-   "partial": 6
+   "partial": 3
   },
   {
    "id": "sunshine",
@@ -43,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 21,
+ "count": 18,
  "excluded": [],
  "closures": [
   {
@@ -1195,8 +1195,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T17:11:00+10:00",
-   "last_updated": "2026-11-11T17:12:02+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 05:12 PM AEST",
+   "last_updated": "2026-11-11T21:06:01+10:00",
+   "last_updated_text": "Wed 11 Nov 2026 09:06 PM AEST",
    "provided_by": "Redland City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841082",
@@ -1233,8 +1233,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T17:15:00+10:00",
-   "last_updated": "2026-11-11T17:16:02+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 05:16 PM AEST",
+   "last_updated": "2026-11-11T21:06:03+10:00",
+   "last_updated_text": "Wed 11 Nov 2026 09:06 PM AEST",
    "provided_by": "Redland City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841087",
@@ -1331,86 +1331,6 @@
    }
   },
   {
-   "id": 841101,
-   "road": "Formosa Road",
-   "description": "Between Dairy Swamp Road and Stanbrough Road",
-   "locality": "Belmont",
-   "lga": "Brisbane City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Lane or lanes reduced",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Use alternative route",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T17:49:00+10:00",
-   "last_updated": "2026-11-11T17:51:30+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 05:51 PM AEST",
-   "provided_by": "Brisbane City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841101",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.49204,
-    153.13558
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.49148,
-       153.13204
-      ],
-      [
-       -27.49156,
-       153.1325
-      ],
-      [
-       -27.49172,
-       153.1335
-      ],
-      [
-       -27.49173,
-       153.13358
-      ],
-      [
-       -27.49175,
-       153.1337
-      ],
-      [
-       -27.49204,
-       153.13558
-      ],
-      [
-       -27.49205,
-       153.13565
-      ],
-      [
-       -27.49233,
-       153.13744
-      ],
-      [
-       -27.49252,
-       153.13864
-      ],
-      [
-       -27.49261,
-       153.13924
-      ],
-      [
-       -27.49268,
-       153.13971
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 841077,
    "road": "Gateway Motorway",
    "description": null,
@@ -1427,8 +1347,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T17:07:00+10:00",
-   "last_updated": "2026-11-11T17:08:14+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 05:08 PM AEST",
+   "last_updated": "2026-11-11T23:58:09+10:00",
+   "last_updated_text": "Wed 11 Nov 2026 11:58 PM AEST",
    "provided_by": "Transurban",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841077",
@@ -1443,44 +1363,6 @@
      [
       -27.59245,
       153.09495
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841093,
-   "road": "Miles Platting Road",
-   "description": null,
-   "locality": "Rochedale",
-   "lga": "Brisbane City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": null,
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "Southbound",
-   "advice": "Proceed with caution",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T17:38:00+10:00",
-   "last_updated": "2026-11-11T17:39:30+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 05:39 PM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841093",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.57462,
-    153.10674
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.57462,
-      153.10674
      ]
     ],
     "lines": []
@@ -1503,8 +1385,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T18:12:00+10:00",
-   "last_updated": "2026-11-11T18:13:46+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 06:13 PM AEST",
+   "last_updated": "2026-11-12T02:48:35+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 02:48 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841109",
@@ -1519,44 +1401,6 @@
      [
       -27.49336,
       153.16899
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841104,
-   "road": "Rickertt Road",
-   "description": "All lanes at Chelsea Road",
-   "locality": "Ransome",
-   "lga": "Brisbane City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "Both directions",
-   "advice": "Proceed with caution",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T17:56:00+10:00",
-   "last_updated": "2026-11-11T17:59:23+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 05:59 PM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841104",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.48656,
-    153.18083
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.48656,
-      153.18083
      ]
     ],
     "lines": []
@@ -1579,8 +1423,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T17:12:00+10:00",
-   "last_updated": "2026-11-11T17:14:11+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 05:14 PM AEST",
+   "last_updated": "2026-11-12T02:49:10+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 02:49 AM AEST",
    "provided_by": "Brisbane City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841086",
