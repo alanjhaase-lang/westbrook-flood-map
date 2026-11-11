@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-12T03:22:43+10:00",
- "generated_at_text": "Thu 12 Nov 2026 03:22 AM AEST",
+ "generated_at": "2026-11-12T09:38:46+10:00",
+ "generated_at_text": "Thu 12 Nov 2026 09:38 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-12T03:11:52+10:00",
+  "feed_published": "2026-11-12T09:37:59+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,9 +17,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 8,
-   "closed": 4,
-   "partial": 4
+   "count": 5,
+   "closed": 2,
+   "partial": 3
   },
   {
    "id": "ipswich",
@@ -31,9 +31,9 @@
   {
    "id": "brisbane",
    "name": "Brisbane",
-   "count": 10,
-   "closed": 7,
-   "partial": 3
+   "count": 4,
+   "closed": 2,
+   "partial": 2
   },
   {
    "id": "sunshine",
@@ -43,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 18,
+ "count": 9,
  "excluded": [],
  "closures": [
   {
@@ -113,134 +113,6 @@
       [
        -27.71022,
        152.35674
-      ]
-     ]
-    ]
-   }
-  },
-  {
-   "id": 839723,
-   "road": "Millmerran Leyburn Road / MacWilliam Road",
-   "description": null,
-   "locality": "Tummaville",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Flooding of river",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-05T14:26:00+10:00",
-   "last_updated": "2026-11-06T06:12:02+10:00",
-   "last_updated_text": "Fri 06 Nov 2026 06:12 AM AEST",
-   "provided_by": "Toowoomba Regional",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839723",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.88682,
-    151.52797
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.88793,
-       151.52482
-      ],
-      [
-       -27.88803,
-       151.52497
-      ],
-      [
-       -27.88769,
-       151.52519
-      ],
-      [
-       -27.88745,
-       151.52536
-      ],
-      [
-       -27.88715,
-       151.52554
-      ],
-      [
-       -27.88695,
-       151.52566
-      ],
-      [
-       -27.88684,
-       151.52573
-      ],
-      [
-       -27.8868,
-       151.52577
-      ],
-      [
-       -27.88677,
-       151.52582
-      ],
-      [
-       -27.88672,
-       151.5259
-      ],
-      [
-       -27.88669,
-       151.526
-      ],
-      [
-       -27.88666,
-       151.52614
-      ],
-      [
-       -27.88666,
-       151.52633
-      ],
-      [
-       -27.88666,
-       151.52634
-      ],
-      [
-       -27.8867,
-       151.52673
-      ],
-      [
-       -27.88682,
-       151.52797
-      ],
-      [
-       -27.88692,
-       151.52881
-      ],
-      [
-       -27.88696,
-       151.52918
-      ],
-      [
-       -27.88705,
-       151.52998
-      ],
-      [
-       -27.88713,
-       151.53069
-      ],
-      [
-       -27.88724,
-       151.53157
-      ],
-      [
-       -27.88729,
-       151.53212
-      ],
-      [
-       -27.88731,
-       151.53222
       ]
      ]
     ]
@@ -479,54 +351,6 @@
    }
   },
   {
-   "id": 839933,
-   "road": "Terrabella Road / Imhoff Road",
-   "description": null,
-   "locality": "Sandy Camp",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Flooding of river",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Use alternative route",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-06T11:51:00+10:00",
-   "last_updated": "2026-11-06T11:54:03+10:00",
-   "last_updated_text": "Fri 06 Nov 2026 11:54 AM AEST",
-   "provided_by": "Toowoomba Regional",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839933",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.95115,
-    151.85715
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.92808,
-       151.86191
-      ],
-      [
-       -27.95115,
-       151.85715
-      ],
-      [
-       -27.97833,
-       151.85275
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 837831,
    "road": "Dalrymple Creek Road",
    "description": "Near Hansens Road",
@@ -543,8 +367,8 @@
    "information": "Caution - road damage due to flooding",
    "status": "Published",
    "start": "2026-10-28T09:15:00+10:00",
-   "last_updated": "2026-11-10T07:39:42+10:00",
-   "last_updated_text": "Tue 10 Nov 2026 07:39 AM AEST",
+   "last_updated": "2026-11-12T07:49:00+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 07:49 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837831",
@@ -565,118 +389,6 @@
    }
   },
   {
-   "id": 839346,
-   "road": "Jondaryan Mount Tyson Road",
-   "description": "Between Toowoomba Cecil Plains and Motley Mount Tyson Roads",
-   "locality": "Mount Tyson",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Lane or lanes reduced",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-04T06:15:00+10:00",
-   "last_updated": "2026-11-06T06:12:01+10:00",
-   "last_updated_text": "Fri 06 Nov 2026 06:12 AM AEST",
-   "provided_by": "Toowoomba Regional",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/839346",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.53779,
-    151.57593
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.528,
-       151.5775
-      ],
-      [
-       -27.52984,
-       151.57721
-      ],
-      [
-       -27.53172,
-       151.57691
-      ],
-      [
-       -27.53267,
-       151.57676
-      ],
-      [
-       -27.53503,
-       151.57639
-      ],
-      [
-       -27.53619,
-       151.57621
-      ],
-      [
-       -27.53718,
-       151.57605
-      ],
-      [
-       -27.53759,
-       151.57597
-      ],
-      [
-       -27.53779,
-       151.57593
-      ],
-      [
-       -27.53813,
-       151.57584
-      ],
-      [
-       -27.53849,
-       151.57572
-      ],
-      [
-       -27.53885,
-       151.57562
-      ],
-      [
-       -27.53926,
-       151.57554
-      ],
-      [
-       -27.53989,
-       151.57543
-      ],
-      [
-       -27.54088,
-       151.57527
-      ],
-      [
-       -27.54229,
-       151.57506
-      ],
-      [
-       -27.54292,
-       151.57497
-      ],
-      [
-       -27.54404,
-       151.57484
-      ],
-      [
-       -27.54554,
-       151.57468
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 838419,
    "road": "Millmerran Leyburn Road",
    "description": "Bridge over Canal Creek",
@@ -693,8 +405,8 @@
    "information": "1 lane of bridge closed",
    "status": "Published",
    "start": "2026-10-30T14:10:00+10:00",
-   "last_updated": "2026-11-10T07:39:37+10:00",
-   "last_updated_text": "Tue 10 Nov 2026 07:39 AM AEST",
+   "last_updated": "2026-11-12T07:49:05+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 07:49 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/838419",
@@ -745,8 +457,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T12:24:00+10:00",
-   "last_updated": "2026-11-06T06:14:08+10:00",
-   "last_updated_text": "Fri 06 Nov 2026 06:14 AM AEST",
+   "last_updated": "2026-11-12T08:10:04+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 08:10 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837290",
@@ -1065,82 +777,6 @@
    }
   },
   {
-   "id": 841064,
-   "road": "Bahrs Scrub Road",
-   "description": "Bahrs Scrub Road, Bahrs Scrub - FRSWS",
-   "locality": "Bahrs Scrub",
-   "lga": "Logan City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "All lanes blocked",
-   "impact_type": "Lanes blocked",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T16:47:00+10:00",
-   "last_updated": "2026-11-11T16:48:04+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 04:48 PM AEST",
-   "provided_by": "Logan City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841064",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.74151,
-    153.1843
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.74151,
-      153.1843
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841063,
-   "road": "Chambers Flat Road",
-   "description": "School Road, Logan Reserve - FRSWS",
-   "locality": "Logan Reserve",
-   "lga": "Logan City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "All lanes blocked",
-   "impact_type": "Lanes blocked",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T16:45:00+10:00",
-   "last_updated": "2026-11-11T16:48:02+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 04:48 PM AEST",
-   "provided_by": "Logan City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841063",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.71131,
-    153.09638
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.71131,
-      153.09638
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
    "id": 717127,
    "road": "Dugandan Road",
    "description": "Flood Damage at Bunya Crossing Reserve car park",
@@ -1179,155 +815,83 @@
    }
   },
   {
-   "id": 841082,
-   "road": "Pitt Road",
-   "description": null,
-   "locality": "Wellington Point",
-   "lga": "Redland City",
+   "id": 841225,
+   "road": "Formosa Road",
+   "description": "between Stanbrough Rd and Dairy Swamp Road",
+   "locality": "Gumdale",
+   "lga": "Brisbane City",
    "event_type": "Flooding",
    "event_subtype": "Flash flooding",
    "due_to": "Heavy rain",
-   "impact": "All lanes blocked",
-   "impact_type": "Lanes blocked",
+   "impact": "Road closed to through traffic",
+   "impact_type": "Closures",
    "severity": "closed",
    "direction": "Both directions",
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-11-11T17:11:00+10:00",
-   "last_updated": "2026-11-11T21:06:01+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 09:06 PM AEST",
-   "provided_by": "Redland City Council",
+   "start": "2026-11-12T08:49:00+10:00",
+   "last_updated": "2026-11-12T08:50:58+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 08:50 AM AEST",
+   "provided_by": "Brisbane City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841082",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841225",
    "region": "brisbane",
    "region_name": "Brisbane",
    "marker": [
-    -27.50172,
-    153.23024
+    -27.49205,
+    153.13565
    ],
    "geometry": {
-    "points": [
+    "points": [],
+    "lines": [
      [
-      -27.50172,
-      153.23024
+      [
+       -27.49268,
+       153.13969
+      ],
+      [
+       -27.49261,
+       153.13924
+      ],
+      [
+       -27.49252,
+       153.13864
+      ],
+      [
+       -27.49233,
+       153.13744
+      ],
+      [
+       -27.49205,
+       153.13565
+      ],
+      [
+       -27.49204,
+       153.13558
+      ],
+      [
+       -27.49175,
+       153.1337
+      ],
+      [
+       -27.49173,
+       153.13358
+      ],
+      [
+       -27.49172,
+       153.1335
+      ],
+      [
+       -27.49156,
+       153.1325
+      ],
+      [
+       -27.49152,
+       153.13226
+      ]
      ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841087,
-   "road": "Redgrove Avenue",
-   "description": null,
-   "locality": "Wellington Point",
-   "lga": "Redland City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "All lanes blocked",
-   "impact_type": "Lanes blocked",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T17:15:00+10:00",
-   "last_updated": "2026-11-11T21:06:03+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 09:06 PM AEST",
-   "provided_by": "Redland City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841087",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.50306,
-    153.22878
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.50306,
-      153.22878
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841119,
-   "road": "Rossmore Road",
-   "description": "Rossmore, Chambers Flat - FRSWS",
-   "locality": "Logan Reserve",
-   "lga": "Logan City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "All lanes blocked",
-   "impact_type": "Lanes blocked",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T18:52:00+10:00",
-   "last_updated": "2026-11-11T18:54:02+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 06:54 PM AEST",
-   "provided_by": "Logan City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841119",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.73884,
-    153.0888
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.73884,
-      153.0888
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841117,
-   "road": "Steele Road",
-   "description": "Steele Road, Logan Village - FRSWS",
-   "locality": "Logan Village",
-   "lga": "Logan City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "All lanes blocked",
-   "impact_type": "Lanes blocked",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T18:46:00+10:00",
-   "last_updated": "2026-11-11T18:48:02+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 06:48 PM AEST",
-   "provided_by": "Logan City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841117",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.77408,
-    153.11552
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.77408,
-      153.11552
-     ]
-    ],
-    "lines": []
+    ]
    }
   },
   {
@@ -1347,8 +911,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T17:07:00+10:00",
-   "last_updated": "2026-11-11T23:58:09+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 11:58 PM AEST",
+   "last_updated": "2026-11-12T09:23:42+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 09:23 AM AEST",
    "provided_by": "Transurban",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841077",
@@ -1385,8 +949,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T18:12:00+10:00",
-   "last_updated": "2026-11-12T02:48:35+10:00",
-   "last_updated_text": "Thu 12 Nov 2026 02:48 AM AEST",
+   "last_updated": "2026-11-12T08:44:56+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 08:44 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841109",
@@ -1401,44 +965,6 @@
      [
       -27.49336,
       153.16899
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841086,
-   "road": "Rochedale Road",
-   "description": "At Ford Rd",
-   "locality": "Rochedale",
-   "lga": "Brisbane City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "Lane or lanes reduced",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T17:12:00+10:00",
-   "last_updated": "2026-11-12T02:49:10+10:00",
-   "last_updated_text": "Thu 12 Nov 2026 02:49 AM AEST",
-   "provided_by": "Brisbane City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841086",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.57117,
-    153.12698
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.57117,
-      153.12698
      ]
     ],
     "lines": []
