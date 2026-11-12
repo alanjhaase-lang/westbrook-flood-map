@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-12T23:05:20+10:00",
- "generated_at_text": "Thu 12 Nov 2026 11:05 PM AEST",
+ "generated_at": "2026-11-13T06:50:44+10:00",
+ "generated_at_text": "Fri 13 Nov 2026 06:50 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-12T22:42:52+10:00",
+  "feed_published": "2026-11-13T06:46:14+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,8 +17,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 4,
-   "closed": 1,
+   "count": 5,
+   "closed": 2,
    "partial": 3
   },
   {
@@ -43,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 5,
+ "count": 6,
  "excluded": [],
  "closures": [
   {
@@ -116,6 +116,44 @@
       ]
      ]
     ]
+   }
+  },
+  {
+   "id": 841415,
+   "road": "Oakey Pittsworth Road",
+   "description": "Near Motley Mount Tyson Road",
+   "locality": "Motley",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Proceed with caution",
+   "information": null,
+   "status": "Published",
+   "start": "2026-11-13T05:58:00+10:00",
+   "last_updated": "2026-11-13T05:59:39+10:00",
+   "last_updated_text": "Fri 13 Nov 2026 05:59 AM AEST",
+   "provided_by": "Department of Transport and Main Roads",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.55716,
+    151.60796
+   ],
+   "geometry": {
+    "points": [
+     [
+      -27.55716,
+      151.60796
+     ]
+    ],
+    "lines": []
    }
   },
   {
