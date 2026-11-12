@@ -1,12 +1,14 @@
 {
- "generated_at": "2026-11-12T14:19:05+10:00",
- "generated_at_text": "Thu 12 Nov 2026 02:19 PM AEST",
+ "generated_at": "2026-11-12T23:05:20+10:00",
+ "generated_at_text": "Thu 12 Nov 2026 11:05 PM AEST",
  "stale": false,
  "source": {
-  "used": "api",
-  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
-  "feed_published": "2026-11-12T14:17:08+10:00",
-  "errors": []
+  "used": "fallback",
+  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
+  "feed_published": "2026-11-12T22:42:52+10:00",
+  "errors": [
+   "api: HTTP 429"
+  ]
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -29,9 +31,9 @@
   {
    "id": "brisbane",
    "name": "Brisbane",
-   "count": 4,
-   "closed": 2,
-   "partial": 2
+   "count": 1,
+   "closed": 1,
+   "partial": 0
   },
   {
    "id": "sunshine",
@@ -41,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 8,
+ "count": 5,
  "excluded": [],
  "closures": [
   {
@@ -575,162 +577,6 @@
      [
       -27.35492,
       152.94808
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841225,
-   "road": "Formosa Road",
-   "description": "between Stanbrough Rd and Dairy Swamp Road",
-   "locality": "Gumdale",
-   "lga": "Brisbane City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to through traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-12T08:49:00+10:00",
-   "last_updated": "2026-11-12T12:48:59+10:00",
-   "last_updated_text": "Thu 12 Nov 2026 12:48 PM AEST",
-   "provided_by": "Brisbane City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841225",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.49205,
-    153.13565
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.49268,
-       153.13969
-      ],
-      [
-       -27.49261,
-       153.13924
-      ],
-      [
-       -27.49252,
-       153.13864
-      ],
-      [
-       -27.49233,
-       153.13744
-      ],
-      [
-       -27.49205,
-       153.13565
-      ],
-      [
-       -27.49204,
-       153.13558
-      ],
-      [
-       -27.49175,
-       153.1337
-      ],
-      [
-       -27.49173,
-       153.13358
-      ],
-      [
-       -27.49172,
-       153.1335
-      ],
-      [
-       -27.49156,
-       153.1325
-      ],
-      [
-       -27.49152,
-       153.13226
-      ]
-     ]
-    ]
-   }
-  },
-  {
-   "id": 841077,
-   "road": "Gateway Motorway",
-   "description": null,
-   "locality": "Eight Mile Plains",
-   "lga": "Brisbane City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "Southbound",
-   "advice": "Allow extra travel time",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T17:07:00+10:00",
-   "last_updated": "2026-11-12T13:23:42+10:00",
-   "last_updated_text": "Thu 12 Nov 2026 01:23 PM AEST",
-   "provided_by": "Transurban",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841077",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.59245,
-    153.09495
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.59245,
-      153.09495
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841109,
-   "road": "Molle Road",
-   "description": "All lanes at New Cleveland Road",
-   "locality": "Gumdale",
-   "lga": "Brisbane City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Use alternative route",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-11T18:12:00+10:00",
-   "last_updated": "2026-11-12T12:44:55+10:00",
-   "last_updated_text": "Thu 12 Nov 2026 12:44 PM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841109",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.49336,
-    153.16899
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.49336,
-      153.16899
      ]
     ],
     "lines": []
