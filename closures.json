@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-11-12T09:38:46+10:00",
- "generated_at_text": "Thu 12 Nov 2026 09:38 AM AEST",
+ "generated_at": "2026-11-12T14:19:05+10:00",
+ "generated_at_text": "Thu 12 Nov 2026 02:19 PM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-12T09:37:59+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-11-12T14:17:08+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -17,8 +15,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 5,
-   "closed": 2,
+   "count": 4,
+   "closed": 1,
    "partial": 3
   },
   {
@@ -43,7 +41,7 @@
    "partial": 0
   }
  ],
- "count": 9,
+ "count": 8,
  "excluded": [],
  "closures": [
   {
@@ -113,238 +111,6 @@
       [
        -27.71022,
        152.35674
-      ]
-     ]
-    ]
-   }
-  },
-  {
-   "id": 837540,
-   "road": "Mount Berryman Road / Schluter Road",
-   "description": "Road Closed - Water Over Road - Do not Drive in Flood Waters",
-   "locality": "Mount Berryman",
-   "lga": "Lockyer Valley Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-10-27T09:00:00+10:00",
-   "last_updated": "2026-11-11T06:02:01+10:00",
-   "last_updated_text": "Wed 11 Nov 2026 06:02 AM AEST",
-   "provided_by": "Lockyer Valley Regional Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837540",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.69137,
-    152.32747
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.69034,
-       152.32871
-      ],
-      [
-       -27.69034,
-       152.32867
-      ],
-      [
-       -27.69033,
-       152.32846
-      ],
-      [
-       -27.6903,
-       152.32795
-      ],
-      [
-       -27.69029,
-       152.32774
-      ],
-      [
-       -27.6903,
-       152.32759
-      ],
-      [
-       -27.6903,
-       152.32746
-      ],
-      [
-       -27.69034,
-       152.32713
-      ],
-      [
-       -27.69034,
-       152.32702
-      ],
-      [
-       -27.69033,
-       152.32697
-      ],
-      [
-       -27.69032,
-       152.32688
-      ],
-      [
-       -27.69031,
-       152.32683
-      ],
-      [
-       -27.69028,
-       152.32675
-      ],
-      [
-       -27.69024,
-       152.32669
-      ],
-      [
-       -27.69019,
-       152.3266
-      ],
-      [
-       -27.69012,
-       152.3265
-      ],
-      [
-       -27.69007,
-       152.32642
-      ],
-      [
-       -27.69004,
-       152.32634
-      ],
-      [
-       -27.69013,
-       152.32633
-      ],
-      [
-       -27.69021,
-       152.32634
-      ],
-      [
-       -27.69028,
-       152.32637
-      ],
-      [
-       -27.69039,
-       152.32643
-      ],
-      [
-       -27.6905,
-       152.32657
-      ],
-      [
-       -27.69053,
-       152.3266
-      ],
-      [
-       -27.69064,
-       152.32673
-      ],
-      [
-       -27.69077,
-       152.32691
-      ],
-      [
-       -27.6908,
-       152.32693
-      ],
-      [
-       -27.69103,
-       152.32717
-      ],
-      [
-       -27.69118,
-       152.32731
-      ],
-      [
-       -27.69137,
-       152.32747
-      ],
-      [
-       -27.69151,
-       152.32758
-      ],
-      [
-       -27.69162,
-       152.32765
-      ],
-      [
-       -27.69163,
-       152.32766
-      ],
-      [
-       -27.69192,
-       152.32785
-      ],
-      [
-       -27.69219,
-       152.32802
-      ],
-      [
-       -27.69235,
-       152.3281
-      ],
-      [
-       -27.69247,
-       152.32814
-      ],
-      [
-       -27.69266,
-       152.32818
-      ],
-      [
-       -27.69282,
-       152.3282
-      ],
-      [
-       -27.69299,
-       152.32821
-      ],
-      [
-       -27.69321,
-       152.32819
-      ],
-      [
-       -27.69331,
-       152.32818
-      ],
-      [
-       -27.69342,
-       152.32817
-      ],
-      [
-       -27.69346,
-       152.32816
-      ],
-      [
-       -27.69351,
-       152.32814
-      ],
-      [
-       -27.69358,
-       152.3281
-      ],
-      [
-       -27.69362,
-       152.32807
-      ],
-      [
-       -27.69367,
-       152.32803
-      ],
-      [
-       -27.69369,
-       152.328
       ]
      ]
     ]
@@ -831,8 +597,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-12T08:49:00+10:00",
-   "last_updated": "2026-11-12T08:50:58+10:00",
-   "last_updated_text": "Thu 12 Nov 2026 08:50 AM AEST",
+   "last_updated": "2026-11-12T12:48:59+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 12:48 PM AEST",
    "provided_by": "Brisbane City Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841225",
@@ -911,8 +677,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T17:07:00+10:00",
-   "last_updated": "2026-11-12T09:23:42+10:00",
-   "last_updated_text": "Thu 12 Nov 2026 09:23 AM AEST",
+   "last_updated": "2026-11-12T13:23:42+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 01:23 PM AEST",
    "provided_by": "Transurban",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841077",
@@ -949,8 +715,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-11T18:12:00+10:00",
-   "last_updated": "2026-11-12T08:44:56+10:00",
-   "last_updated_text": "Thu 12 Nov 2026 08:44 AM AEST",
+   "last_updated": "2026-11-12T12:44:55+10:00",
+   "last_updated_text": "Thu 12 Nov 2026 12:44 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841109",
