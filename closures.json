@@ -1,12 +1,14 @@
 {
- "generated_at": "2026-11-14T12:38:06+10:00",
- "generated_at_text": "Sat 14 Nov 2026 12:38 PM AEST",
+ "generated_at": "2026-11-14T19:27:50+10:00",
+ "generated_at_text": "Sat 14 Nov 2026 07:27 PM AEST",
  "stale": false,
  "source": {
-  "used": "api",
-  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
-  "feed_published": "2026-11-14T12:37:22+10:00",
-  "errors": []
+  "used": "fallback",
+  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
+  "feed_published": "2026-11-14T19:26:06+10:00",
+  "errors": [
+   "api: HTTP 429"
+  ]
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -15,9 +17,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 14,
-   "closed": 6,
-   "partial": 8
+   "count": 17,
+   "closed": 8,
+   "partial": 9
   },
   {
    "id": "ipswich",
@@ -29,8 +31,8 @@
   {
    "id": "brisbane",
    "name": "Brisbane",
-   "count": 2,
-   "closed": 2,
+   "count": 1,
+   "closed": 1,
    "partial": 0
   },
   {
@@ -41,11 +43,11 @@
    "partial": 0
   }
  ],
- "count": 16,
+ "count": 18,
  "excluded": [],
  "closures": [
   {
-   "id": 841612,
+   "id": 841787,
    "road": "Clifton Leyburn Road",
    "description": "Near Passmore Road",
    "locality": "Ellangowan",
@@ -60,12 +62,12 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-11-13T21:00:00+10:00",
-   "last_updated": "2026-11-14T12:15:31+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 12:15 PM AEST",
+   "start": "2026-11-14T17:41:00+10:00",
+   "last_updated": "2026-11-14T17:51:33+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 05:51 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841612",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841787",
    "region": "westbrook",
    "region_name": "Westbrook / Toowoomba",
    "marker": [
@@ -268,8 +270,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-14T10:50:15+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 10:50 AM AEST",
+   "last_updated": "2026-11-14T15:40:00+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 03:40 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
@@ -290,14 +292,166 @@
    }
   },
   {
-   "id": 841641,
-   "road": "Toowoomba Karara Road",
-   "description": "From Clifton Leyburn Road to Passmore Road",
-   "locality": "Ellangowan",
+   "id": 841768,
+   "road": "Tummaville Road",
+   "description": null,
+   "locality": "Kincora / Tummaville",
    "lga": "Toowoomba Regional",
    "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Flooding of river",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "Both directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-11-14T16:00:00+10:00",
+   "last_updated": "2026-11-14T16:30:01+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 04:30 PM AEST",
+   "provided_by": "Toowoomba Regional",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841768",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.85193,
+    151.56583
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.84105,
+       151.57281
+      ],
+      [
+       -27.84132,
+       151.5728
+      ],
+      [
+       -27.84211,
+       151.57265
+      ],
+      [
+       -27.84314,
+       151.57241
+      ],
+      [
+       -27.84389,
+       151.57227
+      ],
+      [
+       -27.84475,
+       151.57212
+      ],
+      [
+       -27.84558,
+       151.57197
+      ],
+      [
+       -27.85186,
+       151.56873
+      ],
+      [
+       -27.85192,
+       151.56866
+      ],
+      [
+       -27.85195,
+       151.56859
+      ],
+      [
+       -27.85197,
+       151.5685
+      ],
+      [
+       -27.85198,
+       151.56842
+      ],
+      [
+       -27.85198,
+       151.56824
+      ],
+      [
+       -27.85197,
+       151.56807
+      ],
+      [
+       -27.85192,
+       151.56749
+      ],
+      [
+       -27.85184,
+       151.56675
+      ],
+      [
+       -27.85181,
+       151.56639
+      ],
+      [
+       -27.85181,
+       151.56624
+      ],
+      [
+       -27.85184,
+       151.56607
+      ],
+      [
+       -27.85193,
+       151.56583
+      ],
+      [
+       -27.85499,
+       151.56
+      ],
+      [
+       -27.85516,
+       151.55986
+      ],
+      [
+       -27.85606,
+       151.55914
+      ],
+      [
+       -27.85664,
+       151.55867
+      ],
+      [
+       -27.85787,
+       151.5577
+      ],
+      [
+       -27.85941,
+       151.55647
+      ],
+      [
+       -27.8611,
+       151.55511
+      ],
+      [
+       -27.86142,
+       151.55485
+      ],
+      [
+       -27.86143,
+       151.55484
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 841775,
+   "road": "Tyson Road / Kessler Road / Homestead Road",
+   "description": null,
+   "locality": "Felton",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Flooding of river",
    "impact": "Road closed to all traffic",
    "impact_type": "Closures",
    "severity": "closed",
@@ -305,233 +459,469 @@
    "advice": "Do not drive in flood waters",
    "information": null,
    "status": "Published",
-   "start": "2026-11-14T00:54:00+10:00",
-   "last_updated": "2026-11-14T12:13:39+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 12:13 PM AEST",
-   "provided_by": "Department of Transport and Main Roads",
+   "start": "2026-11-14T16:30:00+10:00",
+   "last_updated": "2026-11-14T16:38:04+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 04:38 PM AEST",
+   "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841641",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841775",
    "region": "westbrook",
    "region_name": "Westbrook / Toowoomba",
    "marker": [
-    -27.93167,
-    151.67088
+    -27.83154,
+    151.72931
    ],
    "geometry": {
     "points": [],
     "lines": [
      [
       [
-       -27.91957,
-       151.67598
+       -27.83274,
+       151.7397
       ],
       [
-       -27.91969,
-       151.67581
+       -27.83283,
+       151.73881
       ],
       [
-       -27.91993,
-       151.67548
+       -27.83287,
+       151.73836
       ],
       [
-       -27.92012,
-       151.67525
+       -27.83293,
+       151.73786
       ],
       [
-       -27.92035,
-       151.67499
+       -27.83301,
+       151.7369
       ],
       [
-       -27.92045,
-       151.6749
+       -27.83314,
+       151.73556
       ],
       [
-       -27.92059,
-       151.67477
+       -27.83319,
+       151.73506
       ],
       [
-       -27.92066,
-       151.67471
+       -27.83325,
+       151.73454
       ],
       [
-       -27.9209,
-       151.67452
+       -27.8333,
+       151.73409
       ],
       [
-       -27.92122,
-       151.67431
+       -27.83334,
+       151.73354
       ],
       [
-       -27.92135,
-       151.67422
+       -27.83335,
+       151.73336
       ],
       [
-       -27.9216,
-       151.67406
+       -27.83335,
+       151.73316
       ],
       [
-       -27.92178,
-       151.67395
+       -27.83333,
+       151.73294
       ],
       [
-       -27.92222,
-       151.67366
+       -27.83329,
+       151.73281
       ],
       [
-       -27.92253,
-       151.67348
+       -27.83325,
+       151.73267
       ],
       [
-       -27.92319,
-       151.67308
+       -27.8332,
+       151.73249
       ],
       [
-       -27.92365,
-       151.67282
+       -27.8331,
+       151.73229
       ],
       [
-       -27.92403,
-       151.67261
+       -27.83301,
+       151.7321
       ],
       [
-       -27.92465,
-       151.67229
+       -27.8329,
+       151.7319
       ],
       [
-       -27.92536,
-       151.67198
+       -27.8328,
+       151.73172
       ],
       [
-       -27.92565,
-       151.67187
+       -27.83265,
+       151.73144
       ],
       [
-       -27.92624,
-       151.67165
+       -27.83251,
+       151.73117
       ],
       [
-       -27.92641,
-       151.6716
+       -27.83239,
+       151.73096
       ],
       [
-       -27.92664,
-       151.67153
+       -27.83212,
+       151.73045
       ],
       [
-       -27.92689,
-       151.67145
+       -27.83197,
+       151.73013
       ],
       [
-       -27.92797,
-       151.67117
+       -27.83181,
+       151.72984
       ],
       [
-       -27.92844,
-       151.6711
+       -27.83154,
+       151.72931
       ],
       [
-       -27.92956,
-       151.67101
+       -27.83141,
+       151.72907
       ],
       [
-       -27.93167,
-       151.67088
+       -27.83132,
+       151.72886
       ],
       [
-       -27.93189,
-       151.67087
+       -27.83119,
+       151.72861
       ],
       [
-       -27.93242,
-       151.67083
+       -27.83107,
+       151.72838
       ],
       [
-       -27.93323,
-       151.67076
+       -27.83093,
+       151.72812
       ],
       [
-       -27.93376,
-       151.67067
+       -27.83068,
+       151.72763
       ],
       [
-       -27.93517,
-       151.6704
+       -27.83053,
+       151.72734
       ],
       [
-       -27.93582,
-       151.67028
+       -27.83026,
+       151.7268
       ],
       [
-       -27.93757,
-       151.66994
+       -27.83014,
+       151.72655
       ],
       [
-       -27.93939,
-       151.6696
+       -27.83005,
+       151.72636
       ],
       [
-       -27.93955,
-       151.66957
+       -27.82998,
+       151.72617
       ],
       [
-       -27.94029,
-       151.66941
+       -27.82996,
+       151.72609
       ],
       [
-       -27.9405,
-       151.66936
+       -27.82991,
+       151.72592
       ],
       [
-       -27.94082,
-       151.66924
+       -27.82985,
+       151.72559
       ],
       [
-       -27.94104,
-       151.66916
+       -27.82976,
+       151.72504
       ],
       [
-       -27.94131,
-       151.66904
+       -27.82975,
+       151.72461
       ],
       [
-       -27.94156,
-       151.66891
+       -27.82977,
+       151.72446
       ],
       [
-       -27.94188,
-       151.66874
+       -27.82979,
+       151.72434
       ],
       [
-       -27.94262,
-       151.66829
+       -27.82984,
+       151.72421
       ],
       [
-       -27.94337,
-       151.66786
+       -27.82992,
+       151.72407
       ],
       [
-       -27.9437,
-       151.66766
+       -27.83,
+       151.72391
       ],
       [
-       -27.94381,
-       151.66759
+       -27.83012,
+       151.72366
       ],
       [
-       -27.94396,
-       151.66749
+       -27.83024,
+       151.72336
       ],
       [
-       -27.94398,
-       151.66748
+       -27.8303,
+       151.72315
       ],
       [
-       -27.94435,
-       151.6672
+       -27.83032,
+       151.72305
       ],
       [
-       -27.94446,
-       151.66709
+       -27.82913,
+       151.71774
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 841774,
+   "road": "Yarramalong Road",
+   "description": "Yarramalong Weir",
+   "locality": "Tummaville",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Long-term flooding",
+   "due_to": "Flooding of river",
+   "impact": "Road closed to all traffic",
+   "impact_type": "Closures",
+   "severity": "closed",
+   "direction": "All directions",
+   "advice": "Do not drive in flood waters",
+   "information": null,
+   "status": "Published",
+   "start": "2026-11-14T16:00:00+10:00",
+   "last_updated": "2026-11-14T16:30:05+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 04:30 PM AEST",
+   "provided_by": "Toowoomba Regional",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841774",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.8352,
+    151.44942
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.83426,
+       151.44987
+      ],
+      [
+       -27.83429,
+       151.44985
+      ],
+      [
+       -27.83445,
+       151.44971
+      ],
+      [
+       -27.83454,
+       151.4496
+      ],
+      [
+       -27.83461,
+       151.44952
+      ],
+      [
+       -27.83468,
+       151.44944
+      ],
+      [
+       -27.83475,
+       151.44937
+      ],
+      [
+       -27.83479,
+       151.44934
+      ],
+      [
+       -27.83482,
+       151.44932
+      ],
+      [
+       -27.83485,
+       151.4493
+      ],
+      [
+       -27.83489,
+       151.4493
+      ],
+      [
+       -27.83493,
+       151.44929
+      ],
+      [
+       -27.83498,
+       151.4493
+      ],
+      [
+       -27.83502,
+       151.4493
+      ],
+      [
+       -27.83505,
+       151.44931
+      ],
+      [
+       -27.8351,
+       151.44933
+      ],
+      [
+       -27.83514,
+       151.44936
+      ],
+      [
+       -27.8352,
+       151.44942
+      ],
+      [
+       -27.83567,
+       151.44991
+      ],
+      [
+       -27.83571,
+       151.44993
+      ],
+      [
+       -27.83576,
+       151.44996
+      ],
+      [
+       -27.8358,
+       151.44998
+      ],
+      [
+       -27.83584,
+       151.44999
+      ],
+      [
+       -27.83591,
+       151.44999
+      ],
+      [
+       -27.83599,
+       151.45
+      ],
+      [
+       -27.83607,
+       151.45001
+      ],
+      [
+       -27.83681,
+       151.44991
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 841789,
+   "road": "Back Plains Road",
+   "description": null,
+   "locality": "Felton",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Observe signage",
+   "information": null,
+   "status": "Published",
+   "start": "2026-11-14T18:15:00+10:00",
+   "last_updated": "2026-11-14T18:12:02+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 06:12 PM AEST",
+   "provided_by": "Toowoomba Regional",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841789",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.85475,
+    151.8044
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.85516,
+       151.80433
+      ],
+      [
+       -27.85475,
+       151.8044
+      ],
+      [
+       -27.85033,
+       151.80515
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "id": 841788,
+   "road": "Clifton Pittsworth Road",
+   "description": null,
+   "locality": "Back Plains",
+   "lga": "Toowoomba Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Water over road",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Observe signage",
+   "information": null,
+   "status": "Published",
+   "start": "2026-11-14T18:00:00+10:00",
+   "last_updated": "2026-11-14T18:06:03+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 06:06 PM AEST",
+   "provided_by": "Toowoomba Regional",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841788",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.88876,
+    151.75387
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.88876,
+       151.75387
+      ],
+      [
+       -27.89299,
+       151.78571
       ]
      ]
     ]
@@ -570,44 +960,6 @@
      [
       -28.04474,
       151.87866
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841618,
-   "road": "Gatton Laidley Road",
-   "description": "Near Van de Weyer road",
-   "locality": "Forest Hill",
-   "lga": "Lockyer Valley Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Heavy rain",
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-13T22:33:00+10:00",
-   "last_updated": "2026-11-14T10:32:59+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 10:32 AM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841618",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.60029,
-    152.35858
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.60029,
-      152.35858
      ]
     ],
     "lines": []
@@ -720,8 +1072,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T11:03:00+10:00",
-   "last_updated": "2026-11-14T11:06:45+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 11:06 AM AEST",
+   "last_updated": "2026-11-14T17:39:38+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 05:39 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841708",
@@ -4136,8 +4488,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-13T23:25:00+10:00",
-   "last_updated": "2026-11-14T07:30:04+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 07:30 AM AEST",
+   "last_updated": "2026-11-14T15:38:01+10:00",
+   "last_updated_text": "Sat 14 Nov 2026 03:38 PM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841667",
@@ -4196,44 +4548,6 @@
      [
       -27.35492,
       152.94808
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 841650,
-   "road": "Molle Road",
-   "description": "at Overland Creek between Chelsea Rd and New Cleveland Rd",
-   "locality": "Gumdale",
-   "lga": "Brisbane City",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "Road closed to through traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-14T03:57:00+10:00",
-   "last_updated": "2026-11-14T08:41:17+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 08:41 AM AEST",
-   "provided_by": "Brisbane City Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841650",
-   "region": "brisbane",
-   "region_name": "Brisbane",
-   "marker": [
-    -27.49425,
-    153.17482
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.49425,
-      153.17482
      ]
     ],
     "lines": []
