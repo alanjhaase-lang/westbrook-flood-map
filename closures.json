@@ -1,12 +1,14 @@
 {
- "generated_at": "2026-11-15T16:28:53+10:00",
- "generated_at_text": "Sun 15 Nov 2026 04:28 PM AEST",
+ "generated_at": "2026-11-16T00:15:21+10:00",
+ "generated_at_text": "Mon 16 Nov 2026 12:15 AM AEST",
  "stale": false,
  "source": {
-  "used": "api",
-  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
-  "feed_published": "2026-11-15T16:27:36+10:00",
-  "errors": []
+  "used": "fallback",
+  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
+  "feed_published": "2026-11-16T00:11:13+10:00",
+  "errors": [
+   "api: HTTP 429"
+  ]
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -15,8 +17,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 18,
-   "closed": 8,
+   "count": 17,
+   "closed": 7,
    "partial": 10
   },
   {
@@ -41,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 19,
+ "count": 18,
  "excluded": [],
  "closures": [
   {
@@ -142,44 +144,6 @@
       ]
      ]
     ]
-   }
-  },
-  {
-   "id": 841787,
-   "road": "Clifton Leyburn Road",
-   "description": "Near Passmore Road",
-   "locality": "Ellangowan",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-14T17:41:00+10:00",
-   "last_updated": "2026-11-15T09:15:47+10:00",
-   "last_updated_text": "Sun 15 Nov 2026 09:15 AM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841787",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.93992,
-    151.72592
-   ],
-   "geometry": {
-    "points": [
-     [
-      -27.93992,
-      151.72592
-     ]
-    ],
-    "lines": []
    }
   },
   {
@@ -368,8 +332,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T16:00:00+10:00",
-   "last_updated": "2026-11-14T16:30:01+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 04:30 PM AEST",
+   "last_updated": "2026-11-15T16:50:01+10:00",
+   "last_updated_text": "Sun 15 Nov 2026 04:50 PM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841768",
@@ -520,8 +484,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T16:30:00+10:00",
-   "last_updated": "2026-11-14T16:38:04+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 04:38 PM AEST",
+   "last_updated": "2026-11-15T16:52:02+10:00",
+   "last_updated_text": "Sun 15 Nov 2026 04:52 PM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841775",
@@ -768,8 +732,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T16:00:00+10:00",
-   "last_updated": "2026-11-14T16:30:05+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 04:30 PM AEST",
+   "last_updated": "2026-11-15T16:52:01+10:00",
+   "last_updated_text": "Sun 15 Nov 2026 04:52 PM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841774",
@@ -912,8 +876,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T18:15:00+10:00",
-   "last_updated": "2026-11-14T18:12:02+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 06:12 PM AEST",
+   "last_updated": "2026-11-15T16:52:06+10:00",
+   "last_updated_text": "Sun 15 Nov 2026 04:52 PM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841789",
@@ -960,8 +924,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T18:00:00+10:00",
-   "last_updated": "2026-11-14T18:06:03+10:00",
-   "last_updated_text": "Sat 14 Nov 2026 06:06 PM AEST",
+   "last_updated": "2026-11-15T16:52:03+10:00",
+   "last_updated_text": "Sun 15 Nov 2026 04:52 PM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841788",
@@ -1132,8 +1096,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T11:03:00+10:00",
-   "last_updated": "2026-11-15T16:03:07+10:00",
-   "last_updated_text": "Sun 15 Nov 2026 04:03 PM AEST",
+   "last_updated": "2026-11-16T00:10:00+10:00",
+   "last_updated_text": "Mon 16 Nov 2026 12:10 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841708",
@@ -4102,8 +4066,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-15T16:03:13+10:00",
-   "last_updated_text": "Sun 15 Nov 2026 04:03 PM AEST",
+   "last_updated": "2026-11-16T00:10:00+10:00",
+   "last_updated_text": "Mon 16 Nov 2026 12:10 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
