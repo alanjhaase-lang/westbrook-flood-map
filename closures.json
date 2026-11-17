@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-17T22:46:16+10:00",
- "generated_at_text": "Tue 17 Nov 2026 10:46 PM AEST",
+ "generated_at": "2026-11-18T07:25:02+10:00",
+ "generated_at_text": "Wed 18 Nov 2026 07:25 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-17T22:33:57+10:00",
+  "feed_published": "2026-11-18T07:23:37+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,8 +17,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 27,
-   "closed": 15,
+   "count": 26,
+   "closed": 14,
    "partial": 12
   },
   {
@@ -43,449 +43,9 @@
    "partial": 0
   }
  ],
- "count": 29,
+ "count": 28,
  "excluded": [],
  "closures": [
-  {
-   "id": 842067,
-   "road": "Binnie Street / Watts Siding Road",
-   "description": "Between Binnie Street and McNallys Road",
-   "locality": "Cambooya / Greenmount",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-16T10:14:00+10:00",
-   "last_updated": "2026-11-17T06:40:11+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:40 AM AEST",
-   "provided_by": "Toowoomba Regional",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842067",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.76332,
-    151.89342
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.77838,
-       151.90756
-      ],
-      [
-       -27.77821,
-       151.90759
-      ],
-      [
-       -27.77746,
-       151.90767
-      ],
-      [
-       -27.77688,
-       151.90772
-      ],
-      [
-       -27.77652,
-       151.90771
-      ],
-      [
-       -27.77618,
-       151.90767
-      ],
-      [
-       -27.77568,
-       151.90757
-      ],
-      [
-       -27.77545,
-       151.90751
-      ],
-      [
-       -27.77533,
-       151.90748
-      ],
-      [
-       -27.77511,
-       151.90742
-      ],
-      [
-       -27.77469,
-       151.90729
-      ],
-      [
-       -27.77426,
-       151.90709
-      ],
-      [
-       -27.77376,
-       151.90679
-      ],
-      [
-       -27.77345,
-       151.90659
-      ],
-      [
-       -27.77299,
-       151.90623
-      ],
-      [
-       -27.77277,
-       151.90605
-      ],
-      [
-       -27.77252,
-       151.90581
-      ],
-      [
-       -27.77216,
-       151.90545
-      ],
-      [
-       -27.77198,
-       151.90524
-      ],
-      [
-       -27.77194,
-       151.9052
-      ],
-      [
-       -27.77163,
-       151.90477
-      ],
-      [
-       -27.77135,
-       151.90435
-      ],
-      [
-       -27.7712,
-       151.90412
-      ],
-      [
-       -27.77101,
-       151.9038
-      ],
-      [
-       -27.77078,
-       151.9033
-      ],
-      [
-       -27.77061,
-       151.90283
-      ],
-      [
-       -27.77043,
-       151.90223
-      ],
-      [
-       -27.77023,
-       151.9015
-      ],
-      [
-       -27.77005,
-       151.90087
-      ],
-      [
-       -27.76995,
-       151.90052
-      ],
-      [
-       -27.76979,
-       151.89996
-      ],
-      [
-       -27.76962,
-       151.89942
-      ],
-      [
-       -27.76948,
-       151.89907
-      ],
-      [
-       -27.7691,
-       151.89829
-      ],
-      [
-       -27.7686,
-       151.89749
-      ],
-      [
-       -27.76847,
-       151.89727
-      ],
-      [
-       -27.76816,
-       151.89683
-      ],
-      [
-       -27.76787,
-       151.8965
-      ],
-      [
-       -27.76735,
-       151.89601
-      ],
-      [
-       -27.76689,
-       151.89566
-      ],
-      [
-       -27.76637,
-       151.8953
-      ],
-      [
-       -27.76586,
-       151.89492
-      ],
-      [
-       -27.76516,
-       151.89451
-      ],
-      [
-       -27.76436,
-       151.89405
-      ],
-      [
-       -27.76419,
-       151.89395
-      ],
-      [
-       -27.76332,
-       151.89342
-      ],
-      [
-       -27.76265,
-       151.89301
-      ],
-      [
-       -27.76241,
-       151.89284
-      ],
-      [
-       -27.7621,
-       151.89259
-      ],
-      [
-       -27.76189,
-       151.89243
-      ],
-      [
-       -27.7616,
-       151.89218
-      ],
-      [
-       -27.76159,
-       151.89217
-      ],
-      [
-       -27.76139,
-       151.89198
-      ],
-      [
-       -27.76117,
-       151.89172
-      ],
-      [
-       -27.761,
-       151.89152
-      ],
-      [
-       -27.76082,
-       151.89129
-      ],
-      [
-       -27.76068,
-       151.89109
-      ],
-      [
-       -27.76058,
-       151.89094
-      ],
-      [
-       -27.7605,
-       151.8908
-      ],
-      [
-       -27.76037,
-       151.89047
-      ],
-      [
-       -27.76024,
-       151.89011
-      ],
-      [
-       -27.76016,
-       151.88987
-      ],
-      [
-       -27.75998,
-       151.8893
-      ],
-      [
-       -27.75993,
-       151.88914
-      ],
-      [
-       -27.75981,
-       151.88869
-      ],
-      [
-       -27.75974,
-       151.88833
-      ],
-      [
-       -27.75969,
-       151.88805
-      ],
-      [
-       -27.75963,
-       151.88772
-      ],
-      [
-       -27.75957,
-       151.88745
-      ],
-      [
-       -27.7593,
-       151.88599
-      ],
-      [
-       -27.75895,
-       151.88421
-      ],
-      [
-       -27.75886,
-       151.88375
-      ],
-      [
-       -27.7587,
-       151.8831
-      ],
-      [
-       -27.75858,
-       151.88268
-      ],
-      [
-       -27.75849,
-       151.88245
-      ],
-      [
-       -27.75834,
-       151.88207
-      ],
-      [
-       -27.75817,
-       151.8817
-      ],
-      [
-       -27.75789,
-       151.88115
-      ],
-      [
-       -27.75757,
-       151.8805
-      ],
-      [
-       -27.75744,
-       151.88026
-      ],
-      [
-       -27.7572,
-       151.87973
-      ],
-      [
-       -27.757,
-       151.8793
-      ],
-      [
-       -27.75679,
-       151.87893
-      ],
-      [
-       -27.75655,
-       151.87852
-      ],
-      [
-       -27.75619,
-       151.87795
-      ],
-      [
-       -27.75611,
-       151.87782
-      ],
-      [
-       -27.75606,
-       151.87772
-      ],
-      [
-       -27.75596,
-       151.87752
-      ],
-      [
-       -27.75586,
-       151.87728
-      ],
-      [
-       -27.75575,
-       151.87695
-      ],
-      [
-       -27.75572,
-       151.87687
-      ],
-      [
-       -27.75559,
-       151.87653
-      ],
-      [
-       -27.75552,
-       151.87639
-      ],
-      [
-       -27.75542,
-       151.87622
-      ],
-      [
-       -27.75528,
-       151.87599
-      ],
-      [
-       -27.75506,
-       151.8757
-      ],
-      [
-       -27.75444,
-       151.87487
-      ],
-      [
-       -27.75375,
-       151.87401
-      ],
-      [
-       -27.75325,
-       151.87335
-      ],
-      [
-       -27.75297,
-       151.87297
-      ],
-      [
-       -27.7529,
-       151.87289
-      ]
-     ]
-    ]
-   }
-  },
   {
    "id": 841880,
    "road": "Bostock Road",
@@ -503,8 +63,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-15T13:30:00+10:00",
-   "last_updated": "2026-11-17T06:40:08+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:40 AM AEST",
+   "last_updated": "2026-11-18T07:14:11+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 07:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841880",
@@ -603,8 +163,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-16T07:26:00+10:00",
-   "last_updated": "2026-11-17T12:08:42+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 12:08 PM AEST",
+   "last_updated": "2026-11-18T05:55:04+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 05:55 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842010",
@@ -697,8 +257,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-16T10:41:00+10:00",
-   "last_updated": "2026-11-17T06:32:02+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:32 AM AEST",
+   "last_updated": "2026-11-18T05:58:01+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 05:58 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842082",
@@ -957,8 +517,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-17T13:07:00+10:00",
-   "last_updated": "2026-11-17T13:09:00+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 01:09 PM AEST",
+   "last_updated": "2026-11-18T05:55:17+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 05:55 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842417",
@@ -1097,8 +657,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-05T14:26:00+10:00",
-   "last_updated": "2026-11-17T06:44:01+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:44 AM AEST",
+   "last_updated": "2026-11-18T07:16:01+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 07:16 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842080",
@@ -1225,8 +785,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-17T18:58:05+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:58 PM AEST",
+   "last_updated": "2026-11-18T05:55:11+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 05:55 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
@@ -1263,8 +823,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T16:00:00+10:00",
-   "last_updated": "2026-11-17T06:42:01+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:42 AM AEST",
+   "last_updated": "2026-11-18T07:16:04+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 07:16 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841768",
@@ -1415,8 +975,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T16:30:00+10:00",
-   "last_updated": "2026-11-17T06:40:03+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:40 AM AEST",
+   "last_updated": "2026-11-18T07:14:05+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 07:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841775",
@@ -1663,8 +1223,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T16:00:00+10:00",
-   "last_updated": "2026-11-17T06:40:01+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:40 AM AEST",
+   "last_updated": "2026-11-18T07:16:07+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 07:16 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841774",
@@ -1807,8 +1367,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T18:15:00+10:00",
-   "last_updated": "2026-11-17T06:40:05+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:40 AM AEST",
+   "last_updated": "2026-11-18T07:14:10+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 07:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841789",
@@ -1855,8 +1415,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T18:00:00+10:00",
-   "last_updated": "2026-11-17T06:40:04+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:40 AM AEST",
+   "last_updated": "2026-11-18T07:14:07+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 07:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841788",
@@ -1899,8 +1459,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-17T14:35:00+10:00",
-   "last_updated": "2026-11-17T14:38:05+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 02:38 PM AEST",
+   "last_updated": "2026-11-18T07:14:14+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 07:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842444",
@@ -2392,8 +1952,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T11:03:00+10:00",
-   "last_updated": "2026-11-17T18:58:05+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:58 PM AEST",
+   "last_updated": "2026-11-18T05:54:47+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 05:54 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841708",
@@ -5698,8 +5258,8 @@
    "information": "Caution - water over the road",
    "status": "Published",
    "start": "2026-11-16T13:50:00+10:00",
-   "last_updated": "2026-11-17T18:14:59+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 06:14 PM AEST",
+   "last_updated": "2026-11-18T00:00:44+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 12:00 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842147",
@@ -6102,36 +5662,6 @@
     "lines": [
      [
       [
-       -27.55078,
-       152.12132
-      ],
-      [
-       -27.55085,
-       152.12131
-      ],
-      [
-       -27.55095,
-       152.1213
-      ],
-      [
-       -27.55103,
-       152.12128
-      ],
-      [
-       -27.55109,
-       152.12126
-      ],
-      [
-       -27.55116,
-       152.12123
-      ],
-      [
-       -27.55117,
-       152.12122
-      ]
-     ],
-     [
-      [
        -27.54881,
        152.12208
       ],
@@ -6175,6 +5705,36 @@
        -27.54854,
        152.12272
       ]
+     ],
+     [
+      [
+       -27.55078,
+       152.12132
+      ],
+      [
+       -27.55085,
+       152.12131
+      ],
+      [
+       -27.55095,
+       152.1213
+      ],
+      [
+       -27.55103,
+       152.12128
+      ],
+      [
+       -27.55109,
+       152.12126
+      ],
+      [
+       -27.55116,
+       152.12123
+      ],
+      [
+       -27.55117,
+       152.12122
+      ]
      ]
     ]
    }
@@ -6196,8 +5756,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-16T04:36:00+10:00",
-   "last_updated": "2026-11-17T14:57:06+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 02:57 PM AEST",
+   "last_updated": "2026-11-18T05:54:52+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 05:54 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841963",
