@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-11-18T07:25:02+10:00",
- "generated_at_text": "Wed 18 Nov 2026 07:25 AM AEST",
+ "generated_at": "2026-11-18T13:03:35+10:00",
+ "generated_at_text": "Wed 18 Nov 2026 01:03 PM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-18T07:23:37+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-11-18T12:58:44+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -17,9 +15,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 26,
-   "closed": 14,
-   "partial": 12
+   "count": 25,
+   "closed": 11,
+   "partial": 14
   },
   {
    "id": "ipswich",
@@ -43,7 +41,7 @@
    "partial": 0
   }
  ],
- "count": 28,
+ "count": 27,
  "excluded": [],
  "closures": [
   {
@@ -147,62 +145,6 @@
    }
   },
   {
-   "id": 842010,
-   "road": "Clifton Leyburn Road (Clifton Leyburn Road)",
-   "description": "Twin Bridges",
-   "locality": "Ellangowan",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Heavy rain",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-16T07:26:00+10:00",
-   "last_updated": "2026-11-18T05:55:04+10:00",
-   "last_updated_text": "Wed 18 Nov 2026 05:55 AM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842010",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.94247,
-    151.72054
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.94188,
-       151.72161
-      ],
-      [
-       -27.94195,
-       151.72148
-      ],
-      [
-       -27.94247,
-       151.72054
-      ],
-      [
-       -27.94273,
-       151.72009
-      ],
-      [
-       -27.94279,
-       151.71996
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 842201,
    "road": "Cockburn Road",
    "description": "CMN - Traffic Hazard - Water Over Road",
@@ -219,8 +161,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-16T15:49:00+10:00",
-   "last_updated": "2026-11-17T09:06:01+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 09:06 AM AEST",
+   "last_updated": "2026-11-18T08:16:02+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 08:16 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842201",
@@ -309,8 +251,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T17:09:00+10:00",
-   "last_updated": "2026-11-16T14:54:02+10:00",
-   "last_updated_text": "Mon 16 Nov 2026 02:54 PM AEST",
+   "last_updated": "2026-11-18T08:58:01+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 08:58 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842150",
@@ -369,8 +311,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-16T10:35:00+10:00",
-   "last_updated": "2026-11-17T09:20:02+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 09:20 AM AEST",
+   "last_updated": "2026-11-18T08:16:01+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 08:16 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842075",
@@ -457,184 +399,6 @@
       [
        -27.71022,
        152.35674
-      ]
-     ]
-    ]
-   }
-  },
-  {
-   "id": 841990,
-   "road": "Merivale Street",
-   "description": "Creek rises result in flooding",
-   "locality": "Allora",
-   "lga": "Southern Downs Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Water over road",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "Both directions",
-   "advice": "Use alternative route",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-16T06:43:00+10:00",
-   "last_updated": "2026-11-16T06:44:02+10:00",
-   "last_updated_text": "Mon 16 Nov 2026 06:44 AM AEST",
-   "provided_by": "Southern Downs Regional Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841990",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -28.02995,
-    151.97316
-   ],
-   "geometry": {
-    "points": [
-     [
-      -28.02995,
-      151.97316
-     ]
-    ],
-    "lines": []
-   }
-  },
-  {
-   "id": 842417,
-   "road": "Millmerran Leyburn Road",
-   "description": "Between Tummaville Road and Canal Creek",
-   "locality": "Leyburn",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Flooding of river",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Use alternative route",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-17T13:07:00+10:00",
-   "last_updated": "2026-11-18T05:55:17+10:00",
-   "last_updated_text": "Wed 18 Nov 2026 05:55 AM AEST",
-   "provided_by": "Department of Transport and Main Roads",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842417",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.96902,
-    151.57963
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.96692,
-       151.58018
-      ],
-      [
-       -27.96698,
-       151.58017
-      ],
-      [
-       -27.96705,
-       151.58017
-      ],
-      [
-       -27.96723,
-       151.58015
-      ],
-      [
-       -27.96735,
-       151.58015
-      ],
-      [
-       -27.96755,
-       151.58011
-      ],
-      [
-       -27.96774,
-       151.58007
-      ],
-      [
-       -27.96789,
-       151.58003
-      ],
-      [
-       -27.96803,
-       151.58
-      ],
-      [
-       -27.96811,
-       151.57998
-      ],
-      [
-       -27.96818,
-       151.57995
-      ],
-      [
-       -27.96828,
-       151.57991
-      ],
-      [
-       -27.96834,
-       151.57989
-      ],
-      [
-       -27.96845,
-       151.57985
-      ],
-      [
-       -27.96851,
-       151.57983
-      ],
-      [
-       -27.9688,
-       151.57972
-      ],
-      [
-       -27.96902,
-       151.57963
-      ],
-      [
-       -27.96924,
-       151.57955
-      ],
-      [
-       -27.96946,
-       151.57946
-      ],
-      [
-       -27.96973,
-       151.57937
-      ],
-      [
-       -27.96992,
-       151.57931
-      ],
-      [
-       -27.9702,
-       151.57924
-      ],
-      [
-       -27.97049,
-       151.57918
-      ],
-      [
-       -27.97174,
-       151.57896
-      ],
-      [
-       -27.97404,
-       151.57855
-      ],
-      [
-       -27.97826,
-       151.5778
       ]
      ]
     ]
@@ -785,8 +549,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-18T05:55:11+10:00",
-   "last_updated_text": "Wed 18 Nov 2026 05:55 AM AEST",
+   "last_updated": "2026-11-18T10:22:17+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 10:22 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
@@ -1727,8 +1491,8 @@
    "information": "Caution - road damage due to flooding",
    "status": "Published",
    "start": "2026-10-28T09:15:00+10:00",
-   "last_updated": "2026-11-16T09:00:07+10:00",
-   "last_updated_text": "Mon 16 Nov 2026 09:00 AM AEST",
+   "last_updated": "2026-11-18T09:34:07+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 09:34 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837831",
@@ -1749,6 +1513,50 @@
    }
   },
   {
+   "id": 842698,
+   "road": "Dodt Road",
+   "description": "Water over road - Observe Signage",
+   "locality": "Forest Hill",
+   "lga": "Lockyer Valley Regional",
+   "event_type": "Flooding",
+   "event_subtype": "Flash flooding",
+   "due_to": "Heavy rain",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Observe signage",
+   "information": null,
+   "status": "Published",
+   "start": "2026-11-18T12:15:00+10:00",
+   "last_updated": "2026-11-18T12:12:02+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 12:12 PM AEST",
+   "provided_by": "Lockyer Valley Regional Council",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842698",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.57878,
+    152.34247
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.57878,
+       152.34247
+      ],
+      [
+       -27.57424,
+       152.3361
+      ]
+     ]
+    ]
+   }
+  },
+  {
    "id": 841702,
    "road": "East Haldon Road",
    "description": "Water Over Road - Observe Signage",
@@ -1765,8 +1573,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T10:00:00+10:00",
-   "last_updated": "2026-11-17T11:20:06+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 11:20 AM AEST",
+   "last_updated": "2026-11-18T12:04:03+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 12:04 PM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841702",
@@ -1814,8 +1622,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T07:33:00+10:00",
-   "last_updated": "2026-11-17T11:20:02+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 11:20 AM AEST",
+   "last_updated": "2026-11-18T12:04:02+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 12:04 PM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841669",
@@ -1862,8 +1670,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T18:57:00+10:00",
-   "last_updated": "2026-11-17T11:18:02+10:00",
-   "last_updated_text": "Tue 17 Nov 2026 11:18 AM AEST",
+   "last_updated": "2026-11-18T12:06:01+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 12:06 PM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841699",
@@ -1884,6 +1692,50 @@
    }
   },
   {
+   "id": 842681,
+   "road": "Main Street / Knust Road",
+   "description": null,
+   "locality": "Mount Tyson",
+   "lga": "Toowoomba Regional",
+   "event_type": "Hazard",
+   "event_subtype": "Road damage",
+   "due_to": "Earlier flooding",
+   "impact": "All lanes affected",
+   "impact_type": "Lanes affected",
+   "severity": "partial",
+   "direction": "All directions",
+   "advice": "Observe signage",
+   "information": null,
+   "status": "Published",
+   "start": "2026-11-18T11:15:00+10:00",
+   "last_updated": "2026-11-18T11:18:03+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 11:18 AM AEST",
+   "provided_by": "Toowoomba Regional",
+   "source_link": "https://qldtraffic.qld.gov.au/",
+   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842681",
+   "region": "westbrook",
+   "region_name": "Westbrook / Toowoomba",
+   "marker": [
+    -27.57479,
+    151.56271
+   ],
+   "geometry": {
+    "points": [],
+    "lines": [
+     [
+      [
+       -27.57479,
+       151.56271
+      ],
+      [
+       -27.62729,
+       151.55431
+      ]
+     ]
+    ]
+   }
+  },
+  {
    "id": 838419,
    "road": "Millmerran Leyburn Road",
    "description": "Bridge over Canal Creek",
@@ -1900,8 +1752,8 @@
    "information": "1 lane of bridge closed",
    "status": "Published",
    "start": "2026-10-30T14:10:00+10:00",
-   "last_updated": "2026-11-16T09:00:14+10:00",
-   "last_updated_text": "Mon 16 Nov 2026 09:00 AM AEST",
+   "last_updated": "2026-11-18T09:34:08+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 09:34 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/838419",
@@ -1952,8 +1804,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T11:03:00+10:00",
-   "last_updated": "2026-11-18T05:54:47+10:00",
-   "last_updated_text": "Wed 18 Nov 2026 05:54 AM AEST",
+   "last_updated": "2026-11-18T10:22:11+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 10:22 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841708",
@@ -5258,8 +5110,8 @@
    "information": "Caution - water over the road",
    "status": "Published",
    "start": "2026-11-16T13:50:00+10:00",
-   "last_updated": "2026-11-18T00:00:44+10:00",
-   "last_updated_text": "Wed 18 Nov 2026 12:00 AM AEST",
+   "last_updated": "2026-11-18T12:10:38+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 12:10 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842147",
@@ -5662,6 +5514,36 @@
     "lines": [
      [
       [
+       -27.55078,
+       152.12132
+      ],
+      [
+       -27.55085,
+       152.12131
+      ],
+      [
+       -27.55095,
+       152.1213
+      ],
+      [
+       -27.55103,
+       152.12128
+      ],
+      [
+       -27.55109,
+       152.12126
+      ],
+      [
+       -27.55116,
+       152.12123
+      ],
+      [
+       -27.55117,
+       152.12122
+      ]
+     ],
+     [
+      [
        -27.54881,
        152.12208
       ],
@@ -5705,36 +5587,6 @@
        -27.54854,
        152.12272
       ]
-     ],
-     [
-      [
-       -27.55078,
-       152.12132
-      ],
-      [
-       -27.55085,
-       152.12131
-      ],
-      [
-       -27.55095,
-       152.1213
-      ],
-      [
-       -27.55103,
-       152.12128
-      ],
-      [
-       -27.55109,
-       152.12126
-      ],
-      [
-       -27.55116,
-       152.12123
-      ],
-      [
-       -27.55117,
-       152.12122
-      ]
      ]
     ]
    }
@@ -5756,8 +5608,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-16T04:36:00+10:00",
-   "last_updated": "2026-11-18T05:54:52+10:00",
-   "last_updated_text": "Wed 18 Nov 2026 05:54 AM AEST",
+   "last_updated": "2026-11-18T09:54:51+10:00",
+   "last_updated_text": "Wed 18 Nov 2026 09:54 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841963",
