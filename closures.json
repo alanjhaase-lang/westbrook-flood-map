@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-11-20T04:27:30+10:00",
- "generated_at_text": "Fri 20 Nov 2026 04:27 AM AEST",
+ "generated_at": "2026-11-20T10:48:15+10:00",
+ "generated_at_text": "Fri 20 Nov 2026 10:48 AM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-20T04:24:46+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-11-20T10:43:38+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -415,8 +413,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-20T01:52:51+10:00",
-   "last_updated_text": "Fri 20 Nov 2026 01:52 AM AEST",
+   "last_updated": "2026-11-20T08:44:12+10:00",
+   "last_updated_text": "Fri 20 Nov 2026 08:44 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
@@ -1205,8 +1203,8 @@
    "information": "Caution - road damage due to flooding",
    "status": "Published",
    "start": "2026-10-28T09:15:00+10:00",
-   "last_updated": "2026-11-18T09:34:07+10:00",
-   "last_updated_text": "Wed 18 Nov 2026 09:34 AM AEST",
+   "last_updated": "2026-11-20T09:53:08+10:00",
+   "last_updated_text": "Fri 20 Nov 2026 09:53 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837831",
@@ -1466,8 +1464,8 @@
    "information": "1 lane of bridge closed",
    "status": "Published",
    "start": "2026-10-30T14:10:00+10:00",
-   "last_updated": "2026-11-18T09:34:08+10:00",
-   "last_updated_text": "Wed 18 Nov 2026 09:34 AM AEST",
+   "last_updated": "2026-11-20T09:53:09+10:00",
+   "last_updated_text": "Fri 20 Nov 2026 09:53 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/838419",
@@ -1908,6 +1906,36 @@
     "lines": [
      [
       [
+       -27.55078,
+       152.12132
+      ],
+      [
+       -27.55085,
+       152.12131
+      ],
+      [
+       -27.55095,
+       152.1213
+      ],
+      [
+       -27.55103,
+       152.12128
+      ],
+      [
+       -27.55109,
+       152.12126
+      ],
+      [
+       -27.55116,
+       152.12123
+      ],
+      [
+       -27.55117,
+       152.12122
+      ]
+     ],
+     [
+      [
        -27.54881,
        152.12208
       ],
@@ -1951,36 +1979,6 @@
        -27.54854,
        152.12272
       ]
-     ],
-     [
-      [
-       -27.55078,
-       152.12132
-      ],
-      [
-       -27.55085,
-       152.12131
-      ],
-      [
-       -27.55095,
-       152.1213
-      ],
-      [
-       -27.55103,
-       152.12128
-      ],
-      [
-       -27.55109,
-       152.12126
-      ],
-      [
-       -27.55116,
-       152.12123
-      ],
-      [
-       -27.55117,
-       152.12122
-      ]
      ]
     ]
    }
@@ -2002,8 +2000,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-16T04:36:00+10:00",
-   "last_updated": "2026-11-20T01:53:43+10:00",
-   "last_updated_text": "Fri 20 Nov 2026 01:53 AM AEST",
+   "last_updated": "2026-11-20T09:59:29+10:00",
+   "last_updated_text": "Fri 20 Nov 2026 09:59 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841963",
