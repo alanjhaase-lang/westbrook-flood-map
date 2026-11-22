@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-22T23:01:43+10:00",
- "generated_at_text": "Sun 22 Nov 2026 11:01 PM AEST",
+ "generated_at": "2026-11-23T06:19:58+10:00",
+ "generated_at_text": "Mon 23 Nov 2026 06:19 AM AEST",
  "stale": false,
  "source": {
   "used": "fallback",
   "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-22T22:56:06+10:00",
+  "feed_published": "2026-11-23T06:18:09+10:00",
   "errors": [
    "api: HTTP 429"
   ]
@@ -17,9 +17,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 19,
+   "count": 18,
    "closed": 6,
-   "partial": 13
+   "partial": 12
   },
   {
    "id": "ipswich",
@@ -43,7 +43,7 @@
    "partial": 0
   }
  ],
- "count": 20,
+ "count": 19,
  "excluded": [],
  "closures": [
   {
@@ -363,8 +363,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-22T17:58:06+10:00",
-   "last_updated_text": "Sun 22 Nov 2026 05:58 PM AEST",
+   "last_updated": "2026-11-23T06:02:23+10:00",
+   "last_updated_text": "Mon 23 Nov 2026 06:02 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
@@ -907,50 +907,6 @@
    }
   },
   {
-   "id": 842698,
-   "road": "Dodt Road",
-   "description": "Water over road - Observe Signage",
-   "locality": "Forest Hill",
-   "lga": "Lockyer Valley Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Observe signage",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-18T12:15:00+10:00",
-   "last_updated": "2026-11-20T14:08:07+10:00",
-   "last_updated_text": "Fri 20 Nov 2026 02:08 PM AEST",
-   "provided_by": "Lockyer Valley Regional Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842698",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.57878,
-    152.34247
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.57878,
-       152.34247
-      ],
-      [
-       -27.57424,
-       152.3361
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 841669,
    "road": "East Haldon Road / Black Duck Creek Road",
    "description": "Water Over Road - Observe Signage",
@@ -1067,8 +1023,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-26T17:09:00+10:00",
-   "last_updated": "2026-11-20T12:16:03+10:00",
-   "last_updated_text": "Fri 20 Nov 2026 12:16 PM AEST",
+   "last_updated": "2026-11-23T06:18:01+10:00",
+   "last_updated_text": "Mon 23 Nov 2026 06:18 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/843295",
