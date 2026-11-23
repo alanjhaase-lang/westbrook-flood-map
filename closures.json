@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-11-23T06:19:58+10:00",
- "generated_at_text": "Mon 23 Nov 2026 06:19 AM AEST",
+ "generated_at": "2026-11-23T11:01:36+10:00",
+ "generated_at_text": "Mon 23 Nov 2026 11:01 AM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-23T06:18:09+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-11-23T11:01:00+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -17,9 +15,9 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 18,
+   "count": 17,
    "closed": 6,
-   "partial": 12
+   "partial": 11
   },
   {
    "id": "ipswich",
@@ -43,7 +41,7 @@
    "partial": 0
   }
  ],
- "count": 19,
+ "count": 18,
  "excluded": [],
  "closures": [
   {
@@ -163,8 +161,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-06-30T14:26:00+10:00",
-   "last_updated": "2026-11-04T11:40:01+10:00",
-   "last_updated_text": "Wed 04 Nov 2026 11:40 AM AEST",
+   "last_updated": "2026-11-23T06:24:01+10:00",
+   "last_updated_text": "Mon 23 Nov 2026 06:24 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/750590",
@@ -220,7 +218,7 @@
   },
   {
    "id": 842080,
-   "road": "Millmerran Leyburn Road / MacWilliam Road",
+   "road": "MacWilliam Road",
    "description": null,
    "locality": "Tummaville",
    "lga": "Toowoomba Regional",
@@ -235,40 +233,24 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-05T14:26:00+10:00",
-   "last_updated": "2026-11-19T06:00:04+10:00",
-   "last_updated_text": "Thu 19 Nov 2026 06:00 AM AEST",
+   "last_updated": "2026-11-23T09:14:01+10:00",
+   "last_updated_text": "Mon 23 Nov 2026 09:14 AM AEST",
    "provided_by": "Toowoomba Regional",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842080",
    "region": "westbrook",
    "region_name": "Westbrook / Toowoomba",
    "marker": [
-    -27.88682,
-    151.52797
+    -27.88677,
+    151.52582
    ],
    "geometry": {
     "points": [],
     "lines": [
      [
       [
-       -27.88793,
-       151.52482
-      ],
-      [
-       -27.88803,
-       151.52497
-      ],
-      [
-       -27.88769,
-       151.52519
-      ],
-      [
-       -27.88745,
-       151.52536
-      ],
-      [
-       -27.88715,
-       151.52554
+       -27.88706,
+       151.5256
       ],
       [
        -27.88695,
@@ -300,47 +282,7 @@
       ],
       [
        -27.88666,
-       151.52633
-      ],
-      [
-       -27.88666,
-       151.52634
-      ],
-      [
-       -27.8867,
-       151.52673
-      ],
-      [
-       -27.88682,
-       151.52797
-      ],
-      [
-       -27.88692,
-       151.52881
-      ],
-      [
-       -27.88696,
-       151.52918
-      ],
-      [
-       -27.88705,
-       151.52998
-      ],
-      [
-       -27.88713,
-       151.53069
-      ],
-      [
-       -27.88724,
-       151.53157
-      ],
-      [
-       -27.88729,
-       151.53212
-      ],
-      [
-       -27.88731,
-       151.53222
+       151.52622
       ]
      ]
     ]
@@ -363,8 +305,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-23T06:02:23+10:00",
-   "last_updated_text": "Mon 23 Nov 2026 06:02 AM AEST",
+   "last_updated": "2026-11-23T10:34:04+10:00",
+   "last_updated_text": "Mon 23 Nov 2026 10:34 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
@@ -923,8 +865,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T07:33:00+10:00",
-   "last_updated": "2026-11-20T14:08:06+10:00",
-   "last_updated_text": "Fri 20 Nov 2026 02:08 PM AEST",
+   "last_updated": "2026-11-23T06:20:01+10:00",
+   "last_updated_text": "Mon 23 Nov 2026 06:20 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841669",
@@ -1007,66 +949,6 @@
    }
   },
   {
-   "id": 843295,
-   "road": "Ingoldsby Road / Upper Tenthill School Road",
-   "description": "Water Over Road - Observe Signage",
-   "locality": "Upper Tenthill",
-   "lga": "Lockyer Valley Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Flash flooding",
-   "due_to": "Heavy rain",
-   "impact": "All lanes affected",
-   "impact_type": "Lanes affected",
-   "severity": "partial",
-   "direction": "All directions",
-   "advice": "Observe signage",
-   "information": null,
-   "status": "Published",
-   "start": "2026-10-26T17:09:00+10:00",
-   "last_updated": "2026-11-23T06:18:01+10:00",
-   "last_updated_text": "Mon 23 Nov 2026 06:18 AM AEST",
-   "provided_by": "Lockyer Valley Regional Council",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/843295",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.65973,
-    152.22811
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.65992,
-       152.22889
-      ],
-      [
-       -27.65986,
-       152.2285
-      ],
-      [
-       -27.65981,
-       152.22831
-      ],
-      [
-       -27.65973,
-       152.22811
-      ],
-      [
-       -27.65955,
-       152.2278
-      ],
-      [
-       -27.65948,
-       152.22772
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 841699,
    "road": "Litfins Road",
    "description": "Road Damage",
@@ -1083,8 +965,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-10-23T18:57:00+10:00",
-   "last_updated": "2026-11-20T14:08:02+10:00",
-   "last_updated_text": "Fri 20 Nov 2026 02:08 PM AEST",
+   "last_updated": "2026-11-23T06:24:06+10:00",
+   "last_updated_text": "Mon 23 Nov 2026 06:24 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841699",
@@ -1591,8 +1473,8 @@
    "information": null,
    "status": "Published",
    "start": "2026-11-14T07:29:00+10:00",
-   "last_updated": "2026-11-20T11:40:03+10:00",
-   "last_updated_text": "Fri 20 Nov 2026 11:40 AM AEST",
+   "last_updated": "2026-11-23T06:22:16+10:00",
+   "last_updated_text": "Mon 23 Nov 2026 06:22 AM AEST",
    "provided_by": "Lockyer Valley Regional Council",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841668",
