@@ -1,14 +1,12 @@
 {
- "generated_at": "2026-11-24T07:09:08+10:00",
- "generated_at_text": "Tue 24 Nov 2026 07:09 AM AEST",
+ "generated_at": "2026-11-24T15:18:57+10:00",
+ "generated_at_text": "Tue 24 Nov 2026 03:18 PM AEST",
  "stale": false,
  "source": {
-  "used": "fallback",
-  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
-  "feed_published": "2026-11-24T07:06:28+10:00",
-  "errors": [
-   "api: HTTP 429"
-  ]
+  "used": "api",
+  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
+  "feed_published": "2026-11-24T15:18:32+10:00",
+  "errors": []
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -17,8 +15,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 16,
-   "closed": 4,
+   "count": 14,
+   "closed": 2,
    "partial": 12
   },
   {
@@ -43,7 +41,7 @@
    "partial": 0
   }
  ],
- "count": 17,
+ "count": 15,
  "excluded": [],
  "closures": [
   {
@@ -219,326 +217,6 @@
    }
   },
   {
-   "id": 842080,
-   "road": "MacWilliam Road",
-   "description": null,
-   "locality": "Tummaville",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Flooding of river",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-05T14:26:00+10:00",
-   "last_updated": "2026-11-24T06:40:06+10:00",
-   "last_updated_text": "Tue 24 Nov 2026 06:40 AM AEST",
-   "provided_by": "Toowoomba Regional",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/842080",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.88677,
-    151.52582
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.88706,
-       151.5256
-      ],
-      [
-       -27.88695,
-       151.52566
-      ],
-      [
-       -27.88684,
-       151.52573
-      ],
-      [
-       -27.8868,
-       151.52577
-      ],
-      [
-       -27.88677,
-       151.52582
-      ],
-      [
-       -27.88672,
-       151.5259
-      ],
-      [
-       -27.88669,
-       151.526
-      ],
-      [
-       -27.88666,
-       151.52614
-      ],
-      [
-       -27.88666,
-       151.52622
-      ]
-     ]
-    ]
-   }
-  },
-  {
-   "id": 841775,
-   "road": "Tyson Road / Kessler Road / Homestead Road",
-   "description": null,
-   "locality": "Felton",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Flooding of river",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-14T16:30:00+10:00",
-   "last_updated": "2026-11-24T06:40:12+10:00",
-   "last_updated_text": "Tue 24 Nov 2026 06:40 AM AEST",
-   "provided_by": "Toowoomba Regional",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841775",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.83154,
-    151.72931
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.83274,
-       151.7397
-      ],
-      [
-       -27.83283,
-       151.73881
-      ],
-      [
-       -27.83287,
-       151.73836
-      ],
-      [
-       -27.83293,
-       151.73786
-      ],
-      [
-       -27.83301,
-       151.7369
-      ],
-      [
-       -27.83314,
-       151.73556
-      ],
-      [
-       -27.83319,
-       151.73506
-      ],
-      [
-       -27.83325,
-       151.73454
-      ],
-      [
-       -27.8333,
-       151.73409
-      ],
-      [
-       -27.83334,
-       151.73354
-      ],
-      [
-       -27.83335,
-       151.73336
-      ],
-      [
-       -27.83335,
-       151.73316
-      ],
-      [
-       -27.83333,
-       151.73294
-      ],
-      [
-       -27.83329,
-       151.73281
-      ],
-      [
-       -27.83325,
-       151.73267
-      ],
-      [
-       -27.8332,
-       151.73249
-      ],
-      [
-       -27.8331,
-       151.73229
-      ],
-      [
-       -27.83301,
-       151.7321
-      ],
-      [
-       -27.8329,
-       151.7319
-      ],
-      [
-       -27.8328,
-       151.73172
-      ],
-      [
-       -27.83265,
-       151.73144
-      ],
-      [
-       -27.83251,
-       151.73117
-      ],
-      [
-       -27.83239,
-       151.73096
-      ],
-      [
-       -27.83212,
-       151.73045
-      ],
-      [
-       -27.83197,
-       151.73013
-      ],
-      [
-       -27.83181,
-       151.72984
-      ],
-      [
-       -27.83154,
-       151.72931
-      ],
-      [
-       -27.83141,
-       151.72907
-      ],
-      [
-       -27.83132,
-       151.72886
-      ],
-      [
-       -27.83119,
-       151.72861
-      ],
-      [
-       -27.83107,
-       151.72838
-      ],
-      [
-       -27.83093,
-       151.72812
-      ],
-      [
-       -27.83068,
-       151.72763
-      ],
-      [
-       -27.83053,
-       151.72734
-      ],
-      [
-       -27.83026,
-       151.7268
-      ],
-      [
-       -27.83014,
-       151.72655
-      ],
-      [
-       -27.83005,
-       151.72636
-      ],
-      [
-       -27.82998,
-       151.72617
-      ],
-      [
-       -27.82996,
-       151.72609
-      ],
-      [
-       -27.82991,
-       151.72592
-      ],
-      [
-       -27.82985,
-       151.72559
-      ],
-      [
-       -27.82976,
-       151.72504
-      ],
-      [
-       -27.82975,
-       151.72461
-      ],
-      [
-       -27.82977,
-       151.72446
-      ],
-      [
-       -27.82979,
-       151.72434
-      ],
-      [
-       -27.82984,
-       151.72421
-      ],
-      [
-       -27.82992,
-       151.72407
-      ],
-      [
-       -27.83,
-       151.72391
-      ],
-      [
-       -27.83012,
-       151.72366
-      ],
-      [
-       -27.83024,
-       151.72336
-      ],
-      [
-       -27.8303,
-       151.72315
-      ],
-      [
-       -27.83032,
-       151.72305
-      ],
-      [
-       -27.82913,
-       151.71774
-      ]
-     ]
-    ]
-   }
-  },
-  {
    "id": 841789,
    "road": "Back Plains Road",
    "description": null,
@@ -647,8 +325,8 @@
    "information": "Caution - road damage due to flooding",
    "status": "Published",
    "start": "2026-10-28T09:15:00+10:00",
-   "last_updated": "2026-11-22T09:08:43+10:00",
-   "last_updated_text": "Sun 22 Nov 2026 09:08 AM AEST",
+   "last_updated": "2026-11-24T10:25:03+10:00",
+   "last_updated_text": "Tue 24 Nov 2026 10:25 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/837831",
@@ -867,8 +545,8 @@
    "information": "1 lane of bridge closed",
    "status": "Published",
    "start": "2026-10-30T14:10:00+10:00",
-   "last_updated": "2026-11-22T09:09:21+10:00",
-   "last_updated_text": "Sun 22 Nov 2026 09:09 AM AEST",
+   "last_updated": "2026-11-24T10:25:05+10:00",
+   "last_updated_text": "Tue 24 Nov 2026 10:25 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/838419",
@@ -919,8 +597,8 @@
    "information": "Proceed with caution.",
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-24T05:04:13+10:00",
-   "last_updated_text": "Tue 24 Nov 2026 05:04 AM AEST",
+   "last_updated": "2026-11-24T15:05:12+10:00",
+   "last_updated_text": "Tue 24 Nov 2026 03:05 PM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
