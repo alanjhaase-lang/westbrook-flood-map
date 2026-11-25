@@ -1,12 +1,14 @@
 {
- "generated_at": "2026-11-25T10:42:13+10:00",
- "generated_at_text": "Wed 25 Nov 2026 10:42 AM AEST",
+ "generated_at": "2026-11-25T19:12:22+10:00",
+ "generated_at_text": "Wed 25 Nov 2026 07:12 PM AEST",
  "stale": false,
  "source": {
-  "used": "api",
-  "url": "https://api.qldtraffic.qld.gov.au/v2/events",
-  "feed_published": "2026-11-25T10:36:26+10:00",
-  "errors": []
+  "used": "fallback",
+  "url": "https://data.qldtraffic.qld.gov.au/events_v2.geojson",
+  "feed_published": "2026-11-25T19:11:33+10:00",
+  "errors": [
+   "api: HTTP 429"
+  ]
  },
  "attribution": "Road data © State of Queensland (QLDTraffic), CC BY 4.0",
  "licence": "https://creativecommons.org/licenses/by/4.0/",
@@ -15,8 +17,8 @@
   {
    "id": "westbrook",
    "name": "Westbrook / Toowoomba",
-   "count": 12,
-   "closed": 2,
+   "count": 11,
+   "closed": 1,
    "partial": 10
   },
   {
@@ -41,109 +43,9 @@
    "partial": 0
   }
  ],
- "count": 13,
+ "count": 12,
  "excluded": [],
  "closures": [
-  {
-   "id": 841880,
-   "road": "Bostock Road",
-   "description": null,
-   "locality": "Pampas",
-   "lga": "Toowoomba Regional",
-   "event_type": "Flooding",
-   "event_subtype": "Long-term flooding",
-   "due_to": "Flooding of river",
-   "impact": "Road closed to all traffic",
-   "impact_type": "Closures",
-   "severity": "closed",
-   "direction": "All directions",
-   "advice": "Do not drive in flood waters",
-   "information": null,
-   "status": "Published",
-   "start": "2026-11-15T13:30:00+10:00",
-   "last_updated": "2026-11-25T06:24:11+10:00",
-   "last_updated_text": "Wed 25 Nov 2026 06:24 AM AEST",
-   "provided_by": "Toowoomba Regional",
-   "source_link": "https://qldtraffic.qld.gov.au/",
-   "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841880",
-   "region": "westbrook",
-   "region_name": "Westbrook / Toowoomba",
-   "marker": [
-    -27.73712,
-    151.38868
-   ],
-   "geometry": {
-    "points": [],
-    "lines": [
-     [
-      [
-       -27.72812,
-       151.40003
-      ],
-      [
-       -27.7289,
-       151.39883
-      ],
-      [
-       -27.73077,
-       151.39597
-      ],
-      [
-       -27.73198,
-       151.39413
-      ],
-      [
-       -27.73312,
-       151.39237
-      ],
-      [
-       -27.73712,
-       151.38868
-      ],
-      [
-       -27.73722,
-       151.38865
-      ],
-      [
-       -27.73736,
-       151.38859
-      ],
-      [
-       -27.73752,
-       151.3885
-      ],
-      [
-       -27.73766,
-       151.38841
-      ],
-      [
-       -27.73781,
-       151.38829
-      ],
-      [
-       -27.73797,
-       151.38812
-      ],
-      [
-       -27.73819,
-       151.38777
-      ],
-      [
-       -27.73869,
-       151.38674
-      ],
-      [
-       -27.73986,
-       151.3845
-      ],
-      [
-       -27.74067,
-       151.38296
-      ]
-     ]
-    ]
-   }
-  },
   {
    "id": 750590,
    "road": "Laidley Creek West Road",
@@ -549,8 +451,8 @@
    "information": "Proceed with caution.",
    "status": "Published",
    "start": "2026-11-13T05:58:00+10:00",
-   "last_updated": "2026-11-25T07:50:55+10:00",
-   "last_updated_text": "Wed 25 Nov 2026 07:50 AM AEST",
+   "last_updated": "2026-11-25T11:50:54+10:00",
+   "last_updated_text": "Wed 25 Nov 2026 11:50 AM AEST",
    "provided_by": "Department of Transport and Main Roads",
    "source_link": "https://qldtraffic.qld.gov.au/",
    "api_url": "https://api.qldtraffic.qld.gov.au/v2/events/841415",
