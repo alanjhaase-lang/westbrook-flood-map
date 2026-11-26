@@ -89,7 +89,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040788.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-26"
   },
   "040789": {
    "minor": 8.2,
@@ -98,7 +98,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040789.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-26"
   },
   "040791": {
    "minor": 7.0,
@@ -107,7 +107,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040791.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-26"
   },
   "040796": {
    "minor": 6.2,
@@ -116,7 +116,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.040796.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-26"
   },
   "040812": {
    "minor": 10.0,
@@ -386,7 +386,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540071.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-26"
   },
   "540078": {
    "minor": 9.0,
@@ -1394,7 +1394,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540432.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-26"
   },
   "540433": {
    "minor": 4.2,
@@ -1628,7 +1628,7 @@
    "datum": null,
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540535.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-26"
   },
   "540536": {
    "minor": 3.25,
@@ -2204,7 +2204,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540805.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-26"
   },
   "540807": {
    "minor": null,
