@@ -827,7 +827,7 @@
    "datum": "LGH",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540205.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-28"
   },
   "540216": {
    "minor": null,
@@ -1259,7 +1259,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540398.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-28"
   },
   "540403": {
    "minor": null,
@@ -1307,13 +1307,13 @@
    "checked": "2026-10-24"
   },
   "540415": {
-   "minor": 5.8,
-   "moderate": 7.0,
-   "major": 8.3,
+   "minor": 12.4,
+   "moderate": 13.5,
+   "major": 14.8,
    "datum": "LGH",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540415.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-28"
   },
   "540416": {
    "minor": 5.2,
@@ -1322,7 +1322,7 @@
    "datum": "LGH",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540416.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-28"
   },
   "540417": {
    "minor": 2.5,
@@ -1430,7 +1430,7 @@
    "datum": null,
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540444.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-28"
   },
   "540445": {
    "minor": null,
@@ -1793,13 +1793,13 @@
    "checked": "2026-10-24"
   },
   "540625": {
-   "minor": null,
-   "moderate": null,
-   "major": null,
-   "datum": null,
+   "minor": 3.7,
+   "moderate": 5.5,
+   "major": 6.0,
+   "datum": "LGH",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540625.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-28"
   },
   "540636": {
    "minor": 38.5,
@@ -2060,7 +2060,7 @@
    "datum": null,
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540739.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-28"
   },
   "540741": {
    "minor": null,
@@ -2168,7 +2168,7 @@
    "datum": null,
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540794.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-28"
   },
   "540795": {
    "minor": null,
