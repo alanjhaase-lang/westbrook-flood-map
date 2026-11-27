@@ -530,7 +530,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540118.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-27"
   },
   "540119": {
    "minor": 75.5,
@@ -620,7 +620,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540130.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-27"
   },
   "540132": {
    "minor": 2.0,
@@ -971,7 +971,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540278.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-27"
   },
   "540279": {
    "minor": 2.8,
@@ -980,7 +980,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540279.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-27"
   },
   "540286": {
    "minor": 1.7,
@@ -989,7 +989,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540286.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-27"
   },
   "540296": {
    "minor": 6.0,
@@ -2150,7 +2150,7 @@
    "datum": null,
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540784.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-27"
   },
   "540788": {
    "minor": null,
@@ -2186,7 +2186,7 @@
    "datum": "AHD",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540799.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-27"
   },
   "540804": {
    "minor": 6.0,
@@ -2195,7 +2195,7 @@
    "datum": "LGH",
    "source": "bom_station_plot_page",
    "source_url": "https://www.bom.gov.au/fwo/IDQ65389/IDQ65389.540804.plt.shtml",
-   "checked": "2026-10-24"
+   "checked": "2026-11-27"
   },
   "540805": {
    "minor": 4.6,
